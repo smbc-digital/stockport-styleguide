@@ -1,0 +1,45 @@
+.icon-boxes {
+    @extend .grid-container;
+    @extend .grid-parent;
+    list-style: none;
+    margin-bottom: 15px;
+
+    li {
+        @extend .grid-25;
+        @extend .tablet-grid-50;
+        @extend .mobile-grid-50;
+        text-align: center;
+        
+        div {
+            padding: 15px 0;
+            border: 1px solid $grey-light;
+            margin-bottom: 20px;
+            height: 110px;
+
+            i {
+                color: $primary;
+                font-size: 3em;
+            }
+
+            p {
+                font-size: $fontSizeLarge;
+                font-weight: $fontWeightLarge;
+                margin: 0;
+                line-height: 24px;
+                margin-top: 15px;
+            }
+        }
+
+        @media #{$desktop} {
+            &:nth-child(4n) {
+                padding-right: 0;
+            }
+        }
+
+        @media #{$tablet}, #{$mobile} {
+            &:nth-child(2n) {
+                padding-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+body > footer {
+    border-top: 10px solid $teal;
+    background-color: $primary-dark;
+    padding-top: 20px;
+
+    #footer-logo {
+        @extend .grid-33;
+        @extend .tablet-grid-35;
+        @extend .mobile-grid-100;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px 0;
+        margin: 0;
+
+        a {
+            background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
+            background-size: cover;
+            display: inline-block;
+            height: 50px;
+            width: 245px;
+            color: transparent;
+            font-size: 0;
+        }
+    }
+
+    .footer-links {
+        @extend .grid-33;
+        @extend .tablet-grid-45;
+        list-style: none;
+        display: inline;
+        padding: 0 0 20px;
+        
+        li {
+            float: left;
+            width: 50%;
+
+            a {
+                text-decoration: none;
+                color: $white;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        @extend .grid-33;
+        @extend .tablet-grid-20;
+        @extend .hide-on-mobile;
+        list-style: none;
+        text-align: right;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            border: 1px solid $grey-middle;
+            margin: 5px;
+            text-align: right;
+            @include border-radius(50%);
+
+            &:hover {
+                border-color: $white;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            a {
+                display: table-cell;
+                vertical-align: middle; 
+                text-align: center;
+                height: 60px;
+                width: 60px;
+                color: $white;
+
+                i {
+                    font-size: $fontSizeLarger;
+                }
+            }
+        }
+    }
+
+    .mobile-social-links {
+        @extend .hide-on-desktop;
+        @extend .hide-on-tablet;
+        @extend .mobile-grid-100;
+        list-style: none;
+        padding: 0;
+        background-color: $teal;
+
+        li {
+            float: left;
+            width: 25%;
+
+            a {
+                border-right: 1px solid rgba(255, 255, 255, 0.5);
+                display: block;
+                text-align: center;
+                padding: 22px 0;
+                color: $white;
+
+                i {
+                    font-size: 2.250em;
+                }
+            }
+
+            .facebook:hover,
+            .facebook:active,
+            .facebook:focus {
+                background-color: $facebook;
+            }
+
+            .twitter:hover,
+            .twitter:active,
+            .twitter:focus {
+                background-color: $twitter;
+            }
+
+            .youtube:hover,
+            .youtube:active,
+            .youtube:focus {
+                background-color: $youtube;
+            }
+
+            .instagram:hover,
+            .instagram:active,
+            .instagram:focus {
+                background-color: $instagram;
+            }
+        }
+    }
+
+    .footer-copyright {
+        color: $white;
+        background-color: $primary-darkest;
+        padding: 5px 0;
+        text-align: right;
+
+        p {
+            @extend .grid-50;
+            @extend .mobile-grid-100;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            @extend .mobile-grid-100;
+            display: inline-block;
+            text-align: right;
+            padding: 0;
+            color: $white;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media #{$mobile} {
+        border-top: none;
+        padding-top: 0;
+
+        .footer-links {
+            width: 200px;
+            margin-left: 25px;
+            display: block;
+
+            li {
+                float: none;
+                width: 100%;
+
+                a {
+                    font-size: $fontSizeSmall;
+                }
+            }
+        }
+
+        .footer-copyright p, .footer-copyright a {
+            text-align: center;
+        }
+
+        .footer-copyright a {
+            font-size: 0.900em;
+        }
+    }
+}

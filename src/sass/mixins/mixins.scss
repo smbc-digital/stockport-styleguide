@@ -1,0 +1,72 @@
+@mixin button-colors ($buttonColour, $textColour) {
+    color: $textColour;
+    background-color: $buttonColour;
+
+    a {
+        color: $textColour;
+    }
+
+    &:hover, &:focus {
+        background-color: lighten($buttonColour, 5%);
+    }
+
+    &:active {
+        background-color: darken($buttonColour, 5%);
+    }
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+@mixin outline {
+    outline: 3px solid $orange;
+}
+
+@mixin transition-box-shadow($shadow) {
+    transition: all .5s;
+    transition-property: box-shadow;
+    cursor: pointer;
+    text-decoration: none;
+    @include box-shadow($shadow);
+}
+
+@mixin chevron($right-position) {
+    position: absolute;
+    top: 50%;
+    right: $right-position;
+    margin-top: -10px;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f105";
+    font-size: 20px;
+}
+
+@mixin alert-colours($content-background-color, $font-color) {
+    background-color: $content-background-color;
+
+    a {
+        color: $font-color;
+    }
+
+    > i {
+        background-color: darken($content-background-color, 10%);
+    }
+
+    .content {
+        color: $font-color;
+
+        h2 {
+            color: $font-color;
+        }
+    }
+
+    .dismiss {
+        color: $font-color;
+    }
+}

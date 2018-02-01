@@ -1,0 +1,144 @@
+.colour-boxes {
+    @extend .grid-container;
+    @extend .grid-parent;
+    list-style: none;
+    margin-bottom: 15px;
+
+    li {
+        @extend .grid-25;
+        @extend .tablet-grid-50;
+        @extend .mobile-grid-50;
+        text-align: center;
+        padding: 5px 10px 5px 0;
+
+        @media #{$desktop} {
+            &:nth-child(4n) {
+                padding-right: 0;
+            }
+        }
+
+        @media #{$tablet}, #{$mobile} {
+            &:nth-child(2n) {
+                padding-right: 0;
+            }
+        }
+
+        div {
+            @include border-radius(3px);
+            padding: 15px 10px;
+            
+            p {
+                font-family: $fontFamilyHeadings;
+                font-size: $fontSizeLarge;
+                font-weight: $fontWeightLarge;
+                margin: 0;
+            }
+        }
+    }
+
+    .primary {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .teal {
+        background-color: $teal;
+        color: $white;
+    }
+
+    .teal-darker {
+        background-color: $teal-darker;
+        color: $white;
+    }
+
+    .off-white {
+        background-color: $off-white;
+        color: $grey-darkest;
+    }
+
+    .white {
+        background-color: $white;
+        color: $grey-darkest;
+        border: 1px solid $grey-middle;
+    }
+
+    .grey-darkest {
+        background-color: $grey-darkest;
+        color: $white;
+    }
+
+    .primary-darkest {
+        background-color: $primary-darkest;
+        color: $white;
+    }
+
+    .primary-darker {
+        background-color: $primary-darker;
+        color: $white;
+    }
+
+    .primary-dark {
+        background-color: $primary-dark;
+        color: $white;
+    }
+
+    .primary-light {
+        background-color: $primary-light;
+        color: $white;
+    }
+
+    .primary-pale {
+        background-color: $primary-pale;
+        color: $white;
+    }
+
+    .green {
+        background-color: $green;
+        color: $white;
+    }
+
+    .soft-blue {
+        background-color: $soft-blue;
+        color: $white;
+    }
+
+    .red {
+        background-color: $red;
+        color: $white;
+    }
+
+    .orange {
+        background-color: $orange;
+        color: $white;
+    }
+
+    .purple {
+        background-color: $purple;
+        color: $white;
+    }
+
+    .grey-dark {
+        background-color: $grey-dark;
+        color: $white;
+    }
+
+    .grey-lightest {
+        background-color: $grey-lightest;
+        color: $grey-darkest;
+    }
+
+    .grey-lighter {
+        background-color: $grey-lighter;
+        color: $grey-darkest;
+    }
+
+    .grey-light {
+        background-color: $grey-light;
+        color: $grey-darkest;
+    }
+
+    .grey-middle {
+        background-color: $grey-middle;
+        color: $grey-darkest;
+    }
+}

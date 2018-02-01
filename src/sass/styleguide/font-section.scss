@@ -1,0 +1,30 @@
+.font-display,
+.heading-display {
+    margin-bottom: 20px;
+}
+
+.font-display {
+    span {
+        font-size: $fontSizeExtraLarge;
+        line-height: 50px;
+        display: inline-block;
+    }
+    
+    .alphabet {
+        display: inline-block;
+        margin-left: 25px;
+
+        p {
+            margin-bottom: 0;
+            line-height: 25px;
+        }
+    }
+
+    .source-sans-pro {
+        font-family: $fontFamilyHeadings;
+    }
+
+    .noto-sans {
+        font-family: $fontFamily;
+    }
+}

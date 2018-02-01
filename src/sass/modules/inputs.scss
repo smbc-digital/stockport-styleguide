@@ -1,0 +1,115 @@
+form {
+    margin: 0;
+    width: 100%;
+
+    fieldset {
+        border: none;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+
+        legend {
+            display: none;
+        }
+
+        label {
+            @extend h3;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        input,
+        textarea {
+            display: block;
+            padding: 15px 10px;
+            border: 1px solid $grey-middle;
+            @include border-radius(3px);
+            width: 100%;
+            font-family: $fontFamily;
+            color: $grey-darkest;
+            font-size: 1em;
+            margin-bottom: 15px;
+        
+            &.input-validation-error {
+                border: 1px solid $red;
+                @include border-radius(3px 3px 0 0);
+            }
+
+            &:active,
+            &:focus {
+                @include outline;
+                border-color: transparent;
+                border-radius: 0;
+            }
+        }
+
+        input {
+            height: 50px;
+        }
+
+        textarea {
+            height: 250px;
+        }
+        
+        input[type="number"] {
+            -moz-appearance: textfield;
+        
+            &::-webkit-inner-spin-button, 
+            &::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+            }
+        }
+
+        input[type="radio"] {
+            color: $white;
+            background-color: $grey-darkest;
+            font-weight: $fontWeightLarge;
+            font-size: $fontSizeBold;
+        }
+        
+        .input-addon {
+            width: 10px;
+            vertical-align: middle;
+            background-color: $off-white;
+            border-bottom: 1px solid $grey-lightest;
+            border-left: 1px solid $grey-lightest;
+            border-top: 1px solid $grey-lightest;
+            @include border-radius(3px 0 0 3px);
+            font-size: 1.5em;
+            padding: 0 10px;
+        
+            + input {
+                @include border-radius(0 3px 3px 0);
+            }
+        }
+
+        .input-error-content {
+            background: $red;
+            color: $white;
+            width: 530px;
+            padding: 5px 10px;
+
+            i {
+                color: $red;
+                position: absolute;
+                top: 69px;
+                left: 20px;
+                font-size: 36px;
+            }
+        }
+
+        .input-information-content i {
+            font-size: 27px;
+            color: $orange;
+            margin: 8px 5px 0 0;
+            position: relative;
+            top: 2px;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.alert {
+    @include border-radius(5px);
+    border: 1px solid $grey-light;
+    color: $white;
+    background-color: $grey-dark;
+    display: table;
+    margin-bottom: 20px;
+
+    > i {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 2.250em;
+        padding: 15px 20px;
+        background-color: $grey-darkest;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    > div {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 25px 15px;
+
+        h2 {
+            color: $white;
+            margin-bottom: 10px;
+            font-size: 1.500em;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    > a {
+        padding: 5px 5px 2px 5px;
+        position: relative;
+        right: 1px;
+        color: $white;
+
+        i {
+            font-size: 1.500em;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+.alert-warning {
+    @extend .alert;
+    @include alert-colours($orange, $grey-darkest);
+
+    a:active,
+    a:focus {
+        outline-color: $soft-blue;
+    }
+}
+
+.alert-information {
+    @extend .alert;
+    @include alert-colours($soft-blue, $white);
+}
+
+.alert-error {
+    @extend .alert;
+    @include alert-colours($red, $white);
+}
+
+.alert-success {
+    @extend .alert;
+    @include alert-colours($green, $white);
+}
+
+.alert-fullwidth {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+
+    > i {
+        font-size: 1.875em;
+        color: rgba(255, 255, 255, 0.65);
+        width: 25px;
+        padding: 10px 15px;
+    }
+
+    > div {
+        padding: 15px;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    div:last-of-type {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 20px;
+        min-width: 50px;
+
+        a {
+            color: $white;
+            border: 1px solid $white;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            padding: 14px 11px 7px 12px;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            i {
+                font-size: 1.750em;
+            }
+        }
+    }
+}
+
+.alert-warning-fullwidth {
+    @extend .alert-warning;
+    @extend .alert-fullwidth;
+}
+
+.alert-information-fullwidth {
+    @extend .alert-information;
+    @extend .alert-fullwidth;
+}
+
+.alert-error-fullwidth {
+    @extend .alert-error;
+    @extend .alert-fullwidth;
+}
+
+.alert-success-fullwidth {
+    @extend .alert-success;
+    @extend .alert-fullwidth;
+}
+
+.inline-alert {
+    background-color: $off-white;
+    border-left: 5px solid $grey-lighter;
+    @include border-radius(3px);
+    padding: 15px;
+    margin-bottom: 20px;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 1.500em;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

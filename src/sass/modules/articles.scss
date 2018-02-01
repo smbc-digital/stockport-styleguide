@@ -1,0 +1,13 @@
+article {
+    &.with-aside {
+        @extend .grid-70;
+        @extend .tablet-grid-70;
+        @extend .mobile-grid-100;
+        padding: 20px 20px 0;
+    }
+
+    section.with-border-bottom {
+        border-bottom: 1px solid $grey-light;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,152 @@
+body > header {
+    background-color: $primary;
+    width: 100%;
+
+    #header-logo {
+        @extend .grid-50;
+        @extend .tablet-grid-50;
+        @extend .mobile-grid-50;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 12px 0;
+        margin: 0;
+
+        a {
+            background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
+            background-size: cover;
+            display: inline-block;
+            height: 50px;
+            width: 250px;
+            color: transparent;
+            font-size: 0;
+
+            @media #{$mobile} {
+                background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-mobile%402x.png");
+                height: 35px;
+                width: 175px;
+            }
+        }
+    }
+
+    #header-my-account {
+        @extend .grid-25;
+        @extend .tablet-grid-25;
+        @extend .mobile-grid-50;
+        text-align: right;
+        padding: 21px 15px;
+        
+        @media #{$mobile} {
+            padding: 11px 15px;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+
+                i {
+                    color: $white;
+                }
+            }
+
+            i {
+                color: $primary-pale;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .header-search {
+        @extend .grid-25;
+        @extend .tablet-grid-25;
+        @extend .hide-on-mobile;
+        padding: 13px 15px 12px;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        fieldset {
+            margin: 0;
+            width: 100%;
+
+            input {
+                font-size: $fontSizeDefault;
+                padding-right: 45px;
+                width:100%;
+                margin-bottom: 0;
+            }
+
+            button {
+                background: none;
+                border: none;
+                font-size: 1.375em;
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 50px;
+                width: 50px;
+                margin: 0;
+    
+                &:hover {
+                    color: $grey-dark;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: $primary-dark;
+
+        ul {
+            @extend .grid-container;
+            padding-bottom: 4px;
+            margin: 0 auto;
+            color: $white;
+            
+            li {
+                display: inline;
+
+                &:after {
+                    font: normal normal normal 14px/1 FontAwesome;
+                    content: '\f105';
+                    padding: 0 10px 0 15px;
+                    color: $grey-middle;
+                }
+
+                &:last-of-type:after {
+                    content: none;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.title-container {
+    background-color: $teal-darker;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+
+.title {
+    max-width:1200px;
+    margin: 0 auto;
+    font-family: $fontFamilyHeadings;
+    font-weight: $fontWeightLarge;
+
+    h1 {
+        color: $white;
+        font-size: 2.750em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 0px;
+        color: $white;
+        font-size: $fontSizeLarger;
+    }
+}

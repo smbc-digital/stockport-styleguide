@@ -1,0 +1,88 @@
+/* Variables */
+$fontFamily: 'Noto Sans', Arial, sans-serif;
+$fontFamilyHeadings: 'Source Sans Pro', sans-serif;
+
+/* Font weight */
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightLarge: 600;
+
+/* Font Size */
+$fontSizeSmall: 0.875em;
+$fontSizeDefault: 1em;
+$fontSizeBold: 1.125em;
+$fontSizeLarge: 1.500em;
+$fontSizeLarger: 1.875em;
+$fontSizeExtraLarge: 4.250em;
+
+/* Base */
+body {
+    font: 16px / 2 'Noto Sans', Arial, sans-serif;;
+    color: $grey-darkest;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*------------------- Headings -------------------*/
+
+h1,
+.h1 {
+    font-family: $fontFamilyHeadings;
+    color: #065c58;
+    font-size: $fontSizeExtraLarge;
+    font-weight: $fontWeightLarge;
+    line-height: 100%;
+    margin: 10px 0 20px 0;
+}
+
+h2,
+.h2 {
+    font-family: $fontFamilyHeadings;
+    color: $grey-darkest;
+    font-size: $fontSizeLarger;
+    font-weight: $fontWeightLarge;
+    line-height: 100%;
+    margin: 0 0 20px 0;
+}
+
+h3,
+.h3 {
+    font-family: $fontFamilyHeadings;
+    color: $grey-darkest;
+    font-size: $fontSizeLarge;
+    font-weight: $fontWeightLarge;
+    margin: 0 0 15px 0;
+    line-height: 100%;
+}
+
+h4,
+.h4 {
+    font-family: $fontFamilyHeadings;
+    color: $grey-darkest;
+    font-size: $fontSizeBold;
+    font-weight: $fontWeightLarge;
+    margin: 0 0 10px 0;
+    line-height: 100%;
+}
+
+p,
+.p {
+    font-family: $fontFamily;
+    font-size: $fontSizeDefault;
+    font-weight: $fontWeightRegular;
+    margin: 0 0 10px 0;
+}
+
+a {
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        text-decoration: none;
+        outline: 3px solid $orange;
+    }
+}
