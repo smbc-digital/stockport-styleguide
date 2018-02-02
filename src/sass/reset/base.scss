@@ -15,6 +15,11 @@ main {
     article {
         background-color: $white;
     }
+
+    div#root{
+        background-color: $white;
+        padding: 20px 20px 0;
+    }
 }
 
 ul {

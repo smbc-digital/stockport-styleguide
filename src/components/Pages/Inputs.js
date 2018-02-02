@@ -15,15 +15,19 @@ class Inputs extends Component{
                         <p>Form inputs are a vital way of allowing users to enter information on a page.</p>
                     </section>
                     <section>
-                        <h2>Radio Buttons</h2>
-                        <p>Radio buttons allow users to make a single selection from a list of possible choices.</p>
                         <form method="get" role="form radio-button">
                             <fieldset className="input-group">
+                                <h2>Radio Buttons</h2>
+                                <p>Radio buttons allow users to make a single selection from a list of possible choices.</p>
                                 <legend>Radio button example</legend>
-                                <label for="radio1">I'm a selected radio button! :)</label>
-                                <input id="radio1" name="radio1" type="radio" checked="checked"/>
-                                <label for="radio2">I haven't been selected! :(</label>
-                                <input id="radio2" name="radio2" type="radio"/>
+                                <label className="input-radio-container">I'm a selected radio button! :)
+                                    <input type="radio" checked="checked"/>
+                                    <span className="checkmark"></span>
+                                </label>
+                                <label className="input-radio-container">I haven't been selected! :(
+                                    <input type="radio"/>
+                                    <span className="checkmark"></span>
+                                </label>
                             </fieldset>
                         </form>
                     </section>
@@ -33,9 +37,9 @@ class Inputs extends Component{
                         <form method="get" role="form checkboxes">
                             <fieldset className="input-group">
                                 <legend>Checkbox example</legend>
-                                <label for="checkbox1">Check, check, check</label>
+                                <label htmlFor="checkbox1">Check, check, check</label>
                                 <input id="checkbox1" name="checkbox1" type="checkbox" checked="checked"/>
-                                <label for="checkbox2">I'm unchecked'</label>
+                                <label htmlFor="checkbox2">I'm unchecked'</label>
                                 <input id="checkbox2" name="checkbox2" type="checkbox"/>
                             </fieldset>
                         </form>
