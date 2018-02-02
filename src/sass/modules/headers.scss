@@ -6,10 +6,7 @@ body > header {
         @extend .grid-50;
         @extend .tablet-grid-50;
         @extend .mobile-grid-50;
-        display: table-cell;
-        vertical-align: middle;
-        padding: 12px 0;
-        margin: 0;
+        height: 80px;
 
         a {
             background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
@@ -19,6 +16,8 @@ body > header {
             width: 250px;
             color: transparent;
             font-size: 0;
+            position: relative;
+            top: -8px;
 
             @media #{$mobile} {
                 background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-mobile%402x.png");
@@ -33,7 +32,7 @@ body > header {
         @extend .tablet-grid-25;
         @extend .mobile-grid-50;
         text-align: right;
-        padding: 21px 15px;
+        padding: 24px 12px;
         
         @media #{$mobile} {
             padding: 11px 15px;
@@ -58,7 +57,7 @@ body > header {
         }
     }
 
-    .header-search {
+    form {
         @extend .grid-25;
         @extend .tablet-grid-25;
         @extend .hide-on-mobile;
@@ -74,6 +73,7 @@ body > header {
                 padding-right: 45px;
                 width:100%;
                 margin-bottom: 0;
+                height: 23px;
             }
 
             button {

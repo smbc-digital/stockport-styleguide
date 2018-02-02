@@ -16,7 +16,7 @@ export class Header extends Component {
                     <div id="header-my-account">
                         <a href="http://myaccount.stockport.gov.uk"><i className="fa fa-user" aria-hidden="true"></i>My Account</a>
                     </div>
-                    <form method="get" role="search" id="cludo-search-form" className="header-search cludo-search_autocomplete">
+                    <form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
                         <fieldset className="input-group">
                             <legend>Search Stockport Gov website:</legend>
                             <label htmlFor="search" className="sr-only">Search</label>
