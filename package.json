@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base src --hot --inline && lint:watch ",
+    "create": "npm install && npm run build",
+    "start": "webpack && webpack-dev-server --content-base src --hot --inline && lint:watch ",
     "build": "webpack",
     "test": "jest",
     "lint": "node_modules/.bin/esw webpack.config.* src",
