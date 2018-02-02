@@ -16,18 +16,18 @@ class Inputs extends Component{
                     </section>
                     <section>
                         <form method="get" role="form radio-button">
-                            <fieldset className="input-group">
+                            <fieldset className="input-group ">
                                 <h2>Radio Buttons</h2>
                                 <p>Radio buttons allow users to make a single selection from a list of possible choices.</p>
                                 <legend>Radio button example</legend>
-                                <label className="input-radio-container">I'm a selected radio button! :)
-                                    <input type="radio" checked="checked"/>
-                                    <span className="checkmark"></span>
-                                </label>
-                                <label className="input-radio-container">I haven't been selected! :(
-                                    <input type="radio"/>
-                                    <span className="checkmark"></span>
-                                </label>
+                                <div className="input-radio-container">
+                                    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes"/>
+                                    <label for="radio-inline-1">I'm a selected radio button! :)</label>
+                                </div>
+                                <div className="input-radio-container">
+                                    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No"/>
+                                    <label for="radio-inline-2">I haven't been selected! :(</label>
+                                </div>
                             </fieldset>
                         </form>
                     </section>

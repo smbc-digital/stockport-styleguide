@@ -2,8 +2,6 @@ form {
     margin: 0;
     width: 100%;
 
-    
-
     fieldset {
         border: none;
         padding: 0;
@@ -71,101 +69,108 @@ form {
                 margin: 0; 
             }
         }
+    }    
+    
+    .input-radio-container {
+        display: block;
+        position: relative;
 
         input[type="radio"] {
-            color: $white;
-            background-color: $grey-darkest;
-            font-weight: $fontWeightLarge;
-            font-size: $fontSizeBold;
-        }
-
-        .input-radio-container{
-            @extend p;
-            display: block;
-            position: relative;
-            padding-left: 45px;
-            margin-bottom: 20px;
-            line-height: 2em;
+            position: absolute;
             cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+            left: 0;
+            top: 0;
+            width: 38px;
+            height: 38px;
+            z-index: 1;
+            margin: 0;
+            zoom: 1;
+            filter: alpha(opacity=0);
+            opacity: 0;
 
-            input {
-                position: absolute;    
-                top: 0;
-                left: 0;
-                cursor: pointer;
-                opacity: 0;
-                z-index: 1;
-
-                &:checked ~ .checkmark:after {
-                    display: block;
-                }
-            }
-
-            .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 30px;
-                width: 30px;
-                border: 2px solid $black;
-                border-radius: 50%;
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                    left: 5px;
-                    top: 5px;
-                    width: 20px;
-                    height: 20px;
-                    background-color: $black;
-                    border-radius:50%;
-                }
-            }
-        }    
-    
-        
-        .input-addon {
-            width: 10px;
-            vertical-align: middle;
-            background-color: $off-white;
-            border-bottom: 1px solid $grey-lightest;
-            border-left: 1px solid $grey-lightest;
-            border-top: 1px solid $grey-lightest;
-            @include border-radius(3px 0 0 3px);
-            font-size: 1.5em;
-            padding: 0 10px;
-        
-            + input {
-                @include border-radius(0 3px 3px 0);
+            &:checked + label::after {
+                zoom: 1;
+                filter: alpha(opacity=100);
+                opacity: 1;
             }
         }
 
-        .input-error-content {
-            background: $red;
-            color: $white;
-            width: 530px;
-            padding: 5px 10px;
-
-            i {
-                color: $red;
-                position: absolute;
-                top: 69px;
-                left: 20px;
-                font-size: 36px;
-            }
-        }
-
-        .input-information-content i {
-            font-size: 27px;
-            color: $orange;
-            margin: 8px 5px 0 0;
+        label {
+            font-family: $fontFamily;
+            font-size: $fontSizeDefault;
+            font-weight: $fontWeightRegular;
+            display: inline-block;
             position: relative;
-            top: 2px;
+            padding-left: 50px;
+            margin: 0 0 10px;
+            line-height: 2.4em;
+            cursor: pointer;
+            @include user-select(none);
+
+            &::before {
+                content: "";
+                border: 2px solid;
+                background: transparent;
+                width: 34px;
+                height: 34px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include border-radius(50%);
+            }
+    
+            &::after {
+                content: "";
+                border: 10px solid;
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 9px;
+                left: 9px;
+                @include border-radius(50%);
+                zoom: 1;
+                filter: alpha(opacity=0);
+                opacity: 0;
+            }
         }
+    }
+        
+    .input-addon {
+        width: 10px;
+        vertical-align: middle;
+        background-color: $off-white;
+        border-bottom: 1px solid $grey-lightest;
+        border-left: 1px solid $grey-lightest;
+        border-top: 1px solid $grey-lightest;
+        @include border-radius(3px 0 0 3px);
+        font-size: 1.5em;
+        padding: 0 10px;
+    
+        + input {
+            @include border-radius(0 3px 3px 0);
+        }
+    }
+
+    .input-error-content {
+        background: $red;
+        color: $white;
+        width: 530px;
+        padding: 5px 10px;
+
+        i {
+            color: $red;
+            position: absolute;
+            top: 69px;
+            left: 20px;
+            font-size: 36px;
+        }
+    }
+
+    .input-information-content i {
+        font-size: 27px;
+        color: $orange;
+        margin: 8px 5px 0 0;
+        position: relative;
+        top: 2px;
     }
 }
