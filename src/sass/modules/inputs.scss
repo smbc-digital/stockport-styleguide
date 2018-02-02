@@ -93,7 +93,10 @@ form {
             user-select: none;
 
             input {
-                position: absolute;
+                position: absolute;    
+                top: 0;
+                left: 0;
+                cursor: pointer;
                 opacity: 0;
 
                 &:checked ~ .checkmark:after {
