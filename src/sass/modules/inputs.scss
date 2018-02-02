@@ -98,6 +98,7 @@ form {
                 left: 0;
                 cursor: pointer;
                 opacity: 0;
+                z-index: 1;
 
                 &:checked ~ .checkmark:after {
                     display: block;
