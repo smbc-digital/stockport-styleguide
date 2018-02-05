@@ -1,10 +1,44 @@
 import React, { Component } from 'react'
 import Aside from '../Elements/Aside'
+import { RadioInputsContainer, CheckboxInputsContainer } from 'smbc-react-components'
 
 class Inputs extends Component{
     constructor(props){
         super(props)
+        this.radioInputs = [
+            {
+                "id": "radio-inline-1",
+                "label": "Ham",
+                "name": "MeatChoice",
+                "value": "Ham"
+            },
+            {
+                "id": "radio-inline-2",
+                "label": "Chicken",
+                "name": "MeatChoice",
+                "value": "Chicken"
+            }
+        ]
+
+        this.checkboxInputs = [
+            {
+                "id": "checkbox-inline-1",
+                "label": "Brie",
+                "name": "CheeseChoice",
+                "value": "Brie"
+            },
+            {
+                "id": "checkbox-inline-2",
+                "label": "Cheshire",
+                "name": "CheeseChoice",
+                "value": "Cheshire"
+            }
+        ]
     }
+
+    onChangeHandler(event) {
+		console.log("app change handler hit")
+	}
 
     render(){
         return (
@@ -16,32 +50,24 @@ class Inputs extends Component{
                     </section>
                     <section>
                         <form method="get" role="form radio-button">
-                            <fieldset className="input-group ">
-                                <h2>Radio Buttons</h2>
-                                <p>Radio buttons allow users to make a single selection from a list of possible choices.</p>
-                                <legend>Radio button example</legend>
-                                <div className="input-radio-container">
-                                    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes"/>
-                                    <label for="radio-inline-1">I'm a selected radio button! :)</label>
-                                </div>
-                                <div className="input-radio-container">
-                                    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No"/>
-                                    <label for="radio-inline-2">I haven't been selected! :(</label>
-                                </div>
-                            </fieldset>
+                            <RadioInputsContainer
+                                header='Radio Buttons'
+                                description='Radio buttons allow users to make a single selection from a list of possible choices.'
+                                legend='Meat choice'
+                                options={this.radioInputs}
+                                onChange={this.onChangeHandler.bind(this)}
+                            />
                         </form>
                     </section>
                     <section>
-                        <h2>Checkboxes</h2>
-                        <p>Checkboxes allow users to make one or more selections from a list.</p>
                         <form method="get" role="form checkboxes">
-                            <fieldset className="input-group">
-                                <legend>Checkbox example</legend>
-                                <label htmlFor="checkbox1">Check, check, check</label>
-                                <input id="checkbox1" name="checkbox1" type="checkbox" checked="checked"/>
-                                <label htmlFor="checkbox2">I'm unchecked'</label>
-                                <input id="checkbox2" name="checkbox2" type="checkbox"/>
-                            </fieldset>
+                            <CheckboxInputsContainer
+                                header='Checkboxes'
+                                description='Checkboxes allow users to make one or more selections from a list.'
+                                legend='Cheese choice'
+                                options={this.checkboxInputs}
+                                onChange={this.onChangeHandler.bind(this)}
+                            />
                         </form>
                     </section>
                     <section>
