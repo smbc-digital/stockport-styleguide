@@ -9,11 +9,11 @@
     "build": "webpack",
     "test": "jest",
     "lint": "node_modules/.bin/esw webpack.config.* src",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+    "addWebpack" : "git add ./build/styles.min.css"
+
   },
-  "pre-commit": [
-    "build"
-  ],
+  "pre-commit": [ "build", "addWebpack" ],
   "keywords": [],
   "author": "Colin Lees",
   "license": "ISC",
