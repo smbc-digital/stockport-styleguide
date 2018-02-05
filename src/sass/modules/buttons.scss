@@ -39,7 +39,16 @@ button {
     &:active,
     &:focus {
         @include border-radius(0px);
-    } 
+    }
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+
+    &:disabled{
+        background-color: transparentize($teal-darker, 0.35);    
+    }
+
 }
 
 .button-primary {

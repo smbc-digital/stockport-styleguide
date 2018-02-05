@@ -2,6 +2,10 @@ form {
     margin: 0;
     width: 100%;
 
+    h1,h2,h3{
+        margin: 0 0 20px;
+    }
+
     fieldset {
         border: none;
         padding: 0;
@@ -93,6 +97,10 @@ form {
                 filter: alpha(opacity=100);
                 opacity: 1;
             }
+
+            &:focus + label::before{
+                @include outline;
+            }
         }
 
         label {
@@ -102,7 +110,7 @@ form {
             display: inline-block;
             position: relative;
             padding-left: 50px;
-            margin: 0 0 10px;
+            margin: 0 0 20px;
             line-height: 2.4em;
             cursor: pointer;
             @include user-select(none);
