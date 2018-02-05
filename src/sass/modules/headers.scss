@@ -124,6 +124,28 @@ body > header {
             }
         }
     }
+
+    .banner-header {
+        @extend .grid-100, .mobile-grid-100, .tablet-grid-100;
+        background-color: $primary-darkest;
+        color: $white;
+        font-family: $fontFamilyHeadings;
+        line-height: 1.5em;
+        padding: 10px 0;
+
+        span {
+            background-color: $orange; 
+            @include border-radius(4px);
+            font-size: $fontSizeSmall;
+            font-weight: $fontWeightLarge;
+            margin-right: 15px; 
+            padding: 5px 12px; 
+        }
+
+        a {
+            color: $white;
+        }
+    }
 }
 
 .title-container {

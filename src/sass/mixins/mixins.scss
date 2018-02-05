@@ -79,7 +79,7 @@
     user-select: $value;
 }
 
-@mixin radio-checkbox-input($type, $raduis) {
+@mixin radio-checkbox-input($type, $radius) {
     display: block;
     position: relative;
 
@@ -124,7 +124,7 @@
         display: inline-block;
         position: relative;
         padding-left: 50px;
-        margin: 0 0 10px;
+        margin: 0 0 20px;
         line-height: 2.4em;
         cursor: pointer;
         @include user-select(none);
@@ -138,7 +138,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            @include border-radius($raduis);
+            @include border-radius($radius);
         }
 
         &::after {
@@ -149,7 +149,7 @@
             position: absolute;
             top: 9px;
             left: 9px;
-            @include border-radius($raduis);
+            @include border-radius($radius);
             zoom: 1;
             filter: alpha(opacity=0);
             opacity: 0;

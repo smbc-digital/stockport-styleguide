@@ -25,6 +25,11 @@ export class Header extends Component {
                         </fieldset>
                     </form>
                 </div>
+                <div className="banner-header">
+                    <div className="center-wrapper">
+                        <span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
+                    </div>
+                </div>
                 <nav className="breadcrumb">
                     <h2 className="sr-only">Breadcrumb navigation</h2>
                     <ul className="center-wrapper">
@@ -32,6 +37,7 @@ export class Header extends Component {
                         <li>Style guide</li>
                     </ul>
                 </nav>
+                
             </header>
         )
     }
