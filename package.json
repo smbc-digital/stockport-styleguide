@@ -53,6 +53,6 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.6",
-    "smbc-react-components": "^1.0.16"
+    "smbc-react-components": "^1.0.26"
   }
 }

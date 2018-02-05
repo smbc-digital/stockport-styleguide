@@ -45,10 +45,11 @@ button {
         width: 100%;
     }
 
-    &:disabled{
-        background-color: transparentize($teal-darker, 0.35);    
+    &:disabled, &:disabled:hover{
+        background-color: transparentize($teal-darker, 0.35);  
+        @include transition-box-shadow(0 0 0 0 rgba(0,0,0,0.3));
+        cursor: default;
     }
-
 }
 
 .button-primary {
