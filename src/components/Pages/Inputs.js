@@ -17,6 +17,13 @@ class Inputs extends Component{
                 "label": "Chicken",
                 "name": "MeatChoice",
                 "value": "Chicken"
+            },
+            {
+                "id": "radio-inline-3",
+                "label": "Disabled",
+                "name": "MeatChoice",
+                "value": "disabled",
+                "disabled": "true"
             }
         ]
 
@@ -32,6 +39,25 @@ class Inputs extends Component{
                 "label": "Cheshire",
                 "name": "CheeseChoice",
                 "value": "Cheshire"
+            },
+            {
+                "id": "checkbox-inline-3",
+                "label": "This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.",
+                "name": "CheeseChoice",
+                "value": "NULL"
+            },
+            {
+                "id": "checkbox-inline-4",
+                "label": "This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.",
+                "name": "CheeseChoice",
+                "value": ""
+            },
+            {
+                "id": "checkbox-inline-5",
+                "label": "Disabled",
+                "name": "CheeseChoice",
+                "value": "disabled",
+                "disabled": "true"
             }
         ]
     }

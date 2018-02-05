@@ -96,6 +96,16 @@
         filter: alpha(opacity=0);
         opacity: 0;
 
+        &:disabled {
+            cursor: default;
+
+            + label {
+                filter: alpha(opacity=50);
+                opacity: 0.5;
+                cursor: default;
+            }
+        }
+
         &:checked + label::after {
             zoom: 1;
             filter: alpha(opacity=100);
