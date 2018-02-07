@@ -10,10 +10,13 @@
     "test": "jest",
     "lint": "node_modules/.bin/esw webpack.config.* src",
     "lint:watch": "npm run lint -- --watch",
-    "addWebpack" : "git add ./build/styles.min.css"
-
+    "addWebpack": "git add ./build/styles.min.css",
+    "update:smbc": "npm update smbc-react-components"
   },
-  "pre-commit": [ "build", "addWebpack" ],
+  "pre-commit": [
+    "build",
+    "addWebpack"
+  ],
   "keywords": [],
   "author": "Colin Lees",
   "license": "ISC",

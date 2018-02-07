@@ -37,7 +37,6 @@ export class Header extends Component {
                         <li>Style guide</li>
                     </ul>
                 </nav>
-                
             </header>
         )
     }

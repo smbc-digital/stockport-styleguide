@@ -52,10 +52,6 @@ form {
             }
         }
 
-        input {
-            height: 50px;
-        }
-
         textarea {
             height: 250px;
         }
@@ -101,6 +97,10 @@ form {
         width: 530px;
         padding: 5px 10px;
 
+        @media #{$mobile, $tablet} {
+            width: auto;
+        }
+
         i {
             color: $red;
             position: absolute;
@@ -117,4 +117,32 @@ form {
         position: relative;
         top: 2px;
     }
+
+    .input-memorable-date{
+        
+        div{
+            display: inline-block;
+
+            input{
+            display: inline-block;
+            width: 34px;
+            margin-right: 20px;
+            line-height: 1.125em;
+            text-align: center;
+
+            &.invalid{
+                border-color: $red;
+            }
+
+            
+        }
+        &:last-of-type{
+            input{
+                width: 53px;
+            }
+            }
+        }
+        
+        
+    }   
 }

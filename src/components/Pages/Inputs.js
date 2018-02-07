@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Aside from '../Elements/Aside'
-import { RadioInputsContainer, CheckboxInputsContainer } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer } from 'smbc-react-components'
 
 class Inputs extends Component{
     constructor(props){
@@ -119,6 +119,11 @@ class Inputs extends Component{
                     <section>
                         <h2>Date input</h2>
                         <p>When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs.</p>
+                    </section>
+                     <section>
+                        <form>
+                            <MemorableDateInputContainer heading='Memorable date input' description="When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs." />
+                        </form>
                     </section>
                 </article>
                 <Aside/>
