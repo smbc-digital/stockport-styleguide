@@ -82,12 +82,13 @@
 @mixin radio-checkbox-input($type, $radius) {
     display: block;
     position: relative;
+    margin-bottom: 20px;
 
     input[type=#{$type}] {
         position: absolute;
         cursor: pointer;
         left: 0;
-        top: 0;
+        top: 50%;
         width: 38px;
         height: 38px;
         z-index: 1;
@@ -95,6 +96,7 @@
         zoom: 1;
         filter: alpha(opacity=0);
         opacity: 0;
+        margin-top: -19px;
 
         &:disabled {
             cursor: default;
@@ -123,9 +125,9 @@
         font-weight: $fontWeightRegular;
         display: inline-block;
         position: relative;
-        padding-left: 50px;
-        margin: 0 0 20px;
-        line-height: 2.4em;
+        padding: 3px 0 4px 50px;
+        margin: 0;
+        line-height: $fontSizeLarger;
         cursor: pointer;
         @include user-select(none);
 
@@ -136,9 +138,10 @@
             width: 34px;
             height: 34px;
             position: absolute;
-            top: 0;
+            top: 50%;
             left: 0;
             @include border-radius($radius);
+            margin-top: -19px;
         }
 
         &::after {
@@ -147,12 +150,13 @@
             width: 0;
             height: 0;
             position: absolute;
-            top: 9px;
+            top: 50%;
             left: 9px;
             @include border-radius($radius);
             zoom: 1;
             filter: alpha(opacity=0);
             opacity: 0;
+            margin-top: -10px;
         }
     }
 }

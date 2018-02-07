@@ -1,9 +1,9 @@
 @import "vendor/unsemantic-grid-responsive-tablet.scss";
+@import "mixins/mixins.scss";
 @import "reset/devices.scss";
 @import "reset/colour-pallette.scss";
 @import "reset/text.scss";
 @import "reset/base.scss";
-@import "mixins/mixins.scss";
 @import "modules/buttons.scss";
 @import "modules/icons.scss";
 @import "modules/inputs.scss";

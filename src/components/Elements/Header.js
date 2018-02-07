@@ -18,8 +18,7 @@ export class Header extends Component {
                     </div>
                     <form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
                         <fieldset className="input-group">
-                            <legend>Search Stockport Gov website:</legend>
-                            <label htmlFor="search" className="sr-only">Search</label>
+                            <label htmlFor="search" className="sr-only">Search Stockport council website</label>
                             <input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
                             <button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
                         </fieldset>

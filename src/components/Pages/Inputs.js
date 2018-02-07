@@ -8,21 +8,27 @@ class Inputs extends Component{
         this.radioInputs = [
             {
                 "id": "radio-inline-1",
-                "label": "Ham",
+                "label": "This value should span over one line",
                 "name": "MeatChoice",
-                "value": "Ham"
+                "value": ""
             },
             {
                 "id": "radio-inline-2",
-                "label": "Chicken",
+                "label": "This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.",
                 "name": "MeatChoice",
-                "value": "Chicken"
+                "value": ""
             },
             {
                 "id": "radio-inline-3",
-                "label": "Disabled",
+                "label": "This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.",
                 "name": "MeatChoice",
-                "value": "disabled",
+                "value": ""
+            },
+            {
+                "id": "radio-inline-4",
+                "label": "This input is disabled",
+                "name": "MeatChoice",
+                "value": "",
                 "disabled": "true"
             }
         ]
@@ -30,33 +36,27 @@ class Inputs extends Component{
         this.checkboxInputs = [
             {
                 "id": "checkbox-inline-1",
-                "label": "Brie",
+                "label": "This value should span over one line",
                 "name": "CheeseChoice",
-                "value": "Brie"
+                "value": ""
             },
             {
                 "id": "checkbox-inline-2",
-                "label": "Cheshire",
+                "label": "This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.",
                 "name": "CheeseChoice",
-                "value": "Cheshire"
+                "value": ""
             },
             {
                 "id": "checkbox-inline-3",
-                "label": "This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.",
-                "name": "CheeseChoice",
-                "value": "NULL"
-            },
-            {
-                "id": "checkbox-inline-4",
                 "label": "This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.",
                 "name": "CheeseChoice",
                 "value": ""
             },
             {
-                "id": "checkbox-inline-5",
-                "label": "Disabled",
+                "id": "checkbox-inline-4",
+                "label": "This input is disabled",
                 "name": "CheeseChoice",
-                "value": "disabled",
+                "value": "",
                 "disabled": "true"
             }
         ]

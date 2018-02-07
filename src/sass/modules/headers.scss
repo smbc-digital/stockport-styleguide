@@ -25,6 +25,10 @@ body > header {
                 width: 175px;
             }
         }
+
+        @media #{$mobile} {
+            height: 60px;
+        }
     }
 
     #header-my-account {
@@ -73,7 +77,6 @@ body > header {
                 padding-right: 45px;
                 width:100%;
                 margin-bottom: 0;
-                height: 23px;
             }
 
             button {
@@ -83,8 +86,8 @@ body > header {
                 position: absolute;
                 right: 0;
                 top: 0;
-                height: 50px;
-                width: 50px;
+                height: 55px;
+                width: 55px;
                 margin: 0;
     
                 &:hover {

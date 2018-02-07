@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "npm install && npm run build",
-    "start": "webpack && webpack-dev-server --content-base src --hot --inline && lint:watch ",
+    "start": "webpack && webpack-dev-server --content-base src --hot --inline",
     "build": "webpack",
     "addWebpack": "git add ./build/styles.min.css"
   },
