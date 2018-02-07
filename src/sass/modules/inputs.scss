@@ -97,7 +97,7 @@ form {
         width: 530px;
         padding: 5px 10px;
 
-        @media #{$mobile, $tablet} {
+        @media #{$mobile}, #{$tablet} {
             width: auto;
         }
 
