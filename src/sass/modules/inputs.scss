@@ -163,7 +163,7 @@ form {
 
         input {
             display: inline-block;
-            width: 34px;
+            width: 55px;
             margin-right: 20px;
             line-height: 1.125em;
             text-align: center;
@@ -173,8 +173,12 @@ form {
             }
         }
 
+        label {
+            font-size: 1.25em;
+        }
+
         &:last-of-type input{
-            width: 53px;
+            width: 75px;
         }
     }   
 }
