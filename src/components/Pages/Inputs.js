@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Aside from '../Elements/Aside'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer } from 'smbc-react-components'
 
 class Inputs extends Component{
     constructor(props){
@@ -97,8 +97,9 @@ class Inputs extends Component{
                         </form>
                     </section>
                     <section>
-                        <h2>Text input</h2>
-                        <p>Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users.</p>
+                        <form>
+                            <TextInputContainer label="Text input" id="fullname" type="text" optional={true} description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users."  />
+                        </form>
                     </section>
                     <section>
                         <h2>Text inputs validation</h2>

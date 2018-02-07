@@ -29,6 +29,39 @@ form {
             @extend h3;
             margin-bottom: 10px;
             display: block;
+
+            &.optional {
+                display: inline-block;
+            }
+        }
+
+        h2 {
+            margin: 0 0 20px;
+        }
+        
+        h3 {
+            &.optional {
+                display: inline-block;
+
+                @media #{$mobile} {
+                    display: block;
+                }
+            }
+        }
+
+        p {
+            margin: 0 0 20px;
+
+            &.optional {
+                padding-left: 10px;
+                font-size: $fontSizeSmall;
+                display: inline-block;
+
+                @media #{$mobile} {
+                    display: block;
+                    padding: 0;
+                }
+            }
         }
 
         input,
@@ -38,6 +71,7 @@ form {
             border: 1px solid $grey-middle;
             @include border-radius(3px);
             width: 100%;
+            max-width: 550px;
             font-family: $fontFamily;
             color: $grey-darkest;
             font-size: 1em;
@@ -70,7 +104,8 @@ form {
                 margin: 0; 
             }
         }
-    }    
+    }   
+
     
     .input-radio-container {
         @include radio-checkbox-input("radio", 50%)
@@ -123,31 +158,23 @@ form {
         top: 2px;
     }
 
-    .input-memorable-date{
-        
-        div{
-            display: inline-block;
+    .input-memorable-date div{
+        display: inline-block;
 
-            input{
+        input {
             display: inline-block;
             width: 34px;
             margin-right: 20px;
             line-height: 1.125em;
             text-align: center;
 
-            &.invalid{
+            &.invalid {
                 border-color: $red;
             }
+        }
 
-            
+        &:last-of-type input{
+            width: 53px;
         }
-        &:last-of-type{
-            input{
-                width: 53px;
-            }
-            }
-        }
-        
-        
     }   
 }
