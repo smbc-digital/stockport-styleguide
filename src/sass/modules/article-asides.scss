@@ -57,7 +57,7 @@
                     padding: 0 15px 0 15px;
 
                     @media #{$mobile} {
-                        content: '';
+                        content: '\f105';
                         padding-left: 20px;
                     }
                 }
