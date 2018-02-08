@@ -16,7 +16,7 @@ class Buttons extends Component{
                     <button className="button-primary" href="#">I'm a primary button</button>
                     <button className="button-secondary" href="#">I'm a secondary button</button>
                     <button className="button-inverted" href="#">I'm an inverted button</button>
-                    <button className="button-disabled" href="#">I'm a disabled button</button>
+                    <button className="button-primary" href="#" disabled>I'm a disabled button</button>
                     <button className="button-login" href="#">My Account login button</button>
                 </article>
                 <Aside/>
