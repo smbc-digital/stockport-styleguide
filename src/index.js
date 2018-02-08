@@ -19,4 +19,4 @@ ReactDOM.render(
             <Route path="/" component={App} />
         </ConnectedRouter>
     </Provider>
-, document.body)
+, document.getElementById('root'))
