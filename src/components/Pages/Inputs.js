@@ -98,12 +98,13 @@ class Inputs extends Component{
                     </section>
                     <section>
                         <form>
-                            <TextInputContainer label="Text input" id="fullname" type="text" optional={true} description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users."  />
+                            <TextInputContainer label="Text input" id="fullname" type="text" optional={true} description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users." onChangeHandler={() => {}} />
                         </form>
                     </section>
                     <section>
-                        <h2>Text inputs validation</h2>
-                        <p>Validation allows us to show users where something hasn't gone quite right and highlights the exact point where they need to make a change - so they're not left guessing.</p>
+                        <form>
+                            <TextInputContainer label="Text input" id="fullname" type="text" optional={false} description="Validation allows us to show users where something hasn't gone quite right and highlights the exact point where they need to make a change - so they're not left guessing." onChangeHandler={() => {}}  />
+                        </form>
                     </section>
                     <section>
                         <h2>My Account validation</h2>

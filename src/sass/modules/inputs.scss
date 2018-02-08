@@ -135,18 +135,21 @@ form {
         background: $red;
         color: $white;
         width: 530px;
-        padding: 5px 10px;
+        padding: 10px;
+        position: relative;
+        top: -20px;
 
         @media #{$mobile}, #{$tablet} {
             width: auto;
         }
 
-        i {
+        &:before {
+            content: "\f0d8";
+            font-family: FontAwesome;
+            font-size: 2em;
             color: $red;
             position: absolute;
-            top: 69px;
-            left: 20px;
-            font-size: 36px;
+            top: -20px;
         }
     }
 
@@ -158,27 +161,37 @@ form {
         top: 2px;
     }
 
-    .input-memorable-date div{
-        display: inline-block;
-
-        input {
+    .input-memorable-date { 
+        div {
             display: inline-block;
-            width: 55px;
-            margin-right: 20px;
-            line-height: 1.125em;
-            text-align: center;
 
-            &.invalid {
-                border-color: $red;
+            input {
+                display: inline-block;
+                width: 55px;
+                margin-right: 20px;
+                line-height: 1.125em;
+                text-align: center;
+            }
+
+            label {
+                font-size: 1.25em;
+            }
+
+            &:last-of-type input {
+                width: 75px;
+            }
+        }  
+
+        .input-error-content {
+            top: 0;
+
+            &:before {
+                content: '';
             }
         }
 
-        label {
-            font-size: 1.25em;
+        .input-validation-error {
+            @include border-radius(3px);
         }
-
-        &:last-of-type input{
-            width: 75px;
-        }
-    }   
+    }
 }
