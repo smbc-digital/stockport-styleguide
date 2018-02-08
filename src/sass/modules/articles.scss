@@ -1,9 +1,10 @@
 article {
+    padding: 40px 20px 0;
+    
     &.with-aside {
         @extend .grid-70;
         @extend .tablet-grid-70;
         @extend .mobile-grid-100;
-        padding: 40px 20px 0;
     }
 
     section.with-border-bottom {
