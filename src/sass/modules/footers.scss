@@ -1,4 +1,5 @@
-body > footer {
+body > footer,
+#root > footer {
     border-top: 10px solid $teal;
     background-color: $primary-dark;
     padding-top: 20px;
@@ -11,15 +12,11 @@ body > footer {
         vertical-align: middle;
         padding: 10px 0;
         margin: 0;
+        @include header-footer-logo();
 
-        a {
-            background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
-            background-size: cover;
-            display: inline-block;
-            height: 50px;
-            width: 245px;
-            color: transparent;
-            font-size: 0;
+        @media #{$mobile} {
+            margin-left: 25px;
+            display: block;
         }
     }
 
@@ -78,6 +75,8 @@ body > footer {
 
                 i {
                     font-size: $fontSizeLarger;
+                    position: relative;
+                    top: 5px;
                 }
             }
         }
@@ -104,6 +103,8 @@ body > footer {
 
                 i {
                     font-size: 2.250em;
+                    position: relative;
+                    top: 5px;
                 }
             }
 

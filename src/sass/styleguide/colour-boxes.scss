@@ -2,14 +2,14 @@
     @extend .grid-container;
     @extend .grid-parent;
     list-style: none;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     li {
         @extend .grid-25;
         @extend .tablet-grid-50;
         @extend .mobile-grid-50;
         text-align: center;
-        padding: 5px 10px 5px 0;
+        padding: 0 10px 10px 0;
 
         @media #{$desktop} {
             &:nth-child(4n) {

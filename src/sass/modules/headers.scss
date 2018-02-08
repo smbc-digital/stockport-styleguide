@@ -1,4 +1,5 @@
-body > header {
+body > header,
+#root > header {
     background-color: $primary;
     width: 100%;
 
@@ -7,24 +8,7 @@ body > header {
         @extend .tablet-grid-50;
         @extend .mobile-grid-50;
         height: 80px;
-
-        a {
-            background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
-            background-size: cover;
-            display: inline-block;
-            height: 50px;
-            width: 250px;
-            color: transparent;
-            font-size: 0;
-            position: relative;
-            top: -8px;
-
-            @media #{$mobile} {
-                background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-mobile%402x.png");
-                height: 35px;
-                width: 175px;
-            }
-        }
+        @include header-footer-logo();
 
         @media #{$mobile} {
             height: 60px;
