@@ -2,22 +2,6 @@ form {
     margin: 0;
     width: 100%;
 
-    h1 {
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        margin-bottom: 14px;
-    }
-
-    h3 {
-        margin-bottom: 16px;
-    }
-
-    p {
-        margin-bottom: 12px;
-    }
-
     fieldset {
         border: none;
         padding: 0;
@@ -39,11 +23,17 @@ form {
             }
         }
 
+        h1 {
+            margin-bottom: 10px;
+        }
+
         h2 {
-            margin: 0 0 20px;
+            margin: 0 0 14px;
         }
         
         h3 {
+            margin-bottom: 16px;
+
             &.optional {
                 display: inline-block;
 
@@ -54,7 +44,7 @@ form {
         }
 
         p {
-            margin: 0 0 20px;
+            margin: 0 0 12px;
 
             &.optional {
                 padding-left: 10px;
@@ -109,7 +99,6 @@ form {
             }
         }
     }   
-
     
     .input-radio-container {
         @include radio-checkbox-input("radio", 50%)
