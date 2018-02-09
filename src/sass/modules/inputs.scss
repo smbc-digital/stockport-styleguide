@@ -75,6 +75,12 @@ form {
             &.input-validation-error {
                 border: 1px solid $red;
                 @include border-radius(3px 3px 0 0);
+
+                &:active,
+                &:focus {
+                    border-color: transparent;
+                    border-radius: 0;
+                }
             }
 
             &:active,
@@ -180,25 +186,21 @@ form {
                 font-size: 2em;
                 color: $red;
                 position: absolute;
-                top: 80px;
+                top: 65px;
                 left: 25%;
 
-                &.year{
+                &.year {
                     left: 30%;
                 }
             }
         }  
 
         .input-error-content {
-            top: 0;
-
+            top: -16px;
+            
             &:before {
                 content: '';
             }
-        }
-
-        .input-validation-error {
-            @include border-radius(3px);
         }
     }
 }
