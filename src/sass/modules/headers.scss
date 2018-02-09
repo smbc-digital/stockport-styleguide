@@ -124,7 +124,7 @@ body > header,
             background-color: $orange; 
             @include border-radius(4px);
             font-size: $fontSizeSmall;
-            font-weight: $fontWeightLarge;
+            font-weight: $fontWeightBold;
             margin-right: 15px; 
             padding: 5px 12px; 
         }
@@ -145,7 +145,7 @@ body > header,
     max-width:1200px;
     margin: 0 auto;
     font-family: $fontFamilyHeadings;
-    font-weight: $fontWeightLarge;
+    font-weight: $fontWeightBold;
 
     h1 {
         color: $white;

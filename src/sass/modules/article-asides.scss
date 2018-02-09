@@ -40,14 +40,14 @@
 
             &:last-of-type a {
                 border-bottom: 0;
-                font-weight: $fontWeightLarge;
+                font-weight: $fontWeightBold;
             }
 
             &.current-page {
                 padding: 10px 0;
                 color: $primary-light;
                 background-color: $white;
-                font-weight: $fontWeightLarge;
+                font-weight: $fontWeightBold;
                 border-top: 1px solid $white;
                 margin-top: -1px;
 

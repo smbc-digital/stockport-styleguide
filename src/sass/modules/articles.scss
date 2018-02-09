@@ -1,6 +1,10 @@
 article {
     padding: 40px 20px 0;
     
+    @media #{$mobile} {
+        padding-top: 30px;
+    }
+
     &.with-aside {
         @extend .grid-70;
         @extend .tablet-grid-70;

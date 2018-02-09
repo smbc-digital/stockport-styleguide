@@ -7,15 +7,20 @@ $fontFamilyHeadings: 'Source Sans Pro', sans-serif;
 /* Font weight */
 $fontWeightLight: 300;
 $fontWeightRegular: 400;
-$fontWeightLarge: 600;
+$fontWeightBold: 600;
 
 /* Font Size */
 $fontSizeSmall: 0.875em;
 $fontSizeDefault: 1em;
-$fontSizeBold: 1.125em;
-$fontSizeLarge: 1.500em;
-$fontSizeLarger: 1.875em;
-$fontSizeExtraLarge: 4.250em;
+$fontSizeBold: 1.250em;
+$fontSizeLarge: 1.375em;
+$fontSizeLarger: 1.750em;
+$fontSizeExtraLarge: 3.750em;
+
+/* Mobile Font Size */
+$mobileFontSizeLarge: 1.375em;
+$mobileFontSizeLarger: 1.625em;
+$mobileFontSizeExtraLarge: 2.250em;
 
 /* Base */
 body {
@@ -31,9 +36,14 @@ h1,
     font-family: $fontFamilyHeadings;
     color: $primary;
     font-size: $fontSizeExtraLarge;
-    font-weight: $fontWeightLarge;
+    font-weight: $fontWeightBold;
     line-height: 1em;
     margin: 0 0 28px 0;
+
+    @media #{$mobile} {
+        font-size: $mobileFontSizeExtraLarge;
+        margin-bottom: 18px;
+    }
 }
 
 h2,
@@ -41,9 +51,14 @@ h2,
     font-family: $fontFamilyHeadings;
     color: $grey-darkest;
     font-size: $fontSizeLarger;
-    font-weight: $fontWeightLarge;
+    font-weight: $fontWeightBold;
     line-height: 1em;
     margin: 0 0 32px 0;
+
+    @media #{$mobile} {
+        font-size: $mobileFontSizeLarger;
+        margin-bottom: 22px;
+    }
 }
 
 h3,
@@ -51,9 +66,14 @@ h3,
     font-family: $fontFamilyHeadings;
     color: $grey-darkest;
     font-size: $fontSizeLarge;
-    font-weight: $fontWeightLarge;
+    font-weight: $fontWeightBold;
     margin: 0 0 34px 0;
     line-height: 1em;
+
+    @media #{$mobile} {
+        font-size: $mobileFontSizeLarge;
+        margin-bottom: 24px;
+    }
 }
 
 h4,
@@ -61,7 +81,7 @@ h4,
     font-family: $fontFamilyHeadings;
     color: $grey-darkest;
     font-size: $fontSizeBold;
-    font-weight: $fontWeightLarge;
+    font-weight: $fontWeightBold;
     margin: 0 0 12px 0;
     line-height: 1em;
 }
