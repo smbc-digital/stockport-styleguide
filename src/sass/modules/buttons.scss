@@ -92,3 +92,8 @@ button {
         @include box-shadow(none);
     }
 }
+
+.button-back{
+    display: block;
+    margin-bottom: 20px;
+}
