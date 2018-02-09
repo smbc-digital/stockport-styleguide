@@ -124,7 +124,7 @@ class Inputs extends Component{
                     </section>
                      <section>
                         <form>
-                            <MemorableDateInputContainer heading='Memorable date input' description="When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs." />
+                            <MemorableDateInputContainer onChangeHandler={() => {}} heading='Memorable date input' description="When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs." />
                         </form>
                     </section>
                 </article>
