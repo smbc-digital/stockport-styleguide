@@ -145,18 +145,13 @@
         }
 
         &::after {
-            content: "";
-            border: 10px solid;
             width: 0;
             height: 0;
             position: absolute;
             top: 50%;
-            left: 9px;
-            @include border-radius($radius);
             zoom: 1;
             filter: alpha(opacity=0);
             opacity: 0;
-            margin-top: -10px;
         }
     }
 }

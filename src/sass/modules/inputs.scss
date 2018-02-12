@@ -107,13 +107,29 @@ form {
     }   
     
     .input-radio-container {
-        @include radio-checkbox-input("radio", 50%)
+        @include radio-checkbox-input("radio", 50%);
+
+        label::after {
+            content: "";
+            border: 10px solid;
+            left: 9px;
+            @include border-radius(50%);
+            margin-top: -10px;
+        }
     }
 
     .input-checkbox-container {
-        @include radio-checkbox-input("checkbox", 0%)
+        @include radio-checkbox-input("checkbox", 0%);
+
+        label::after {
+            content: "\f00c";
+            border: none;
+            left: 7px;
+            margin-top: -14px;
+            font: normal normal normal 26px/1 FontAwesome;
+        }
     }
-        
+
     .input-addon {
         width: 10px;
         vertical-align: middle;
