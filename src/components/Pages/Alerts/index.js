@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Aside from '../Elements/Aside'
-import Alert from '../Elements/Alert'
-import AlertFullWidth from '../Elements/AlertFullWidth'
-import AlertInline from '../Elements/AlertInline'
+import Aside from '../../Elements/Aside'
+import Alert from '../../Elements/Alert'
+import AlertFullWidth from '../../Elements/AlertFullWidth'
+import AlertInline from '../../Elements/AlertInline'
 
 class Alerts extends Component{
     constructor(props){

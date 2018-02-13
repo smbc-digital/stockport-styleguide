@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Aside from '../Elements/Aside'
+import Aside from '../../Elements/Aside'
 
 class Typography extends Component{
     constructor(props){

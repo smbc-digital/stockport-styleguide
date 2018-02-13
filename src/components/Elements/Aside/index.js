@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import NavItem  from './NavItem'
+import NavItem  from '../NavItem'
 
 class Aside extends Component{
     constructor(props){

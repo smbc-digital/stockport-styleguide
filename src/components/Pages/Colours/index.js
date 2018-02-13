@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Aside from '../Elements/Aside'
-import ColourBoxes from '../Elements/ColourBoxes'
+import Aside from '../../Elements/Aside'
+import ColourBoxes from '../../Elements/ColourBoxes'
 
 class Colours extends Component{
     constructor(props){

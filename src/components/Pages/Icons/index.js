@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Aside from '../Elements/Aside'
-import IconBoxes from '../Elements/IconBoxes'
+import Aside from '../../Elements/Aside'
+import IconBoxes from '../../Elements/IconBoxes'
 
 class Icons extends Component{
     constructor(props){

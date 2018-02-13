@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import { connect } from 'react-redux'
 import { Switch, Route } from 'react-router'
-import { push } from 'react-router-redux'
 import Home from './Pages/Home'
 import Colours from './Pages/Colours'
 import Typography from './Pages/Typography'
