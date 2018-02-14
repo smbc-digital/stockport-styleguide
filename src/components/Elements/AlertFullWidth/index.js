@@ -1,42 +1,45 @@
 import React from 'react'
+import AlertFullWidth from './AlertFullWidth';
 
-class AlertFullWidth extends React.Component {
+class AlertFullWidthContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.level = "alert-" + this.props.level + "-fullwidth"
-        this.icon = "fa fa-"
-        switch (this.props.level) {
-            case "success":
-                this.icon += "check-circle"
-                break
-            case "information":
-                this.icon += "info-circle"
-                break
-            case "error":
-                this.icon += "exclamation-circle"
-                break
-            case "warning":
-                this.icon += "exclamation-triangle"
-                break
-            default:
-                this.icon += "exclamation-triangle"
+        this.state = {
+            level: 'alert-' + this.props.level + '-fullwidth',
+            icon: this.setIconLevel(this.props.level),
+            isHidden: false
         }
     }
     
+    setIconLevel(level) {
+        switch (level) {
+            case 'success':
+                return 'fa fa-check-circle'
+                break
+            case 'information':
+                return 'fa fa-info-circle'
+                break
+            case 'error':
+                return 'fa fa-exclamation-circle'
+                break
+            case 'warning':
+                return 'fa fa-exclamation-triangle'
+                break
+            default:
+                return 'fa fa-exclamation-triangle'
+        }
+    }
+    
+    onClickHandler(event) {
+        event.preventDefault();
+        this.setState({ isHidden: !this.state.isHidden })
+    }
+
     render() {
         return(
-            <section className={this.level}>
-                <i className={this.icon}></i>
-                <div className="content">
-                    <h2>{this.props.heading}</h2>
-                    <p dangerouslySetInnerHTML={{__html: this.props.content}}/>
-                </div>
-                <div className="dismiss">
-                    <a href="#" aria-label="close"><i className="fa fa-times"></i></a>
-                </div>
-            </section>
+            this.state.isHidden == false && <AlertFullWidth level={this.state.level} icon={this.state.icon} heading={this.props.heading} content={this.props.content} onClickHandler={this.onClickHandler.bind(this)} />
         )
     }
 }
 
-export default AlertFullWidth
+export default AlertFullWidthContainer

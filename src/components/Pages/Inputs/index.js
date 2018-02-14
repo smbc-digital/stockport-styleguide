@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Aside from '../Elements/Aside'
+import Aside from '../../Elements/Aside'
 import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer } from 'smbc-react-components'
 
 class Inputs extends Component{

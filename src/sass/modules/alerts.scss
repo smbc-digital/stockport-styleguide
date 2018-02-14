@@ -27,7 +27,7 @@
         }
 
         p {
-            margin-bottom: 0;
+            margin-bottom: 0px;
         }
     }
 
@@ -92,6 +92,10 @@
         h2 {
             margin-bottom: 0;
         }
+
+        p {
+            margin-bottom: -6px;
+        }
     }
 
     div:last-of-type {
@@ -142,7 +146,7 @@
     @extend .alert-fullwidth;
 }
 
-.inline-alert {
+.alert-inline {
     background-color: $off-white;
     border-left: 5px solid $grey-lighter;
     @include border-radius(3px);

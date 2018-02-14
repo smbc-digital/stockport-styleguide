@@ -1,14 +1,12 @@
 import React from 'react'
+import AlertInline from './AlertInline'
 
-class AlertInline extends React.Component {
+class AlertInlineContainer extends React.Component {
     render() {
         return(
-            <section className="inline-alert">
-                <h2>{this.props.heading}</h2>
-                <p dangerouslySetInnerHTML={{__html: this.props.content}}/>
-            </section>
+            <AlertInline heading={this.props.heading} content={this.props.content} />
         )
     }
 }
 
-export default AlertInline
+export default AlertInlineContainer

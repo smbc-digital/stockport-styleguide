@@ -1,40 +1,45 @@
 import React from 'react'
+import Alert from './Alert'
 
-class Alert extends React.Component {
+class AlertContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.level = "alert-" + this.props.level
-        this.icon = "fa fa-"
-        switch (this.props.level) {
-            case "success":
-                this.icon += "check-circle"
-                break
-            case "information":
-                this.icon += "info-circle"
-                break
-            case "error":
-                this.icon += "exclamation-circle"
-                break
-            case "warning":
-                this.icon += "exclamation-triangle"
-                break
-            default:
-                this.icon += "exclamation-triangle"
+        this.state = {
+            level: 'alert-' + this.props.level,
+            icon: this.setIconLevel(this.props.level),
+            isHidden: false
         }
     }
     
+    setIconLevel(level) {
+        switch (level) {
+            case 'success':
+                return 'fa fa-check-circle'
+                break
+            case 'information':
+                return 'fa fa-info-circle'
+                break
+            case 'error':
+                return 'fa fa-exclamation-circle'
+                break
+            case 'warning':
+                return 'fa fa-exclamation-triangle'
+                break
+            default:
+                return 'fa fa-exclamation-triangle'
+        }
+    }
+
+    onClickHandler(event) {
+        event.preventDefault();
+        this.setState({ isHidden: !this.state.isHidden })
+    }
+
     render() {
         return(
-            <section className={this.level}>
-                <i className={this.icon}></i>
-                <div className="content">
-                    <h2>{this.props.heading}</h2>
-                    <p dangerouslySetInnerHTML={{__html: this.props.content}}/>
-                </div>
-                <a href="#" aria-label="close"><i className="fa fa-times"></i></a>
-            </section>
+            this.state.isHidden == false && <Alert level={this.state.level} icon={this.state.icon} heading={this.props.heading} content={this.props.content} onClickHandler={this.onClickHandler.bind(this)} />
         )
     }
 }
 
-export default Alert
+export default AlertContainer
