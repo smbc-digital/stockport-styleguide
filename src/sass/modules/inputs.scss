@@ -68,7 +68,8 @@ form {
             max-width: 550px;
             font-family: $fontFamily;
             color: $grey-darkest;
-            font-size: 1em;
+            font-size: $fontSizeDefault;
+                
             margin-bottom: 15px;
             box-sizing: border-box;
         
@@ -103,6 +104,26 @@ form {
                 -webkit-appearance: none; 
                 margin: 0; 
             }
+        }
+
+        select{
+            @include border-radius(3px);
+            font-size: $fontSizeDefault;
+            border: 1px solid #bcbcbc;
+            width: 100%;
+            max-width: 550px;
+            font-family: $fontFamily;
+            box-sizing: border-box;
+            line-height: 1.125em;
+            padding: 15px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none; 
+            background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+            background-repeat: no-repeat;
+            background-position: right 30px center;
+            background-color: #fff;
+        
         }
     }   
     

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Aside from '../Elements/Aside'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer } from 'smbc-react-components'
 
 class Inputs extends Component{
     constructor(props){
@@ -107,6 +107,13 @@ class Inputs extends Component{
                         </form>
                     </section>
                     <section>
+                        <form>
+                            <SelectInputContainer description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra, nulla ut sollicitudin sagittis, eros lectus bibendum nibh, nec laoreet enim eros et urna." 
+                                                id="style-guide-select" name="style-guide-select"  placeholder="placeholder" onChange={this.onChangeHandler.bind(this)} 
+                                                label="Select dropdown" options={[{value: '1', name: 'first option'}, {value: '2', name: 'second option'}]} />
+                        </form>
+                    </section>
+                    <section>
                         <h2>My Account validation</h2>
                         <p>My Account signing up and logging in validation is slightly different. It allows us to provide a more detailed explanation of what information we need a user to input.</p>
                     </section>
@@ -125,6 +132,11 @@ class Inputs extends Component{
                      <section>
                         <form>
                             <MemorableDateInputContainer onChangeHandler={() => {}} heading='Memorable date input' description="When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs." />
+                        </form>
+                    </section>
+                    <section>
+                        <form>
+                            <AddressPicker header="Address input" description="A user can use this component to select an address. The postcode search will search inside Stockport only and if the addres isn't inside Stockport the user can click manual search and enter each field separately." HandleChange={this.onChangeHandler.bind(this)}/>
                         </form>
                     </section>
                 </article>
