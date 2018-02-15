@@ -97,20 +97,40 @@ class Inputs extends Component{
                         </form>
                     </section>
                     <section>
-                        <form>
-                            <TextInputContainer label="Text input" id="fullname" type="text" optional={true} description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users." onChangeHandler={() => {}} />
+                        <form method="get" role="form text-input">
+                            <TextInputContainer
+                                label="Text input"
+                                id="fullname"
+                                type="text"
+                                optional={true}
+                                description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users."
+                                onChangeHandler={() => {}}
+                            />
                         </form>
                     </section>
                     <section>
-                        <form>
-                            <TextInputContainer label="Text input" id="fullname" type="text" optional={false} description="Validation allows us to show users where something hasn't gone quite right and highlights the exact point where they need to make a change - so they're not left guessing." onChangeHandler={() => {}}  />
+                        <form method="get" role="form text-input">
+                            <TextInputContainer
+                                label="Text input"
+                                id="fullname"
+                                type="text"
+                                optional={false}
+                                description="Validation allows us to show users where something hasn't gone quite right and highlights the exact point where they need to make a change - so they're not left guessing."
+                                onChangeHandler={() => {}}
+                            />
                         </form>
                     </section>
                     <section>
-                        <form>
-                            <SelectInputContainer description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra, nulla ut sollicitudin sagittis, eros lectus bibendum nibh, nec laoreet enim eros et urna." 
-                                                id="style-guide-select" name="style-guide-select"  placeholder="placeholder" onChange={this.onChangeHandler.bind(this)} 
-                                                label="Select dropdown" options={[{value: '1', name: 'first option'}, {value: '2', name: 'second option'}]} />
+                        <form method="get" role="form select-input">
+                            <SelectInputContainer
+                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra, nulla ut sollicitudin sagittis, eros lectus bibendum nibh, nec laoreet enim eros et urna." 
+                                id="style-guide-select"
+                                name="style-guide-select"
+                                placeholder="placeholder"
+                                onChange={this.onChangeHandler.bind(this)} 
+                                label="Select dropdown"
+                                options={[{value: '1', name: 'first option'}, {value: '2', name: 'second option'}]}
+                            />
                         </form>
                     </section>
                     <section>
@@ -130,13 +150,21 @@ class Inputs extends Component{
                         <p>When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs.</p>
                     </section>
                      <section>
-                        <form>
-                            <MemorableDateInputContainer onChangeHandler={() => {}} heading='Memorable date input' description="When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs." />
+                        <form method="get" role="form memorable-date-input">
+                            <MemorableDateInputContainer
+                                onChangeHandler={() => {}}
+                                heading='Memorable date input'
+                                description="When we're asking a user for a memorable date, like a date of birth, we should seperate text fields rather than a date picker. We also provide an example above the inputs."
+                            />
                         </form>
                     </section>
                     <section>
-                        <form>
-                            <AddressPicker header="Address input" description="A user can use this component to select an address. The postcode search will search inside Stockport only and if the addres isn't inside Stockport the user can click manual search and enter each field separately." HandleChange={this.onChangeHandler.bind(this)}/>
+                        <form method="get" role="form address-input">
+                            <AddressPicker
+                                header="Address input"
+                                description="A user can use this component to select an address. The postcode search will search inside Stockport only and if the addres isn't inside Stockport the user can click manual search and enter each field separately."
+                                handleChange={this.onChangeHandler.bind(this)}
+                            />
                         </form>
                     </section>
                 </article>
