@@ -22,7 +22,7 @@ export class Home extends Component {
                         <li><a href="/typography"><i className="si-stationary"></i><span>Typography</span></a></li>
                         <li><a href="/navigation"><i className="si-car"></i><span>Navigation</span></a></li>
                         <li><a href="/buttons"><i className="si-pointing-hand"></i><span>Buttons</span></a></li>
-                        <li><a href="/inputs"><i className="si-clipboard-pencil"></i><span>Inputs</span></a></li>
+                        <li><a href="/formElements"><i className="si-clipboard-pencil"></i><span>Form Elements</span></a></li>
                         <li><a href="/alerts"><i className="si-exclamation-mark"></i><span>Alerts</span></a></li>
                         <li><a href="/tables"><i className="si-data-table"></i><span>Tables</span></a></li>
                         <li><a href="/profiles"><i className="si-person"></i><span>Profiles</span></a></li>

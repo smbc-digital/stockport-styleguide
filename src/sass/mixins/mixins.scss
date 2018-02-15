@@ -154,6 +154,10 @@
             opacity: 0;
         }
     }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 @mixin header-footer-logo() {

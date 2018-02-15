@@ -5,7 +5,7 @@ import Colours from './Pages/Colours'
 import Typography from './Pages/Typography'
 import Navigation from './Pages/Navigation'
 import Buttons from './Pages/Buttons'
-import Inputs from './Pages/Inputs'
+import FormElements from './Pages/FormElements'
 import Alerts from './Pages/Alerts'
 import Tables from './Pages/Tables'
 import Profiles from './Pages/Profiles'
@@ -24,7 +24,7 @@ class App extends Component{
                 <Route path="/typography" component={Typography}/>
                 <Route path="/navigation" component={Navigation}/>
                 <Route path="/buttons" component={Buttons}/>
-                <Route path="/inputs" component={Inputs}/>
+                <Route path="/formelements" component={FormElements}/>
                 <Route path="/alerts" component={Alerts}/>
                 <Route path="/tables" component={Tables}/>
                 <Route path="/profiles" component={Profiles}/>

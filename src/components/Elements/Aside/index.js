@@ -10,7 +10,7 @@ class Aside extends Component{
             "Typography",
             "Navigation",
             "Buttons",
-            "Inputs",
+            "FormElements",
             "Alerts",
             "Tables",
             "Profiles",
