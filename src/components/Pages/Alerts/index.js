@@ -20,45 +20,49 @@ class Alerts extends Component{
                         <AlertContainer
                             level="warning"
                             heading="This is a warning alert"
-                            content='The cost of Council Tax is increasing by 3.75% for the 2016-2017 tax year. you can vists our <a href="https://www.stockport.gov.uk/topic/council-tax">Council Tax pages</a> to find out more information.'
+                            content='We’ll use this to tell you about something that’s quite important. It has 20px spacing on the top and bottom and consists of a H3 heading and body text.'
+                            enableH3='true'
                         />
                         <AlertContainer
                             level="information"
                             heading="This is an information alert"
-                            content='The cost of Council Tax is increasing by 3.75% for the 2016-2017 tax year. you can vists our <a href="https://www.stockport.gov.uk/topic/council-tax">Council Tax pages</a> to find out more information.'
+                            content='We’ll use this to give you useful information. It has 20px spacing on the top and bottom and consists of a H3 heading and body text.'
+                            enableH3='true'
                         />
                         <AlertContainer
                             level="error"
                             heading="This is an error alert"
-                            content='The cost of Council Tax is increasing by 3.75% for the 2016-2017 tax year. you can vists our <a href="https://www.stockport.gov.uk/topic/council-tax">Council Tax pages</a> to find out more information.'
+                            content='We’ll use this to tell you that something has gone wrong. It has 20px spacing on the top and bottom and consists of a H3 heading and body text.'
+                            enableH3='true'
                         />
                         <AlertContainer
                             level="success"
                             heading="This is a success alert"
-                            content='The cost of Council Tax is increasing by 3.75% for the 2016-2017 tax year. you can vists our <a href="https://www.stockport.gov.uk/topic/council-tax">Council Tax pages</a> to find out more information.'
+                            content='We’ll use this to tell you how great you’ve done! It has 20px spacing on the top and bottom and consists of a H3 heading and body text.'
+                            enableH3='true'
                         />
                     </section>
                     <section>
                         <h2>Full width homepage/showcase alerts</h2>
                         <AlertFullWidthContainer
-                            level="warning"
-                            heading="This is a warning alert"
-                            content="The world isn't ending, but this is still pretty important."
+                            level='warning'
+                            heading='This is a warning alert'
+                            content='It has 20px between the heading and body and at the top and bottom of the content.'
                         />
                         <AlertFullWidthContainer
-                            level="information"
-                            heading="This is an information alert"
-                            content="We think that you should read this because it could be useful."
+                            level='information'
+                            heading='This is an information alert'
+                            content='It has 20px between the heading and body and at the top and bottom of the content.'
                         />
                         <AlertFullWidthContainer
-                            level="error"
-                            heading="This is an error alert"
-                            content="This is a critical issue that needs addressing right this minute!"
+                            level='error'
+                            heading='This is an error alert'
+                            content='It has 20px between the heading and body and at the top and bottom of the content.'
                         />
                         <AlertFullWidthContainer
-                            level="success"
-                            heading="This is a success alert"
-                            content="You did really, really really great. Well done!"
+                            level='success'
+                            heading='This is a success alert'
+                            content='It has 20px between the heading and body and at the top and bottom of the content.'
                         />
                     </section>
                     <section>
@@ -66,7 +70,7 @@ class Alerts extends Component{
                         <p>Inline alerts allow content designers to draw out important information in the body of an article section.</p>
                         <AlertInlineContainer
                             heading="Hello! I'm an inline alert heading"
-                            content="I'm some body text that adds a bit more information to the alert."
+                            content="I’m some body text that adds a bit more information to the alert. There’s 20px between the heading and the body and 20px between the content and top and bottom of the alert box."
                         />
                     </section>
                 </article>

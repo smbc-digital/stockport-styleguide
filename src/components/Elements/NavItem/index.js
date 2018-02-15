@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class NavItem extends React.Component {
     render() {
-        var isActive = this.context.router.route.location.pathname.toLowerCase() === '/' + this.props.to.toLowerCase();
+        var isActive = this.context.router.route.location.pathname.toLowerCase() === this.props.to.toLowerCase();
         var className = isActive ? 'current-page' : '';
 
         if (isActive) {

@@ -43,7 +43,7 @@ export class Footer extends Component {
                 </div>
                 <div className="footer-copyright">
                     <div className="center-wrapper">
-                        <p><i className="fa fa-copyright"></i>&nbsp;2016 Stockport Metropolitan Borough Council</p>
+                        <p><i className="fa fa-copyright"></i>&nbsp;{(new Date().getFullYear())} Stockport Metropolitan Borough Council</p>
                         <a href="#">Built by the Digital Team in Stockport</a>
                     </div>
                 </div>

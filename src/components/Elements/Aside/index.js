@@ -6,15 +6,38 @@ class Aside extends Component{
     constructor(props){
         super(props)
         this.routes = [
-            "Colours",
-            "Typography",
-            "Navigation",
-            "Buttons",
-            "FormElements",
-            "Alerts",
-            "Tables",
-            "Profiles",
-            "Icons"
+            {
+                name: "Colours",
+                route: "/colours"
+            },
+            {
+                name: "Typography",
+                route: "/typography"
+            },
+            {
+                name: "Buttons",
+                route: "/buttons"
+            },
+            {
+                name: "Form Elements",
+                route: "/form-elements"
+            },
+            {
+                name: "Alerts",
+                route: "/alerts"
+            },
+            {
+                name: "Tables",
+                route: "/tables"
+            },
+            {
+                name: "Profiles",
+                route: "/profiles"
+            },
+            {
+                name: "Icons",
+                route: "/icons"
+            }
         ]
     }
 
@@ -26,7 +49,7 @@ class Aside extends Component{
                     <ul>
                         {this.routes.map((route, index) => {
                             return(
-                                <NavItem to={route} key={index} name={route}/>
+                                <NavItem to={route.route} key={index} name={route.name}/>
                             )
                         })}
                         <li>
