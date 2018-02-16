@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Aside from '../Elements/Aside'
+import Aside from '../../Elements/Aside'
 
-class Navigation extends Component{
+class Profiles extends Component{
     constructor(props){
         super(props)
     }
@@ -9,8 +9,8 @@ class Navigation extends Component{
     render(){
         return (
             <main>
-                <article className="with-aside button-display">
-                    <h1>Navigation</h1>
+                <article className="with-aside">
+                    <h1>Profiles</h1>
                 </article>
                 <Aside/>
             </main>
@@ -18,4 +18,4 @@ class Navigation extends Component{
     } 
 }
 
-export default Navigation
+export default Profiles

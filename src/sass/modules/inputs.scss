@@ -13,142 +13,142 @@ form {
             padding: 0;
         }
 
-        label {
-            @extend h3;
-            margin-bottom: 10px;
-            display: block;
-
-            &.optional {
-                display: inline-block;
+        .input-radio-container {
+            @include radio-checkbox-input("radio", 50%);
+    
+            label::after {
+                content: "";
+                border: 10px solid;
+                left: 9px;
+                @include border-radius(50%);
+                margin-top: -10px;
             }
         }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            margin: 0 0 14px;
-        }
-        
-        h3 {
-            margin-bottom: 16px;
-
-            &.optional {
-                display: inline-block;
-
-                @media #{$mobile} {
-                    display: block;
-                }
+    
+        .input-checkbox-container {
+            @include radio-checkbox-input("checkbox", 0%);
+    
+            label::after {
+                content: "\f00c";
+                border: none;
+                left: 7px;
+                margin-top: -14px;
+                font: normal normal normal 26px/1 FontAwesome;
             }
         }
+    }
+    
+    label {
+        @extend h3;
+        margin-bottom: 10px;
+        display: block;
 
-        p {
-            margin: 0 0 12px;
+        &.optional {
+            display: inline-block;
+        }
+    }
 
-            &.optional {
-                padding-left: 10px;
-                font-size: $fontSizeSmall;
-                display: inline-block;
+    h1 {
+        margin-bottom: 10px;
+    }
 
-                @media #{$mobile} {
-                    display: block;
-                    padding: 0;
-                }
+    h2 {
+        margin: 0 0 14px;
+    }
+    
+    h3 {
+        margin-bottom: 16px;
+
+        &.optional {
+            display: inline-block;
+
+            @media #{$mobile} {
+                display: block;
             }
         }
+    }
 
-        input,
-        textarea {
-            display: block;
-            padding: 15px 10px;
-            border: 1px solid $grey-middle;
-            @include border-radius(3px);
-            width: 100%;
-            max-width: 550px;
-            font-family: $fontFamily;
-            color: $grey-darkest;
-            font-size: $fontSizeDefault;
-                
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        
-            &.input-validation-error {
-                border: 1px solid $red;
-                @include border-radius(3px 3px 0 0);
+    p {
+        margin: 0 0 12px;
 
-                &:active,
-                &:focus {
-                    border-color: transparent;
-                    border-radius: 0;
-                }
+        &.optional {
+            padding-left: 10px;
+            font-size: $fontSizeSmall;
+            display: inline-block;
+
+            @media #{$mobile} {
+                display: block;
+                padding: 0;
             }
+        }
+    }
+
+    input,
+    textarea {
+        display: block;
+        padding: 15px 10px;
+        border: 1px solid $grey-middle;
+        @include border-radius(3px);
+        width: 100%;
+        max-width: 550px;
+        font-family: $fontFamily;
+        color: $grey-darkest;
+        font-size: $fontSizeDefault;
+            
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    
+        &.input-validation-error {
+            border: 1px solid $red;
+            @include border-radius(3px 3px 0 0);
 
             &:active,
             &:focus {
-                @include outline;
                 border-color: transparent;
                 border-radius: 0;
             }
         }
 
-        textarea {
-            height: 250px;
-        }
-        
-        input[type="number"] {
-            -moz-appearance: textfield;
-        
-            &::-webkit-inner-spin-button, 
-            &::-webkit-outer-spin-button { 
-                -webkit-appearance: none; 
-                margin: 0; 
-            }
-        }
-
-        select{
-            @include border-radius(3px);
-            font-size: $fontSizeDefault;
-            border: 1px solid #bcbcbc;
-            width: 100%;
-            max-width: 550px;
-            font-family: $fontFamily;
-            box-sizing: border-box;
-            line-height: 1.125em;
-            padding: 15px 10px;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none; 
-            background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
-            background-repeat: no-repeat;
-            background-position: right 30px center;
-            background-color: #fff;
-        
-        }
-    }   
-    
-    .input-radio-container {
-        @include radio-checkbox-input("radio", 50%);
-
-        label::after {
-            content: "";
-            border: 10px solid;
-            left: 9px;
-            @include border-radius(50%);
-            margin-top: -10px;
+        &:active,
+        &:focus {
+            @include outline;
+            border-color: transparent;
+            border-radius: 0;
         }
     }
 
-    .input-checkbox-container {
-        @include radio-checkbox-input("checkbox", 0%);
-
-        label::after {
-            content: "\f00c";
-            border: none;
-            left: 7px;
-            margin-top: -14px;
-            font: normal normal normal 26px/1 FontAwesome;
+    textarea {
+        height: 250px;
+    }
+    
+    input[type="number"] {
+        -moz-appearance: textfield;
+    
+        &::-webkit-inner-spin-button, 
+        &::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
         }
+    }
+
+    select{
+        @include border-radius(3px);
+        font-size: $fontSizeDefault;
+        border: 1px solid #bcbcbc;
+        width: 100%;
+        max-width: 550px;
+        font-family: $fontFamily;
+        box-sizing: border-box;
+        line-height: 1.125em;
+        padding: 15px 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; 
+        background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+        background-repeat: no-repeat;
+        background-position: right 30px center;
+        background-color: #fff;
+    
     }
 
     .input-addon {
