@@ -11,10 +11,10 @@ const paths = {
 
 module.exports = {
     entry: {
-    main: [
-        'babel-polyfill',
-        path.join(paths.SRC, 'index.js'),    
-      ]},
+        main: [
+            'babel-polyfill',
+            path.join(paths.SRC, 'index.js'),    
+        ]},
     output: {
         path: paths.BUILD,
         filename: 'app.bundle.js',
