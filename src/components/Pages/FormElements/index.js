@@ -186,8 +186,8 @@ class Inputs extends Component{
                                         hideKeyboardShortcutsPanel={true}
                                         isOutsideRange={() => false}
                                     />
+					            {this.state.dateValidationMessage.length > 0 && <p className='input-error-content'>{this.state.dateValidationMessage}</p>}
                                 </div>
-					        {this.state.dateValidationMessage.length > 0 && <p className='input-error-content'>{this.state.dateValidationMessage}</p>}
                             </form>
                         </section>
                     </section>

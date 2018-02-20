@@ -245,6 +245,11 @@ form {
             @include border-radius(3px 3px 0 0);
         }
 
+        .input-error-content {
+            top: -21px;
+            width: 110px;
+        }
+
         .SingleDatePicker {
             display: block;
             width: 140px;
