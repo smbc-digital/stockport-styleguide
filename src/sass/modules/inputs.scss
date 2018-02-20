@@ -7,7 +7,6 @@ form {
         padding: 0;
         width: 100%;
         position: relative;
-        margin: 0 0 20px;
 
         legend {
             padding: 0;
@@ -94,8 +93,7 @@ form {
         font-family: $fontFamily;
         color: $grey-darkest;
         font-size: $fontSizeDefault;
-            
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         box-sizing: border-box;
     
         &.input-validation-error {
@@ -148,7 +146,7 @@ form {
         background-repeat: no-repeat;
         background-position: right 30px center;
         background-color: #fff;
-    
+        margin-bottom: 20px;
     }
 
     .input-addon {
@@ -237,6 +235,38 @@ form {
             
             &:before {
                 content: '';
+            }
+        }
+    }
+
+    .SingleDatePicker {
+        display: block;
+        width: 140px;
+
+        .DayPickerNavigation_button__default {
+            &:active,
+            &:focus {
+                @include border-radius(0);
+                border-color: $orange;
+            }
+        }
+
+        .SingleDatePickerInput__withBorder {
+            border: none;
+
+            input {
+                @extend input;
+                text-align: center;
+            }
+        }
+
+        .CalendarDay__selected, {
+            background-color: $primary;
+            border-bottom-color: $primary-dark;
+
+            &:active,
+            &:hover {
+                background-color: $primary-light;
             }
         }
     }

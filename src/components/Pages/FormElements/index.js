@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
 import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer } from 'smbc-react-components'
+import 'react-dates/initialize'
+import { SingleDatePicker } from 'react-dates'
+import moment from 'moment'
 
 class Inputs extends Component{
     constructor(props){
@@ -60,6 +63,11 @@ class Inputs extends Component{
                 "disabled": "true"
             }
         ]
+
+        this.state = {
+            date: null,
+            focused: false
+        }
     }
 
     onChangeHandler(event) {
@@ -154,6 +162,22 @@ class Inputs extends Component{
                                     onChangeHandler={() => {}}
                                     heading='Memorable dates'
                                     description="For example, 23 7 1968"
+                                />
+                            </form>
+                        </section>
+                        <section>
+                            <form method="get" role="form date-input">
+                                <label>Single date input</label>
+                                <SingleDatePicker
+                                    date={this.state.date}
+                                    onDateChange={date => this.setState({ date })}
+                                    focused={this.state.focused}
+                                    onFocusChange={({ focused }) => this.setState({ focused })}
+                                    numberOfMonths={1}
+                                    displayFormat="DD/MM/YYYY"
+                                    placeholder="dd/mm/yyyy"
+                                    hideKeyboardShortcutsPanel={true}
+                                    isOutsideRange={() => false}
                                 />
                             </form>
                         </section>
