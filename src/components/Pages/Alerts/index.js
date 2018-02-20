@@ -73,6 +73,29 @@ class Alerts extends Component{
                             content="I’m some body text that adds a bit more information to the alert. There’s 20px between the heading and the body and 20px between the content and top and bottom of the alert box."
                         />
                     </section>
+                    <section>
+                        <h2>Form alerts</h2>
+                        <p>In-form alerts are used in forms to give users either additional information or a warning message about a question or an answer in a form.</p>
+                        <p>The icon is centre aligned. When there is only one line of text the dividers are 20px away from the icon. When there is multiple lines the dividers are 20px away from the text.</p>
+                        <section>
+                            <h3>Information alert</h3>
+                            <section class="alert-form-information">
+                                <i class="fa fa-info-circle"></i>
+                                <p>I'm a sentence on <strong>one line</strong> within an in-form alert.</p>
+                            </section>
+                            <section class="alert-form-information">
+                                <i class="fa fa-info-circle"></i>
+                                <p>I'm some body text that gives the user some additional information about a question or an answer in a form.</p>
+                            </section>
+                        </section>
+                        <section>
+                            <h3>Warning alerts</h3>
+                            <section class="alert-form-warning">
+                                <i class="fa fa-info-exclamation"></i>
+                                <p>I'm some body text that gives the user a warning message about a question or an answer in a form. This example shows what the alert should look like when it goes onto three lines.</p>
+                            </section>
+                        </section>
+                    </section>
                 </article>
                 <Aside/>
             </main>

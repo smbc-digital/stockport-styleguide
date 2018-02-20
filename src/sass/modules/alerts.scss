@@ -160,3 +160,33 @@
         margin-bottom: 0;
     }
 }
+
+.alert-form {
+    padding: 20px;
+    border-top: 1px solid $grey-light;
+    border-bottom: 1px solid $grey-light;
+
+    i {
+        font-size: 2em;
+    }
+
+    p {
+        display: inline-block;
+    }
+}
+
+.alert-form-information {
+    @extend .alert-form;
+
+    i {
+        color: $soft-blue;
+    }
+}
+
+.alert-form-warning {
+    @extend .alert-form;
+
+    i {
+        color: $orange;
+    }
+}
