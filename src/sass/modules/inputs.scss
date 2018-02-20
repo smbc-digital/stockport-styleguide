@@ -239,34 +239,41 @@ form {
         }
     }
 
-    .SingleDatePicker {
-        display: block;
-        width: 140px;
-
-        .DayPickerNavigation_button__default {
-            &:active,
-            &:focus {
-                @include border-radius(0);
-                border-color: $orange;
-            }
+    .input-date-picker{
+        &.invalid input{
+            border: 1px solid $red;
+            @include border-radius(3px 3px 0 0);
         }
 
-        .SingleDatePickerInput__withBorder {
-            border: none;
+        .SingleDatePicker {
+            display: block;
+            width: 140px;
 
-            input {
-                @extend input;
-                text-align: center;
+            .DayPickerNavigation_button__default {
+                &:active,
+                &:focus {
+                    @include border-radius(0);
+                    border-color: $orange;
+                }
             }
-        }
 
-        .CalendarDay__selected, {
-            background-color: $primary;
-            border-bottom-color: $primary-dark;
+            .SingleDatePickerInput__withBorder {
+                border: none;
 
-            &:active,
-            &:hover {
-                background-color: $primary-light;
+                input {
+                    @extend input;
+                    text-align: center;
+                }
+            }
+
+            .CalendarDay__selected, {
+                background-color: $primary;
+                border-bottom-color: $primary-dark;
+
+                &:active,
+                &:hover {
+                    background-color: $primary-light;
+                }
             }
         }
     }

@@ -66,13 +66,19 @@ class Inputs extends Component{
 
         this.state = {
             date: null,
-            focused: false
+            focused: false,
+            dateValidationMessage: '',
         }
     }
 
     onChangeHandler(event) {
 		console.log("app change handler hit")
 	}
+
+    onChangeDate(date) {
+        let validationMessage = date !== null ? '' : 'Date is invalid'
+		this.setState({ date: date, isValid: date !== null,dateValidationMessage: validationMessage })
+    }
 
     render(){
         return (
@@ -168,17 +174,20 @@ class Inputs extends Component{
                         <section>
                             <form method="get" role="form date-input">
                                 <label>Single date input</label>
-                                <SingleDatePicker
-                                    date={this.state.date}
-                                    onDateChange={date => this.setState({ date })}
-                                    focused={this.state.focused}
-                                    onFocusChange={({ focused }) => this.setState({ focused })}
-                                    numberOfMonths={1}
-                                    displayFormat="DD/MM/YYYY"
-                                    placeholder="dd/mm/yyyy"
-                                    hideKeyboardShortcutsPanel={true}
-                                    isOutsideRange={() => false}
-                                />
+                                <div className={this.state.dateValidationMessage.length> 0 ? 'input-date-picker invalid' : 'input-date-picker'}>
+                                    <SingleDatePicker
+                                        date={this.state.date}
+                                        onDateChange={this.onChangeDate.bind(this)}
+                                        focused={this.state.focused}
+                                        onFocusChange={({ focused }) => this.setState({ focused })}
+                                        numberOfMonths={1}
+                                        displayFormat="DD/MM/YYYY"
+                                        placeholder="dd/mm/yyyy"
+                                        hideKeyboardShortcutsPanel={true}
+                                        isOutsideRange={() => false}
+                                    />
+                                </div>
+					        {this.state.dateValidationMessage.length > 0 && <p className='input-error-content'>{this.state.dateValidationMessage}</p>}
                             </form>
                         </section>
                     </section>
