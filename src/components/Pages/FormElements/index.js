@@ -3,64 +3,63 @@ import Aside from '../../Elements/Aside'
 import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer } from 'smbc-react-components'
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
-import moment from 'moment'
 
 class Inputs extends Component{
     constructor(props){
         super(props)
         this.radioInputs = [
             {
-                "id": "radio-inline-1",
-                "label": "This value should span over one line",
-                "name": "MeatChoice",
-                "value": ""
+                'id': 'radio-inline-1',
+                'label': 'This value should span over one line',
+                'name': 'MeatChoice',
+                'value': ''
             },
             {
-                "id": "radio-inline-2",
-                "label": "This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.",
-                "name": "MeatChoice",
-                "value": ""
+                'id': 'radio-inline-2',
+                'label': 'This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.',
+                'name': 'MeatChoice',
+                'value': ''
             },
             {
-                "id": "radio-inline-3",
-                "label": "This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.",
-                "name": "MeatChoice",
-                "value": ""
+                'id': 'radio-inline-3',
+                'label': 'This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.',
+                'name': 'MeatChoice',
+                'value': ''
             },
             {
-                "id": "radio-inline-4",
-                "label": "This input is disabled",
-                "name": "MeatChoice",
-                "value": "",
-                "disabled": "true"
+                'id': 'radio-inline-4',
+                'label': 'This input is disabled',
+                'name': 'MeatChoice',
+                'value': '',
+                'disabled': 'true'
             }
         ]
 
         this.checkboxInputs = [
             {
-                "id": "checkbox-inline-1",
-                "label": "This value should span over one line",
-                "name": "CheeseChoice",
-                "value": ""
+                'id': 'checkbox-inline-1',
+                'label': 'This value should span over one line',
+                'name': 'CheeseChoice',
+                'value': ''
             },
             {
-                "id": "checkbox-inline-2",
-                "label": "This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.",
-                "name": "CheeseChoice",
-                "value": ""
+                'id': 'checkbox-inline-2',
+                'label': 'This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.',
+                'name': 'CheeseChoice',
+                'value': ''
             },
             {
-                "id": "checkbox-inline-3",
-                "label": "This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.",
-                "name": "CheeseChoice",
-                "value": ""
+                'id': 'checkbox-inline-3',
+                'label': 'This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.',
+                'name': 'CheeseChoice',
+                'value': ''
             },
             {
-                "id": "checkbox-inline-4",
-                "label": "This input is disabled",
-                "name": "CheeseChoice",
-                "value": "",
-                "disabled": "true"
+                'id': 'checkbox-inline-4',
+                'label': 'This input is disabled',
+                'name': 'CheeseChoice',
+                'value': '',
+                'disabled': 'true'
             }
         ]
 
@@ -71,8 +70,8 @@ class Inputs extends Component{
         }
     }
 
-    onChangeHandler(event) {
-		console.log("app change handler hit")
+    onChange(event) {
+		return event
 	}
 
     onChangeDate(date) {
@@ -97,7 +96,7 @@ class Inputs extends Component{
                                     description='Radio buttons allow users to make a single selection from a list of possible choices.'
                                     legend='Meat choice'
                                     options={this.radioInputs}
-                                    onChange={this.onChangeHandler.bind(this)}
+                                    onChange={this.onChange.bind(this)}
                                 />
                             </form>
                         </section>
@@ -108,7 +107,7 @@ class Inputs extends Component{
                                     description='Checkboxes allow users to make one or more selections from a list.'
                                     legend='Cheese choice'
                                     options={this.checkboxInputs}
-                                    onChange={this.onChangeHandler.bind(this)}
+                                    onChange={this.onChange.bind(this)}
                                 />
                             </form>
                         </section>
@@ -119,7 +118,7 @@ class Inputs extends Component{
                                     id="style-guide-select"
                                     name="style-guide-select"
                                     placeholder="Select an address..."
-                                    onChange={this.onChangeHandler.bind(this)} 
+                                    onChange={this.onChange.bind(this)} 
                                     label="Drop downs"
                                     options={[{value: '1', name: 'first option'}, {value: '2', name: 'second option'}]}
                                 />
@@ -160,8 +159,8 @@ class Inputs extends Component{
                     <section>
                         <h2>Date inputs</h2>
                         <p>We have two types of date input, a date picker and a memorable date field.</p>
-                        <p>When we're asking a user for a memorable date, like a date of brith, we should use seperate text fields rather than a date picker. We also provide an example above the inputs.</p>
-                        <p>When asking for recent past or upcoming dates, we use a calendar date picker, as it's useful for the user to be able to see the date, month and year.</p>
+                        <p>When we&apos;re asking a user for a memorable date, like a date of brith, we should use seperate text fields rather than a date picker. We also provide an example above the inputs.</p>
+                        <p>When asking for recent past or upcoming dates, we use a calendar date picker, as it&apos;s useful for the user to be able to see the date, month and year.</p>
                         <section>
                             <form method="get" role="form memorable-date-input">
                                 <MemorableDateInputContainer
@@ -186,7 +185,7 @@ class Inputs extends Component{
                                         hideKeyboardShortcutsPanel={true}
                                         isOutsideRange={() => false}
                                     />
-					            {this.state.dateValidationMessage.length > 0 && <p className='input-error-content'>{this.state.dateValidationMessage}</p>}
+                                {this.state.dateValidationMessage.length > 0 && <p className='input-error-content'>{this.state.dateValidationMessage}</p>}
                                 </div>
                             </form>
                         </section>
@@ -198,7 +197,7 @@ class Inputs extends Component{
                                 {<AddressPicker
                                     header="Address input"
                                     description="A user can use this component to select an address. The postcode search will search inside Stockport only and if the addres isn't inside Stockport the user can click manual search and enter each field separately."
-                                    handleChange={this.onChangeHandler.bind(this)}
+                                    handleChange={this.onChange.bind(this)}
                                 />}
                             </form>
                         </section>
