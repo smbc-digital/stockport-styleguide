@@ -7,113 +7,113 @@ class Colours extends Component{
         super(props)
         this.primaryColours = [
             {
-                "Name": "Primary",
-                "Class": "primary",
-                "Hex": "#055c58"
+                'Name': 'Primary',
+                'Class': 'primary',
+                'Hex': '#055c58'
             },
             {
-                "Name": "Teal",
-                "Class": "teal",
-                "Hex": "#00b79b"
+                'Name': 'Teal',
+                'Class': 'teal',
+                'Hex': '#00b79b'
             },
             {
-                "Name": "Teal darker",
-                "Class": "teal-darker",
-                "Hex": "#1a8c7a"
+                'Name': 'Teal darker',
+                'Class': 'teal-darker',
+                'Hex': '#1a8c7a'
             },
             {
-                "Name": "Off white",
-                "Class": "off-white",
-                "Hex": "#ebebeb"
+                'Name': 'Off white',
+                'Class': 'off-white',
+                'Hex': '#ebebeb'
             },
             {
-                "Name": "White",
-                "Class": "white",
-                "Hex": "#ffffff"
+                'Name': 'White',
+                'Class': 'white',
+                'Hex': '#ffffff'
             },
             {
-                "Name": "Grey darkest",
-                "Class": "grey-darkest",
-                "Hex": "#333333"
+                'Name': 'Grey darkest',
+                'Class': 'grey-darkest',
+                'Hex': '#333333'
             }
         ]
         this.secondaryColours = [
             {
-                "Name": "Primary darkest",
-                "Class": "primary-darkest",
-                "Hex": "#092726"
+                'Name': 'Primary darkest',
+                'Class': 'primary-darkest',
+                'Hex': '#092726'
             },
             {
-                "Name": "Primary darker",
-                "Class": "primary-darker",
-                "Hex": "#1d3837"
+                'Name': 'Primary darker',
+                'Class': 'primary-darker',
+                'Hex': '#1d3837'
             },
             {
-                "Name": "Primary dark",
-                "Class": "primary-dark",
-                "Hex": "#124a47"
+                'Name': 'Primary dark',
+                'Class': 'primary-dark',
+                'Hex': '#124a47'
             },
             {
-                "Name": "Primary light",
-                "Class": "primary-light",
-                "Hex": "#3a716e"
+                'Name': 'Primary light',
+                'Class': 'primary-light',
+                'Hex': '#3a716e'
             },
             {
-                "Name": "Primary pale",
-                "Class": "primary-pale",
-                "Hex": "#83aeac"
+                'Name': 'Primary pale',
+                'Class': 'primary-pale',
+                'Hex': '#83aeac'
             },
             {
-                "Name": "Green",
-                "Class": "green",
-                "Hex": "#15863a"
+                'Name': 'Green',
+                'Class': 'green',
+                'Hex': '#15863a'
             },
             {
-                "Name": "Soft blue",
-                "Class": "soft-blue",
-                "Hex": "#207eab"
+                'Name': 'Soft blue',
+                'Class': 'soft-blue',
+                'Hex': '#207eab'
             },
             {
-                "Name": "Red",
-                "Class": "red",
-                "Hex": "#c83725"
+                'Name': 'Red',
+                'Class': 'red',
+                'Hex': '#c83725'
             },
             {
-                "Name": "Orange",
-                "Class": "orange",
-                "Hex": "#ef8a16"
+                'Name': 'Orange',
+                'Class': 'orange',
+                'Hex': '#ef8a16'
             },
             {
-                "Name": "Purple",
-                "Class": "purple",
-                "Hex": "#8e5572"
+                'Name': 'Purple',
+                'Class': 'purple',
+                'Hex': '#8e5572'
             },
             {
-                "Name": "Grey dark",
-                "Class": "grey-dark",
-                "Hex": "#666666"
+                'Name': 'Grey dark',
+                'Class': 'grey-dark',
+                'Hex': '#666666'
             }
         ]
         this.tertiaryColours = [
             {
-                "Name": "Grey lightest",
-                "Class": "grey-lightest",
-                "Hex": "#e1e1e1"
+                'Name': 'Grey lightest',
+                'Class': 'grey-lightest',
+                'Hex': '#e1e1e1'
             },
             {
-                "Name": "Grey lighter",
-                "Class": "grey-lighter",
-                "Hex": "#cccccc"
+                'Name': 'Grey lighter',
+                'Class': 'grey-lighter',
+                'Hex': '#cccccc'
             },
             {
-                "Name": "Grey light",
-                "Class": "grey-light",
-                "Hex": "#bcbcbc"
+                'Name': 'Grey light',
+                'Class': 'grey-light',
+                'Hex': '#bcbcbc'
             },
             {
-                "Name": "Grey middle",
-                "Class": "grey-middle",
-                "Hex": "#999999"
+                'Name': 'Grey middle',
+                'Class': 'grey-middle',
+                'Hex': '#999999'
             }
         ]
     }

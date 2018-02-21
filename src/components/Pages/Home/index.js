@@ -12,7 +12,7 @@ export class Home extends Component {
                 <section className="title-container">
                     <div className="title">
                         <h1>Welcome to the Stockport.gov.uk style guide</h1>
-                        <p className="hide-on-mobile">Home to the Digital Team's shared styles and design patterns</p>
+                        <p className="hide-on-mobile">Home to the Digital Team&apos;s shared styles and design patterns</p>
                     </div>
                 </section>
                 <section className="center-wrapper">

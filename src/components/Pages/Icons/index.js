@@ -7,20 +7,20 @@ class Icons extends Component{
         super(props)
         this.icons = [
             {
-                "Name": "Basket",
-                "Class": "si-basket"
+                'Name': 'Basket',
+                'Class': 'si-basket'
             },
             {
-                "Name": "Bin",
-                "Class": "si-bin"
+                'Name': 'Bin',
+                'Class': 'si-bin'
             },
             {
-                "Name": "Book",
-                "Class": "si-book"
+                'Name': 'Book',
+                'Class': 'si-book'
             },
             {
-                "Name": "Books",
-                "Class": "si-books"
+                'Name': 'Books',
+                'Class': 'si-books'
             }
         ]
     }

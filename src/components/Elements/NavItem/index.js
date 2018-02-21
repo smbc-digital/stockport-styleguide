@@ -1,26 +1,21 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 class NavItem extends React.Component {
     render() {
-        var isActive = this.context.router.route.location.pathname.toLowerCase() === this.props.to.toLowerCase();
-        var className = isActive ? 'current-page' : '';
+        var isActive = this.context.router.route.location.pathname.toLowerCase() === this.props.to.toLowerCase()
+        var className = isActive ? 'current-page' : ''
 
         if (isActive) {
-            return(<li className={className}>{this.props.name}</li>);
+            return(<li className={className}>{this.props.name}</li>)
         } else {
             return(
                 <li className={className}>
                     <NavLink to={this.props.to} {...this.props}>{this.props.name}</NavLink>
                 </li>
-            );
+            )
         }
     }
 }
 
-NavItem.contextTypes = {
-    router: PropTypes.object
-};
-
-export default NavItem;
+export default NavItem

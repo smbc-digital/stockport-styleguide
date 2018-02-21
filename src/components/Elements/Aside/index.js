@@ -7,36 +7,36 @@ class Aside extends Component{
         super(props)
         this.routes = [
             {
-                name: "Colours",
-                route: "/colours"
+                name: 'Colours',
+                route: '/colours'
             },
             {
-                name: "Typography",
-                route: "/typography"
+                name: 'Typography',
+                route: '/typography'
             },
             {
-                name: "Buttons",
-                route: "/buttons"
+                name: 'Buttons',
+                route: '/buttons'
             },
             {
-                name: "Form Elements",
-                route: "/form-elements"
+                name: 'Form Elements',
+                route: '/form-elements'
             },
             {
-                name: "Alerts",
-                route: "/alerts"
+                name: 'Alerts',
+                route: '/alerts'
             },
             {
-                name: "Tables",
-                route: "/tables"
+                name: 'Tables',
+                route: '/tables'
             },
             {
-                name: "Profiles",
-                route: "/profiles"
+                name: 'Profiles',
+                route: '/profiles'
             },
             {
-                name: "Icons",
-                route: "/icons"
+                name: 'Icons',
+                route: '/icons'
             }
         ]
     }
