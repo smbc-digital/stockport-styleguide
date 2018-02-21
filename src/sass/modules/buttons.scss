@@ -93,8 +93,20 @@ button {
     }
 }
 
-.button-back{
+.button-back {
     display: inline-block;
-    margin-bottom: 20px;
     cursor: pointer;
+}
+
+a.anchor-with-icon {
+    display: table;
+    vertical-align: middle;
+    margin-bottom: 30px;
+
+    i {
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+        @include button-colors($white, $primary);
+    }
 }

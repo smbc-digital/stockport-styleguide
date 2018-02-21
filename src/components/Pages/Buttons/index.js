@@ -18,6 +18,7 @@ class Buttons extends Component{
                     <button className="button-inverted" href="#">I'm an inverted button</button>
                     <button className="button-primary" href="#" disabled>I'm a disabled button</button>
                     <button className="button-login" href="#">My Account login button</button>
+                    <a className='anchor-with-icon' href='#'><i className="fa fa-plus-square fa-2x"></i>I'm an anchor with an icon</a>
                 </article>
                 <Aside/>
             </main>
