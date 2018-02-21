@@ -1,5 +1,5 @@
 import React from 'react'
-import Enzyme, { mount, shallow } from 'enzyme'
+import Enzyme, { mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import AlertContainer from './index'
 
@@ -56,20 +56,20 @@ describe('AlertContainer', () => {
     setAlertLevel({alert: { level: 'error', icon: 'fa-exclamation-circle'}})
     setAlertLevel({alert: { level: 'NotValid', icon: 'fa-exclamation-triangle'}})
 
-    describe('onClickHandler()', () => {
+    describe('onClick()', () => {
 
-        const runOnClickHandlerUpdateStateTest = (event) => {
+        const runOnClickUpdateStateTest = (event) => {
 			it(`should update isHidden state to ${event.target.result}`, () => {
                 const { enzymeWrapper } = setup()
                 enzymeWrapper.setState({ isHidden: event.target.value})
-				enzymeWrapper.instance().onClickHandler(event)
+				enzymeWrapper.instance().onClick(event)
 				
                 expect(enzymeWrapper.instance().state.isHidden).toBe(event.target.result)
                 expect(enzymeWrapper.find('Alert').exists()).toBe(event.target.result)
 			})
 		}
 
-		runOnClickHandlerUpdateStateTest({target: { value: true, result: false}, preventDefault: jest.fn()})
-		runOnClickHandlerUpdateStateTest({target: { value: false, result: true}, preventDefault: jest.fn()})
+		runOnClickUpdateStateTest({target: { value: true, result: false}, preventDefault: jest.fn()})
+		runOnClickUpdateStateTest({target: { value: false, result: true}, preventDefault: jest.fn()})
     })
 })

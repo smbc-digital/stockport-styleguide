@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Alert = ({level, icon, heading, content, enableH3, onClickHandler}) => {
+const Alert = ({level, icon, heading, content, enableH3, onClick}) => {
     return(
         <section className={level}>
             <i className={icon}></i>
@@ -11,7 +11,7 @@ const Alert = ({level, icon, heading, content, enableH3, onClickHandler}) => {
                 }
                 <p dangerouslySetInnerHTML={{__html: content}}/>
             </div>
-            <a href="#" aria-label="close" onClick={onClickHandler.bind(this)}><i className="fa fa-times"></i></a>
+            <a href="#" aria-label="close" onClick={onClick.bind(this)}><i className="fa fa-times"></i></a>
         </section>
     )
 }

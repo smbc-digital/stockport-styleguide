@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-const AlertFullWidth = ({level, icon, heading, content, onClickHandler}) => {
+const AlertFullWidth = ({level, icon, heading, content, onClick}) => {
     return(
         <section className={level}>
             <i className={icon}></i>
@@ -9,7 +9,7 @@ const AlertFullWidth = ({level, icon, heading, content, onClickHandler}) => {
                 <p dangerouslySetInnerHTML={{__html: content}}/>
             </div>
             <div className="dismiss">
-                <a href="#" aria-label="close" onClick={onClickHandler.bind(this)}><i className="fa fa-times"></i></a>
+                <a href="#" aria-label="close" onClick={onClick.bind(this)}><i className="fa fa-times"></i></a>
             </div>
         </section>
     )
