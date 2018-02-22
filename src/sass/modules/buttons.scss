@@ -110,3 +110,7 @@ a.anchor-with-icon {
         @include button-colors($white, $primary);
     }
 }
+
+a.anchor-as-block { 
+    display: block;
+}
