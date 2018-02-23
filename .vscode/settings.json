@@ -1,8 +1,10 @@
 {
     "[javascript]": {
         "editor.detectIndentation": false,
-        "editor.insertSpaces": false
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
     },
     "eslint.enable": true,
-    "sasslint.enable": true
+    "sasslint.enable": true,
+    "files.eol": "\r\n"
 }
