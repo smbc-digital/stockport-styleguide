@@ -93,6 +93,41 @@ button {
     }
 }
 
+.button-loading {
+    transition: color .2s;
+    transition-property: color, background-color;
+    color: $grey-lighter;
+    background-color: $grey-middle;
+    cursor: default;
+    
+    &:after {
+        text-rendering: auto;
+        -moz-osx-font-smoothing: grayscale;
+        color: $white;
+        content: "\f1ce";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 30px;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: calc(50% - 15px);
+        top: calc(50% - 15px);
+        @include animation(load 1s ease-in-out infinite);
+    }
+    &:before {
+        display: none;
+    }
+
+    &:hover,
+    &:focus{
+        color: $grey-lighter;
+        background-color: $grey-middle;
+        @include box-shadow(0 8px 20px 0 rgba(0,0,0,.1));
+        cursor: default;
+    }
+}
+
 .button-back {
     display: inline-block;
     cursor: pointer;
@@ -113,4 +148,19 @@ a.anchor-with-icon {
 
 a.anchor-as-block { 
     display: block;
+}
+
+
+@include keyframes(load) {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

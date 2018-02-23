@@ -175,3 +175,28 @@
         }
     }
 }
+
+@mixin animation ($animationOptions) {
+    -webkit-animation: $animationOptions;
+    -moz-animation: $animationOptions;
+    -o-animation: $animationOptions;
+    animation:$animationOptions
+}
+
+@mixin keyframes ($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
