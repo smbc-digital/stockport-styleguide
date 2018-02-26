@@ -159,8 +159,8 @@ class Inputs extends Component{
                     <section>
                         <h2>Date inputs</h2>
                         <p>We have two types of date input, a date picker and a memorable date field.</p>
-                        <p>When we&apos;re asking a user for a memorable date, like a date of brith, we should use seperate text fields rather than a date picker. We also provide an example above the inputs.</p>
-                        <p>When asking for recent past or upcoming dates, we use a calendar date picker, as it&apos;s useful for the user to be able to see the date, month and year.</p>
+                        <p>When we're asking a user for a memorable date, like a date of brith, we should use seperate text fields rather than a date picker. We also provide an example above the inputs.</p>
+                        <p>When asking for recent past or upcoming dates, we use a calendar date picker, as it's useful for the user to be able to see the date, month and year.</p>
                         <section>
                             <form method="get" role="form memorable-date-input">
                                 <MemorableDateInputContainer

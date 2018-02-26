@@ -8,7 +8,9 @@
     "test": "jest --watchAll",
     "start": "webpack && webpack-dev-server --content-base src --hot --inline",
     "build": "webpack",
-    "addWebpack": "git add ./build/styles.min.css"
+    "addWebpack": "git add ./build/styles.min.css",
+    "lint:sass": "sass-lint -v",
+    "lint:js": "eslint src/**/*.js"
   },
   "pre-commit": [
     "build",

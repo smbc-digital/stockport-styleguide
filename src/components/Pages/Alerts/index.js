@@ -81,18 +81,18 @@ class Alerts extends Component{
                             <h3>Information alert</h3>
                             <section className="alert-form-information">
                                 <i className="fa fa-info-circle"></i>
-                                <p>I&apos;m a sentence on <strong>one line</strong> within an in-form alert.</p>
+                                <p>I'm a sentence on <strong>one line</strong> within an in-form alert.</p>
                             </section>
                             <section className="alert-form-information">
                                 <i className="fa fa-info-circle"></i>
-                                <p>I&apos;m some body text that gives the user some additional information about a question or an answer in a form.</p>
+                                <p>I'm some body text that gives the user some additional information about a question or an answer in a form.</p>
                             </section>
                         </section>
                         <section>
                             <h3>Warning alerts</h3>
                             <section className="alert-form-warning">
                                 <i className="fa fa-info-exclamation"></i>
-                                <p>I&apos;m some body text that gives the user a warning message about a question or an answer in a form. This example shows what the alert should look like when it goes onto three lines.</p>
+                                <p>I'm some body text that gives the user a warning message about a question or an answer in a form. This example shows what the alert should look like when it goes onto three lines.</p>
                             </section>
                         </section>
                     </section>

@@ -43,12 +43,12 @@ class Typography extends Component{
                     <section className="heading-display">
                         <h2>Headings</h2>
                         <section>
-                            <h1>Hey, i&apos;m an h1</h1>
-                            <h2>Hey, i&apos;m an h2</h2>
-                            <h3>Hey, i&apos;m an h3</h3>
-                            <h4>Hey, i&apos;m an h4</h4>
-                            <p>Hey, i&apos;m body text and i appear absolutely everywhere!</p>
-                            <a href="#">Hey, i&apos;m a link to some amazing content</a>
+                            <h1>Hey, i'm an h1</h1>
+                            <h2>Hey, i'm an h2</h2>
+                            <h3>Hey, i'm an h3</h3>
+                            <h4>Hey, i'm an h4</h4>
+                            <p>Hey, i'm body text and i appear absolutely everywhere!</p>
+                            <a href="#">Hey, i'm a link to some amazing content</a>
                         </section>
                     </section>
                 </article>

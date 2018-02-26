@@ -100,7 +100,7 @@ button {
     color: $grey-lighter;
     background-color: $grey-middle;
     cursor: default;
-    
+
     &:after {
         text-rendering: auto;
         -moz-osx-font-smoothing: grayscale;
@@ -116,12 +116,13 @@ button {
         top: calc(50% - 15px);
         @include animation(load 1s ease-in-out infinite);
     }
+
     &:before {
         display: none;
     }
 
     &:hover,
-    &:focus{
+    &:focus {
         color: $grey-lighter;
         background-color: $grey-middle;
         @include box-shadow(0 8px 20px 0 rgba(0,0,0,.1));

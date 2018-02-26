@@ -181,7 +181,7 @@
 @mixin animation ($animationOptions) {
     -webkit-animation: $animationOptions;
     -moz-animation: $animationOptions;
-    -o-animation: $animationOptions;
+    -o-animation: $animationOptions; // sass-lint:disable-line no-misspelled-properties
     animation: $animationOptions
 }
 

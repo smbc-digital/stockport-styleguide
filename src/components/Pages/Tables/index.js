@@ -65,7 +65,7 @@ class Tables extends Component{
                     </section>
                     <section className="hide-on-tablet hide-on-desktop">
                             <h2 className="h3">My Account activity table</h2>
-                            <p>The My Account reports table shows detailed information about a user&apos;s recent activity.</p>
+                            <p>The My Account reports table shows detailed information about a user's recent activity.</p>
                             <section className="data-table">
                                 <header>
                                     <div className="headings">
