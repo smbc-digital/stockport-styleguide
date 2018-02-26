@@ -1,13 +1,13 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const paths = {
     BUILD: path.resolve(__dirname, 'build'),
     SRC: path.resolve(__dirname, 'src'),
     CSS: path.resolve(__dirname, 'css')
-};
+}
 
 module.exports = {
     entry: {
@@ -25,7 +25,7 @@ module.exports = {
             template: path.join(paths.SRC, 'index.html'),
         }),
         new ExtractTextPlugin('styles.min.css'),
-        new CleanWebpackPlugin(['build']),
+        new CleanWebpackPlugin(['build'])
     ],
     module: {
         rules: [
@@ -52,7 +52,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: "stockportwingdings.[ext]"
+                        name: 'stockportwingdings.[ext]'
                     }
                 }
                 ],
@@ -65,4 +65,4 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     }
-};
+}

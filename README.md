@@ -1,4 +1,4 @@
-# Stockport Styleguide [![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg?style=flat-square)](https://github.com/smbc-digital/stockport-styleguide)
+# Stockport Styleguide [![GitHub issues](https://img.shields.io/github/issues/smbc-digital/stockport-styleguide.svg)](https://github.com/smbc-digital/stockport-styleguide/issues)
 
 Stockport styleguide is a React application to showcase the reusable components for the Stockport Council website. This project contains both the SASS styleing of the components and a showcase of the [smbc-react-components](https://www.npmjs.com/package/smbc-react-components) used within the Council's website.
 
@@ -10,6 +10,14 @@ Stockport styleguide is a React application to showcase the reusable components 
 * npm
 
 `$ npm run setup`
+
+#### Linting
+
+This project makes use of [sass-lint](https://www.npmjs.com/package/sass-lint) and [es-lint](https://www.npmjs.com/package/eslint). To make use of these packages you will need to install these npm packages and then install the relevant IDE addons:
+
+* VS Code:
+  * [Sass Lint](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Usage
 
@@ -45,7 +53,7 @@ Stockport styleguide is a React application to showcase the reusable components 
 
 ## Development
 
-Within the package.json file there is a pre-commit that will run `npm run build` which bundles up the packages and adds them to the commit.
+Within the package.json file there is a pre-commit that will run `$npm run build` which bundles up the packages and adds them to the commit.
 
 ## Roadmap
 
