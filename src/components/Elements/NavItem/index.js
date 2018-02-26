@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 class NavItem extends React.Component {
     render() {
@@ -16,6 +17,10 @@ class NavItem extends React.Component {
             )
         }
     }
+}
+
+NavItem.contextTypes = {
+    router: PropTypes.object
 }
 
 export default NavItem
