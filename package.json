@@ -17,6 +17,7 @@
   "keywords": [],
   "author": "Stockport Metropolitan Borough Council",
   "license": "ISC",
+  "sasslintConfig": ".sass-lint.yml",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
@@ -44,6 +45,7 @@
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^6.0.6",
     "smbc-react-components": "^1.1.30",
     "webpack": "^3.10.0",

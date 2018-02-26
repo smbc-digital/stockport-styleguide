@@ -12,7 +12,7 @@ body > footer,
         vertical-align: middle;
         padding: 10px 0;
         margin: 0;
-        @include header-footer-logo();
+        @include header-footer-logo;
 
         @media #{$mobile} {
             margin-left: 25px;
@@ -26,7 +26,7 @@ body > footer,
         list-style: none;
         display: inline;
         padding: 0 0 20px;
-        
+
         li {
             float: left;
             width: 50%;
@@ -35,7 +35,7 @@ body > footer,
                 text-decoration: none;
                 color: $white;
 
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -180,7 +180,8 @@ body > footer,
             }
         }
 
-        .footer-copyright p, .footer-copyright a {
+        .footer-copyright p,
+        .footer-copyright a {
             text-align: center;
         }
 

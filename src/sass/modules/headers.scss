@@ -8,7 +8,7 @@ body > header,
         @extend .tablet-grid-50;
         @extend .mobile-grid-50;
         height: 80px;
-        @include header-footer-logo();
+        @include header-footer-logo;
 
         @media #{$mobile} {
             height: 60px;
@@ -59,7 +59,7 @@ body > header,
             input {
                 font-size: $fontSizeDefault;
                 padding-right: 45px;
-                width:100%;
+                width: 100%;
                 margin-bottom: 0;
             }
 
@@ -73,7 +73,7 @@ body > header,
                 height: 55px;
                 width: 55px;
                 margin: 0;
-    
+
                 &:hover {
                     color: $grey-dark;
                     cursor: pointer;
@@ -90,7 +90,7 @@ body > header,
             padding-bottom: 4px;
             margin: 0 auto;
             color: $white;
-            
+
             li {
                 display: inline;
 
@@ -116,7 +116,7 @@ body > header,
         @extend .grid-100, .mobile-grid-100, .tablet-grid-100;
         background-color: $primary-darkest;
         color: $white;
-        font-family: $fontFamilyHeadings;
+        font-family: $font-family-headings;
         line-height: 1.5em;
         padding: 10px 0;
 
@@ -142,9 +142,9 @@ body > header,
 }
 
 .title {
-    max-width:1200px;
+    max-width: 1200px;
     margin: 0 auto;
-    font-family: $fontFamilyHeadings;
+    font-family: $font-family-headings;
     font-weight: $fontWeightBold;
 
     h1 {
@@ -154,7 +154,7 @@ body > header,
     }
 
     p {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         color: $white;
         font-size: $fontSizeLarger;
     }

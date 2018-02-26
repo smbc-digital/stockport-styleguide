@@ -14,7 +14,7 @@ form {
 
         .input-radio-container {
             @include radio-checkbox-input("radio", 50%);
-    
+
             label::after {
                 content: "";
                 border: 10px solid;
@@ -23,10 +23,10 @@ form {
                 margin-top: -10px;
             }
         }
-    
+
         .input-checkbox-container {
             @include radio-checkbox-input("checkbox", 0%);
-    
+
             label::after {
                 content: "\f00c";
                 border: none;
@@ -36,7 +36,7 @@ form {
             }
         }
     }
-    
+
     label {
         @extend h3;
         margin-bottom: 10px;
@@ -54,7 +54,7 @@ form {
     h2 {
         margin: 0 0 14px;
     }
-    
+
     h3 {
         margin-bottom: 16px;
 
@@ -95,12 +95,12 @@ form {
         @include border-radius(3px);
         width: 100%;
         max-width: 550px;
-        font-family: $fontFamily;
+        font-family: $font-family;
         color: $grey-darkest;
         font-size: $fontSizeDefault;
         margin-bottom: 20px;
         box-sizing: border-box;
-    
+
         &.input-validation-error {
             border: 1px solid $red;
             @include border-radius(3px 3px 0 0);
@@ -123,10 +123,10 @@ form {
     textarea {
         height: 250px;
     }
-    
+
     input[type="number"] {
         -moz-appearance: textfield;
-    
+
         &::-webkit-inner-spin-button, 
         &::-webkit-outer-spin-button { 
             -webkit-appearance: none; 
@@ -134,20 +134,20 @@ form {
         }
     }
 
-    select{
+    select {
         @include border-radius(3px);
         font-size: $fontSizeDefault;
         border: 1px solid #bcbcbc;
         width: 100%;
         max-width: 550px;
-        font-family: $fontFamily;
+        font-family: $font-family;
         box-sizing: border-box;
         line-height: 1.125em;
         padding: 15px 10px;
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none; 
-        background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+        appearance: none;
+        background-image: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png');
         background-repeat: no-repeat;
         background-position: right 30px center;
         background-color: #fff;
@@ -164,7 +164,7 @@ form {
         @include border-radius(3px 0 0 3px);
         font-size: 1.5em;
         padding: 0 10px;
-    
+
         + input {
             @include border-radius(0 3px 3px 0);
         }
@@ -237,15 +237,15 @@ form {
 
         .input-error-content {
             top: -16px;
-            
+
             &:before {
                 content: '';
             }
         }
     }
 
-    .input-date-picker{
-        &.invalid input{
+    .input-date-picker {
+        &.invalid input {
             border: 1px solid $red;
             @include border-radius(3px 3px 0 0);
         }
@@ -255,6 +255,7 @@ form {
             width: 110px;
         }
 
+        // sass-lint:disable class-name-format
         .SingleDatePicker {
             display: block;
             width: 140px;

@@ -9,7 +9,7 @@
         line-height: 50px;
         display: inline-block;
     }
-    
+
     .alphabet {
         display: inline-block;
         margin-left: 25px;
@@ -21,10 +21,10 @@
     }
 
     .source-sans-pro {
-        font-family: $fontFamilyHeadings;
+        font-family: $font-family-headings;
     }
 
     .noto-sans {
-        font-family: $fontFamily;
+        font-family: $font-family;
     }
 }

@@ -25,7 +25,7 @@
         li {
             width: 100%;
 
-            a{
+            a {
                 padding: 10px 0 10px 15px;
                 margin-left: 20px;
                 border-bottom: 1px solid $grey-light;
@@ -39,7 +39,7 @@
             }
 
             &:last-of-type a {
-                border-bottom: 0;
+                border-bottom: none;
                 font-weight: $fontWeightBold;
             }
 

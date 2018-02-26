@@ -26,9 +26,9 @@
         div {
             @include border-radius(3px);
             padding: 15px 10px;
-            
+
             p {
-                font-family: $fontFamilyHeadings;
+                font-family: $font-family-headings;
                 font-size: $fontSizeLarge;
                 font-weight: $fontWeightBold;
                 margin: 0;

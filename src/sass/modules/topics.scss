@@ -6,7 +6,7 @@
     @include box-shadow(0 15px 20px 0 rgba(0, 0, 0, 0.1));
 
     h2 {
-        padding: 0px 20px 10px;
+        padding: 0 20px 10px;
         margin-bottom: 0;
         border-bottom: 1px solid $grey-light;
         letter-spacing: -0.5px;
@@ -34,7 +34,7 @@
 
                 &:hover {                 
                     @include transition-box-shadow(0 20px 40px 0 rgba(0,0,0,0.3));
-    
+
                     span {
                         text-decoration: underline;
                     }
@@ -42,7 +42,7 @@
 
                 &:active,
                 &:focus {
-                    @include border-radius(0px);
+                    @include border-radius(0);
                 }
 
                 &:after {

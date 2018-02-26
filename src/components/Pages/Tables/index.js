@@ -14,7 +14,7 @@ class Tables extends Component{
                     <p>Tables show tabular data in columns and rows.</p>
                     <section className="hide-on-mobile">
                         <h2 className="h3">My Account activity table</h2>
-                        <p>The My Account reports table shows detailed information about a user's recent activity.</p>
+                        <p>The My Account reports table shows detailed information about a user&apois;s recent activity.</p>
                         <section className="data-table">
                             <header>
                                 <div className="headings">

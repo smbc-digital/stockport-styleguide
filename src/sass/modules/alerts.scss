@@ -1,4 +1,4 @@
-.alert {
+@mixin alert {
     @include border-radius(5px);
     color: $white;
     background-color: $grey-dark;
@@ -20,14 +20,15 @@
         vertical-align: middle;
         padding: 20px 15px;
 
-        h2, h3 {
+        h2,
+        h3 {
             color: $white;
             margin-bottom: 10px;
             font-size: 1.375em;
         }
 
         p {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
@@ -52,7 +53,7 @@
 }
 
 .alert-warning {
-    @extend .alert;
+    @include alert;
     @include alert-colours($orange, $grey-darkest);
 
     a:active,
@@ -62,21 +63,21 @@
 }
 
 .alert-information {
-    @extend .alert;
+    @include alert;
     @include alert-colours($soft-blue, $white);
 }
 
 .alert-error {
-    @extend .alert;
+    @include alert;
     @include alert-colours($red, $white);
 }
 
 .alert-success {
-    @extend .alert;
+    @include alert;
     @include alert-colours($green, $white);
 }
 
-.alert-fullwidth {
+@mixin alert-fullwidth {
     width: 100%;
     border-radius: 0;
     position: relative;
@@ -126,30 +127,30 @@
 
 .alert-warning-fullwidth {
     @extend .alert-warning;
-    @extend .alert-fullwidth;
+    @include alert-fullwidth;
 }
 
 .alert-information-fullwidth {
     @extend .alert-information;
-    @extend .alert-fullwidth;
+    @include alert-fullwidth;
 }
 
 .alert-error-fullwidth {
     @extend .alert-error;
-    @extend .alert-fullwidth;
+    @include alert-fullwidth;
 }
 
 .alert-success-fullwidth {
     @extend .alert-success;
-    @extend .alert-fullwidth;
+    @include alert-fullwidth;
 }
 
 .alert-inline {
     background-color: $off-white;
     border-left: 5px solid $grey-lighter;
-    @include border-radius(3px);
     padding: 20px;
     margin-bottom: 30px;
+    @include border-radius(3px);
 
     h2 {
         margin-bottom: 10px;
@@ -161,7 +162,7 @@
     }
 }
 
-.alert-form {
+@mixin alert-form {
     padding: 20px;
     border-top: 1px solid $grey-light;
     border-bottom: 1px solid $grey-light;
@@ -176,7 +177,7 @@
 }
 
 .alert-form-information {
-    @extend .alert-form;
+    @include alert-form;
 
     i {
         color: $soft-blue;
@@ -184,7 +185,7 @@
 }
 
 .alert-form-warning {
-    @extend .alert-form;
+    @include alert-form;
 
     i {
         color: $orange;
