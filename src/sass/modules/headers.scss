@@ -45,39 +45,62 @@ body > header,
         }
     }
 
+    #cludo-search-form,
     form {
         @extend .grid-25;
         @extend .tablet-grid-25;
         @extend .hide-on-mobile;
         padding: 13px 15px 12px;
         background-color: rgba(255, 255, 255, 0.1);
+        position: relative;
 
-        fieldset {
-            margin: 0;
+        .search-input,
+        input {
+            @include border-radius(3px);
+            font-size: $fontSizeDefault;
+            padding: 15px 45px 15px 10px;
             width: 100%;
+            margin-bottom: 0;
+            background-color: $white;
+            color: $grey-darkest;
+            border: 1px solid $grey-middle;
+            line-height: 1.35em;
+            height: 55px;
 
-            input {
-                font-size: $fontSizeDefault;
-                padding-right: 45px;
-                width: 100%;
-                margin-bottom: 0;
+            &:active,
+            &:focus {
+                @include outline;
+                border: 1px solid transparent !important; // sass-lint:disable-line no-important because CludoSearch is an arse!
+                border-radius: 0;
+            }
+        }
+
+        .search-button,
+        button {
+            background: none;
+            border: none;
+            font-size: 1.375em;
+            position: absolute;
+            right: 15px;
+            top: 14px;
+            height: 53px;
+            width: 55px;
+            margin: 0;
+            text-indent: 6px;
+
+            &:active,
+            &:focus {
+                @include outline;
+                border: none !important; // sass-lint:disable-line no-important because CludoSearch is an arse!
+                transition: none;
             }
 
-            button {
-                background: none;
-                border: none;
-                font-size: 1.375em;
-                position: absolute;
-                right: 0;
-                top: 0;
-                height: 55px;
-                width: 55px;
-                margin: 0;
-
-                &:hover {
-                    color: $grey-dark;
-                    cursor: pointer;
-                }
+            &:active,
+            &:hover {
+                border: none !important; // sass-lint:disable-line no-important because CludoSearch is an arse!
+                color: $grey-dark;
+                cursor: pointer;
+                transition: none;
             }
         }
     }

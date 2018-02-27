@@ -17,11 +17,9 @@ export class Header extends Component {
 						<a href="http://myaccount.stockport.gov.uk"><i className="fa fa-user" aria-hidden="true"></i>My Account</a>
 					</div>
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
-						<fieldset className="input-group">
-							<label htmlFor="search" className="sr-only">Search Stockport council website</label>
-							<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
-							<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
-						</fieldset>
+						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
+						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
+						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
 				<div className="banner-header">

@@ -137,7 +137,7 @@ body > footer,
     .footer-copyright {
         color: $white;
         background-color: $primary-darkest;
-        padding: 5px 0;
+        padding: 5px 0 0;
         text-align: right;
 
         p {
@@ -180,12 +180,16 @@ body > footer,
             }
         }
 
-        .footer-copyright p,
-        .footer-copyright a {
+        .footer-copyright .center-wrapper {
+            text-align: center;
+        }
+
+        .footer-copyright p {
             text-align: center;
         }
 
         .footer-copyright a {
+            display: inline;
             font-size: 0.900em;
         }
     }
