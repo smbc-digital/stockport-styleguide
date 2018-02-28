@@ -193,7 +193,7 @@ class Inputs extends Component{
 					<section>
 						<h2>Other elements</h2>
 						<section>
-							<form method="get" role="form address-input">
+							<form method="get" role="form address-input" className='address-finder'>
 								{<AddressPicker
 									header="Address input"
 									description="A user can use this component to select an address. The postcode search will search inside Stockport only and if the addres isn't inside Stockport the user can click manual search and enter each field separately."
