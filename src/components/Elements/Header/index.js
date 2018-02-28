@@ -10,7 +10,7 @@ export class Header extends Component {
 		return (
 			<header>
 				<div className="center-wrapper">
-					<div id ="header-logo">
+					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
 					<div id="header-my-account">

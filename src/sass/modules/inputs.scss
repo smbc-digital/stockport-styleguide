@@ -84,7 +84,7 @@ form {
 
     a {
         margin-bottom: 20px;
-        display: block;
+        display: inline-block;
     }
 
     input,
@@ -117,6 +117,10 @@ form {
             @include outline;
             border-color: transparent;
             border-radius: 0;
+        }
+
+        @media #{$mobile} {
+            max-width: 100%;
         }
     }
 
