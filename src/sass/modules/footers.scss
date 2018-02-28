@@ -15,8 +15,7 @@ body > footer,
         @include header-footer-logo;
 
         @media #{$mobile} {
-            margin-left: 25px;
-            display: block;
+            padding-left: 25px;
         }
     }
 
