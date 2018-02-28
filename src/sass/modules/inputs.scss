@@ -37,9 +37,8 @@ form {
         }
     }
 
-    label {
-        @extend h3;
-        margin-bottom: 10px;
+    h3 {
+        margin-bottom: 16px;
         display: block;
 
         &.optional {
@@ -47,33 +46,18 @@ form {
         }
     }
 
-    h1 {
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        margin: 0 0 14px;
-    }
-
-    h3 {
-        margin-bottom: 16px;
-
-        &.optional {
-            display: inline-block;
-
-            @media #{$mobile} {
-                display: block;
-            }
-        }
+    label {
+        @extend h3;
     }
 
     p {
-        margin: 0 0 12px;
+        margin: 0 0 10px;
 
         &.optional {
             padding-left: 10px;
             font-size: $fontSizeSmall;
             display: inline-block;
+            margin-bottom: 0;
 
             @media #{$mobile} {
                 display: block;
