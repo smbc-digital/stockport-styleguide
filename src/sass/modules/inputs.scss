@@ -242,6 +242,11 @@ form {
         .SingleDatePicker {
             display: block;
             width: 140px;
+            background-color: transparent;
+
+            .DateInput {
+                background-color: transparent;
+            }
 
             .DayPickerNavigation_button__default {
                 &:active,
