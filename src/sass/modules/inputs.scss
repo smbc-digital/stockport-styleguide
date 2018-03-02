@@ -246,11 +246,14 @@ form {
         // sass-lint:disable class-name-format
         .SingleDatePicker {
             display: block;
-            width: 140px;
-            background-color: transparent;
+
+            .SingleDatePickerInput {
+                background-color: transparent;
+            }
 
             .DateInput {
                 background-color: transparent;
+                width: 140px;
             }
 
             .DayPickerNavigation_button__default {
