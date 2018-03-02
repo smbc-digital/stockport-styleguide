@@ -168,6 +168,7 @@ class Inputs extends Component{
 									heading='Memorable dates'
 									description="For example, 23 7 1968"
 								/>
+								<hr/>
 							</form>
 						</section>
 						<section>
