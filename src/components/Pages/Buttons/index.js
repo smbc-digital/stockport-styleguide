@@ -9,7 +9,7 @@ class Buttons extends Component {
 	render() {
 		return (
 			<main>
-				<article className="with-aside button-display">
+				<article className="with-aside">
 					<h1>Buttons</h1>
 					<p>Buttons highlight key calls to action across the website; ranging from downloading a document to logging into My Account.</p>
 					<p>If you want to link different pages together, text links should be used instead.</p>

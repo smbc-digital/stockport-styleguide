@@ -18,8 +18,9 @@ class Promotions extends Component{
 					<div className='promotion-container'>
 						<h2>Manage your Council Tax in one place</h2>
 						<p>You can continue to use My Account to view your previous and outstanding payments as well as your final bills.</p>
-						<a href="#" className='button button-secondary'>Go to MyAccount</a>
+						<a href="#" className='button-secondary'>Go to MyAccount</a>
 					</div>
+					<button className="button-primary" href="#">I'm a primary button</button>
 				</article>
 				<Aside/>
 			</main>

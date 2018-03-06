@@ -1,7 +1,7 @@
 .promotion-container {
 	background-color: $white;
 	padding: 20px 10px 0 10px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	border: 1px solid $grey-light;
 	max-width: 100%;
 	@include border-radius(3px);
@@ -10,5 +10,9 @@
 	@media #{$desktop} {
 		max-width: 60%;
 		padding: 20px 20px 0 20px;
+	}
+
+	.button-secondary {
+		margin-bottom: 20px;
 	}
 }
