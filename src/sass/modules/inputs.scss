@@ -161,7 +161,7 @@ form {
     .input-error-content {
         background: $red;
         color: $white;
-        width: 530px;
+        max-width: 530px;
         padding: 10px;
         margin-bottom: 0;
         position: relative;
@@ -169,6 +169,7 @@ form {
 
         @media #{$mobile} {
             width: auto;
+            max-width: 100%;
         }
 
         &:before {
