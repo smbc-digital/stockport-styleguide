@@ -1,0 +1,14 @@
+.promotion-container {
+	background-color: $white;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	border: 1px solid $grey-light;
+	max-width: 100%;
+	@include border-radius(3px);
+	@include box-shadow(0 14px 28px $grey-lightest);
+
+	@media #{$desktop} {
+		max-width: 60%;
+		padding: 20px;
+	}
+}

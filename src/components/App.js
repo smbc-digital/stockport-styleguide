@@ -12,6 +12,7 @@ import Profiles from './Pages/Profiles'
 import Icons from './Pages/Icons'
 import Header from './Elements/Header'
 import Footer from './Elements/Footer'
+import Promotions from './Pages/Promotions'
 
 class App extends Component{
 
@@ -30,6 +31,7 @@ class App extends Component{
 					<Route path="/tables" component={Tables}/>
 					<Route path="/profiles" component={Profiles}/>
 					<Route path="/icons" component={Icons}/>
+					<Route path="/promotions" component={Promotions}/>
 				</Switch>
 				<Footer/>
 			</React.Fragment>
