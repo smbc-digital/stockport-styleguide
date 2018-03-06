@@ -167,7 +167,7 @@ form {
         position: relative;
         top: -20px;
 
-        @media #{$mobile}, #{$tablet} {
+        @media #{$mobile} {
             width: auto;
         }
 
