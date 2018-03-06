@@ -56,6 +56,8 @@ button {
 }
 
 a.button {
+    margin-bottom: 20px;
+    
     @media #{$mobile} {
         padding: 10px 0;
     }
