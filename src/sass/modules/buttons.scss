@@ -12,9 +12,11 @@ button {
 .button {
     border: 1px solid $dark-border;
     color: $white;
-    display: inline-block;
+    display: block;
     font-family: 'Source Sans Pro';
     font-size: 1.25em;
+    line-height: normal;
+    margin: 0 20px 30px 0;
     font-weight: $fontWeightBold;
     text-align: center;
     text-decoration: none;
@@ -51,6 +53,14 @@ button {
         background-color: transparentize($teal-darker, 0.65);  
         @include transition-box-shadow(0 0 0 0 rgba(0,0,0,0.3));
         cursor: default;
+    }
+}
+
+a.button {
+    display: inline-block;
+    
+    @media #{$mobile} {
+        padding: 10px 0;
     }
 }
 
@@ -132,7 +142,7 @@ button {
 }
 
 .button-back {
-    display: inline-block;
+    display: block;
     cursor: pointer;
     margin-bottom: 20px;
 }

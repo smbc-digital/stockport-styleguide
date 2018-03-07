@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
 
-class Buttons extends Component{
-	constructor(props){
+class Buttons extends Component {
+	constructor(props) {
 		super(props)
 	}
 
-	render(){
+	render() {
 		return (
 			<main>
-				<article className="with-aside button-display">
+				<article className="with-aside">
 					<h1>Buttons</h1>
 					<p>Buttons highlight key calls to action across the website; ranging from downloading a document to logging into My Account.</p>
 					<p>If you want to link different pages together, text links should be used instead.</p>
@@ -21,10 +21,10 @@ class Buttons extends Component{
 					<button className="button-primary button-loading is-loading" href="#" >I'm a button at loading state</button>
 					<a className='anchor-with-icon' href='#'><i className="fa fa-plus-square fa-2x"></i>I'm an anchor with an icon</a>
 				</article>
-				<Aside/>
+				<Aside />
 			</main>
-		) 
-	} 
+		)
+	}
 }
 
 export default Buttons

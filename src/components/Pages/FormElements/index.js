@@ -168,6 +168,7 @@ class Inputs extends Component{
 									heading='Memorable dates'
 									description="For example, 23 7 1968"
 								/>
+								<hr/>
 							</form>
 						</section>
 						<section>
@@ -194,11 +195,13 @@ class Inputs extends Component{
 						<h2>Other elements</h2>
 						<section>
 							<form method="get" role="form address-input" className='address-finder'>
-								{<AddressPicker
-									header="Address input"
-									description="A user can use this component to select an address. The postcode search will search inside Stockport only and if the addres isn't inside Stockport the user can click manual search and enter each field separately."
-									handleChange={this.onChange.bind(this)}
-								/>}
+								<AddressPicker
+									enableH2={true}
+									automaticLabel="Enter the company&#39;s postcode"
+									automaticDescription="If it&#39;s not a Stockport postcode, please enter the address manually below."
+									manualLabel='Enter the company&#39;s address'
+									onChange={() => {}}
+								/>
 							</form>
 						</section>
 						<section>

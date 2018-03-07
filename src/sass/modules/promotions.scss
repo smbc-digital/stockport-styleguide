@@ -1,0 +1,23 @@
+.promotion-container {
+    @extend .grid-66;
+    @extend .tablet-grid-66;
+    @extend .mobile-grid-100;
+    @extend .suffix-33;
+    @extend .tablet-suffix-33;
+
+    background-color: $white;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 30px;
+    border: 1px solid $grey-light;
+    max-width: 100%;
+    @include border-radius(3px);
+    @include box-shadow(0 14px 28px $grey-lightest);
+
+    @media #{$desktop} {
+        padding: 20px 20px 0 20px;
+    }
+
+    .button-secondary {
+        margin-bottom: 20px;
+    }
+}

@@ -2,11 +2,16 @@ form {
     margin: 0;
     width: 100%;
 
+    .button {
+        margin-bottom: 20px;
+    }
+
     fieldset {
         border: none;
         padding: 0;
         width: 100%;
         position: relative;
+        margin: 0;
 
         legend {
             padding: 0;
@@ -48,6 +53,11 @@ form {
 
     label {
         @extend h3;
+        display: inline-block;
+    }
+
+    hr {
+        margin-bottom: 30px;
     }
 
     p {
@@ -129,12 +139,15 @@ form {
         padding: 15px 10px;
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none;
         background-image: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png');
         background-repeat: no-repeat;
-        background-position: right 30px center;
+        background-position: right 20px center;
         background-color: #fff;
         margin-bottom: 20px;
+
+        &::-ms-expand {
+            display: none;
+        }
     }
 
     .input-addon {
@@ -156,14 +169,15 @@ form {
     .input-error-content {
         background: $red;
         color: $white;
-        width: 530px;
+        max-width: 530px;
         padding: 10px;
         margin-bottom: 0;
         position: relative;
         top: -20px;
 
-        @media #{$mobile}, #{$tablet} {
+        @media #{$mobile} {
             width: auto;
+            max-width: 100%;
         }
 
         &:before {
@@ -199,6 +213,7 @@ form {
 
             label {
                 font-size: 1.25em;
+                display: block;
             }
 
             &:last-of-type input {
@@ -219,7 +234,7 @@ form {
         }  
 
         .input-error-content {
-            top: -16px;
+            top: -21px;
 
             &:before {
                 content: '';
@@ -241,7 +256,15 @@ form {
         // sass-lint:disable class-name-format
         .SingleDatePicker {
             display: block;
-            width: 140px;
+
+            .SingleDatePickerInput {
+                background-color: transparent;
+            }
+
+            .DateInput {
+                background-color: transparent;
+                width: 140px;
+            }
 
             .DayPickerNavigation_button__default {
                 &:active,

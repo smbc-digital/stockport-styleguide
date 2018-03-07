@@ -37,6 +37,10 @@ class Aside extends Component{
 			{
 				name: 'Icons',
 				route: '/icons'
+			},
+			{
+				name: 'Promotions',
+				route: '/promotions'
 			}
 		]
 	}

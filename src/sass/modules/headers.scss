@@ -164,6 +164,23 @@ body > header,
     padding: 20px;
 }
 
+.header-container { 
+    background-color: $primary-light;
+    margin: 0 0 20px 0;
+    padding: 20px 20px 0;
+    text-align: center;
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        padding-bottom: 26px;
+        margin-bottom: 0;
+    }
+}
+
 .title {
     max-width: 1200px;
     margin: 0 auto;

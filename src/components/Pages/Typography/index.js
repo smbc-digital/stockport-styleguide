@@ -51,6 +51,10 @@ class Typography extends Component{
 							<a href="#">Hey, i'm a link to some amazing content</a>
 						</section>
 					</section>
+					<section className='header-container'>
+						<h1>Hey, i'm an h1 inside a box!</h1>
+						<p className='h2'>Hey, i'm a p styled like h2 inside a box!</p>
+					</section>
 				</article>
 				<Aside/>
 			</main>

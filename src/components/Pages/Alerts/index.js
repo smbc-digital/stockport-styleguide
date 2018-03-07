@@ -4,12 +4,12 @@ import AlertContainer from '../../Elements/Alert'
 import AlertFullWidthContainer from '../../Elements/AlertFullWidth'
 import AlertInlineContainer from '../../Elements/AlertInline'
 
-class Alerts extends Component{
-	constructor(props){
+class Alerts extends Component {
+	constructor(props) {
 		super(props)
 	}
 
-	render(){
+	render() {
 		return (
 			<main>
 				<article className="with-aside">
@@ -97,7 +97,7 @@ class Alerts extends Component{
 						</section>
 					</section>
 				</article>
-				<Aside/>
+				<Aside />
 			</main>
 		)
 	}
