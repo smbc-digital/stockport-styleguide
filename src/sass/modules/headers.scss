@@ -167,12 +167,17 @@ body > header,
 .header-container { 
     background-color: $primary-light;
     margin: 0 0 20px 0;
-    padding: 20px 20px 1px;
+    padding: 20px 20px 0;
     text-align: center;
 
-    h1,
+    h1 {
+        color: $white;
+    }
+
     p {
         color: $white;
+        padding-bottom: 26px;
+        margin-bottom: 0;
     }
 }
 
