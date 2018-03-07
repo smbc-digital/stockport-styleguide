@@ -53,6 +53,7 @@ form {
 
     label {
         @extend h3;
+        display: inline-block;
     }
 
     hr {
@@ -212,6 +213,7 @@ form {
 
             label {
                 font-size: 1.25em;
+                display: block;
             }
 
             &:last-of-type input {
