@@ -12,14 +12,18 @@ form {
         width: 100%;
         position: relative;
         margin: 0;
-        @media screen and (-webkit-min-device-pixel-ratio: 0) {
-            ::i-block-chrome {
-                padding-top: 20px;
-            }             
-        }
 
         legend {
             padding: 0;
+        }
+
+        @media not all and (min-resolution: .001dpcm) { 
+            @supports (-webkit-appearance: none) {
+                legend {
+                    -webkit-margin-top-collapse: separate;
+                    margin-bottom: 20px;
+                }
+            }
         }
 
         .input-radio-container {
@@ -314,4 +318,10 @@ form {
             }
         }
     }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    fieldset {
+        padding-top: 20px;
+    }             
 }
