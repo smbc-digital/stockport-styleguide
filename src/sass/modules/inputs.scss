@@ -17,7 +17,9 @@ form {
             padding: 0;
         }
 
-        legend {
+        _::-webkit-full-page-media, 
+        _:future, 
+        :root legend {
             -webkit-margin-top-collapse: separate;
             margin-bottom: 20px;
         }
