@@ -123,6 +123,7 @@
     label {
         @include user-select(none);
         cursor: pointer;
+        display: inline-block;
         font-family: $font-family;
         font-size: $fontSizeDefault;
         font-weight: $fontWeightRegular;
