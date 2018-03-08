@@ -17,6 +17,11 @@ form {
             padding: 0;
         }
 
+        ::i-block-chrome legend {
+            -webkit-margin-top-collapse: separate;
+            margin-bottom: 20px;
+        }
+
         .input-radio-container {
             @include radio-checkbox-input("radio", 50%);
 
