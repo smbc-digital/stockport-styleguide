@@ -40,6 +40,11 @@ form {
                 font: normal normal normal 26px/1 FontAwesome;
             }
         }
+
+        fieldset > label:first-of-type {
+            -webkit-margin-top-collapse: separate;
+            margin-top: 3px;
+        }
     }
 
     h3 {
