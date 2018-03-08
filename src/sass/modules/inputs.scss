@@ -17,11 +17,13 @@ form {
             padding: 0;
         }
 
-        _::-webkit-full-page-media, 
-        _:future, 
-        :root legend {
-            -webkit-margin-top-collapse: separate;
-            margin-bottom: 20px;
+        @media not all and (min-resolution: .001dpcm) { 
+            @supports (-webkit-appearance: none) {
+                legend {
+                    -webkit-margin-top-collapse: separate;
+                    margin-bottom: 20px;
+                }
+            }
         }
 
         .input-radio-container {
