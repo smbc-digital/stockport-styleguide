@@ -218,7 +218,7 @@ form {
                 line-height: 1.125em;
                 text-align: center;
 
-                @media #{$mobile}{
+                @media #{$mobile} {
                     text-align: center;
                     display: inline-block;
                 }
@@ -272,7 +272,7 @@ form {
 
             .SingleDatePickerInput {
                 background-color: transparent;
-                @media #{$mobile}{
+                @media #{$mobile} {
                     display: block;
                 }
             }
@@ -280,10 +280,9 @@ form {
             .DateInput {
                 background-color: transparent;
                 width: 140px;
-                @media #{$mobile}{
+                @media #{$mobile} {
                     width: 100%;
                  }
-
             }
 
             .DayPickerNavigation_button__default {
@@ -300,7 +299,7 @@ form {
                 input {
                     @extend input;
                     text-align: center;
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         text-align: left;
                     }
 
