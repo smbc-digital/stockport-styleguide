@@ -40,11 +40,6 @@ form {
                 font: normal normal normal 26px/1 FontAwesome;
             }
         }
-
-        fieldset > label:first-of-type {
-            -webkit-margin-top-collapse: separate;
-            margin-top: 3px;
-        }
     }
 
     h3 {
@@ -75,7 +70,7 @@ form {
 
             @media #{$mobile} {
                 display: block;
-                padding-bottom: 10px;
+                padding: 0;
             }
         }
     }
@@ -297,5 +292,12 @@ form {
                 }
             }
         }
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    ::i-block-chrome, 
+    fieldset {
+        padding-top: 20px;
     }
 }
