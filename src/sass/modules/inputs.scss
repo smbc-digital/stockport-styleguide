@@ -12,7 +12,12 @@ form {
         width: 100%;
         position: relative;
         margin: 0;
-        background-color: pink;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            ::i-block-chrome {
+                padding-top: 20px;
+            }             
+        }
 
         legend {
             padding: 0;
@@ -293,12 +298,5 @@ form {
                 }
             }
         }
-    }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    ::i-block-chrome, 
-    fieldset {
-        padding-top: 20px;
     }
 }
