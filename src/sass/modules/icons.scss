@@ -259,31 +259,36 @@
 }
 
 // TODO: Rename to something better
-.header-exclamation-icon {
-    padding: 3px 2px 0;
-    border: 2px solid $primary;
-    color: $primary;
-    text-align: center;
-    border-radius: 100%;
-    font-size: 3em;
-    width: 1em;
-    height: 1em;
-}
 
-.header-icon-container {
+
+.header-icon-aligned {
     display: table;
     margin-bottom: 21px;
-}
 
-.header-icon-align {
-    display: table-cell;
-    vertical-align: middle;
-
-    &div {
+    > div {
+        display: table-cell;
+        vertical-align: middle;
         padding-right: 20px;
 
         @media #{$mobile} {
             padding-right: 10px;
         }
+
+        i {
+            padding: 3px 2px 0;
+            border: 2px solid $primary;
+            color: $primary;
+            text-align: center;
+            border-radius: 100%;
+            font-size: 3em;
+            width: 1em;
+            height: 1em;
+        }
+    }
+
+    > h1 {
+        display: table-cell;
+        vertical-align: middle;
     }
 }
+
