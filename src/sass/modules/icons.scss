@@ -258,14 +258,33 @@
     content: "\e90b";
 }
 
-// TODO: Rename to more appropriate class as could cause confusion with alerts
-.alert {
+// TODO: Rename to something better
+.header-exclamation-icon {
     padding: 3px 2px 0;
     border: 2px solid $primary;
     color: $primary;
     text-align: center;
     border-radius: 100%;
-    font-size: 2em;
+    font-size: 3em;
     width: 1em;
-    height: 1em;
+    height: 1em;    
+    margin: 20px 20px 0 0;
+}
+
+.header-icon-container {
+    display: table;
+    margin-bottom: 21px;
+}
+
+.header-icon-align {
+    display: table-cell;
+    vertical-align: middle;
+
+    &div {
+        padding-right: 20px;
+
+        @media #{$mobile} {
+            padding-right: 10px;
+        }
+    }
 }
