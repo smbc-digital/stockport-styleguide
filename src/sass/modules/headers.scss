@@ -135,6 +135,11 @@ body > header,
         }
     }
 
+    .breadcrumb {
+        background-color: $primary-darker;
+        border-bottom: $teal solid 5px;
+    }
+
     .banner-header {
         @extend .grid-100, .mobile-grid-100, .tablet-grid-100;
         background-color: $primary-darkest;
