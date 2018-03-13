@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer} from 'smbc-react-components'
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 
 class Inputs extends Component{
 	constructor(props){
+		console.log(props);
 		super(props)
 		this.radioInputs = [
 			{
@@ -222,6 +223,19 @@ class Inputs extends Component{
 						<section>
 							<h3>Currency Input</h3>
 							<p>The currency input allows users to focus on the amount they are entering - without the need to input a pound sign. The input is narrow to reflect the information due to be input.</p>
+						</section>
+						<section>
+							<h3>My Text Area Input</h3>
+							<p> TextArea input allows users to enter information. There are different types of text inputs, which provide slightly different experiences for users. This input provides a bigger character limit. </p>
+							<form method="get" role="form my-account-validation">
+								<TextAreaInputContainer
+									maxLength={10} 
+									onChange={this.onChange.bind(this)} 
+									id='testId'
+									label='TextArea input label' 
+									value='This a textArea input label'
+								/>
+							</form>
 						</section>
 					</section>
 				</article>
