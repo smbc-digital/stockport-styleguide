@@ -6,7 +6,6 @@ import { SingleDatePicker } from 'react-dates'
 
 class Inputs extends Component{
 	constructor(props){
-		console.log(props);
 		super(props)
 		this.radioInputs = [
 			{
