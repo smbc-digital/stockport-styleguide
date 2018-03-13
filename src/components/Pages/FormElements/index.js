@@ -224,7 +224,7 @@ class Inputs extends Component {
 							<p>The currency input allows users to focus on the amount they are entering - without the need to input a pound sign. The input is narrow to reflect the information due to be input.</p>
 						</section>
 						<section>
-							<h3>My Text Area Input</h3>
+							<h3>Text Area Input</h3>
 							<p> TextArea input allows users to enter information. There are different types of text inputs, which provide slightly different experiences for users. This input provides a bigger character limit. </p>
 							<form method="get" role="form my-account-validation">
 								<TextAreaInputContainer

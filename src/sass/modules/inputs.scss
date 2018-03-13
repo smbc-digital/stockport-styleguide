@@ -301,6 +301,10 @@ form {
 
                 }
             }
+            
+            .smallerText{
+                font-size: $fontSizeSmall;
+            }
 
             .CalendarDay__selected, {
                 background-color: $primary;
