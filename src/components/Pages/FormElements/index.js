@@ -4,8 +4,8 @@ import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContai
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 
-class Inputs extends Component{
-	constructor(props){
+class Inputs extends Component {
+	constructor(props) {
 		super(props)
 		this.radioInputs = [
 			{
@@ -76,10 +76,10 @@ class Inputs extends Component{
 
 	onChangeDate(date) {
 		let validationMessage = date !== null ? '' : 'Date is invalid'
-		this.setState({ date: date, isValid: date !== null,dateValidationMessage: validationMessage })
+		this.setState({ date: date, isValid: date !== null, dateValidationMessage: validationMessage })
 	}
 
-	render(){
+	render() {
 		return (
 			<main>
 				<article className="with-aside">
@@ -114,13 +114,13 @@ class Inputs extends Component{
 						<section>
 							<form method="get" role="form select-input">
 								<SelectInputContainer
-									description="Drop downs allow a user to select one options from a list; these are foun most commonlt in address finders. Before using a drop down we should think about whether radio buttons are more suitable." 
+									description="Drop downs allow a user to select one options from a list; these are foun most commonlt in address finders. Before using a drop down we should think about whether radio buttons are more suitable."
 									id="style-guide-select"
 									name="style-guide-select"
 									placeholder="Select an address..."
-									onChange={this.onChange.bind(this)} 
+									onChange={this.onChange.bind(this)}
 									label="Drop downs"
-									options={[{value: '1', name: 'first option'}, {value: '2', name: 'second option'}]}
+									options={[{ value: '1', name: 'first option' }, { value: '2', name: 'second option' }]}
 								/>
 							</form>
 						</section>
@@ -135,7 +135,7 @@ class Inputs extends Component{
 									type="text"
 									optional={true}
 									description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users."
-									onChangeHandler={() => {}}
+									onChangeHandler={() => { }}
 								/>
 							</form>
 						</section>
@@ -147,7 +147,7 @@ class Inputs extends Component{
 									type="text"
 									optional={false}
 									description="Validation allows us to show users where something hasn't gone quite right and highlights the exact point where they need to make a change - so they're not left guessing."
-									onChangeHandler={() => {}}
+									onChangeHandler={() => { }}
 								/>
 							</form>
 						</section>
@@ -164,17 +164,17 @@ class Inputs extends Component{
 						<section>
 							<form method="get" role="form memorable-date-input">
 								<MemorableDateInputContainer
-									onChangeHandler={() => {}}
+									onChangeHandler={() => { }}
 									heading='Memorable dates'
 									description="For example, 23 7 1968"
 								/>
-								<hr/>
+								<hr />
 							</form>
 						</section>
 						<section>
 							<form method="get" role="form date-input">
 								<label>Single date input</label>
-								<div className={this.state.dateValidationMessage.length> 0 ? 'input-date-picker invalid' : 'input-date-picker'}>
+								<div className={this.state.dateValidationMessage.length > 0 ? 'input-date-picker invalid' : 'input-date-picker'}>
 									<SingleDatePicker
 										date={this.state.date}
 										onDateChange={this.onChangeDate.bind(this)}
@@ -200,7 +200,7 @@ class Inputs extends Component{
 									automaticLabel="Enter the company&#39;s postcode"
 									automaticDescription="If it&#39;s not a Stockport postcode, please enter the address manually below."
 									manualLabel='Enter the company&#39;s address'
-									onChange={() => {}}
+									onChange={() => { }}
 								/>
 							</form>
 						</section>
@@ -214,7 +214,7 @@ class Inputs extends Component{
 									type="text"
 									optional={false}
 									description="Validation allows us to show users where something hasn't gone quite right and highlights the exact point where they need to make a change - so they're not left guessing."
-									onChangeHandler={() => {}}
+									onChangeHandler={() => { }}
 									useMyAccountValidation={false}
 								/>
 							</form>
@@ -238,10 +238,10 @@ class Inputs extends Component{
 						</section>
 					</section>
 				</article>
-				<Aside/>
+				<Aside />
 			</main>
-		) 
-	} 
+		)
+	}
 }
 
 export default Inputs
