@@ -1,8 +1,4 @@
 button {
-    &:active,
-    &:focus {
-        @include outline;
-    }
 
     &::-moz-focus-inner {
         border: none;
@@ -41,11 +37,7 @@ button {
     &:active,
     &:focus {
         @include border-radius(0);
-    }
-
-    @media #{$mobile} {
-        width: 100%;
-        margin-right: 0;
+        @include outline;
     }
 
     &:disabled,
@@ -54,6 +46,19 @@ button {
         @include transition-box-shadow(0 0 0 0 rgba(0,0,0,0.3));
         cursor: default;
     }
+
+    &::-moz-focus-inner {
+        border: none;
+    }
+
+    @media #{$mobile} {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+form .button {
+    margin-bottom: 20px;
 }
 
 a.button {
@@ -77,6 +82,13 @@ a.button {
 .button-secondary {
     @extend .button;
     @include button-colors($grey-dark, $white);
+
+    &:disabled,
+    &:disabled:hover {
+        background-color: $grey-lighter;  
+        @include transition-box-shadow(0 0 0 0 rgba(0,0,0,0.3));
+        cursor: default;
+    }
 }
 
 .button-tertiary {

@@ -16,7 +16,7 @@ main {
         background-color: $white;
     }
 
-    #root {
+    #root { // sass-lint:disable-line no-ids (#root needed for React)
         background-color: $white;
         padding: 30px 20px 0;
 
