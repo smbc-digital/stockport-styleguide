@@ -302,10 +302,6 @@ form {
                 }
             }
 
-            .smallerText {
-                font-size: $fontSizeSmall;
-            }
-            
             .CalendarDay__selected, {
                 background-color: $primary;
                 border-bottom-color: $primary-dark;
@@ -317,6 +313,10 @@ form {
             }
         }
     }
+}
+
+.smallerText {
+    font-size: $fontSizeSmall;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
