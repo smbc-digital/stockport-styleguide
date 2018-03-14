@@ -119,6 +119,10 @@ form {
 
     textarea {
         height: 250px;
+
+        .char-limit {
+            margin-bottom: 10px;
+        }
     }
 
     input[type="number"] {
