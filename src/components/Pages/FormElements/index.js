@@ -73,9 +73,6 @@ class Inputs extends Component {
 	onChange(event) {
 		return event
 	}
-	onChangeText (){
-
-	}
 
 	onChangeDate(date) {
 		let validationMessage = date !== null ? '' : 'Date is invalid'
