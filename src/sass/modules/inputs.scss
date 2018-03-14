@@ -276,6 +276,11 @@ form {
             .DateInput {
                 background-color: transparent;
                 width: 140px;
+
+                .DateInput_Input {
+                    margin-bottom: 20px;
+                }
+
                 @media #{$mobile} {
                     width: 100%;
                  }
