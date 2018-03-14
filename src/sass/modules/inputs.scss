@@ -120,7 +120,7 @@ form {
     textarea {
         height: 250px;
 
-        .char-limit {
+        &.char-limit {
             margin-bottom: 10px;
         }
     }
