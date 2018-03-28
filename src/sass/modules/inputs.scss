@@ -245,6 +245,7 @@ form {
         .input-error-content {
             top: -21px;
             width: 110px;
+            display: inline-block;
         }
 
         // sass-lint:disable class-name-format
@@ -257,7 +258,7 @@ form {
 
             .DateInput {
                 background-color: transparent;
-                width: 140px;
+                width: 150px;
             }
 
             .DayPickerNavigation_button__default {
