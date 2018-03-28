@@ -42,7 +42,7 @@ rules:
   nesting-depth:
     - 1
     -
-      max-depth: 3
+      max-depth: 4
   no-duplicate-properties: 1
   no-empty-rulesets: 2
   no-debug: 1

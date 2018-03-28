@@ -1,9 +1,9 @@
 body > header,
-#root > header {
+#root > header { // sass-lint:disable-line no-ids (#root needed for React)
     background-color: $primary;
     width: 100%;
 
-    #header-logo {
+    #header-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
         @extend .grid-50;
         @extend .tablet-grid-50;
         @extend .mobile-grid-50;
@@ -15,7 +15,7 @@ body > header,
         }
     }
 
-    #header-my-account {
+    #header-my-account { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
         @extend .grid-25;
         @extend .tablet-grid-25;
         @extend .mobile-grid-50;
@@ -45,7 +45,7 @@ body > header,
         }
     }
 
-    #cludo-search-form,
+    #cludo-search-form, // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
     form {
         @extend .grid-25;
         @extend .tablet-grid-25;
@@ -135,6 +135,11 @@ body > header,
         }
     }
 
+    .breadcrumb {
+        background-color: $primary-darker;
+        border-bottom: $teal solid 5px;
+    }
+
     .banner-header {
         @extend .grid-100, .mobile-grid-100, .tablet-grid-100;
         background-color: $primary-darkest;
@@ -167,7 +172,7 @@ body > header,
 .header-container { 
     background-color: $primary-light;
     margin: 0 0 20px 0;
-    padding: 20px;
+    padding: 20px 20px 0;
     text-align: center;
 
     h1 {
@@ -176,6 +181,8 @@ body > header,
 
     p {
         color: $white;
+        padding-bottom: 26px;
+        margin-bottom: 0;
     }
 }
 

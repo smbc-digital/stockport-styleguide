@@ -13,6 +13,15 @@ form {
             padding: 0;
         }
 
+        @media not all and (min-resolution: .001dpcm) { 
+            @supports (-webkit-appearance: none) {
+                legend {
+                    -webkit-margin-top-collapse: separate;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
         .input-radio-container {
             @include radio-checkbox-input("radio", 50%);
 
@@ -52,7 +61,7 @@ form {
     }
 
     hr {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     p {
@@ -110,6 +119,10 @@ form {
 
     textarea {
         height: 250px;
+
+        &.char-limit {
+            margin-bottom: 10px;
+        }
     }
 
     input[type="number"] {
@@ -204,10 +217,16 @@ form {
                 margin-right: 20px;
                 line-height: 1.125em;
                 text-align: center;
+
+                @media #{$mobile} {
+                    text-align: center;
+                    display: inline-block;
+                }
             }
 
             label {
                 font-size: 1.25em;
+                display: block;
             }
 
             &:last-of-type input {
@@ -254,11 +273,22 @@ form {
 
             .SingleDatePickerInput {
                 background-color: transparent;
+                @media #{$mobile} {
+                    display: block;
+                }
             }
 
             .DateInput {
                 background-color: transparent;
                 width: 150px;
+
+                .DateInput_input {
+                    margin-bottom: 20px;
+                }
+
+                @media #{$mobile} {
+                    width: 100%;
+                 }
             }
 
             .DayPickerNavigation_button__default {
@@ -275,6 +305,10 @@ form {
                 input {
                     @extend input;
                     text-align: center;
+                    @media #{$mobile} {
+                        text-align: left;
+                    }
+
                 }
             }
 
@@ -289,4 +323,14 @@ form {
             }
         }
     }
+}
+
+.smallerText {
+    font-size: $fontSizeSmall;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    fieldset {
+        padding-top: 20px;
+    }             
 }

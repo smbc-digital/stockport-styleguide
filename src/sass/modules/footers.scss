@@ -1,10 +1,10 @@
 body > footer,
-#root > footer {
+#root > footer { // sass-lint:disable-line no-ids (#root needed for React)
     border-top: 10px solid $teal;
     background-color: $primary-dark;
     padding-top: 20px;
 
-    #footer-logo {
+    #footer-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
         @extend .grid-33;
         @extend .tablet-grid-35;
         @extend .mobile-grid-100;

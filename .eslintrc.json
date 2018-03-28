@@ -27,6 +27,10 @@
             "never"
         ],
         "react/prop-types": 0,
-        "react/no-unescaped-entities": 0
+        "react/no-unescaped-entities": 0,
+        "space-infix-ops": [
+            "error",
+            {"int32Hint": false}
+        ]
     }
 }
