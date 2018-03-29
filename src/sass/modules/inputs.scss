@@ -138,7 +138,7 @@ form {
     select {
         @include border-radius(3px);
         font-size: $fontSizeDefault;
-        border: 1px solid #bcbcbc;
+        border: 1px solid #999;
         width: 100%;
         max-width: 550px;
         font-family: $font-family;
