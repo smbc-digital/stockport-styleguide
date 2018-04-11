@@ -11,6 +11,11 @@ form {
 
         legend {
             padding: 0;
+            width: 66%;
+
+            @media #{$mobile} {
+                width: 100%
+            }
         }
 
         @media not all and (min-resolution: .001dpcm) { 
