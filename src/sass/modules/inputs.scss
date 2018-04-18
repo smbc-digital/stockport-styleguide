@@ -2,6 +2,11 @@ form {
     margin: 0;
     width: 100%;
 
+    .header-on-more-than-one-line {
+        display: block;
+        margin-bottom: 30px;
+    }
+
     fieldset {
         border: none;
         padding: 0;
