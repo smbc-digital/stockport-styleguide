@@ -2,9 +2,10 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const paths = {
-    BUILD: path.resolve(__dirname, 'build'),
+    DIST: path.resolve(__dirname, 'build'),
     SRC: path.resolve(__dirname, 'src'),
     CSS: path.resolve(__dirname, 'css')
 }
@@ -13,10 +14,11 @@ module.exports = {
     entry: {
         main: [
             'babel-polyfill',
-            path.join(paths.SRC, 'index.js'),    
-        ]},
+            path.join(paths.SRC, 'index.js'),
+        ]
+    },
     output: {
-        path: paths.BUILD,
+        path: paths.DIST,
         filename: 'app.bundle.js',
         publicPath: '/'
     },
@@ -25,7 +27,10 @@ module.exports = {
             template: path.join(paths.SRC, 'index.html'),
         }),
         new ExtractTextPlugin('styles.min.css'),
-        new CleanWebpackPlugin(['build'])
+        new CleanWebpackPlugin(['build']),
+        new CopyWebpackPlugin([
+            { from: 'src/web.config', to: paths.DIST }
+        ])
     ],
     module: {
         rules: [
@@ -55,8 +60,7 @@ module.exports = {
                     options: {
                         name: 'stockportwingdings.[ext]'
                     }
-                }
-                ],
+                }],
             }
         ]
     },
