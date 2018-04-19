@@ -9,6 +9,7 @@
     "test:watch": "jest --watchAll",
     "start": "webpack && webpack-dev-server --content-base src --hot --inline",
     "build": "webpack",
+    "build:prod": "webpack --config webpack.config.prod.js",
     "addWebpack": "git add ./build/styles.min.css",
     "lint:sass": "sass-lint -v",
     "lint:js": "eslint src/**/*.js"

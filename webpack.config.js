@@ -1,11 +1,12 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const paths = {
-    DIST: path.resolve(__dirname, 'build'),
+    BUILD: path.resolve(__dirname, 'build'),
     SRC: path.resolve(__dirname, 'src'),
     CSS: path.resolve(__dirname, 'css')
 }
@@ -18,7 +19,7 @@ module.exports = {
         ]
     },
     output: {
-        path: paths.DIST,
+        path: paths.BUILD,
         filename: 'app.bundle.js',
         publicPath: '/'
     },
@@ -27,10 +28,13 @@ module.exports = {
             template: path.join(paths.SRC, 'index.html'),
         }),
         new ExtractTextPlugin('styles.min.css'),
-        new CleanWebpackPlugin(['build']),
+        new CleanWebpackPlugin([paths.BUILD]),
         new CopyWebpackPlugin([
-            { from: 'src/web.config', to: paths.DIST }
-        ])
+            { from: 'src/web.config', to: paths.BUILD }
+        ]),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('development')
+        }),
     ],
     module: {
         rules: [
