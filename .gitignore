@@ -5,4 +5,3 @@
 !/dist/styles.min.css
 /.vscode/*
 !/.vscode/settings.json
-package-lock.json
