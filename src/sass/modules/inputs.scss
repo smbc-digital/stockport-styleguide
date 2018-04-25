@@ -188,7 +188,8 @@ form {
     .input-error-content {
         background: $red;
         color: $white;
-        width: 25%;
+
+        width: 100%;
         max-width: 530px;
         padding: 10px;
         margin-bottom: 0;
@@ -344,21 +345,30 @@ form {
 .sort-code { 
     input {
         width: 15%;
+        @media #{$tablet}, #{$mobile} {
+            width: 100%;
+         }
        }
+       .input-error-content {
+        width: 25%;
 
-    @media #{$tablet}, #{$mobile} {
-        width: 100%;
-     }
+    }
 }
 
 .account-number { 
     input {
         width: 15%;
+
+        @media #{$tablet}, #{$mobile} {
+            width: 100%;
+    }
+    .input-error-content {
+        width: 25%;
+
+    }
     }
 
-    @media #{$tablet}, #{$mobile} {
-        width: 100%;
- } 
+
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
