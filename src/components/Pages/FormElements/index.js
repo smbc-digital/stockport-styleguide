@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer} from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer,SortcodeInput,AccountNumberInput } from 'smbc-react-components'
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 
@@ -233,6 +233,24 @@ class Inputs extends Component {
 									id='testId'
 									label='TextArea input label' 
 									value='This a textArea input label'
+								/>
+							</form>
+						</section>
+						<section>
+							<h3>Sort code Input</h3>
+							<p> Sort code allows users to enter a 6 digit card number.</p>
+							<form method="get" role="form my-account-validation">
+								<SortcodeInput
+									onChange={() => { }}
+								/>
+							</form>
+						</section>
+						<section>
+							<h3>Account number Input</h3>
+							<p> Account number allows users to enter an 8 digit card number.</p>
+							<form method="get" role="form my-account-validation">
+								<AccountNumberInput
+									onChange={() => { }}
 								/>
 							</form>
 						</section>

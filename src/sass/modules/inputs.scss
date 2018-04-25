@@ -103,6 +103,9 @@ form {
         font-size: $fontSizeDefault;
         margin-bottom: 20px;
         box-sizing: border-box;
+        &.sort-code{
+            width: 29%
+        }
 
         &.input-validation-error {
             border: 1px solid $red;
@@ -337,6 +340,13 @@ form {
 
 .smallerText {
     font-size: $fontSizeSmall;
+}
+
+.sort-code{ 
+    width: 25%;
+}
+.account-number{ 
+    width: 25%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
