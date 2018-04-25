@@ -188,6 +188,7 @@ form {
     .input-error-content {
         background: $red;
         color: $white;
+        width: 100%;
         max-width: 530px;
         padding: 10px;
         margin-bottom: 0;
@@ -341,7 +342,9 @@ form {
 }
 
 .sort-code { 
-    width: 22%;
+    input {
+        width: 15%;
+       }
 
     @media #{$tablet}, #{$mobile} {
         width: 100%;
@@ -349,7 +352,9 @@ form {
 }
 
 .account-number { 
-    width: 22%;
+    input {
+        width: 15%;
+    }
 
     @media #{$tablet}, #{$mobile} {
         width: 100%;
