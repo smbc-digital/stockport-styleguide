@@ -358,10 +358,11 @@ form {
         @media #{$mobile} {
             width: auto;
             max-width: 100%;
-            }
+        }
+        
         @media #{$tablet} {
             width: auto;
-            }
+        }
     }
 }
 
@@ -375,18 +376,19 @@ form {
             }
 }
 
-.input-error-content {
-    max-width: 530px;
-    width: 23%;
+    .input-error-content {
+        max-width: 530px;
+        width: 23%;
 
-    @media #{$mobile} {
-        width: auto;
-        max-width: 100%;
+        @media #{$mobile} {
+            width: auto;
+            max-width: 100%;
+        }
+        
+        @media #{$tablet} {
+            width: auto;
+        }
     }
-    @media #{$tablet} {
-        width: auto;
-    }
-}
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
