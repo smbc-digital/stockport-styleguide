@@ -354,7 +354,7 @@ form {
     .input-error-content {
         width: 23%;
 
-        @media #{$tablet}, #{$mobile} {
+        @media #{$mobile} , #{$tablet} {
             width: auto;
             max-width: 100%;
             }
@@ -373,7 +373,7 @@ form {
 
     .input-error-content {
         width: 23%;
-        @media #{$tablet}, #{$mobile} {
+        @media #{$mobile} , #{$tablet}  {
             width: auto;
             max-width: 100%;
         }
