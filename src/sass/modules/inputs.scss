@@ -342,33 +342,34 @@ form {
     font-size: $fontSizeSmall;
 }
 
-.sort-code { 
+.sort-code {
+
     input {
         width: 15%;
+        
         @media #{$tablet}, #{$mobile} {
             width: 100%;
          }
        }
-       .input-error-content {
-        width: 25%;
 
+    .input-error-content {
+        width: 25%;
     }
 }
 
 .account-number { 
+
     input {
         width: 15%;
 
         @media #{$tablet}, #{$mobile} {
             width: 100%;
-    }
-    .input-error-content {
-        width: 25%;
-
-    }
-    }
-
-
+            }
+}
+   
+.input-error-content {
+    width: 25%;
+}
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
