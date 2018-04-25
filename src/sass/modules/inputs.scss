@@ -341,10 +341,18 @@ form {
 
 .sort-code { 
     width: 25%;
+
+    @media #{$tablet}, #{$mobile} {
+        width: 100%;
+     }
 }
 
 .account-number { 
     width: 25%;
+
+    @media #{$tablet}, #{$mobile} {
+        width: 100%;
+ } 
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
