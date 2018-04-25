@@ -346,7 +346,7 @@ form {
 
     input {
         width: 15%;
-        
+
         @media #{$tablet}, #{$mobile} {
             width: 100%;
          }
@@ -366,9 +366,9 @@ form {
             width: 100%;
             }
 }
-   
-.input-error-content {
-    width: 25%;
+
+    .input-error-content {
+        width: 25%;
 }
 }
 
