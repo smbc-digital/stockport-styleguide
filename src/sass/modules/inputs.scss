@@ -345,8 +345,12 @@ form {
 
     input {
         width: 15%;
+        @media #{$tablet} {
+            width: 40%
+            
+        }
 
-        @media #{$tablet}, #{$mobile} {
+        @media #{$mobile} {
             width: 100%;
          }
        }
@@ -361,7 +365,7 @@ form {
         }
         
         @media #{$tablet} {
-            width: auto;
+            width: 38%
         }
     }
 }
@@ -370,8 +374,12 @@ form {
 
     input {
         width: 15%;
+        @media #{$tablet} {
+            width: 40%
+            
+        }
 
-        @media #{$tablet}, #{$mobile} {
+        @media  #{$mobile} {
             width: 100%;
             }
 }
@@ -386,7 +394,7 @@ form {
         }
         
         @media #{$tablet} {
-            width: auto;
+            width: 38%
         }
     }
 }
