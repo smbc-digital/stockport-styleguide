@@ -94,6 +94,10 @@ class Alerts extends Component {
 								<i className="fa fa-info-exclamation"></i>
 								<p>I'm some body text that gives the user a warning message about a question or an answer in a form. This example shows what the alert should look like when it goes onto three lines.</p>
 							</section>
+							<section className="alert-form-warning">
+								<i className="fa fa-info-circle"></i>
+								<p>I'm some body text that warns the user of something in a form.</p>
+							</section>
 						</section>
 					</section>
 				</article>

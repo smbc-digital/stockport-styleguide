@@ -187,7 +187,13 @@
 .alert-form-warning {
     @include alert-form;
 
+    p {
+        padding-left: 12px; 
+        vertical-align: middle;
+    }
+
     i {
         color: $orange;
+        vertical-align: text-bottom;
     }
 }
