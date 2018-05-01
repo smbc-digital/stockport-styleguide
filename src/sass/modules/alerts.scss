@@ -179,16 +179,22 @@
 .alert-form-information {
     @include alert-form;
 
+    display: table;
+    padding: 10px;
+
     i {
+        display: table-cell;
         color: $soft-blue;
         margin-right: 10px;
         vertical-align: middle;
+        padding: 0;
     }
 
     p {
-        text-align: center;
+        display: table-cell;
         margin-bottom: 0;
         vertical-align: middle;
+        padding-left: 12px;
     }
 }
 
