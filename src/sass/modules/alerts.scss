@@ -203,9 +203,6 @@
 .alert-form-information {
     @include alert-form;
 
-    display: table;
-    padding: 10px;
-
     i {
         color: $soft-blue;        
     }
