@@ -84,6 +84,7 @@
     display: block;
     margin-bottom: 20px;
     position: relative;
+    max-width: 66%;
 
     input[type=#{$type}] {
         cursor: pointer;

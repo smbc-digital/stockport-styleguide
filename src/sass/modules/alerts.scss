@@ -164,11 +164,13 @@
 }
 
 @mixin alert-form {
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     border-top: 1px solid $grey-light;
     border-bottom: 1px solid $grey-light;
     display: table;
-    width: 95%;
+    max-width: 66%;
+    width: auto;
+    margin-bottom: 20px;
 
     @media #{$mobile} {
         padding-left: 0;
@@ -183,7 +185,7 @@
         display: table-cell;
         vertical-align: middle;
         font-size: 2.250em;
-        padding: 4px 0;
+        padding-right: 20px;
         width: 4%;
 
         @media #{$tablet}
