@@ -93,6 +93,10 @@ form {
                 padding: 0;
             }
         }
+
+        &.extra-margin-bottom {
+            margin-bottom: 25px;
+        }
     }
 
     input,
@@ -341,7 +345,7 @@ form {
     }
 
     .recaptcha {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 }
 
