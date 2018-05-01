@@ -81,6 +81,7 @@
     width: 100%;
     border-radius: 0;
     position: relative;
+    
 
     > i {
         font-size: 1.875em;
@@ -166,15 +167,38 @@
     padding: 20px;
     border-top: 1px solid $grey-light;
     border-bottom: 1px solid $grey-light;
+    display: table;
+    width: 95%;
 
-    i {
-        font-size: 2em;
+    @media #{$mobile} {
+        padding-left: 0;
+        padding-right: 0;
+
+        i {
+            padding: 0
+        } 
+    }
+
+    > i {        
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 2.250em;
+        padding: 15px 3px;
+        width: 6%;
     }
 
     p {
-        display: inline-block;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+
+        @media #{$mobile} 
+        {
+            padding-left: 10px;
+        }
     }
 }
+
 
 .alert-form-information {
     @include alert-form;
@@ -183,31 +207,14 @@
     padding: 10px;
 
     i {
-        display: table-cell;
-        color: $soft-blue;
-        margin-right: 10px;
-        vertical-align: middle;
-        padding: 0;
-    }
-
-    p {
-        display: table-cell;
-        margin-bottom: 0;
-        vertical-align: middle;
-        padding-left: 12px;
+        color: $soft-blue;        
     }
 }
 
 .alert-form-warning {
     @include alert-form;
 
-    p {
-        padding-left: 12px; 
-        vertical-align: middle;
-    }
-
     i {
         color: $orange;
-        vertical-align: text-bottom;
     }
 }
