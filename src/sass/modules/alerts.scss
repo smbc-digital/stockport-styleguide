@@ -168,13 +168,14 @@
     border-top: 1px solid $grey-light;
     border-bottom: 1px solid $grey-light;
     display: table;
-    max-width: 66%;
+    max-width: 62%;
     width: auto;
     margin-bottom: 20px;
-
+    
     @media #{$mobile} {
         padding-left: 0;
         padding-right: 0;
+        max-width: 100%;
 
         i {
             padding: 0
