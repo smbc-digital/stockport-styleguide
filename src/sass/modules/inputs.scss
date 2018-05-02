@@ -52,6 +52,9 @@ form {
                 border: none;
                 left: 7px;
                 width: 60%;
+                @media #{$mobile} {
+                    width: 100%
+                }
                 margin-top: -14px;
                 font: normal normal normal 26px/1 FontAwesome;
             }
