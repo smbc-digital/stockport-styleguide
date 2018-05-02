@@ -164,13 +164,13 @@
 }
 
 @mixin alert-form {
-    padding: 20px 20px 20px 0;
+    padding: 20px 40px 20px 0;
     border-top: 1px solid $grey-light;
     border-bottom: 1px solid $grey-light;
-    display: table;
     max-width: 62%;
     width: auto;
     margin-bottom: 20px;
+    display: inline-block;
     
     @media #{$mobile} {
         padding-left: 0;
