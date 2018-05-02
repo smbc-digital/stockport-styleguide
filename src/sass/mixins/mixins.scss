@@ -86,6 +86,10 @@
     position: relative;
     max-width: 66%;
 
+    @media #{$mobile} {
+        max-width: 100%;
+    }
+
     input[type=#{$type}] {
         cursor: pointer;
         filter: alpha(opacity=0);
