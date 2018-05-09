@@ -224,3 +224,11 @@ body > header,
         font-size: $fontSizeLarger;
     }
 }
+
+.page-conent {
+    margin-left: 20px;
+
+    p {
+        padding-left: 0
+    }
+}
