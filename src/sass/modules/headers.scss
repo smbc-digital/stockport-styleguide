@@ -179,7 +179,12 @@ body > header,
         color: $white;
 
         @media #{$mobile} {
-            font-size: 31px;  
+            font-size: 32px;  
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 23px;
         }
     }
 
