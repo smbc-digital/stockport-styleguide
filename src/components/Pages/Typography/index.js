@@ -53,8 +53,8 @@ class Typography extends Component{
 					</section>
 					<section className='header-container'>
 						<h1>Submit your supporting documents</h1>
-						<h2>Thanks for uploading your supporting evidence</h2>
-						<h3>Your doucument reference number is: 123456789 </h3>
+						<p className="h2">Thanks for uploading your supporting evidence</p>
+						<p className="h3">Your doucument reference number is: 123456789 </p>
 					</section>
 				</article>
 				<Aside/>
