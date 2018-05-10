@@ -226,8 +226,10 @@ body > header,
 }
 
 .page-conent {
-    margin-left: 20px;
-    margin-right: 20px;
+    @media #{$tablet}, #{$mobile} {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     p {
         padding-left: 0;
