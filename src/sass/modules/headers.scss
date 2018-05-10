@@ -227,12 +227,15 @@ body > header,
 
 .page-conent {
     margin-left: 20px;
+    margin-right: 20px;
 
     p {
-        padding-left: 0
+        padding-left: 0;
+        padding-right: 0;
     }
 
     div {
         padding-left: 0;
+        padding-right: 0;
     }
 }
