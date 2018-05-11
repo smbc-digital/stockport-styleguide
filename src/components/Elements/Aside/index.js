@@ -5,6 +5,7 @@ import NavItem  from '../NavItem'
 class Aside extends Component{
 	constructor(props){
 		super(props)
+		this.routesCount = 0
 		this.routes = [
 			{
 				name: 'Colours',
@@ -43,6 +44,15 @@ class Aside extends Component{
 				route: '/promotions'
 			}
 		]
+		this.state = {
+			showFullMenu: false
+		}
+	}
+
+	onClick() {
+		this.setState({
+			showFullMenu: !this.state.showFullMenu
+		})
 	}
 
 	render(){
@@ -52,10 +62,20 @@ class Aside extends Component{
 				<nav>
 					<ul>
 						{this.routes.map((route, index) => {
-							return(
-								<NavItem to={route.route} key={index} name={route.name}/>
-							)
+							if (index < 6)
+								return(
+									<NavItem to={route.route} key={index} name={route.name}/>
+								)
+							else
+								return(
+									<NavItem to={route.route} key={index} name={route.name} className={this.state.showFullMenu ? '' : 'hidden'}/>
+								)
 						})}
+						{this.routes.length > 6 &&
+							<li>
+								<a href="#" onClick={this.onClick.bind(this)}>{this.state.showFullMenu ? 'Less' : 'More'}</a>
+							</li>
+						}
 						<li>
 							<NavLink to="/">Home</NavLink>
 						</li>

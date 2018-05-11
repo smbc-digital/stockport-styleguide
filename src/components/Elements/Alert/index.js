@@ -33,7 +33,7 @@ class AlertContainer extends React.Component {
 
 	render() {
 		return(
-			this.state.isHidden == false && <Alert level={this.state.level} icon={this.state.icon} heading={this.props.heading} content={this.props.content} onClick={this.onClick.bind(this)} />
+			this.state.isHidden == false && <Alert level={this.state.level} icon={this.state.icon} heading={this.props.heading} content={this.props.content} enableH3={this.props.enableH3} onClick={this.onClick.bind(this)} />
 		)
 	}
 }
