@@ -207,7 +207,7 @@
     }
 }
 
-.alert-form-information {
+.alert-information-form {
     @include alert-form;
 
     i {
@@ -215,7 +215,7 @@
     }
 }
 
-.alert-form-warning {
+.alert-warning-form {
     @include alert-form;
 
     i {

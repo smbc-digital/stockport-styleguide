@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
-import AlertContainer from '../../Elements/Alert'
-import AlertFullWidthContainer from '../../Elements/AlertFullWidth'
+import { AlertContainer, AlertFullWidthContainer, AlertForm } from 'smbc-react-components'
 import AlertInlineContainer from '../../Elements/AlertInline'
-import AlertFormContainer from '../../Elements/AlertForm'
 
 class Alerts extends Component {
 	constructor(props) {
@@ -80,22 +78,22 @@ class Alerts extends Component {
 						<p>The icon is centre aligned. When there is only one line of text the dividers are 20px away from the icon. When there is multiple lines the dividers are 20px away from the text.</p>
 						<section>
 							<h3>Information alert</h3>
-							<AlertFormContainer
+							<AlertForm
 								level='information'
 								content="I'm a sentence on <strong>one line</strong> within an in-form alert."
 							/>
-							<AlertFormContainer
+							<AlertForm
 								level='information'
 								content="I'm some body text that gives the user some additional information about a question or an answer in a form."
 							/>
 						</section>
 						<section>
 							<h3>Warning alerts</h3>
-							<AlertFormContainer
+							<AlertForm
 								level='warning'
 								content="I'm some body text that gives the user a warning message about a question or an answer in a form. This example shows what the alert should look like when it goes onto four lines."
 							/>
-							<AlertFormContainer
+							<AlertForm
 								level='warning'
 								content="The sort code and account number don’t match. Check your details and try again"
 							/>
