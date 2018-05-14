@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
-import { AlertContainer, AlertFullWidthContainer, AlertForm } from 'smbc-react-components'
-import AlertInlineContainer from '../../Elements/AlertInline'
+import { AlertContainer, AlertFullWidthContainer, AlertForm, AlertInline } from 'smbc-react-components'
 
 class Alerts extends Component {
 	constructor(props) {
@@ -67,7 +66,7 @@ class Alerts extends Component {
 					<section>
 						<h2>Inline alerts</h2>
 						<p>Inline alerts allow content designers to draw out important information in the body of an article section.</p>
-						<AlertInlineContainer
+						<AlertInline
 							heading="Hello! I'm an inline alert heading"
 							content="I’m some body text that adds a bit more information to the alert. There’s 20px between the heading and the body and 20px between the content and top and bottom of the alert box."
 						/>
