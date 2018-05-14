@@ -8,10 +8,7 @@ main {
     @extend .grid-container;
     @extend .grid-parent;
 
-    &.full-width {
-        background-color: $white;
-    }
-
+    &.full-width,
     article {
         background-color: $white;
     }
@@ -29,6 +26,10 @@ main {
 ul {
     padding: 0;
     margin: 0;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 
 .full-width {
@@ -49,4 +50,8 @@ ul {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: none;
+}
+
+.hidden {
+    display: none;
 }

@@ -2,6 +2,11 @@ form {
     margin: 0;
     width: 100%;
 
+    .header-on-more-than-one-line {
+        display: block;
+        margin-bottom: 26px;
+    }
+
     fieldset {
         border: none;
         padding: 0;
@@ -11,6 +16,11 @@ form {
 
         legend {
             padding: 0;
+            width: 66%;
+
+            @media #{$mobile} {
+                width: 100%
+            }
         }
 
         @media not all and (min-resolution: .001dpcm) { 
@@ -41,10 +51,15 @@ form {
                 content: "\f00c";
                 border: none;
                 left: 7px;
+                width: 60%;
                 margin-top: -14px;
                 font: normal normal normal 26px/1 FontAwesome;
             }
         }
+    }
+
+    ul {
+        margin-left: 15px;
     }
 
     h3 {
@@ -77,6 +92,10 @@ form {
                 display: block;
                 padding: 0;
             }
+        }
+
+        &.extra-margin-bottom {
+            margin-bottom: 25px;
         }
     }
 
@@ -177,6 +196,7 @@ form {
     .input-error-content {
         background: $red;
         color: $white;
+        width: 100%;
         max-width: 530px;
         padding: 10px;
         margin-bottom: 0;
@@ -323,10 +343,72 @@ form {
             }
         }
     }
+
+    .recaptcha {
+        margin-bottom: 25px;
+    }
 }
 
 .smallerText {
     font-size: $fontSizeSmall;
+}
+
+.sort-code {
+
+    input {
+        width: 15%;
+        @media #{$tablet} {
+            width: 40%
+            
+        }
+
+        @media #{$mobile} {
+            width: 100%;
+         }
+       }
+
+    .input-error-content {
+        max-width: 530px;
+        width: 23%;
+
+        @media #{$mobile} {
+            width: auto;
+            max-width: 100%;
+        }
+        
+        @media #{$tablet} {
+            width: 38%
+        }
+    }
+}
+
+.account-number { 
+
+    input {
+        width: 15%;
+        @media #{$tablet} {
+            width: 40%
+            
+        }
+
+        @media  #{$mobile} {
+            width: 100%;
+            }
+}
+
+    .input-error-content {
+        max-width: 530px;
+        width: 23%;
+
+        @media #{$mobile} {
+            width: auto;
+            max-width: 100%;
+        }
+        
+        @media #{$tablet} {
+            width: 38%
+        }
+    }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {

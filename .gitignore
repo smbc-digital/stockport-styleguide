@@ -1,6 +1,8 @@
 /node_modules
 /build/*
+/dist/*
 !/build/styles.min.css
+!/dist/styles.min.css
 /.vscode/*
 !/.vscode/settings.json
-package-lock.json
+/coverage/

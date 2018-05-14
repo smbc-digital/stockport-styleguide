@@ -16,6 +16,9 @@
     @media #{$desktop} {
         padding: 20px 20px 0 20px;
     }
+    @media #{$mobile} {
+        padding: 20px 0 0 0;
+    }
 
     .button-secondary {
         margin-bottom: 20px;

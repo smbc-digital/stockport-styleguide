@@ -171,17 +171,37 @@ body > header,
 
 .header-container { 
     background-color: $primary-light;
-    margin: 0 0 20px 0;
-    padding: 20px 20px 0;
+    margin: 0 0 26px 0;
+    padding: 40px 20px 0 20px;
     text-align: center;
 
-    h1 {
+    .h2 {
+        font-family: Source Sans Pro,sans-serif;
+        font-size: 1.75em;
+        font-weight: 600;
+        line-height: 1em;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+
+    .h3 {
+        font-family: Source Sans Pro,sans-serif;
+        font-size: 1.375em;
+        font-weight: 600;
+        line-height: 1em;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    h1 { 
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        padding-top: 0;
         color: $white;
     }
 
     p {
         color: $white;
-        padding-bottom: 26px;
         margin-bottom: 0;
     }
 }
@@ -202,5 +222,27 @@ body > header,
         margin-bottom: 0;
         color: $white;
         font-size: $fontSizeLarger;
+    }
+}
+
+.page-content {
+    @media #{$tablet}, #{$desktop} {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.promotion-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

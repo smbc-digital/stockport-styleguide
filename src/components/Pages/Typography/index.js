@@ -52,8 +52,9 @@ class Typography extends Component{
 						</section>
 					</section>
 					<section className='header-container'>
-						<h1>Hey, i'm an h1 inside a box!</h1>
-						<p className='h2'>Hey, i'm a p styled like h2 inside a box!</p>
+						<h1>Submit your supporting documents</h1>
+						<p className="h2">Thanks for uploading your supporting evidence</p>
+						<p className="h3">Your doucument reference number is: 123456789 </p>
 					</section>
 				</article>
 				<Aside/>
