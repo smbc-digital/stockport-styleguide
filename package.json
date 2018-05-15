@@ -16,8 +16,7 @@
   },
   "pre-commit": [
     "lint:sass",
-    "lint:js",
-    "test"
+    "lint:js"
   ],
   "keywords": [],
   "author": "Stockport Metropolitan Borough Council",
