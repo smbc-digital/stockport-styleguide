@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Switch, Route } from 'react-router'
+import '../favicon.ico'
 import Home from './Pages/Home'
 import Colours from './Pages/Colours'
 import Typography from './Pages/Typography'

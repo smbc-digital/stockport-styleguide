@@ -65,14 +65,16 @@ There are different sections to the styleguide that have been styled but not yet
 | :runner: | on-going |
 | :ballot_box_with_check: | completed |
 
-* :ballot_box_with_check: Buttons
-* :runner: Inputs
+* :ballot_box_with_check: Colours
 * :ballot_box_with_check: Typography
-* :ballot_box_with_check: Icons
 * :no_entry_sign: Navigation
-* :no_entry_sign: Tables
+* :ballot_box_with_check: Buttons
+* :runner: Form elements
 * :ballot_box_with_check: Alerts
+* :no_entry_sign: Tables
 * :no_entry_sign: Profiles
+* :ballot_box_with_check: Icons
+* :ballot_box_with_check: Promotions
 
 ## Contributing
 

@@ -54,18 +54,18 @@ module.exports = {
                         loader: 'css-loader',
                         options: { minimize: true }
                     },
-                        'sass-loader']
+						'sass-loader']
                 })
             },
             {
-                test: /\.(eot|svg|ttf|woff)$/,
+                test: /\.(eot|svg|ttf|woff|ico)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: 'stockportwingdings.[ext]'
+                        name: '[name].[ext]'
                     }
                 }],
-            }
+			}
         ]
     },
     devServer: {

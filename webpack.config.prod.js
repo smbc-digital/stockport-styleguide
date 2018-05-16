@@ -83,14 +83,14 @@ module.exports = {
             'sass-loader']
         })
       },
-      {
-        test: /\.(eot|svg|ttf|woff)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'stockportwingdings.[ext]'
-          }
-        }],
+	  {
+		test: /\.(eot|svg|ttf|woff|ico)$/,
+		use: [{
+			loader: 'file-loader',
+			options: {
+				name: '[name].[ext]'
+			}
+		}],
       }
     ]
   },

@@ -9,8 +9,6 @@
     "build": "webpack",
     "build:prod": "webpack --config webpack.config.prod.js",
     "start": "webpack && webpack-dev-server --content-base src --hot --inline",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
     "lint:sass": "sass-lint -v",
     "lint:js": "eslint src/**/*.js"
   },
@@ -31,18 +29,16 @@
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.10",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.18.2",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-react": "^7.8.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^2.30.1",
-    "jest": "^22.4.2",
     "node-sass": "^4.9.0",
     "pre-commit": "^1.2.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
@@ -50,16 +46,9 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "sass-lint": "^1.12.1",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^7.0.0",
     "smbc-react-components": "^1.6.0",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.2"
-  },
-  "dependencies": {
-    "moment": "^2.22.1",
-    "react": "^16.3.2",
-    "react-addons-shallow-compare": "^15.6.2",
-    "react-dates": "^16.6.1",
-    "react-dom": "^16.3.2"
   }
 }
