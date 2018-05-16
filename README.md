@@ -61,9 +61,9 @@ There are different sections to the styleguide that have been styled but not yet
 
 | Mark | Description |
 | --- | --- |
-| :no_entry_sign: | work not started |
-| :ballot_box_with_check: | work completed |
-| :runner: | on-going work |
+| :no_entry_sign: | not started |
+| :runner: | on-going |
+| :ballot_box_with_check: | completed |
 
 * :ballot_box_with_check: Buttons
 * :runner: Inputs
