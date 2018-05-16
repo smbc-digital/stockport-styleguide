@@ -6,11 +6,11 @@
   "main": "index.js",
   "scripts": {
     "setup": "npm install && npm run build",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
-    "start": "webpack && webpack-dev-server --content-base src --hot --inline",
     "build": "webpack",
     "build:prod": "webpack --config webpack.config.prod.js",
+    "start": "webpack && webpack-dev-server --content-base src --hot --inline",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "lint:sass": "sass-lint -v",
     "lint:js": "eslint src/**/*.js"
   },
@@ -20,7 +20,7 @@
   ],
   "keywords": [],
   "author": "Stockport Metropolitan Borough Council",
-  "license": "ISC",
+  "license": "MIT",
   "sasslintConfig": ".sass-lint.yml",
   "devDependencies": {
     "babel-core": "^6.26.3",

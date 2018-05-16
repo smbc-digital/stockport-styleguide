@@ -61,18 +61,18 @@ There are different sections to the styleguide that have been styled but not yet
 
 | Mark | Description |
 | --- | --- |
-| bullet | work not started |
-| check mark | work completed |
+| :no_entry_sign: | work not started |
+| :ballot_box_with_check: | work completed |
 | :runner: | on-going work |
 
-* :runner: Buttons
+* :ballot_box_with_check: Buttons
 * :runner: Inputs
 * :ballot_box_with_check: Typography
-* Icons
-* Navigation
-* Tables
-* Alerts
-* Profiles
+* :ballot_box_with_check: Icons
+* :no_entry_sign: Navigation
+* :no_entry_sign: Tables
+* :ballot_box_with_check: Alerts
+* :no_entry_sign: Profiles
 
 ## Contributing
 
