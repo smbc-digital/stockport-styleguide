@@ -1,0 +1,32 @@
+.error-container {
+    border-radius: 3px;
+    margin-bottom: 180px;
+    position: relative;
+    margin-top: 150px;
+
+    @media #{$desktop} {
+        min-width: 790px;
+        margin-top: 180px;
+    }
+}
+
+.error-page {
+    height: 300px;
+    text-align: center;
+
+    h1 {
+        font-weight: bold;
+        font-size: 3.0em;
+        padding-top: 15px;
+
+        @media #{$mobile} {
+           font-size: 2.0em;
+           line-height: 1.5;
+        }
+    }
+
+    .error-page-message {
+        padding-left:25px;
+        padding-right:25px;
+    }
+}
