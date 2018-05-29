@@ -9,11 +9,7 @@
         background-color: white;
         box-shadow: 0 33px 120px rgba(0,0,0,.5);
         border-radius: 10px;
-        
-        @media #{$desktop} {
-            width: 790px;
-        }
-        
+
         h1 {
             font-weight: bold;
             font-size: 1.875em;
@@ -24,11 +20,15 @@
                 line-height: 1.5;
             }
         }
-    
+
         p {
             padding-left: 25px;
             padding-right: 25px;    
             line-height: 1.4;
+        }
+
+        @media #{$desktop} {
+            width: 790px;
         }
     }
 }
