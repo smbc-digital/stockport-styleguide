@@ -14,6 +14,7 @@ import Icons from './Pages/Icons'
 import Header from './Elements/Header'
 import Footer from './Elements/Footer'
 import Promotions from './Pages/Promotions'
+import { ErrorPage } from 'smbc-react-components'
 
 class App extends Component{
 
@@ -33,6 +34,7 @@ class App extends Component{
 					<Route path="/profiles" component={Profiles}/>
 					<Route path="/icons" component={Icons}/>
 					<Route path="/promotions" component={Promotions}/>
+					<Route render={(props) => (<ErrorPage {...props} errorCode={404} />)}/>
 				</Switch>
 				<Footer/>
 			</React.Fragment>
