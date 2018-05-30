@@ -283,6 +283,10 @@
             font-size: 3em;
             width: 1em;
             height: 1em;
+
+            @media #{$tablet} {
+                font-size: 5em;
+            }
         }
     }
 
