@@ -161,6 +161,39 @@ body > header,
             color: $white;
         }
     }
+
+    .skip-to-main-content {
+        display: block;
+
+        a {
+            left: -999px;
+            position: absolute;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: -999;
+            text-decoration: underline;
+
+            &:focus, 
+            &:active {
+                display: inline-block;
+                color: $black;
+                background-color: $yellow-dark;
+                left: auto;
+                top: auto;
+                width: 140px;
+                height: auto;
+                overflow: auto;
+                z-index: 999;
+                margin: 0.75em 0 0 30px;
+                padding: 5px;
+                text-align: center;
+                line-height: 1.5;
+                font-size: $fontSizeSmall;
+            }
+        }
+    }
 }
 
 .title-container {

@@ -9,6 +9,9 @@ export class Header extends Component {
 	render() {
 		return (
 			<header>
+				<div className="skip-to-main-content hide-on-mobile hide-on-tablet">
+					<a href="#content">Skip to main content</a>
+				</div>
 				<div className="center-wrapper">
 					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
