@@ -8,6 +8,7 @@ body > header,
         @extend .tablet-grid-50;
         @extend .mobile-grid-50;
         height: 80px;
+        padding-left: 0;
         @include header-footer-logo;
 
         @media #{$mobile} {
