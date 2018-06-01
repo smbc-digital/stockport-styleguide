@@ -1,14 +1,13 @@
 .data-table {
     width: 100%;
     border: 1px solid $grey-lighter;
-    border-top: 4px solid $orange;
     @include border-radius(3px);
     @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
     margin-bottom: 20px;
 
     header {
         display: table;
-        padding: 10px 0;
+        padding: 20px 0;
         width: 100%;
 
         @media #{$mobile} {
@@ -22,7 +21,11 @@
 
             h2,
             p {
-                margin: 0
+                margin: 0;
+            }
+
+            h2 {
+                margin-bottom: 10px;
             }
         }
 
@@ -45,9 +48,9 @@
 
         thead {
             th {
-                background-color: $grey-lightest;
+                background-color: $grey-lighter;
                 text-align: left;
-                padding: 5px 20px;
+                padding: 20px;
 
                 &.align-right {
                     text-align: right;
@@ -64,10 +67,14 @@
                 }
 
                 td {
-                    padding: 15px 20px;
+                    padding: 25px 20px;
 
                     &.align-right {
                         text-align: right;
+                    }
+
+                    i {
+                        font-size: 1.375em
                     }
                 }
             }
@@ -83,7 +90,7 @@
 
     .status-open {
         @extend .status;
-        background-color: $orange;
+        background-color: $soft-blue;
     }
 
     .status-onhold {

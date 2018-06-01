@@ -81,7 +81,7 @@ class Inputs extends Component {
 
 	render() {
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<section>
 						<h1>Form Elements</h1>

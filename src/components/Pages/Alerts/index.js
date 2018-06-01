@@ -9,7 +9,7 @@ class Alerts extends Component {
 
 	render() {
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<h1>Alerts</h1>
 					<p>Alerts keep users informed of important and sometimes time sensitive changes.</p>

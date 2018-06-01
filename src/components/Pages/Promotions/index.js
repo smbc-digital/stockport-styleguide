@@ -9,7 +9,7 @@ class Promotions extends Component{
 
 	render() {
 		return(
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<section>
 						<h1>Promotions</h1>

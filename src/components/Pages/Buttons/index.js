@@ -8,7 +8,7 @@ class Buttons extends Component {
 
 	render() {
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<h1>Buttons</h1>
 					<p>Buttons highlight key calls to action across the website; ranging from downloading a document to logging into My Account.</p>

@@ -8,7 +8,7 @@ class Tables extends Component{
 
 	render(){
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<h1>Tables</h1>
 					<p>Tables show tabular data in columns and rows.</p>

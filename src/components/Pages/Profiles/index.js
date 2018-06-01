@@ -8,7 +8,7 @@ class Profiles extends Component{
 
 	render(){
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<h1>Profiles</h1>
 				</article>

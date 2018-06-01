@@ -163,6 +163,21 @@ a.button {
     margin-bottom: 20px;
 }
 
+.button-warning {
+    @extend .button;
+    @include button-colors($orange, $white);
+
+    a:active,
+    a:focus {
+        outline-color: $soft-blue;
+    }
+}
+
+.button-danger {
+    @extend .button;
+    @include button-colors($red, $white);
+}
+
 a.anchor-with-icon {
     display: table;
     vertical-align: middle;

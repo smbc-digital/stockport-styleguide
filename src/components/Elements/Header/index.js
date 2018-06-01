@@ -33,8 +33,7 @@ export class Header extends Component {
 				<nav className="breadcrumb">
 					<h2 className="sr-only">Breadcrumb navigation</h2>
 					<ul className="center-wrapper">
-						<li><a href="http://myaccount.stockport.gov.uk">Home</a></li>
-						<li>Style guide</li>
+						<li><a href="/">Home</a></li>
 					</ul>
 				</nav>
 			</header>

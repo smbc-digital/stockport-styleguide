@@ -27,7 +27,7 @@ class Icons extends Component{
 
 	render(){
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<section>
 						<h1>Icons</h1>
