@@ -1,35 +1,44 @@
-.error-page {
+main.error-page-container {
     background-color: $primary-pale;
     background-image: url('https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/bg-sg-home.jpg');
-    overflow: auto;
+    max-width: 100%;
 
-    .error-content {
-        margin: 180px auto;
-        padding-bottom: 15px;
-        text-align: center;
-        background-color: white;
-        box-shadow: 0 33px 120px rgba(0,0,0,.5);
-        border-radius: 10px;
+    #root {
+        background: none;
 
-        h1 {
-            font-weight: bold;
-            font-size: 1.875em;
-            padding-top: 25px;
+        .error-page {
+
+            overflow: auto;
+
+            .error-content {
+                margin: 180px auto;
+                padding-bottom: 15px;
+                text-align: center;
+                background-color: white;
+                box-shadow: 0 33px 120px rgba(0,0,0,.5);
+                border-radius: 10px;
+
+                h1 {
+                    font-weight: bold;
+                    font-size: 1.875em;
+                    padding-top: 25px;
+            
+                    @media #{$mobile} {
+                        font-size: 2.0em;
+                        line-height: 1.5;
+                    }
+                }
+
+                p {
+                    padding-left: 25px;
+                    padding-right: 25px;    
+                    line-height: 1.4;
+                }
     
-            @media #{$mobile} {
-                font-size: 2.0em;
-                line-height: 1.5;
+                @media #{$desktop} {
+                    width: 790px;
+                }
             }
-        }
-
-        p {
-            padding-left: 25px;
-            padding-right: 25px;    
-            line-height: 1.4;
-        }
-
-        @media #{$desktop} {
-            width: 790px;
         }
     }
 }
