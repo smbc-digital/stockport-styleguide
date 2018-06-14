@@ -7,11 +7,11 @@
 
     header {
         display: table;
-        padding: 20px 0;
+        padding: 20px 0 10px;
         width: 100%;
 
         @media #{$mobile} {
-            border-bottom: 1px solid $grey-light;
+            background-color: $grey-lighter;
         }
 
         .headings {
@@ -19,13 +19,13 @@
             vertical-align: middle;
             padding-left: 20px;
 
-            h2,
-            p {
-                margin: 0;
+            @media #{$mobile} {
+                padding-left: 10px;
             }
 
-            h2 {
-                margin-bottom: 10px;
+            h2,
+            p {
+                margin: 0 0 10px 0;
             }
         }
 
@@ -55,6 +55,11 @@
                 &.align-right {
                     text-align: right;
                 }
+
+                @media #{$mobile} {
+                    display: block;
+                    width: 100%;
+                }
             }
         }
 
@@ -76,6 +81,33 @@
                     i {
                         font-size: 1.375em
                     }
+
+                    @media #{$mobile} {
+                        display: block;
+                        padding: 0 10px 10px;
+
+                        &.heading {
+                            font-family: $font-family-headings;
+                            font-size: $fontSizeLarge;
+                            font-weight: $fontWeightBold;
+                        }
+
+                        &:first-of-type {
+                            padding-top: 10px
+                        }
+
+                        &.align-left-mobile {
+                            text-align: left;
+                        }
+
+                        .status {
+                            margin-bottom: 0;
+                        }
+
+                        button {
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
         }
@@ -94,23 +126,32 @@
         }
     }
 
-    .status-open {
+    .status-information {
         @extend .status;
         background-color: $soft-blue;
     }
 
-    .status-onhold {
+    .status-default {
         @extend .status;
     }
 
-    .status-complete {
+    .status-success {
         @extend .status;
         background-color: $green;
+    }
+
+    .status-error {
+        @extend .status;
+        background-color: $red;
     }
 
     section {
         padding: 10px 15px;
         border-bottom: 1px solid $grey-light;
+
+        @media #{$mobile} {
+            padding: 20px 10px;
+        }
 
         h3 {
             margin-bottom: 10px;
@@ -169,19 +210,10 @@
             .heading {
                 font-weight: $fontWeightBold;
             }
-        }
-
-        table tbody tr {
-            background-color: transparent;
-            border-bottom: 1px solid $grey-light;
-            padding: 10px;
-
-            &:nth-child(2n) {
-                background-color: transparent;
-            }
 
             td {
                 width: 50%;
+                padding: 10px;
             }
         }
     }
