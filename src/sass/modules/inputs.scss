@@ -193,7 +193,7 @@ form {
         }
     }
 
-    .input-error-content .input-content {
+    .input-error-content {
         background: $red;
         color: $white;
         width: 100%;
@@ -208,7 +208,7 @@ form {
             max-width: 100%;
         }
 
-        &:before .fa-caret-up {
+        &:before {
             content: "\f0d8";
             font-family: FontAwesome;
             font-size: 2em;
