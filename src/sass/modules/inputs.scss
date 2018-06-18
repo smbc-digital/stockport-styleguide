@@ -411,6 +411,14 @@ form {
     }
 }
 
+.input-error {
+    .input-content {
+        > p {
+            @include input-error-content;
+        }
+    }
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     fieldset {
         padding-top: 20px;
