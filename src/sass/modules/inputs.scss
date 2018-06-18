@@ -193,36 +193,7 @@ form {
         }
     }
 
-    .input-error {
-        background-color: $red;
-        color: $white;
-        position: relative;
-        margin-bottom: 20px;
-
-        @media #{$mobile} {
-            width: auto;
-            max-width: 100%;
-        }
-
-        p {
-            margin-bottom: 0;
-        }
-
-        .input-content {
-            padding: 10px;
-        }
-
-        .fa-caret-up {
-            color: $red;
-            font-size: 2em;
-            left: 10px;
-            position: absolute;
-            top: -20px;
-            z-index: 10;
-        }
-    }
-
-    .input-error-content {
+    .input-error-content .input-content {
         background: $red;
         color: $white;
         width: 100%;
@@ -237,7 +208,7 @@ form {
             max-width: 100%;
         }
 
-        &:before {
+        &:before .fa-caret-up {
             content: "\f0d8";
             font-family: FontAwesome;
             font-size: 2em;
