@@ -193,6 +193,35 @@ form {
         }
     }
 
+    .input-error {
+        background-color: $red;
+        color: $white;
+        position: relative;
+        margin-bottom: 20px;
+
+        @media #{$mobile} {
+            width: auto;
+            max-width: 100%;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .input-content {
+            padding: 10px;
+        }
+
+        .fa-caret-up {
+            color: $red;
+            font-size: 2em;
+            left: 10px;
+            position: absolute;
+            top: -20px;
+            z-index: 10;
+        }
+    }
+
     .input-error-content {
         background: $red;
         color: $white;
