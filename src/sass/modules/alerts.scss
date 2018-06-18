@@ -205,6 +205,10 @@
             padding-right: 10px;
         }
     }
+
+    > div {
+        display: table-cell
+    }
 }
 
 .alert-information-form {
