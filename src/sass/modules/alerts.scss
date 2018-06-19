@@ -4,6 +4,7 @@
     background-color: $grey-dark;
     display: table;
     margin-bottom: 30px;
+    text-align: left;
 
     > i {
         @include border-radius(5px 0 0 5px);
