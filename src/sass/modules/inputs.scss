@@ -118,7 +118,7 @@ form {
         font-family: $font-family;
         color: $grey-darkest;
         font-size: $fontSizeDefault;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         box-sizing: border-box;
 
         &.input-validation-error {
@@ -146,6 +146,7 @@ form {
 
     textarea {
         height: 250px;
+        margin-bottom: 10px;
 
         &.char-limit {
             margin-bottom: 10px;
