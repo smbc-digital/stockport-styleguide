@@ -412,6 +412,9 @@ form {
 }
 
 .input-error {
+
+    margin-top: -32px;
+
     .input-content {
         > p {
             background: $red;
