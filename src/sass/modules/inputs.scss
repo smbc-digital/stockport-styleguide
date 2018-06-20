@@ -65,7 +65,7 @@ form {
     .indented-list {
         margin: 0 0 20px 35px;
 
-        @media($mobile) {
+        @media #{$mobile} {
             margin-left: 25px;
         }
     }
