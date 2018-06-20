@@ -20,7 +20,7 @@ body > header,
         @extend .grid-25;
         @extend .tablet-grid-25;
 
-        .form-header {
+        &.form-header {
             @extend .grid-50;
             @extend .tablet-grid-50;
         }
