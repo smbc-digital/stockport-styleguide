@@ -4,6 +4,7 @@
     background-color: $grey-dark;
     display: table;
     margin-bottom: 30px;
+    text-align: left;
 
     > i {
         @include border-radius(5px 0 0 5px);
@@ -203,6 +204,19 @@
         @media #{$mobile} 
         {
             padding-right: 10px;
+        }
+    }
+
+    > div {
+        display: table-cell;
+
+        ul {
+            padding-left: 25px;
+            
+            @media #{$mobile} 
+            {
+                padding-left: 15px;
+            }
         }
     }
 }

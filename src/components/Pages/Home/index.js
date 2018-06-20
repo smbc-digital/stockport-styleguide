@@ -8,7 +8,7 @@ export class Home extends Component {
 
 	render() {
 		return (
-			<main className="full-width">
+			<main className="full-width" id="content">
 				<section className="title-container">
 					<div className="title">
 						<h1>Welcome to the Stockport.gov.uk style guide</h1>

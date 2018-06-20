@@ -14,7 +14,7 @@
             "tab"
         ],
         "linebreak-style": [
-            "error",
+            1,
             "windows"
         ],
         "quotes": [

@@ -8,25 +8,25 @@ class Tables extends Component{
 
 	render(){
 		return (
-			<main>
+			<main id="content">
 				<article className="with-aside">
 					<h1>Tables</h1>
 					<p>Tables show tabular data in columns and rows.</p>
-					<section className="hide-on-mobile">
+					<section>
 						<h2 className="h3">My Account activity table</h2>
-						<p>The My Account reports table shows detailed information about a user&apois;s recent activity.</p>
+						<p>The My Account reports table shows detailed information about a user's recent activity.</p>
 						<section className="data-table">
 							<header>
 								<div className="headings">
 									<h2>Recent activity</h2>
 									<p>Showing report activity from the last 30 days</p>
 								</div>
-								<div className="call-to-action">
+								<div className="call-to-action hide-on-mobile">
 									<button className="button-inverted" href="#">View all activity</button>
 								</div>
 							</header>
 							<table>
-								<thead>
+								<thead className="hide-on-mobile">
 									<tr>
 										<th>Description</th>
 										<th>Status</th>
@@ -36,67 +36,50 @@ class Tables extends Component{
 								</thead>
 								<tbody>
 									<tr>
-										<td>Street light located on Wellington Road South</td>
-										<td><span className="status-open">Open</span></td>
-										<td className="align-right">Yesterday</td>
-										<td><i className="fa fa-angle-right"></i></td>
+										<td className="heading">Street light located on Wellington Road South</td>
+										<td><span className="status-information">Open</span></td>
+										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> Yesterday</td>
+										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td>Pot hole located on Hill Road</td>
-										<td><span className="status-open">Open</span></td>
-										<td className="align-right">2 days ago</td>
-										<td><i className="fa fa-angle-right"></i></td>
+										<td className="heading">Pot hole located on Hill Road</td>
+										<td><span className="status-information">Open</span></td>
+										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 2 days ago</td>
+										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td>Street light located on Great Bridge Street</td>
-										<td><span className="status-onhold">On hold</span></td>
-										<td className="align-right">3 March 2017</td>
-										<td><i className="fa fa-angle-right"></i></td>
+										<td className="heading">Street light located on Great Bridge Street</td>
+										<td><span className="status-default">On hold</span></td>
+										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 3 March 2017</td>
+										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td>Pot hole located on River Road</td>
-										<td><span className="status-complete">Complete</span></td>
-										<td className="align-right">1 March 2017</td>
-										<td><i className="fa fa-angle-right"></i></td>
+										<td className="heading">Pot hole located on River Road</td>
+										<td><span className="status-success">Complete</span></td>
+										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
+										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+									</tr>
+									<tr>
+										<td className="heading">Pot hole located on Buckingham Road</td>
+										<td><span className="status-error">Issue</span></td>
+										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
+										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+									</tr>
+									<tr className="hide-ondesktop hide-on-tablet">
+										<td><button className="button-inverted" href="#">View all activity</button></td>
 									</tr>
 								</tbody>
 							</table>
 						</section>
 					</section>
-					<section className="hide-on-tablet hide-on-desktop">
-						<h2 className="h3">My Account activity table</h2>
-						<p>The My Account reports table shows detailed information about a user's recent activity.</p>
-						<section className="data-table">
-							<header>
-								<div className="headings">
-									<h2>Recent activity</h2>
-									<p>Showing report activity from the last 30 days</p>
-								</div>
-							</header>
-							<section>
-								<h3>Street light located on Wellington Road South</h3>
-								<span className="status-open">Open</span>
-								<p>Last updated yesterday</p>
-							</section>
-							<section>
-								<h3>Pot hole located on River Street</h3>
-								<span className="status-complete">Complete</span>
-								<p>Last updated 8 November 2017</p>
-							</section>
-							<section>
-								<h3>Blocked grid on Heathbank Road</h3>
-								<span className="status-onhold">On hold</span>
-								<p>Last updated 1 November 2017</p>
-							</section>
-							<footer>
-								<button className="button-inverted" href="#">View all activity</button>
-							</footer>
-						</section>
-					</section>
 					<section>
 						<h2>Information table</h2>
 						<section className="data-table-striped hide-on-mobile">
-							<h3 className="sr-only">Council tax band charges</h3>
+							<header>
+								<div className="headings">
+									<h2>Council tax band charges</h2>
+								</div>
+							</header>
 							<table>
 								<thead>
 									<tr>
@@ -130,7 +113,11 @@ class Tables extends Component{
 							</table>
 						</section>
 						<section className="data-table-striped hide-on-tablet hide-on-desktop">
-							<h3 className="sr-only">Council tax band charges</h3>
+							<header>
+								<div className="headings">
+									<h2>Council tax band charges</h2>
+								</div>
+							</header>
 							<section>
 								<h4 className="sr-only">Council Tax band A charges</h4>
 								<table>

@@ -8,7 +8,7 @@ class Typography extends Component{
 
 	render(){
 		return (
-			<main>
+			<main id="content">
 				<article id="content" className="with-aside">
 					<h1>Typography</h1>
 					<section>
