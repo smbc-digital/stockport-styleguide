@@ -155,11 +155,24 @@ form {
 
     input[type="number"] {
         -moz-appearance: textfield;
+        width: 135px;
 
         &::-webkit-inner-spin-button, 
         &::-webkit-outer-spin-button { 
             -webkit-appearance: none; 
             margin: 0; 
+        }
+    }
+
+    .currency-input-container {
+        > i {
+            position: absolute;
+            padding: 20px 10px 10px 15px;
+            pointer-events: none;
+        }
+
+        input[type="number"] {
+            text-align: center;
         }
     }
 
@@ -419,6 +432,8 @@ form {
         }
     }
 }
+
+
 
 .input-error {
 
