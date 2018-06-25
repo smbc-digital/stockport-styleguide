@@ -203,43 +203,6 @@ body > header,
     padding: 20px;
 }
 
-.header-container { 
-    background-color: $primary-light;
-    margin: 0 0 26px 0;
-    padding: 40px 20px 0 20px;
-    text-align: center;
-
-    .h2 {
-        font-family: Source Sans Pro,sans-serif;
-        font-size: 1.75em;
-        font-weight: 600;
-        line-height: 1em;
-        padding-bottom: 30px;
-        margin: 0;
-    }
-
-    .h3 {
-        font-family: Source Sans Pro,sans-serif;
-        font-size: 1.375em;
-        font-weight: 600;
-        line-height: 1em;
-        padding-bottom: 30px;
-        margin-bottom: 0;
-    }
-
-    h1 { 
-        margin-bottom: 0;
-        padding-bottom: 30px;
-        padding-top: 0;
-        color: $white;
-    }
-
-    p {
-        color: $white;
-        margin-bottom: 0;
-    }
-}
-
 .title {
     max-width: 1200px;
     margin: 0 auto;
