@@ -144,6 +144,8 @@ body > header,
     .breadcrumb {
         background-color: $primary-darker;
         border-bottom: $teal solid 5px;
+        font-size: $fontSizeSmall;
+        padding: 3px 0 1px;
     }
 
     .banner-header {
