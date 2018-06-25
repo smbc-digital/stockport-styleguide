@@ -1,5 +1,7 @@
 main  #root.success-page,
-.success-page {
+main  #root.error-page,
+.success-page,
+.error-page {
     padding-top: 20px;
 
     @media #{$mobile} {
@@ -7,9 +9,17 @@ main  #root.success-page,
     }
 }
 
-.header-container,
-.success-page .header-container { 
+.success-page {
     background-color: $primary-light;
+}
+
+.error-page {
+    background-color: $red;
+}
+
+.header-container,
+.success-page .header-container,
+.error-page .header-container { 
     margin: 0 0 26px 0;
     padding: 40px 20px 0 20px;
     text-align: center;
