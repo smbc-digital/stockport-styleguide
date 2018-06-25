@@ -1,25 +1,15 @@
-main  #root.success-page,
-main  #root.error-page,
 .success-page,
-.error-page {
-    padding-top: 20px;
-
-    @media #{$mobile} {
-        padding-top: 10px;
-    }
+main #root.success-page {
+    @include feedback-page($primary-light);
 }
 
-.success-page {
-    background-color: $primary-light;
+.error-page,
+main #root.error-page {
+    @include feedback-page($red);
 }
 
-.error-page {
-    background-color: $red;
-}
-
-.header-container,
-.success-page .header-container,
-.error-page .header-container { 
+.header-container {
+    background-color: $background-colour;
     margin: 0 0 26px 0;
     padding: 40px 20px 0 20px;
     text-align: center;
@@ -55,9 +45,53 @@ main  #root.error-page,
     }
 }
 
-.body-container,
-.success-page .body-container {
-    @extend .grid-75;
-    @extend .mobile-grid-100;
-    @extend .tablet-grid-100;
+@mixin feedback-page($background-colour) { 
+    padding-top: 20px;
+
+    .header-container {
+        background-color: $background-colour;
+        margin: 0 0 26px 0;
+        padding: 40px 20px 0 20px;
+        text-align: center;
+
+        .h2 {
+            font-family: Source Sans Pro,sans-serif;
+            font-size: 1.75em;
+            font-weight: 600;
+            line-height: 1em;
+            padding-bottom: 30px;
+            margin: 0;
+        }
+
+        .h3 {
+            font-family: Source Sans Pro,sans-serif;
+            font-size: 1.375em;
+            font-weight: 600;
+            line-height: 1em;
+            padding-bottom: 30px;
+            margin-bottom: 0;
+        }
+
+        h1 { 
+            margin-bottom: 0;
+            padding-bottom: 30px;
+            padding-top: 0;
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+
+    .body-container {
+        @extend .grid-75;
+        @extend .mobile-grid-100;
+        @extend .tablet-grid-100;
+    }
+
+    @media #{$mobile} {
+        padding-top: 10px;
+    }
 }
