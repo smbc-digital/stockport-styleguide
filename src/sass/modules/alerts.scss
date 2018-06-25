@@ -208,7 +208,16 @@
     }
 
     > div {
-        display: table-cell
+        display: table-cell;
+
+        ul {
+            padding-left: 25px;
+            
+            @media #{$mobile} 
+            {
+                padding-left: 15px;
+            }
+        }
     }
 }
 
