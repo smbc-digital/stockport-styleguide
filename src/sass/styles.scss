@@ -18,4 +18,6 @@
 @import 'modules/promotions';
 @import 'modules/list';
 @import 'modules/error';
-@import 'modules/feedback';
+@import 'modules/feedback/success';
+@import 'modules/feedback/ineligible-warning';
+@import 'modules/feedback/system-failure';
