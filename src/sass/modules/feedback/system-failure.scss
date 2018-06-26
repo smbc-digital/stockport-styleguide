@@ -1,0 +1,10 @@
+.system-failure {
+    text-align: center;
+
+    .icon {
+        color: $red;
+        border: 3px solid $red;
+        border-radius: 100%;
+        padding: 15px;   
+    }
+}
