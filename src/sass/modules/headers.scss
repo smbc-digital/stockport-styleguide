@@ -157,31 +157,19 @@ body > header,
         padding: 10px 0;
 
         span {
-            background-color: $orange; 
-            @include border-radius(4px);
+            background-color: $white; 
             font-size: $fontSizeSmall;
             font-weight: $fontWeightBold;
             margin-right: 15px; 
             padding: 5px 12px; 
+            color: $primary-darker; 
         }
 
         a {
             color: $white;
         }
     }
-
-    .banner-icon-beta {
-        background-color: $white;
-        color: $primary-darker; 
-        padding-right: 12px; 
-        padding-left: 12px;
-        margin-right: 15px; 
-        padding-top: 5px; 
-        padding-bottom: 5px; 
-        font-size: 12px; 
-        font-weight: 700;
-    }
-
+    
     .skip-to-main-content {
         display: block;
 
