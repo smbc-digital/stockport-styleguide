@@ -170,6 +170,18 @@ body > header,
         }
     }
 
+    .banner-icon-beta {
+        background-color: $white;
+        color: $primary-darker; 
+        padding-right: 12px; 
+        padding-left: 12px;
+        margin-right: 15px; 
+        padding-top: 5px; 
+        padding-bottom: 5px; 
+        font-size: 12px; 
+        font-weight: 700;
+    }
+
     .skip-to-main-content {
         display: block;
 
