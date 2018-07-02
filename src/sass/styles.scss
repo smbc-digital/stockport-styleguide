@@ -6,7 +6,6 @@
 @import 'reset/base';
 @import 'modules/buttons';
 @import 'modules/icons';
-@import 'modules/inputs';
 @import 'modules/headers';
 @import 'modules/footers';
 @import 'modules/articles';
@@ -21,3 +20,11 @@
 @import 'modules/feedback/success';
 @import 'modules/feedback/ineligible-warning';
 @import 'modules/feedback/system-failure';
+@import 'modules/appointment-selector';
+@import 'modules/form-elements/account-number';
+@import 'modules/form-elements/base-errors';
+@import 'modules/form-elements/base-inputs';
+@import 'modules/form-elements/currency-input';
+@import 'modules/form-elements/date-picker';
+@import 'modules/form-elements/form';
+@import 'modules/form-elements/sort-code';

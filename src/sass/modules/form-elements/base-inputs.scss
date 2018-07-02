@@ -1,0 +1,104 @@
+input,
+textarea {
+    display: block;
+    padding: 15px 10px;
+    border: 1px solid $grey-middle;
+    @include border-radius(3px);
+    width: 100%;
+    max-width: 550px;
+    font-family: $font-family;
+    color: $grey-darkest;
+    font-size: $fontSizeDefault;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    &.input-validation-error {
+        border: 1px solid $red;
+        @include border-radius(3px 3px 0 0);
+
+        &:active,
+        &:focus {
+            border-color: transparent;
+            border-radius: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        @include outline;
+        border-color: transparent;
+        border-radius: 0;
+    }
+
+    @media #{$mobile} {
+        max-width: 100%;
+    }
+}
+
+textarea {
+    height: 250px;
+    margin-bottom: 10px;
+
+    &.char-limit {
+        margin-bottom: 10px;
+    }
+}
+
+select {
+    @include border-radius(3px);
+    font-size: $fontSizeDefault;
+    border: 1px solid #999;
+    width: 100%;
+    max-width: 550px;
+    font-family: $font-family;
+    box-sizing: border-box;
+    line-height: 1.125em;
+    padding: 15px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    width: 135px;
+
+    &::-webkit-inner-spin-button, 
+    &::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+}
+
+.input-radio-container {
+    @include radio-checkbox-input("radio", 50%);
+
+    label::after {
+        content: "";
+        border: 10px solid;
+        left: 9px;
+        @include border-radius(50%);
+        margin-top: -10px;
+    }
+}
+
+.input-checkbox-container {
+    @include radio-checkbox-input("checkbox", 0%);
+
+    label::after {
+        content: "\f00c";
+        border: none;
+        left: 7px;
+        width: 60%;
+        margin-top: -14px;
+        font: normal normal normal 26px/1 FontAwesome;
+    }
+}

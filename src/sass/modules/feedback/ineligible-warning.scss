@@ -1,5 +1,7 @@
 .ineligible-warning {
-    .header {
+    @include main-layout;
+
+    .header-container {
         display: table;
         margin-bottom: 21px;
 
@@ -34,7 +36,7 @@
         }
     }
 
-    .body {
+    .body-container {
         @extend .grid-66;
         @extend .mobile-grid-100;
     }

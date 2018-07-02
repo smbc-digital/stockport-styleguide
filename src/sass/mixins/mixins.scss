@@ -1,3 +1,18 @@
+@mixin main-layout {
+    @include center-wrapper;
+    background-color: $white;
+    padding: 30px 20px 0;
+
+    @media #{$mobile} {
+        padding: 30px 10px 0;
+    }
+}
+
+@mixin center-wrapper { 
+    @extend .grid-container;
+    margin: 0 auto;
+}
+
 @mixin button-colors ($button-colour, $text-colour) {
     background-color: $button-colour;
     color: $text-colour;

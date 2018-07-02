@@ -13,13 +13,9 @@ main {
         background-color: $white;
     }
 
-    #root { // sass-lint:disable-line no-ids (#root needed for React)
-        background-color: $white;
-        padding: 30px 20px 0;
-
-        @media #{$mobile} {
-            padding: 30px 10px 0;
-        }
+    #root, // sass-lint:disable-line no-ids (#root needed for React)
+    .page-container {
+        @include main-layout;
     }
 }
 
@@ -33,8 +29,7 @@ ul {
 }
 
 .center-wrapper { 
-    @extend .grid-container;
-    margin: 0 auto;
+    @include center-wrapper;
 }
 
 .sr-only {

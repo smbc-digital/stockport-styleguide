@@ -1,0 +1,132 @@
+form {
+    margin: 0;
+    width: 100%;
+
+    fieldset {
+        border: none;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        margin: 0;
+
+        legend {
+            padding: 0;
+            width: 66%;
+
+            @media #{$mobile} {
+                width: 100%
+            }
+        }
+
+        @media not all and (min-resolution: .001dpcm) { 
+            @supports (-webkit-appearance: none) {
+                legend {
+                    -webkit-margin-top-collapse: separate;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        fieldset {
+            padding-top: 20px;
+        }             
+    }
+
+    h3 {
+        margin-bottom: 16px;
+        display: block;
+
+        &.optional {
+            display: inline-block;
+        }
+    }
+
+    label {
+        @extend h3;
+    }
+
+    p {
+        margin: 0 0 10px;
+
+        &.optional {
+            padding-left: 10px;
+            font-size: $fontSizeSmall;
+            display: inline-block;
+            margin-bottom: 0;
+    
+            @media #{$mobile} {
+                display: block;
+                padding: 0;
+            }
+        }
+
+        &.extra-margin-bottom {
+            margin-bottom: 25px;
+        }
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin: 0 0 20px 15px;
+    }
+}
+
+.recaptcha {
+    margin-bottom: 25px;
+}
+
+.indented-list {
+    margin: 0 0 20px 35px;
+
+    @media #{$mobile} {
+        margin-left: 25px;
+    }
+}
+
+.header-on-more-than-one-line {
+    display: block;
+    margin-bottom: 26px;
+}
+
+.input-addon {
+    width: 10px;
+    vertical-align: middle;
+    background-color: $off-white;
+    border-bottom: 1px solid $grey-lightest;
+    border-left: 1px solid $grey-lightest;
+    border-top: 1px solid $grey-lightest;
+    @include border-radius(3px 0 0 3px);
+    font-size: 1.5em;
+    padding: 0 10px;
+
+    + input {
+        @include border-radius(0 3px 3px 0);
+    }
+}
+
+.smallerText {
+    font-size: $fontSizeSmall;
+}
+
+input.input-loading:after {
+    text-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+    color: $grey-darkest;
+    content: "\f1ce";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 15px);
+    line-height: 1em;
+    visibility: initial;
+    @include animation(load 1s ease-in-out infinite);
+}

@@ -1,5 +1,6 @@
 .success-page,
-main #root.success-page { 
+main #root.success-page {
+    @include main-layout;
     padding-top: 20px;
 
     .header-container {

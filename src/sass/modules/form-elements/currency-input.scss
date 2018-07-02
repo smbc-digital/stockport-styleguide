@@ -1,0 +1,11 @@
+.currency-input-container {
+    > i {
+        position: absolute;
+        padding: 20px 10px 10px 15px;
+        pointer-events: none;
+    }
+
+    input[type="number"] {
+        text-align: center;
+    }
+}

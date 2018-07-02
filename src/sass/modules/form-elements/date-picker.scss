@@ -1,0 +1,159 @@
+input[type="date"] {
+    width: 15%;
+    float: none;
+    position: relative;
+    text-align: center;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+
+    &::-webkit-inner-spin-button, 
+    &::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        position: absolute;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        padding: 20px 8px 15px;
+        top: 0;
+        background: none;
+        background: $white;
+
+        &:hover {
+            cursor: pointer;
+            background: $grey-lightest;
+        }
+    }
+
+    &:active::-webkit-calendar-picker-indicator:hover {
+        top: 2px;
+        height: 16px;
+    }
+
+    + .input-error {
+        width: 154px;
+    }
+}
+
+.input-memorable-date { 
+    div {
+        display: inline-block;
+        position: relative;
+
+        input {
+            display: inline-block;
+            width: 55px;
+            margin-right: 20px;
+            line-height: 1.125em;
+            text-align: center;
+
+            @media #{$mobile} {
+                text-align: center;
+                display: inline-block;
+            }
+        }
+
+        label {
+            font-size: 1.25em;
+            display: block;
+        }
+
+        &:last-of-type input {
+            width: 75px;
+        }
+
+        .fa-caret-up {
+            font-size: 2em;
+            color: $red;
+            position: absolute;
+            top: 65px;
+            left: 25%;
+
+            &.year {
+                left: 30%;
+            }
+        }
+    }  
+
+    .input-error-content {
+        top: -21px;
+
+        &:before {
+            content: '';
+        }
+    }
+}
+
+.input-date-picker {
+    &.invalid input {
+        border: 1px solid $red;
+        @include border-radius(3px 3px 0 0);
+    }
+
+    .input-error-content {
+        top: -21px;
+        width: 130px;
+        display: inline-block;
+    }
+
+    // sass-lint:disable class-name-format
+    .SingleDatePicker {
+        display: block;
+
+        .SingleDatePickerInput {
+            background-color: transparent;
+            @media #{$mobile} {
+                display: block;
+            }
+        }
+
+        .DateInput {
+            background-color: transparent;
+            width: 150px;
+
+            .DateInput_input {
+                margin-bottom: 20px;
+            }
+
+            @media #{$mobile} {
+                width: 100%;
+                }
+        }
+
+        .DayPickerNavigation_button__default {
+            &:active,
+            &:focus {
+                @include border-radius(0);
+                border-color: $orange;
+            }
+        }
+
+        .SingleDatePickerInput__withBorder {
+            border: none;
+
+            input {
+                @extend input;
+                text-align: center;
+                @media #{$mobile} {
+                    text-align: left;
+                }
+
+            }
+        }
+
+        .CalendarDay__selected, {
+            background-color: $primary;
+            border-bottom-color: $primary-dark;
+
+            &:active,
+            &:hover {
+                background-color: $primary-light;
+            }
+        }
+    }
+}

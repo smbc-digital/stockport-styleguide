@@ -1,5 +1,4 @@
 button {
-
     &::-moz-focus-inner {
         border: none;
     }
@@ -42,13 +41,14 @@ button {
 
     &:disabled {
         background-color: transparentize($teal-darker, 0.65);
-        cursor: default;
-    }
+        @include box-shadow(none);
+        cursor: default; 
 
-    &:disabled:hover {
-        background-color: transparentize($teal-darker, 0.65);  
-        @include transition-box-shadow(0 0 0 0 rgba(0,0,0,0.3));
-        cursor: default;
+        &:hover {
+            background-color: transparentize($teal-darker, 0.65);  
+            @include transition-box-shadow(none);
+            cursor: default;
+        }
     }
 
     &::-moz-focus-inner {
@@ -105,6 +105,11 @@ a.button {
     @extend .button;
     @include button-colors($white, $grey-darkest);
     border: solid 1px $grey-middle;
+}
+
+.button-selected { 
+    @extend .button;
+    @include button-colors($soft-blue, $white);
 }
 
 .button-disabled {
