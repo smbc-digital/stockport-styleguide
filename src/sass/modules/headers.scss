@@ -157,12 +157,12 @@ body > header,
         padding: 10px 0;
 
         span {
-            background-color: $orange; 
-            @include border-radius(4px);
+            background-color: $white; 
             font-size: $fontSizeSmall;
             font-weight: $fontWeightBold;
             margin-right: 15px; 
             padding: 5px 12px; 
+            color: $primary-darker; 
         }
 
         a {

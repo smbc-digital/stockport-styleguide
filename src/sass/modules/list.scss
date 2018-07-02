@@ -1,3 +1,13 @@
-ul.inline-list {
-    margin: 0 0 20px 15px;
+ul { 
+    &.inline-list {
+        margin: 0 0 20px 15px;
+    }
+
+    &.indented-list {
+        margin: 0 0 20px 35px;
+    
+        @media #{$mobile} {
+            margin-left: 25px;
+        }
+    }
 }
