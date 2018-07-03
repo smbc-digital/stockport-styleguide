@@ -45,6 +45,12 @@ form {
 
     label {
         @extend h3;
+
+        @media #{$mobile} {
+            &.optional {
+                margin-bottom: 0;
+            }
+        }
     }
 
     p {
