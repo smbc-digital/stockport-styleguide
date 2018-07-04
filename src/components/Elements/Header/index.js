@@ -7,6 +7,8 @@ export class Header extends Component {
 	}
 
 	render() {
+		const { loggedIn } = this.props
+
 		return (
 			<header>
 				<div className="skip-to-main-content hide-on-mobile hide-on-tablet">
@@ -16,9 +18,24 @@ export class Header extends Component {
 					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
-					<div id="header-my-account">
-						<a href="http://myaccount.stockport.gov.uk"><i className="fa fa-user" aria-hidden="true"></i>My Account</a>
-					</div>
+					{loggedIn 
+						? <div id="header-my-account" className="logged-in">
+							<div className='menu'> 
+								<i className="fa fa-user" aria-hidden="true"></i>
+								<p>Welcome User</p>
+								<a href="http://myaccount.stockport.gov.uk">My Account</a>
+								<i className="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<div className='menu-tooltip'>
+								<i className="fa fa-caret-up" aria-hidden="true"></i>
+								<a href="http://myaccount.stockport.gov.uk">Email</a>
+								<a href="http://myaccount.stockport.gov.uk">Settings</a>
+								<a href="http://myaccount.stockport.gov.uk">Account</a>
+							</div>
+						</div> 
+						: <div id="header-my-account">
+							<a href="http://myaccount.stockport.gov.uk"><i className="fa fa-user" aria-hidden="true"></i>My Account</a>
+						</div>}
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
 						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
 						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />

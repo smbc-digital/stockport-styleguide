@@ -10,6 +10,7 @@ import FormElements from './Pages/FormElements'
 import Alerts from './Pages/Alerts'
 import Tables from './Pages/Tables'
 import Profiles from './Pages/Profiles'
+import Headers from './Pages/Headers'
 import Icons from './Pages/Icons'
 import Header from './Elements/Header'
 import Footer from './Elements/Footer'
@@ -21,7 +22,7 @@ class App extends Component{
 	render(){
 		return(
 			<React.Fragment>
-				<Header/>
+				<Header loggedIn />
 				<Switch>
 					<Route exact path="/" component={Home}/>
 					<Route path="/colours" component={Colours}/>
@@ -34,6 +35,7 @@ class App extends Component{
 					<Route path="/profiles" component={Profiles}/>
 					<Route path="/icons" component={Icons}/>
 					<Route path="/promotions" component={Promotions}/>
+					<Route path="/headers" component={Headers}/>
 					<Route render={(props) => (<ErrorPage {...props} errorCode={404} />)}/>
 				</Switch>
 				<Footer/>

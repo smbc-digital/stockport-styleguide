@@ -42,6 +42,10 @@ class Aside extends Component{
 			{
 				name: 'Promotions',
 				route: '/promotions'
+			},
+			{
+				name: 'Headers',
+				route: '/headers'
 			}
 		]
 		this.state = {
