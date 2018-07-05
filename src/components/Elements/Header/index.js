@@ -42,9 +42,10 @@ class Header extends Component {
 									<i className="fa fa-user" aria-hidden="true"></i>
 								</label>
 								<div className="modal-overlay">
-									<div className="button button-outline button-close button-overlay">
-										<label htmlFor="modal"><i className="fa fa-times" aria-hidden="true"></i>Close</label>
-									</div>
+									<label htmlFor="modal" className="button button-outline button-close button-overlay">
+										<i className="fa fa-times" aria-hidden="true"></i>
+										Close
+									</label>
 									<nav className="mobile-menu">
 										<ul>
 											<li><a href="http://myaccount.stockport.gov.uk">Email</a></li>

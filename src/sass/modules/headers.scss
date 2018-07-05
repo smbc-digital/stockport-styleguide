@@ -170,62 +170,38 @@ body > header,
                 transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
                 display: table;
 
-                .button {
-                    vertical-align: top;
-                    display: table-cell;
-                    text-align: right;
-                    height: 70px;
-                    margin-bottom: -70px;
-                }
-
                 .fa {
                     font-size: 30px;
                     color: $white;
                     opacity: 0.8;
                 }
 
-                .modal-box {
-                    display: table;
-                    width: 100%;
-                    position: relative;
-                    height: 100%;
-                    overflow: scroll;
-
-                    label {
-                        padding-left: 10px;
-                        padding-top: 10px;
-                        opacity: 1;
-                        color: $white;
-                        font: 1em "Noto Sans",sans-serif;
-                    }
-
-                    .mobile-menu {
-                        display: table-cell;
-                        height: auto;
-                        vertical-align: middle;
-                        padding-top: 70px;
-                    }
-
-                    a {
-                        text-decoration: none;
-                    }
-                }
-
                 .button-overlay {
+                    @extend .mobile-grid-25;
+                    @extend .tablet-grid-25;
+                    position: relative;
+                    float: right;
+                    display: table-row;
                     border-color: $white;
                     opacity: 1;
+                    padding: 10px 10px 10px 25px;
                     border-radius: 5px;
                     box-shadow: none;
                     position: relative;
-                    right: 0;
-                    top: 0;
                     margin: 10px 10px 0 0;
-                    cursor: pointer;
 
-                    label {
-                        cursor: pointer;
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 5px;
+                        margin: -15px 0 0 0;
                     }
 
+                }
+
+                nav {
+                    display: table-row;
+                    vertical-align: middle;
                 }
             }
         }
