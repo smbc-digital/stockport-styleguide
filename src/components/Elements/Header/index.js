@@ -1,9 +1,13 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
-export class Header extends Component {
+class Header extends Component {
 
 	constructor(props) {
 		super(props)
+	}
+
+	onModalCheckboxChange(event) {
+		document.body.classList = event.target.checked ? 'noscroll' : ''
 	}
 
 	render() {
@@ -18,21 +22,39 @@ export class Header extends Component {
 					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
-					{loggedIn 
+					{loggedIn
 						? <div id="header-my-account" className="logged-in">
-							<div className='menu'> 
+							<div className='menu'>
 								<i className="fa fa-user" aria-hidden="true"></i>
 								<p>Welcome User</p>
 								<a href="http://myaccount.stockport.gov.uk">My Account</a>
 								<i className="fa fa-angle-down" aria-hidden="true"></i>
 							</div>
-							<div className='menu-tooltip'>
+							<nav className='menu-tooltip'>
 								<i className="fa fa-caret-up" aria-hidden="true"></i>
 								<a href="http://myaccount.stockport.gov.uk">Email</a>
 								<a href="http://myaccount.stockport.gov.uk">Settings</a>
 								<a href="http://myaccount.stockport.gov.uk">Account</a>
+							</nav>
+							<div className='modal'>
+								<input id='modal' type='checkbox' name='modal' tabIndex='1' onClick={this.onModalCheckboxChange.bind(this)} />
+								<label htmlFor="modal">
+									<i className="fa fa-user" aria-hidden="true"></i>
+								</label>
+								<div className="modal-overlay">
+									<div className="button button-outline button-close button-overlay">
+										<label htmlFor="modal"><i className="fa fa-times" aria-hidden="true"></i>Close</label>
+									</div>
+									<nav className="mobile-menu">
+										<ul>
+											<li><a href="http://myaccount.stockport.gov.uk">Email</a></li>
+											<li><a href="http://myaccount.stockport.gov.uk">Settings</a></li>
+											<li><a href="http://myaccount.stockport.gov.uk">Account</a></li>
+										</ul>
+									</nav>
+								</div>
 							</div>
-						</div> 
+						</div>
 						: <div id="header-my-account">
 							<a href="http://myaccount.stockport.gov.uk"><i className="fa fa-user" aria-hidden="true"></i>My Account</a>
 						</div>}
@@ -41,18 +63,18 @@ export class Header extends Component {
 						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
 						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
-				</div>
-				<div className="banner-header">
-					<div className="center-wrapper">
-						<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
+					<div className="banner-header">
+						<div className="center-wrapper">
+							<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
+						</div>
 					</div>
+					<nav className="breadcrumb">
+						<h2 className="sr-only">Breadcrumb navigation</h2>
+						<ul className="center-wrapper">
+							<li><a href="/">Home</a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav className="breadcrumb">
-					<h2 className="sr-only">Breadcrumb navigation</h2>
-					<ul className="center-wrapper">
-						<li><a href="/">Home</a></li>
-					</ul>
-				</nav>
 			</header>
 		)
 	}
