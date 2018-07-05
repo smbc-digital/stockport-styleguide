@@ -176,6 +176,27 @@ body > header,
                     opacity: 0.8;
                 }
 
+                .mobile-menu {
+                    ul {
+                        li {
+                            display: block;
+
+                            a {
+                                color: #fff;
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                background: 0 0;
+                                padding: 10px 0;
+                                //-webkit-transition: background .25s;
+                                // transition: background .25s;
+                                font-size: 1.375em;
+                            }
+                        }
+                    }
+
+                }
+
                 .button-overlay {
                     @extend .mobile-grid-25;
                     @extend .tablet-grid-25;
