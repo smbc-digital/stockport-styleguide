@@ -60,6 +60,10 @@ body > header,
                 display: inline-block;
                 position: relative;
                 padding: 10px 10px 10px 30px;
+
+                a {
+                    float: left;
+                }
             }
 
             p {
