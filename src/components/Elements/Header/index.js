@@ -32,14 +32,16 @@ class Header extends Component {
 							</div>
 							<nav className='menu-tooltip'>
 								<i className="fa fa-caret-up" aria-hidden="true"></i>
-								<a href="http://myaccount.stockport.gov.uk">Email</a>
-								<a href="http://myaccount.stockport.gov.uk">Settings</a>
-								<a href="http://myaccount.stockport.gov.uk">Account</a>
+								<a href="http://myaccount.stockport.gov.uk">My Account</a>
+								<a href="http://myaccount.stockport.gov.uk">Account Settings</a>
+								<a href="http://myaccount.stockport.gov.uk">Email alerts</a>
+								<a href="http://myaccount.stockport.gov.uk">Sign out</a>
 							</nav>
 							<div className='modal'>
 								<input id='modal' type='checkbox' name='modal' tabIndex='1' onClick={this.onModalCheckboxChange.bind(this)} />
 								<label htmlFor="modal">
 									<i className="fa fa-user" aria-hidden="true"></i>
+									<span className='hidden'>Open account menu</span>
 								</label>
 								<div className="modal-overlay">
 									<label htmlFor="modal" className="button button-outline button-close button-overlay">
@@ -48,9 +50,10 @@ class Header extends Component {
 									</label>
 									<nav className="mobile-menu">
 										<ul>
-											<li><a href="http://myaccount.stockport.gov.uk">Email</a></li>
-											<li><a href="http://myaccount.stockport.gov.uk">Settings</a></li>
-											<li><a href="http://myaccount.stockport.gov.uk">Account</a></li>
+											<li><a href="http://myaccount.stockport.gov.uk">My Account</a></li>
+											<li><a href="http://myaccount.stockport.gov.uk">Account settings</a></li>
+											<li><a href="http://myaccount.stockport.gov.uk">Email alerts</a></li>
+											<li><a href="http://myaccount.stockport.gov.uk">Sign out</a></li>
 										</ul>
 									</nav>
 								</div>

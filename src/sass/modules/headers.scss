@@ -1,6 +1,6 @@
 body > header,
-#root > header,
-.header-showcase > header { // sass-lint:disable-line no-ids (#root needed for React)
+#root > header, // sass-lint:disable-line no-ids (#root needed for React)
+.header-showcase > header { 
     background-color: $primary;
     width: 100%;
 
@@ -87,7 +87,7 @@ body > header,
                 border: 1px solid $grey-lighter;
                 padding: 0 15px 8px 15px;
                 box-sizing: border-box;
-                @include border-radius(3px);
+                @include border-radius(6px);
 
                 .fa-caret-up {
                     position: absolute;
@@ -139,6 +139,7 @@ body > header,
                     position: absolute;
                     top: 30px;
                     z-index: -10;
+                    width: 50px;
                 }
             }
 
@@ -198,7 +199,7 @@ body > header,
                 }
 
                 .button-overlay {
-                    @extend .mobile-grid-25;
+                    @extend .mobile-grid-30;
                     @extend .tablet-grid-25;
                     position: relative;
                     float: right;
@@ -208,21 +209,42 @@ body > header,
                     padding: 10px 10px 10px 25px;
                     border-radius: 5px;
                     box-shadow: none;
-                    position: relative;
                     margin: 10px 10px 0 0;
 
                     i {
                         position: absolute;
                         top: 50%;
-                        left: 5px;
+                        left: 10px;
                         margin: -15px 0 0 0;
                     }
-
                 }
 
                 nav {
                     display: table-row;
                     vertical-align: middle;
+                    background: transparent;
+
+                    ul {
+                        padding: 0;
+                    }
+
+                    li {
+                        display: block;
+                        text-align: center;
+                        padding: 10px 0;
+                        border-top: 1px solid rgba(255,255,255,.1);
+                        border-bottom: 1px solid rgba(255,255,255,.1);
+
+                        &:after {
+                            content: none;
+                            padding: 0;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: $fontSizeLarge;
+                        }
+                    }
                 }
             }
         }
