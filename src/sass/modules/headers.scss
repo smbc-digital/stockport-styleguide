@@ -35,6 +35,7 @@ body > header,
 
         &.logged-in {
             padding: 0;
+            height: 100%;
             position: relative;
 
             @media #{$tablet}, #{$mobile} {
@@ -66,10 +67,6 @@ body > header,
                 }
             }
 
-            .menu:hover + .menu-tooltip {
-                visibility: visible;
-            }
-
             p {
                 margin: 0;
                 line-height: 1.5em;
@@ -78,6 +75,14 @@ body > header,
 
             a {
                 text-decoration: underline;
+            }
+
+            .menu-container {
+                display: inline-block;
+
+                &:hover .menu-tooltip {
+                    visibility: visible;
+                }
             }
 
             .menu-tooltip {

@@ -24,19 +24,21 @@ class Header extends Component {
 					</div>
 					{loggedIn
 						? <div id="header-my-account" className="logged-in">
-							<div className='menu'>
-								<i className="fa fa-user" aria-hidden="true"></i>
-								<p>Welcome User</p>
-								<a href="http://myaccount.stockport.gov.uk">My Account</a>
-								<i className="fa fa-angle-down" aria-hidden="true"></i>
+							<div className='menu-container'>
+								<div className='menu'>
+									<i className="fa fa-user" aria-hidden="true"></i>
+									<p>Welcome User</p>
+									<a href="http://myaccount.stockport.gov.uk">My Account</a>
+									<i className="fa fa-angle-down" aria-hidden="true"></i>
+								</div>
+								<nav className='menu-tooltip'>
+									<i className="fa fa-caret-up" aria-hidden="true"></i>
+									<a href="http://myaccount.stockport.gov.uk">My Account</a>
+									<a href="http://myaccount.stockport.gov.uk">Account Settings</a>
+									<a href="http://myaccount.stockport.gov.uk">Email alerts</a>
+									<a href="http://myaccount.stockport.gov.uk">Sign out</a>
+								</nav>
 							</div>
-							<nav className='menu-tooltip'>
-								<i className="fa fa-caret-up" aria-hidden="true"></i>
-								<a href="http://myaccount.stockport.gov.uk">My Account</a>
-								<a href="http://myaccount.stockport.gov.uk">Account Settings</a>
-								<a href="http://myaccount.stockport.gov.uk">Email alerts</a>
-								<a href="http://myaccount.stockport.gov.uk">Sign out</a>
-							</nav>
 							<div className='modal'>
 								<input id='modal' type='checkbox' name='modal' tabIndex='1' onClick={this.onModalCheckboxChange.bind(this)} />
 								<label htmlFor="modal">
