@@ -26,8 +26,8 @@ class Header extends Component {
 						? <div id="header-my-account" className="logged-in">
 							<div className='menu-container'>
 								<div className='menu'>
-									<i className="fa fa-user" aria-hidden="true"></i>
 									<p>Welcome User</p>
+									<i className="fa fa-user" aria-hidden="true"></i>
 									<a href="http://myaccount.stockport.gov.uk">My Account</a>
 									<i className="fa fa-angle-down" aria-hidden="true"></i>
 								</div>

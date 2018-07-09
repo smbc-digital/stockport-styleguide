@@ -43,11 +43,11 @@ body > header,
             }
 
             .fa-user {
-                position: absolute;
-                top: 50%;
-                margin: -8px 0 0 0;
-                left: 0;
                 color: white;
+
+                @media #{$desktop} {
+                    margin: 0 15px 0 0;
+                }
             }
 
             .fa-angle-down {
@@ -56,15 +56,9 @@ body > header,
             }
 
             .menu {
-                @extend .hide-on-mobile;
-                @extend .hide-on-tablet;
                 display: inline-block;
                 position: relative;
-                padding: 10px 10px 10px 30px;
-
-                a {
-                    float: left;
-                }
+                padding: 10px 25px 10px 30px;
             }
 
             p {
@@ -78,6 +72,8 @@ body > header,
             }
 
             .menu-container {
+                @extend .hide-on-mobile;
+                @extend .hide-on-tablet;
                 display: inline-block;
 
                 &:hover .menu-tooltip {
@@ -90,7 +86,7 @@ body > header,
                 @extend .hide-on-tablet;
                 visibility: hidden;
                 position: absolute;
-                right: -74px;
+                right: 0;
                 width: 210px;
                 background-color: $white;
                 border: 1px solid $grey-lighter;
@@ -103,7 +99,7 @@ body > header,
                     top: -14px;
                     color: white;
                     font-size: 1.25em;
-                    left: 115px;
+                    left: 174px;
                 }
 
                 a {
