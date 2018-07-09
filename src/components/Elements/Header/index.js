@@ -50,7 +50,7 @@ class Header extends Component {
 										<i className="fa fa-times" aria-hidden="true"></i>
 										Close
 									</label>
-									<nav className="mobile-menu">
+									<nav>
 										<ul>
 											<li><a href="http://myaccount.stockport.gov.uk">My Account</a></li>
 											<li><a href="http://myaccount.stockport.gov.uk">Account settings</a></li>

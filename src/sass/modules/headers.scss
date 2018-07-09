@@ -39,7 +39,7 @@ body > header,
             position: relative;
 
             @media #{$tablet}, #{$mobile} {
-                padding: 14px 15px;
+                padding: 13px 0;
             }
 
             .fa-user {
@@ -180,27 +180,6 @@ body > header,
                     font-size: 30px;
                     color: $white;
                     opacity: 0.8;
-                }
-
-                .mobile-menu {
-                    ul {
-                        li {
-                            display: block;
-
-                            a {
-                                color: #fff;
-                                width: 100%;
-                                height: 100%;
-                                display: block;
-                                background: 0 0;
-                                padding: 10px 0;
-                                //-webkit-transition: background .25s;
-                                // transition: background .25s;
-                                font-size: 1.375em;
-                            }
-                        }
-                    }
-
                 }
 
                 .button-overlay {
