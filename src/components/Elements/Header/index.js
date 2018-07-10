@@ -69,18 +69,18 @@ class Header extends Component {
 						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
 						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
-					<div className="banner-header">
-						<div className="center-wrapper">
-							<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
-						</div>
-					</div>
-					<nav className="breadcrumb">
-						<h2 className="sr-only">Breadcrumb navigation</h2>
-						<ul className="center-wrapper">
-							<li><a href="/">Home</a></li>
-						</ul>
-					</nav>
 				</div>
+				<div className="banner-header">
+					<div className="center-wrapper">
+						<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
+					</div>
+				</div>
+				<nav className="breadcrumb">
+					<h2 className="sr-only">Breadcrumb navigation</h2>
+					<ul className="center-wrapper">
+						<li><a href="/">Home</a></li>
+					</ul>
+				</nav>
 			</header>
 		)
 	}
