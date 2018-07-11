@@ -1,4 +1,4 @@
-#upload-file-list {
+.upload-file-list {
     display: none;
     border: 1px solid $grey-lightest;
     border-radius: 2px;
@@ -41,7 +41,7 @@
     }
 }
 
-#upload-file-input {
+.upload-file-input {
     padding: 0;
     margin: 0 0 25px 0;
 
