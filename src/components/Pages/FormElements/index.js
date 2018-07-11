@@ -279,6 +279,25 @@ class Inputs extends Component {
 								</CodeExample>
 							</form>
 						</section>
+						<section>
+							<form>
+								<h1>Submit your supporting documents</h1>
+								<div id="upload-file-list" className="grid-50 tablet-grid-50 mobile-grid-100">
+									<div className="grid-100">
+										<i className="fa fa-1x fa-file"></i>
+										<span>test2.txt</span>
+										<i className="fa fa-1x fa-times"></i>
+									</div>
+								</div>
+								<div id="upload-file-input" className="grid-100">
+									<label className="button-primary label-file">
+										Browse for files
+										<input id="Files" name="Files" type="File"></input>
+									</label>
+								</div>
+								<button disabled="" id="submitFiles" type="submit" className="button-primary">Submit your documents</button>
+							</form>
+						</section>
 					</section>
 				</article>
 				<Aside />
