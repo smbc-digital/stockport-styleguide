@@ -70,6 +70,7 @@
 
         @media #{$mobile, $tablet} 
         {
+            max-width: none;
             min-width: 0;
         }
 
