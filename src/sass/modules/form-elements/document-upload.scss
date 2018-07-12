@@ -61,6 +61,17 @@
 
     .label-file {
         background-color: $grey-dark;
+        width: auto;
+
+        @media #{$desktop} 
+        {
+            max-width: 150px;
+        }
+
+        @media #{$mobile, $tablet} 
+        {
+            min-width: 0;
+        }
 
         &:before {
             content: '';
