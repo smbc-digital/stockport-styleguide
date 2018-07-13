@@ -282,14 +282,14 @@ class Inputs extends Component {
 						<section>
 							<form>
 								<h1>Submit your supporting documents</h1>
-								<div className="upload-file-list grid-50 tablet-grid-50 mobile-grid-100">
+								<div className="upload-file-list" style={{display: 'block'}}>
 									<div className="grid-100">
 										<i className="fa fa-1x fa-file"></i>
 										<span>test2.txt</span>
 										<i className="fa fa-1x fa-times"></i>
 									</div>
 								</div>
-								<div className="upload-file-input grid-100">
+								<div className="upload-file-input">
 									<label className="button-primary label-file">
 										Browse for files
 										<input id="Files" name="Files" type="File"></input>
