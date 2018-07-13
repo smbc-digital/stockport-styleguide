@@ -85,5 +85,9 @@ section.header-container {
     p {
         color: $white;
         margin-bottom: 0;
+
+        &:last-child {
+            padding-bottom: 30px;
+        }
     }
 }
