@@ -1,8 +1,8 @@
-.ineligible-warning {
+.ineligible-warning,
+.root {
     @include main-layout;
 
-    .header-container, 
-    .root.header-container {
+    .header-container {
         display: table;
         margin-bottom: 21px;
 
