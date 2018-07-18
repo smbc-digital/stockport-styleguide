@@ -29,6 +29,11 @@
     }
 }
 
+.input-radio-container + .input-error,
+.input-checkbox-container + .input-error {
+    margin-top: -17px;
+}
+
 .input-error-content {
     background: $red;
     color: $white;
