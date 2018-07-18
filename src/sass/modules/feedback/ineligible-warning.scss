@@ -1,5 +1,5 @@
-.ineligible-warning,
-.root {
+#root, // sass-lint:disable-line no-ids (#root needed for React)
+.ineligible-warning {
     @include main-layout;
 
     .header-container {
