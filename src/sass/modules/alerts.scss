@@ -178,12 +178,14 @@
         padding-right: 0;
         max-width: 100%;
 
-        i {
+        i, 
+        span {
             padding: 0
         } 
     }
 
-    > i {        
+    > i, 
+    span {        
         display: table-cell;
         vertical-align: middle;
         font-size: 2.250em;
@@ -224,7 +226,8 @@
 .alert-information-form {
     @include alert-form;
 
-    i {
+    i, 
+    span {
         color: $soft-blue;        
     }
 }
@@ -232,7 +235,8 @@
 .alert-warning-form {
     @include alert-form;
 
-    i {
+    i, 
+    span {
         color: $orange;
     }
 }

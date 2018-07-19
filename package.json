@@ -47,7 +47,7 @@
     "redux-thunk": "^2.2.0",
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.0.0",
-    "smbc-react-components": "^1.6.24",
+    "smbc-react-components": "^2.0.15",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.2"
   },
