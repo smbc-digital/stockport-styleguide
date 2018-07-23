@@ -22,7 +22,7 @@ class App extends Component{
 	render(){
 		return(
 			<React.Fragment>
-				<Header loggedIn />
+				<Header />
 				<Switch>
 					<Route exact path="/" component={Home}/>
 					<Route path="/colours" component={Colours}/>
