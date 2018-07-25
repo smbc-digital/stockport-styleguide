@@ -68,7 +68,7 @@
             max-width: 150px;
         }
 
-        @media #{$mobile, $tablet} 
+        @media #{$mobile} 
         {
             max-width: none;
             min-width: 0;
