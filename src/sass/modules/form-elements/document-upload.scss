@@ -63,7 +63,7 @@
         background-color: $grey-dark;
         width: auto;
 
-        @media #{$desktop} 
+        @media #{$desktop, $tablet} 
         {
             max-width: 150px;
         }
