@@ -20,12 +20,12 @@
 @import 'modules/feedback/success';
 @import 'modules/feedback/ineligible-warning';
 @import 'modules/feedback/system-failure';
-@import 'modules/appointment-selector';
+@import 'modules/form-elements/form';
+@import 'modules/form-elements/base-inputs';
 @import 'modules/form-elements/account-number';
 @import 'modules/form-elements/base-errors';
-@import 'modules/form-elements/base-inputs';
 @import 'modules/form-elements/currency-input';
 @import 'modules/form-elements/date-picker';
-@import 'modules/form-elements/form';
 @import 'modules/form-elements/sort-code';
 @import 'modules/form-elements/document-upload';
+@import 'modules/form-elements/appointment-selector';
