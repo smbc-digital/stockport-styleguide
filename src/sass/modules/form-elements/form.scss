@@ -33,8 +33,7 @@ form {
         margin-bottom: 16px;
         display: block;
 
-        &.optional, 
-        &.inline {
+        &.optional {
             display: inline-block;
         }
     }
@@ -43,15 +42,13 @@ form {
         @extend h3;
 
         @media #{$mobile} {
-            &.optional, 
-            &.inline {
+            &.optional {
                 margin-bottom: 0;
             }
         }
     }
 
-    h2.optional, 
-    h2.inline {
+    h2.optional {
         margin-bottom: 0;
         display: inline-block;
     }
@@ -59,8 +56,7 @@ form {
     p {
         margin: 0 0 10px;
 
-        &.optional, 
-        &.inline {
+        &.optional {
             padding-left: 10px;
             font-size: $fontSizeSmall;
             display: inline-block;
