@@ -56,4 +56,8 @@ form .appointment-radio-container {
             }
         }
     }
+
+    @media #{$mobile} {
+        display: block;
+    }
 }
