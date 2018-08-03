@@ -61,6 +61,11 @@ button {
     }
 }
 
+p + .button {
+    margin-top: 20px;
+}
+
+
 form .button {
     margin-bottom: 20px;
 }
