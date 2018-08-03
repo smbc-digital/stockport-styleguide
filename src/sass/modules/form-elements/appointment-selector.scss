@@ -29,6 +29,7 @@ form .appointment-radio-container {
 
     label {
         @extend .button-inverted;
+        width: inherit;
         margin: 0;
         padding: 10px 35px;
 
@@ -59,5 +60,6 @@ form .appointment-radio-container {
 
     @media #{$mobile} {
         display: block;
+        margin-right: 0;
     }
 }
