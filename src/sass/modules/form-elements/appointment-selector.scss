@@ -49,6 +49,7 @@ form .appointment-radio-container {
 
         &:checked + label {
             @extend .button-selected;
+            width: inherit;
             margin: 0;
             padding: 10px 35px;
 

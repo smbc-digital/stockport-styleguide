@@ -24,6 +24,7 @@ export class Home extends Component {
 						<li><a href="/buttons"><i className="si-pointing-hand"></i><span>Buttons</span></a></li>
 						<li><a href="/form-elements"><i className="si-clipboard-pencil"></i><span>Form Elements</span></a></li>
 						<li><a href="/alerts"><i className="si-exclamation-mark"></i><span>Alerts</span></a></li>
+						<li><a href="/inform-alerts"><i className="fa fa-exclamation-circle"></i><span>In-form alerts</span></a></li>
 						<li><a href="/tables"><i className="si-data-table"></i><span>Tables</span></a></li>
 						<li><a href="/profiles"><i className="si-person"></i><span>Profiles</span></a></li>
 						<li><a href="/icons"><i className="si-colin"></i><span>Icons</span></a></li>

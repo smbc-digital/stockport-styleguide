@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
 
-class Typography extends Component{
-	constructor(props){
+class Typography extends Component {
+	constructor(props) {
 		super(props)
 	}
 
-	render(){
+	render() {
 		return (
 			<main id="content">
 				<article id="content" className="with-aside">
@@ -42,13 +42,61 @@ class Typography extends Component{
 					</section>
 					<section className="heading-display">
 						<h2>Headings</h2>
-						<section>
-							<h1>Hey, i'm an h1</h1>
-							<h2>Hey, i'm an h2</h2>
-							<h3>Hey, i'm an h3</h3>
-							<h4>Hey, i'm an h4</h4>
-							<p>Hey, i'm body text and i appear absolutely everywhere!</p>
-							<a href="#">Hey, i'm a link to some amazing content</a>
+						<section className="with-border-bottom">
+							<h1>This is what h1 looks like</h1>
+							<div className="description">
+								<p>Font family: Source Sans Pro</p>
+								<p>Font size: 60px</p>
+								<p>Font weight: 600</p>
+								<p>Colour: #065c58</p>
+								<p>Letter spacing: -1.5px</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<h2>This is what h2 looks like</h2>
+							<div className="description">
+								<p>Font family: Source Sans Pro</p>
+								<p>Font size: 28px</p>
+								<p>Font weight: 600</p>
+								<p>Colour: #333333</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<h3>This is what h3 looks like</h3>
+							<div className="description">
+								<p>Font family: Source Sans Pro</p>
+								<p>Font size: 22px</p>
+								<p>Font weight: 700</p>
+								<p>Colour: #333333</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<h4>This is what h4 looks like</h4>
+							<div className="description">
+								<p>Font family: Source Sans Pro</p>
+								<p>Font size: 20px</p>
+								<p>Font weight: 400</p>
+								<p>Colour: #333333</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<p>This is what body text looks like</p>
+							<div className="description">
+								<p>Font family: Noto Sans</p>
+								<p>Font size: 16px</p>
+								<p>Font weight: 400</p>
+								<p>Colour: #333333</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<a href="#">This is what a link to some amazing content looks like</a>
+							<div className="description">
+								<p>Font family: Noto Sans</p>
+								<p>Font size: 16px</p>
+								<p>Font weight: 400</p>
+								<p>Colour: #065c58</p>
+								<p>Text decoration: Underline</p>
+							</div>
 						</section>
 					</section>
 					<section className='header-container'>
@@ -57,10 +105,10 @@ class Typography extends Component{
 						<p className="h3">Your doucument reference number is: 123456789 </p>
 					</section>
 				</article>
-				<Aside/>
+				<Aside />
 			</main>
-		) 
-	} 
+		)
+	}
 }
 
 export default Typography

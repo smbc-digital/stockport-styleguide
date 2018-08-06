@@ -15,6 +15,7 @@ import Icons from './Pages/Icons'
 import Header from './Elements/Header'
 import Footer from './Elements/Footer'
 import Promotions from './Pages/Promotions'
+import InFormAlerts from './Pages/InFormAlerts'
 import { ErrorPage } from 'smbc-react-components'
 
 class App extends Component{
@@ -31,6 +32,7 @@ class App extends Component{
 					<Route path="/buttons" component={Buttons}/>
 					<Route path="/form-elements" component={FormElements}/>
 					<Route path="/alerts" component={Alerts}/>
+					<Route path='/inform-alerts' component={InFormAlerts} />
 					<Route path="/tables" component={Tables}/>
 					<Route path="/profiles" component={Profiles}/>
 					<Route path="/icons" component={Icons}/>
