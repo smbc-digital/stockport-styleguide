@@ -187,6 +187,52 @@ class Tables extends Component{
 								</table>
 							</section>
 						</section>
+						<h2>Costing table</h2>
+						<section className="data-table-costing">
+							<header>
+								<div className="headings">
+									<h2>Your items</h2>
+								</div>
+							</header>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											Item A
+											<a href="#">Remove</a>
+										</td>
+										<td className="align-right">£30</td>
+									</tr>
+									<tr>
+										<td>
+											Item B
+											<a href="#">Remove</a>
+										</td>
+										<td className="align-right">£60</td>
+									</tr>
+									<tr>
+										<td>
+											Item C
+											<a href="#">Remove</a>
+										</td>
+										<td className="align-right">£100</td>
+									</tr>
+									<tr>
+										<td>
+											Item D
+											<a href="#">Remove</a>
+										</td>
+										<td className="align-right">£10</td>
+									</tr>
+								</tbody>
+							</table>
+							<footer>
+								<strong>
+									Total
+									<span className="align-right">£200</span>
+								</strong>
+							</footer>
+						</section>
 					</section>
 				</article>
 				<Aside/>

@@ -225,3 +225,35 @@
         }
     }
 }
+
+.data-table-costing {
+    @extend .data-table-striped;
+
+    @media #{$desktop} {
+        width: 60%;
+    }
+
+    @media #{$mobile} {
+        header {
+            background-color: $white;
+        }
+    }
+
+    table tr td {
+        a {
+            display: block;
+        }
+
+        &.align-right {
+            vertical-align: top;
+        }
+    }
+
+    footer {
+        border-top: 1px solid $grey-lighter;
+
+        .align-right {
+            float: right;
+        }
+    }
+}
