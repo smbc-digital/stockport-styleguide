@@ -71,6 +71,10 @@ form {
         &.extra-margin-bottom {
             margin-bottom: 25px;
         }
+
+        &.description {
+            @extend .grid-66;
+        }
     }
 
     hr {
