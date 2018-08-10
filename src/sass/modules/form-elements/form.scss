@@ -75,6 +75,7 @@ form {
         &.description {
             @extend .grid-66;
             float: none;
+            padding: 0;
         }
     }
 
