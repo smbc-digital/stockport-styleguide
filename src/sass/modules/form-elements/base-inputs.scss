@@ -39,10 +39,15 @@ textarea {
     height: 250px;
     margin-bottom: 10px;
 
+    &.small {
+        height: 100px;
+    }
+
     &.char-limit {
         margin-bottom: 10px;
     }
 }
+
 
 select {
     @include border-radius(3px);
