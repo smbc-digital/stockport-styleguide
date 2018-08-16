@@ -44,6 +44,8 @@ main #root.success-page {
         @extend .grid-75;
         @extend .mobile-grid-100;
         @extend .tablet-grid-100;
+
+        padding: 0;
     }
 
     @media #{$mobile} {
