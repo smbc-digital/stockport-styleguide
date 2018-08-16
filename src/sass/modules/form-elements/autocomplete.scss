@@ -14,7 +14,7 @@
     border: 1px solid #999;
     width: 100%;
     max-width: 550px;
-    font-family: Noto Sans,Arial,sans-serif;
+    font-family: Noto Sans, Arial, sans-serif;
     box-sizing: border-box;
     line-height: 1.125em;
     padding: 15px 10px;
@@ -27,7 +27,9 @@
     margin-bottom: 20px;
     text-overflow: ellipsis;
 }
+
 /*.autocomplete__input*/
+
 /*.autocomplete__hint {
     -webkit-appearance: none;
     border: 2px solid;
@@ -77,7 +79,7 @@
 .autocomplete__menu {
     background-color: #fff;
     border: 3px solid #ef8a16;
-    border-top: 0;
+    border-top: none;
     color: #34384b;
     margin-left: -3px;
     max-height: 342px;
@@ -96,7 +98,7 @@
 }
 
 .autocomplete__menu--overlay {
-    box-shadow: rgba(0,0,0,.256863) 0 2px 6px;
+    box-shadow: rgba(0, 0, 0, .256863) 0 2px 6px;
     left: 0;
     position: absolute;
     top: 100%;
@@ -110,23 +112,24 @@
     padding-left: 10px;
 }
 
-    .autocomplete__option > * {
-        pointer-events: none
-    }
+.autocomplete__option>* {
+    pointer-events: none
+}
 
-    .autocomplete__option:first-of-type {
-        border-top-width: 0
-    }
+.autocomplete__option:first-of-type {
+    border-top-width: 0
+}
 
-    .autocomplete__option:last-of-type {
-        border-bottom-width: 0
-    }
+.autocomplete__option:last-of-type {
+    border-bottom-width: 0
+}
 
 .autocomplete__option--odd {
     background-color: #fafafa
 }
 
-.autocomplete__option--focused, .autocomplete__option:hover {
+.autocomplete__option--focused,
+.autocomplete__option:hover {
     background-color: #005ea5;
     border-color: #005ea5;
     color: #fff;
