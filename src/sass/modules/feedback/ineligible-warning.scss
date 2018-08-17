@@ -43,5 +43,14 @@
     .body-container {
         @extend .grid-66;
         @extend .mobile-grid-100;
+
+        p {
+
+            ul {
+                padding-left: 16px;
+            }
+
+        }
+        
     }
 }
