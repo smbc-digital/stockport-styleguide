@@ -11,7 +11,7 @@ class Header extends Component {
 	}
 
 	render() {
-		const { loggedIn } = this.props
+		const { loggedIn, javascriptBanner } = this.props
 
 		return (
 			<header>
@@ -70,6 +70,12 @@ class Header extends Component {
 						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
+				{ javascriptBanner 
+					? <div className="banner-header javascript-error">
+						<div className="center-wrapper">
+							<span>JavaScript off</span>To get the best experience on this website please use a browser with JavaScript enabled.
+						</div>
+					</div> : null}
 				<div className="banner-header">
 					<div className="center-wrapper">
 						<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.

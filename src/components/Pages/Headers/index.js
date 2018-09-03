@@ -22,6 +22,12 @@ class Headers extends Component {
 							loggedIn
 						/>
 					</div>
+					<h2>Header with javascript disabled</h2>
+					<div className='header-showcase'>
+						<Header
+							loggedIn javascriptBanner
+						/>
+					</div>
 				</article>
 				<Aside />
 			</main>
