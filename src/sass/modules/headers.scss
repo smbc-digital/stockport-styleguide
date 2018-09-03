@@ -376,6 +376,19 @@ body > header,
         a {
             color: $white;
         }
+
+        &.javascript-error {
+            background-color: $orange;
+            color: $black;
+
+            span {
+                margin-right: 15px; 
+                padding: 5px 12px; 
+                background-color: transparent;
+                color: $black;
+                font-weight: $fontWeightBold;
+            }
+        }
     }
 
     .skip-to-main-content {
