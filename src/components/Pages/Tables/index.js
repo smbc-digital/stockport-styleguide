@@ -219,7 +219,7 @@ class Tables extends Component{
 									</tr>
 									<tr>
 										<td>
-											Item D
+											Really long item name, first data-items are set to a fixed width of 80% of the table width.
 											<a href="#">Remove</a>
 										</td>
 										<td className="align-right">£10</td>

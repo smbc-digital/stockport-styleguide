@@ -229,10 +229,6 @@
 .data-table-costing {
     @extend .data-table-striped;
 
-    @media #{$desktop} {
-        width: 60%;
-    }
-
     @media #{$mobile} {
         header {
             background-color: $white;
@@ -246,6 +242,12 @@
 
         &.align-right {
             vertical-align: top;
+        }
+    }
+
+    @media #{$desktop, $tablet}{
+        table tr td:first-child{
+            width:80%;
         }
     }
 
