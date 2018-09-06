@@ -1,0 +1,22 @@
+.settings-section {
+    hr {
+        color: #ccc;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    ul,
+    li {
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
