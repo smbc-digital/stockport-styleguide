@@ -28,7 +28,9 @@
     text-overflow: ellipsis;
 }
 
-/*.autocomplete__input*/
+.autocomplete__input::-ms-clear {
+    display: none;
+}
 
 /*.autocomplete__hint {
     -webkit-appearance: none;
