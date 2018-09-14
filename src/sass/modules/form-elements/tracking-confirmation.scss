@@ -1,0 +1,28 @@
+.tracking-reference {
+    text-align: center;
+    border: 1px solid $grey-lighter;
+    border-left: none;
+    border-right: none;
+    background: $grey-lightest;
+
+    h3 {
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        color: $grey-darkest;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.notification {
+    text-align: center;
+
+    &.success {
+        i {
+            color: $primary-light;
+        }
+    }
+}
