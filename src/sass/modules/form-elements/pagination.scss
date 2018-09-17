@@ -1,0 +1,63 @@
+.pagination-previous, 
+.pagination-next {
+    
+    @media #{$mobile} {
+        width: 100%;
+    }
+
+    width: 50%;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    border-top: 2px solid rgba(0,0,0,.1);
+    margin-bottom: 15px;
+
+    > a {
+        background-color: transparent;
+        color: $teal-darker;
+        text-decoration: none;
+        display: table;
+        width: 100%;  
+    }
+
+    h4 {
+        color: $teal-darker;
+        margin: 10px 0 0;
+    }
+
+    > a:hover {
+        text-decoration: none;
+        background-color: $off-white;
+
+        h4 {
+            text-decoration: underline;  
+        }
+    }
+
+    p {
+        color: $grey-darkest;
+    }
+
+    .pagination-chevron {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 45px;
+        color: rgba(0,0,0,.1);
+    }
+}
+
+.pagination-previous {
+    float: left;
+
+    > a {
+        text-align: left;
+        float: right;
+    }
+}
+
+.pagination-next {
+    float: right;
+
+    > a {
+        text-align: right;
+    }
+}
