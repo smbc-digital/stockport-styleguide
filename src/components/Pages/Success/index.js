@@ -14,9 +14,11 @@ class Success extends Component{
 					<section>
 						<h2>Successful Reporting</h2>
 						<div className="notification success">
-							<h1>Report a</h1>
-							<i className="fa fa-5x fa-check"></i>
-							<h2>Thank you for reporting a </h2>
+							<h1>Report a blocked grid</h1>
+							<div className="si-icon-bordered">
+								<i className="fa fa-5x fa-check"></i>
+							</div>
+							<h2>Thank you for reporting a blocked grid</h2>
 						</div>
 						<div className="tracking-reference">
 							<h3>Your report number is</h3>

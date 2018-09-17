@@ -261,3 +261,12 @@
 .si-wallet:before {
     content: "\e90b";
 }
+
+.si-icon-bordered {
+    border: 3px solid;
+    border-radius: 100%;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    color: $green;
+}
