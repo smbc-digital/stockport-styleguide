@@ -16,7 +16,6 @@ import Header from './Elements/Header'
 import Footer from './Elements/Footer'
 import Promotions from './Pages/Promotions'
 import InFormAlerts from './Pages/InFormAlerts'
-import Success from './Pages/Success'
 import { ErrorPage } from 'smbc-react-components'
 
 class App extends Component{
@@ -39,7 +38,6 @@ class App extends Component{
 					<Route path="/icons" component={Icons}/>
 					<Route path="/promotions" component={Promotions}/>
 					<Route path="/headers" component={Headers}/>
-					<Route path="/success" component={Success}/>
 					<Route render={(props) => (<ErrorPage {...props} errorCode={404} />)}/>
 				</Switch>
 				<Footer/>

@@ -46,10 +46,6 @@ class Aside extends Component{
 			{
 				name: 'Headers',
 				route: '/headers'
-			},
-			{
-				name: 'Success',
-				route: '/success'
 			}
 		]
 		this.state = {
