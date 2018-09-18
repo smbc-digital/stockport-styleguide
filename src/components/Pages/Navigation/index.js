@@ -74,6 +74,23 @@ class Navigation extends Component{
 							</div>
 						</div>
 					</section>
+					<section>
+						<h2>Naviagation ordered list with current active</h2>
+						<ol>
+							<li>
+								<a href="#">Primary schools</a>
+							</li>
+							<li className="nav-active">
+								<a href="#">Secondary schools</a>
+							</li>
+							<li>
+								<a href="#">Secondary schools</a>
+							</li>
+							<li>
+								<a href="#">Secondary schools</a>
+							</li>
+						</ol>
+					</section>
 				</article>
 				<Aside/>
 			</main>
