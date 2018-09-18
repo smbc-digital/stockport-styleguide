@@ -16,24 +16,20 @@ class Navigation extends Component{
 						<div className="pagination-container">
 							<div className="pagination-previous">
 								<a href="#">
-									<div className="pagination-chevron">
-										<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
-									</div>
+									<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
 									<div>
-										<h4>Previous page</h4>
-										<p>Secondary schools</p>
+										<p className="pagination-header no-margin-bottom">Previous page</p>
+										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
 								</a>
 							</div>
 							<div className="pagination-next">
 								<a href="#">
 									<div>
-										<h4>Next page</h4>
-										<p>Secondary schools</p>
+										<p className="pagination-header no-margin-bottom">Next page</p>
+										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
-									<div className="pagination-chevron">
-										<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
-									</div>
+									<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
@@ -46,12 +42,10 @@ class Navigation extends Component{
 							<div className="pagination-next">
 								<a href="#">
 									<div>
-										<h4>Next page</h4>
-										<p>Secondary schools</p>
+										<p className="pagination-header no-margin-bottom">Next page</p>
+										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
-									<div className="pagination-chevron">
-										<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
-									</div>
+									<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
@@ -61,12 +55,10 @@ class Navigation extends Component{
 						<div className="pagination-container">
 							<div className="pagination-previous">
 								<a href="#">
-									<div className="pagination-chevron">
-										<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
-									</div>
+									<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
 									<div>
-										<h4>Previous page</h4>
-										<p>Secondary schools</p>
+										<p className="pagination-header no-margin-bottom">Previous page</p>
+										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
 								</a>
 							</div>

@@ -1,6 +1,6 @@
 .pagination-container {
-    border-bottom: 2px solid rgba(0,0,0,.1);
-    border-top: 2px solid rgba(0,0,0,.1);
+    border-bottom: 2px solid $dark-border;
+    border-top: 2px solid $dark-border;
     margin-bottom: 15px;
     display: flex;
 
@@ -16,25 +16,37 @@
         }
 
         width: 50%;
+        display: flex;
 
         > a {
             background-color: transparent;
             color: $teal-darker;
             text-decoration: none;
-            display: table;
             width: 100%;  
+            text-align: left;
+            display: flex;
+            align-items: center;
+
+            > div {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            i {
+                color: rgba(0,0,0,.1);
+            }
         }
 
-        h4 {
+        .pagination-header {
             color: $teal-darker;
-            margin: 10px 0 0;
+            font-weight: $fontWeightBold;
         }
 
         > a:hover {
             text-decoration: none;
             background-color: $off-white;
 
-            h4 {
+            .pagination-header {
                 text-decoration: underline;  
             }
         }
@@ -48,19 +60,29 @@
             vertical-align: middle;
             text-align: center;
             width: 45px;
-            color: rgba(0,0,0,.1);
+            color: $dark-border;
         }
     }
 
     .pagination-previous {
         > a {
-            text-align: left;
+            justify-content: flex-start;
+
+            i {
+                margin-right: 15px;
+                margin-left: 10px;
+            }
         }
     }
 
     .pagination-next {
         > a {
-            text-align: right;
+            justify-content: flex-end;
+
+            i {
+                margin-left: 15px;
+                margin-right: 10px;
+            }
         }
     }
 }
