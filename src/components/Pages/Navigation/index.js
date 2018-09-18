@@ -13,43 +13,65 @@ class Navigation extends Component{
 					<h1>Navigation</h1>
 					<section>
 						<h2>Pagination</h2>
-						<div className="pagination-previous">
-							<a href="#">
-								<div className="pagination-chevron">
-									<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
-								</div>
-								<div>
-									<h4>Previous page</h4>
-									<p>Secondary schools</p>
-								</div>
-							</a>
-						</div>
-						<div className="pagination-next">
-							<a href="#">
-								<div>
-									<h4>Next page</h4>
-									<p>Secondary schools</p>
-								</div>
-								<div className="pagination-chevron">
-									<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
-								</div>
-							</a>
+						<div className="pagination-container">
+							<div className="pagination-previous">
+								<a href="#">
+									<div className="pagination-chevron">
+										<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
+									</div>
+									<div>
+										<h4>Previous page</h4>
+										<p>Secondary schools</p>
+									</div>
+								</a>
+							</div>
+							<div className="pagination-next">
+								<a href="#">
+									<div>
+										<h4>Next page</h4>
+										<p>Secondary schools</p>
+									</div>
+									<div className="pagination-chevron">
+										<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+									</div>
+								</a>
+							</div>
 						</div>
 					</section>
 					<section>
 						<h2>Pagination - Right side only</h2>
-						<div className="pagination-previous">
+						<div className="pagination-container">
+							<div className="pagination-previous">
+							</div>
+							<div className="pagination-next">
+								<a href="#">
+									<div>
+										<h4>Next page</h4>
+										<p>Secondary schools</p>
+									</div>
+									<div className="pagination-chevron">
+										<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+									</div>
+								</a>
+							</div>
 						</div>
-						<div className="pagination-next">
-							<a href="#">
-								<div>
-									<h4>Next page</h4>
-									<p>Secondary schools</p>
-								</div>
-								<div className="pagination-chevron">
-									<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
-								</div>
-							</a>
+					</section>
+					<section>
+						<h2>Pagination - Left side only</h2>
+						<div className="pagination-container">
+							<div className="pagination-previous">
+								<a href="#">
+									<div className="pagination-chevron">
+										<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
+									</div>
+									<div>
+										<h4>Previous page</h4>
+										<p>Secondary schools</p>
+									</div>
+								</a>
+							</div>
+							<div className="pagination-next">
+							</div>
 						</div>
 					</section>
 				</article>
