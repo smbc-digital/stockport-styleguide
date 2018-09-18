@@ -7,60 +7,60 @@
     @media #{$mobile} {
         display: block;
     }
-}
 
-.pagination-previous, 
-.pagination-next {
-    
-    @media #{$mobile} {
-        width: 100%;
-    }
+    .pagination-previous, 
+    .pagination-next {
+        
+        @media #{$mobile} {
+            width: 100%;
+        }
 
-    width: 50%;
+        width: 50%;
 
-    > a {
-        background-color: transparent;
-        color: $teal-darker;
-        text-decoration: none;
-        display: table;
-        width: 100%;  
-    }
-
-    h4 {
-        color: $teal-darker;
-        margin: 10px 0 0;
-    }
-
-    > a:hover {
-        text-decoration: none;
-        background-color: $off-white;
+        > a {
+            background-color: transparent;
+            color: $teal-darker;
+            text-decoration: none;
+            display: table;
+            width: 100%;  
+        }
 
         h4 {
-            text-decoration: underline;  
+            color: $teal-darker;
+            margin: 10px 0 0;
+        }
+
+        > a:hover {
+            text-decoration: none;
+            background-color: $off-white;
+
+            h4 {
+                text-decoration: underline;  
+            }
+        }
+
+        p {
+            color: $grey-darkest;
+        }
+
+        .pagination-chevron {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 45px;
+            color: rgba(0,0,0,.1);
         }
     }
 
-    p {
-        color: $grey-darkest;
+    .pagination-previous {
+        > a {
+            text-align: left;
+        }
     }
 
-    .pagination-chevron {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        width: 45px;
-        color: rgba(0,0,0,.1);
-    }
-}
-
-.pagination-previous {
-    > a {
-        text-align: left;
-    }
-}
-
-.pagination-next {
-    > a {
-        text-align: right;
+    .pagination-next {
+        > a {
+            text-align: right;
+        }
     }
 }
