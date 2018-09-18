@@ -23,7 +23,6 @@
             color: $teal-darker;
             text-decoration: none;
             width: 100%;  
-            text-align: left;
             display: flex;
             align-items: center;
 
@@ -53,14 +52,6 @@
 
         p {
             color: $grey-darkest;
-        }
-
-        .pagination-chevron {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-            width: 45px;
-            color: $dark-border;
         }
     }
 
