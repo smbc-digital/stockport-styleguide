@@ -18,7 +18,7 @@ class Navigation extends Component{
 								<a href="#">
 									<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
 									<div>
-										<p className="pagination-header no-margin-bottom">Previous page</p>
+										<p className="no-margin-bottom">Previous page</p>
 										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
 								</a>
@@ -26,7 +26,7 @@ class Navigation extends Component{
 							<div className="pagination-next">
 								<a href="#">
 									<div>
-										<p className="pagination-header no-margin-bottom">Next page</p>
+										<p className="no-margin-bottom">Next page</p>
 										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
 									<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
@@ -42,7 +42,7 @@ class Navigation extends Component{
 							<div className="pagination-next">
 								<a href="#">
 									<div>
-										<p className="pagination-header no-margin-bottom">Next page</p>
+										<p className="no-margin-bottom">Next page</p>
 										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
 									<i className="fa fa-angle-right fa-3x" aria-hidden="true"></i>
@@ -57,7 +57,7 @@ class Navigation extends Component{
 								<a href="#">
 									<i className="fa fa-angle-left fa-3x" aria-hidden="true"></i>
 									<div>
-										<p className="pagination-header no-margin-bottom">Previous page</p>
+										<p className="no-margin-bottom">Previous page</p>
 										<p className="no-margin-bottom">Secondary schools</p>
 									</div>
 								</a>
