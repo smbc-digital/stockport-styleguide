@@ -233,6 +233,144 @@ class Tables extends Component{
 								</strong>
 							</footer>
 						</section>
+						<h2>Appointments</h2>
+						<section className="appointments">
+							<header>
+								<div>
+									<h2><strong>Previous appointments</strong></h2>
+									<p>Showing all your previous appointments</p>
+								</div>
+							</header>
+							<table>
+								<thead className="hide-on-mobile hide-on-tablet">
+									<tr>
+										<td><strong>Description</strong></td>
+										<td className="align-right"><strong>Appointment date</strong></td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td className="hide-on-desktop">
+											<div>
+												<div>
+													<p><strong>Register a birth appointment</strong></p>
+													<p>6 September 2018</p>
+												</div>
+											</div>
+										</td>
+										<td className="hide-on-mobile hide-on-tablet">Register a birth appointment</td>
+										<td className="align-right hide-on-mobile hide-on-tablet">6 September 2018</td>
+										<td className="hide-on-mobile hide-on-tablet"></td>
+									</tr>
+									<tr>
+										<td className="hide-on-desktop">
+											<div>
+												<div>
+													<p><strong>Register a birth appointment</strong></p>
+													<p>6 September 2018</p>
+												</div>
+											</div>
+										</td>
+										<td className="hide-on-mobile hide-on-tablet">Register a birth appointment</td>
+										<td className="align-right hide-on-mobile hide-on-tablet">6 September 2018</td>
+										<td className="hide-on-mobile hide-on-tablet"></td>
+									</tr>
+								</tbody>
+							</table>
+							<footer>
+								<div>
+									<div className="items-count">
+										Showing 1 - 10 of 27 appointments
+									</div>
+									<div className="page-numbers">
+										<span>1</span>
+										<form method="get" action="#">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="1" type="hidden"></input>
+											<button type="submit">2</button>
+										</form>
+										<form action="#" method="get">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="2" type="hidden"></input>
+											<button type="submit">3</button>
+										</form>            
+										<form action="#" method="get">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="3" type="hidden"></input>
+											<button type="submit">Next</button>
+										</form>
+									</div>
+								</div>
+							</footer>
+						</section>
+						<h2>Appointments With Link</h2>
+						<section className="appointments">
+							<header>
+								<div>
+									<h2><strong>Previous appointments</strong></h2>
+									<p>Showing all your previous appointments</p>
+								</div>
+							</header>
+							<table>
+								<thead className="hide-on-mobile hide-on-tablet">
+									<tr>
+										<td><strong>Description</strong></td>
+										<td className="align-right"><strong>Appointment date</strong></td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr className="hover-hand">
+										<td className="hide-on-desktop">
+											<div>
+												<div>
+													<p><strong>Register a birth appointment</strong></p>
+													<p>6 September 2018</p>
+												</div>
+												<i className="fa fa-angle-right" aria-hidden="true"></i>
+											</div>
+										</td>
+										<td className="hide-on-mobile hide-on-tablet"><a href="#"></a>Register a birth appointment</td>
+										<td className="align-right hide-on-mobile hide-on-tablet">6 September 2018</td>
+										<td className="hide-on-mobile hide-on-tablet"><i className="fa fa-angle-right"></i></td>
+									</tr>
+									<tr className="hover-hand">
+										<td className="hide-on-desktop">
+											<div>
+												<div>
+													<p><strong>Register a birth appointment</strong></p>
+													<p>6 September 2018</p>
+												</div>
+												<i className="fa fa-angle-right" aria-hidden="true"></i>
+											</div>
+										</td>
+										<td className="hide-on-mobile hide-on-tablet"><a href="#"></a>Register a birth appointment</td>
+										<td className="align-right hide-on-mobile hide-on-tablet">6 September 2018</td>
+										<td className="hide-on-mobile hide-on-tablet"><i className="fa fa-angle-right"></i></td>
+									</tr>
+								</tbody>
+							</table>
+							<footer>
+								<div>
+									<div className="items-count">
+										Showing 1 - 10 of 27 appointments
+									</div>
+									<div className="page-numbers">
+										<span>1</span>
+										<form method="get" action="#">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="1" type="hidden"></input>
+											<button type="submit">2</button>
+										</form>
+										<form action="#" method="get">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="2" type="hidden"></input>
+											<button type="submit">3</button>
+										</form>            
+										<form action="#" method="get">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="3" type="hidden"></input>
+											<button type="submit">Next</button>
+										</form>
+									</div>
+								</div>
+							</footer>
+						</section>
 					</section>
 				</article>
 				<Aside/>

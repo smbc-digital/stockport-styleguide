@@ -259,3 +259,164 @@
         }
     }
 }
+
+.appointments {
+
+    &.previous-appointments {
+        border-top-color: $primary-pale;
+    }
+
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid $grey-light;
+    border-top-width: 5px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px $box-shadow;
+
+    header {
+        max-width: none;
+        padding: 15px 15px;
+        border-bottom: 1px solid $grey-lighter;
+
+        @media #{$mobile} {
+            padding: 20px 15px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: initial;
+        }
+
+        p {
+            line-height: 22px;
+            margin-top: 5px;
+            color: $grey-dark;
+            margin-bottom: 0;
+        }
+    }
+
+    table {
+        margin: 0;
+        border-collapse: separate;
+        border: none;
+        width: 100%;
+        border-spacing: 0;
+
+        thead {
+            border-bottom: 1px solid $grey-darkest;
+
+            tr {
+                height: 30px;
+                background-color: $off-white;
+                border-top: 1px solid $grey-lighter;
+
+                .align-right {
+                    text-align: right;
+                }
+
+                td {
+                    padding-left: 14px;
+                    padding-right: 14px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid $grey-lighter;
+
+                .align-right {
+                    text-align: right;
+                }
+
+                td {
+                    padding: 14px;
+                    border-bottom: 1px solid $grey-lighter;
+
+                    > div {
+                        display: flex;
+                        align-items: center;
+
+                        > div {
+                            flex: 2 0 0;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &.hover-hand {
+                    cursor: pointer;
+
+                }
+
+                &.hover-hand:hover {
+                    background: $off-white;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 14px;
+
+        p {
+            padding: 14px;
+            margin: 0;
+        }
+
+        td {
+            .align-right {
+                text-align: right;
+            }
+        }
+
+        > div {
+            display: flex;
+
+            @media #{$mobile, $tablet} {
+                display: block;
+                text-align: center;
+            }
+
+            .items-count {
+                flex: 2 0 0;
+            }
+
+            .page-numbers {
+                text-align: right;
+
+                span {
+                    font-size: 20px;
+                }
+
+                @media #{$mobile, $tablet} {
+                    text-align: center;
+                }
+
+                form {
+                    display: inline;
+
+                    button {
+                        text-decoration: underline;
+                        margin-left: 4px;
+                        line-height: 20px;
+                        color: $primary-light;
+                        width: auto;
+                        padding: 0;
+                        border-bottom: 2px solid $primary-light;
+                        background: none;
+                        border: none;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
