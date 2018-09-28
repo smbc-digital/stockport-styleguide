@@ -236,10 +236,8 @@ class Tables extends Component{
 						<h2>Appointments</h2>
 						<section className="appointments">
 							<header>
-								<div>
-									<h2><strong>Previous appointments</strong></h2>
-									<p>Showing all your previous appointments</p>
-								</div>
+								<h2><strong>Previous appointments</strong></h2>
+								<p>Showing all your previous appointments</p>
 							</header>
 							<table>
 								<thead className="hide-on-mobile hide-on-tablet">
@@ -304,10 +302,8 @@ class Tables extends Component{
 						<h2>Appointments With Link</h2>
 						<section className="appointments">
 							<header>
-								<div>
-									<h2><strong>Upcoming appointments</strong></h2>
-									<p>Showing all your upcoming appointments</p>
-								</div>
+								<h2><strong>Upcoming appointments</strong></h2>
+								<p>Showing all your upcoming appointments</p>
 							</header>
 							<table>
 								<thead className="hide-on-mobile hide-on-tablet">
@@ -374,10 +370,8 @@ class Tables extends Component{
 						<h2>Previous Appointments</h2>
 						<section className="appointments previous-appointments">
 							<header>
-								<div>
-									<h2><strong>Previous appointments</strong></h2>
-									<p>Showing all your previous appointments</p>
-								</div>
+								<h2><strong>Previous appointments</strong></h2>
+								<p>Showing all your previous appointments</p>
 							</header>
 							<table>
 								<thead className="hide-on-mobile hide-on-tablet">
