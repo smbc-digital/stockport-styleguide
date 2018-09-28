@@ -299,6 +299,7 @@
     }
 
     table {
+        overflow: hidden;
         margin: 0;
         border-collapse: separate;
         border: none;
@@ -333,10 +334,21 @@
                 }
 
                 td {
+                    position: relative;
                     padding: 14px;
                     border-bottom: 1px solid $grey-lighter;
 
-                    > div {
+                    a {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 9999px;
+                        height: 100%;
+                        z-index: 9999;
+                    }
+
+                    > div { 
                         display: flex;
                         align-items: center;
 
