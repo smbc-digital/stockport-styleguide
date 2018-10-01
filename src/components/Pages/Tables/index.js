@@ -36,31 +36,31 @@ class Tables extends Component{
 								</thead>
 								<tbody>
 									<tr>
-										<td className="heading">Street light located on Wellington Road South</td>
+										<td className="heading"><a href="#"></a>Street light located on Wellington Road South</td>
 										<td><span className="status-information">Open</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> Yesterday</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td className="heading">Pot hole located on Hill Road</td>
+										<td className="heading"><a href="#"></a>Pot hole located on Hill Road</td>
 										<td><span className="status-information">Open</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 2 days ago</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td className="heading">Street light located on Great Bridge Street</td>
+										<td className="heading"><a href="#"></a>Street light located on Great Bridge Street</td>
 										<td><span className="status-default">On hold</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 3 March 2017</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td className="heading">Pot hole located on River Road</td>
+										<td className="heading"><a href="#"></a>Pot hole located on River Road</td>
 										<td><span className="status-success">Complete</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr>
-										<td className="heading">Pot hole located on Buckingham Road</td>
+										<td className="heading"><a href="#"></a>Pot hole located on Buckingham Road</td>
 										<td><span className="status-error">Issue</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>

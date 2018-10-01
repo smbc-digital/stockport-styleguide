@@ -51,6 +51,7 @@
     }
 
     table {
+        overflow: hidden;
         width: 100%;
         border-collapse: collapse;
 
@@ -81,6 +82,7 @@
 
                 td {
                     padding: 25px 20px;
+                    position: relative;
 
                     &.align-right {
                         text-align: right;
@@ -88,6 +90,16 @@
 
                     i {
                         font-size: 1.375em
+                    }
+
+                    a {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 9999px;
+                        height: 100%;
+                        z-index: 9999;
                     }
 
                     @media #{$tablet}, #{$desktop} {
@@ -124,6 +136,10 @@
                         }
                     }
                 }
+            }
+
+            tr:hover {
+                background: $off-white;
             }
         }
     }
