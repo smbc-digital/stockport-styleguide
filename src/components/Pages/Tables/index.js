@@ -15,7 +15,7 @@ class Tables extends Component{
 					<section>
 						<h2 className="h3">My Account activity table</h2>
 						<p>The My Account reports table shows detailed information about a user's recent activity.</p>
-						<section className="data-table">
+						<section className="data-table with-link">
 							<header>
 								<div className="headings">
 									<h2>Recent activity</h2>
@@ -317,7 +317,7 @@ class Tables extends Component{
 							</footer>
 						</section>
 						<h2>Appointments With Link</h2>
-						<section className="appointments">
+						<section className="appointments with-link">
 							<header>
 								<h2><strong>Upcoming appointments</strong></h2>
 								<p>Showing all your upcoming appointments</p>

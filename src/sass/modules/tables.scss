@@ -92,16 +92,6 @@
                         font-size: 1.375em
                     }
 
-                    a {
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 9999px;
-                        height: 100%;
-                        z-index: 9999;
-                    }
-
                     @media #{$tablet}, #{$desktop} {
                         button {
                             margin: 0;
@@ -136,10 +126,6 @@
                         }
                     }
                 }
-            }
-
-            tr:hover {
-                background: $off-white;
             }
         }
     }
@@ -362,16 +348,6 @@
                     padding: 14px;
                     border-bottom: 1px solid $grey-lighter;
 
-                    a {
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 9999px;
-                        height: 100%;
-                        z-index: 9999;
-                    }
-
                     > div { 
                         display: flex;
                         align-items: center;
@@ -384,15 +360,6 @@
                             margin: 0;
                         }
                     }
-                }
-
-                &.hover-hand {
-                    cursor: pointer;
-
-                }
-
-                &.hover-hand:hover {
-                    background: $off-white;
                 }
             }
         }
@@ -452,6 +419,31 @@
                         cursor: pointer;
                     }
                 }
+            }
+        }
+    }
+}
+
+.with-link {
+    table {
+        tbody {
+            tr {
+                td {
+                    a {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 9999px;
+                        height: 100%;
+                        z-index: 9999;
+                    }
+                }
+            }
+
+            tr:hover {
+                cursor: pointer;
+                background: $off-white;
             }
         }
     }
