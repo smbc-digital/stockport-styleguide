@@ -72,6 +72,23 @@ class Tables extends Component{
 							</table>
 						</section>
 					</section>
+					<h1>Tables</h1>
+					<p>Tables show when no data</p>
+					<section>
+						<h2 className="h3">My Account activity table</h2>
+						<p>The My Account reports table shows detailed information about a user's recent activity.</p>
+						<section className="data-table">
+							<header>
+								<div className="headings">
+									<h2>Recent activity</h2>
+									<p>Showing report activity from the last 30 days</p>
+								</div>
+							</header>
+							<div className="no-activity">
+								<p>You have no activity</p>
+							</div>
+						</section>
+					</section>
 					<section>
 						<h2>Information table</h2>
 						<section className="data-table-striped hide-on-mobile">
@@ -316,13 +333,15 @@ class Tables extends Component{
 								<tbody>
 									<tr className="hover-hand">
 										<td className="hide-on-desktop">
-											<div>
+											<a href="#">
 												<div>
-													<p><strong>Register a birth appointment</strong></p>
-													<p>6 September 2018</p>
+													<div>
+														<p><strong>Register a birth appointment</strong></p>
+														<p>6 September 2018</p>
+													</div>
+													<i className="fa fa-angle-right" aria-hidden="true"></i>
 												</div>
-												<i className="fa fa-angle-right" aria-hidden="true"></i>
-											</div>
+											</a>
 										</td>
 										<td className="hide-on-mobile hide-on-tablet"><a href="#"></a>Register a birth appointment</td>
 										<td className="align-right hide-on-mobile hide-on-tablet">6 September 2018</td>
