@@ -286,14 +286,9 @@
 .appointments {
     @extend .paginated-footer;
 
-    &.previous-appointments {
-        border-top-color: $primary-pale;
-    }
-
     margin: 20px 0;
     padding: 0;
     border: 1px solid $grey-light;
-    border-top-width: 5px;
     background-color: $white;
     border-radius: 5px;
     box-shadow: 0 10px 20px $box-shadow;
