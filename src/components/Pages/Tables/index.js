@@ -125,6 +125,28 @@ class Tables extends Component{
 									</tr>
 								</tbody>
 							</table>
+							<footer>
+								<div>
+									<div className="items-count">
+										Showing 1 - 10 of 27 appointments
+									</div>
+									<div className="page-numbers">
+										<span>1</span>
+										<form method="get" action="#">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="1" type="hidden"></input>
+											<button type="submit">2</button>
+										</form>
+										<form action="#" method="get">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="2" type="hidden"></input>
+											<button type="submit">3</button>
+										</form>            
+										<form action="#" method="get">
+											<input id="pager1PageIndex" name="pager1PageIndex" value="3" type="hidden"></input>
+											<button type="submit">Next</button>
+										</form>
+									</div>
+								</div>
+							</footer>
 						</section>
 					</section>
 					<h1>Tables</h1>

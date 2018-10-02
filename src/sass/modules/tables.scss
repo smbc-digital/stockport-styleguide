@@ -1,4 +1,6 @@
 .data-table {
+    @extend .paginated-footer;
+    
     width: 100%;
     border: 1px solid $grey-lighter;
     @include border-radius(3px);
@@ -205,16 +207,6 @@
             }
         }
     }
-
-    footer {
-        display: block;
-        padding: 10px 15px;
-
-        button {
-            margin-bottom: 0;
-            width: 100%;
-        }
-    }
 }
 
 .data-table-striped {
@@ -292,6 +284,7 @@
 }
 
 .appointments {
+    @extend .paginated-footer;
 
     &.previous-appointments {
         border-top-color: $primary-pale;
@@ -385,64 +378,6 @@
             }
         }
     }
-
-    footer {
-        padding: 14px;
-
-        p {
-            padding: 14px;
-            margin: 0;
-        }
-
-        td {
-            .align-right {
-                text-align: right;
-            }
-        }
-
-        > div {
-            display: flex;
-
-            @media #{$mobile, $tablet} {
-                display: block;
-                text-align: center;
-            }
-
-            .items-count {
-                flex: 2 0 0;
-            }
-
-            .page-numbers {
-                text-align: right;
-
-                span {
-                    font-size: 20px;
-                }
-
-                @media #{$mobile, $tablet} {
-                    text-align: center;
-                }
-
-                form {
-                    display: inline;
-
-                    button {
-                        text-decoration: underline;
-                        margin-left: 4px;
-                        line-height: 20px;
-                        color: $primary-light;
-                        width: auto;
-                        padding: 0;
-                        border-bottom: 2px solid $primary-light;
-                        background: none;
-                        border: none;
-                        font-size: 20px;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
 }
 
 .appointment-link {
@@ -512,6 +447,66 @@
             tr:hover {
                 cursor: pointer;
                 background: $off-white;
+            }
+        }
+    }
+}
+
+.paginated-footer {
+    footer {
+        padding: 14px;
+
+        p {
+            padding: 14px;
+            margin: 0;
+        }
+
+        td {
+            .align-right {
+                text-align: right;
+            }
+        }
+
+        > div {
+            display: flex;
+
+            @media #{$mobile, $tablet} {
+                display: block;
+                text-align: center;
+            }
+
+            .items-count {
+                flex: 2 0 0;
+            }
+
+            .page-numbers {
+                text-align: right;
+
+                span {
+                    font-size: 20px;
+                }
+
+                @media #{$mobile, $tablet} {
+                    text-align: center;
+                }
+
+                form {
+                    display: inline;
+
+                    button {
+                        text-decoration: underline;
+                        margin-left: 4px;
+                        line-height: 20px;
+                        color: $primary-light;
+                        width: auto;
+                        padding: 0;
+                        border-bottom: 2px solid $primary-light;
+                        background: none;
+                        border: none;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
