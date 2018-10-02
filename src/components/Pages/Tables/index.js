@@ -47,8 +47,8 @@ class Tables extends Component{
 									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Street light located on Wellington Road South</td>
 										<td><span className="status-information">Open</span></td>
-										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> Yesterday</td>
-										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+										<td className="align-right">Yesterday</td>
+										<td><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr className="hide-on-desktop hide-on-tablet">
 										<a href="#">
@@ -62,8 +62,8 @@ class Tables extends Component{
 									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Pot hole located on Hill Road</td>
 										<td><span className="status-information">Open</span></td>
-										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 2 days ago</td>
-										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+										<td className="align-right">2 days ago</td>
+										<td><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr className="hide-on-desktop hide-on-tablet">
 										<a href="#">
@@ -77,8 +77,8 @@ class Tables extends Component{
 									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Street light located on Great Bridge Street</td>
 										<td><span className="status-default">On hold</span></td>
-										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 3 March 2017</td>
-										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+										<td className="align-right">3 March 2017</td>
+										<td><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr className="hide-on-desktop hide-on-tablet">
 										<a href="#">
@@ -92,8 +92,8 @@ class Tables extends Component{
 									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Pot hole located on River Road</td>
 										<td><span className="status-success">Complete</span></td>
-										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
-										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+										<td className="align-right">1 March 2017</td>
+										<td><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr className="hide-on-desktop hide-on-tablet">
 										<a href="#">
@@ -107,8 +107,8 @@ class Tables extends Component{
 									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Pot hole located on Buckingham Road</td>
 										<td><span className="status-error">Issue</span></td>
-										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
-										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
+										<td className="align-right">1 March 2017</td>
+										<td><i className="fa fa-angle-right"></i></td>
 									</tr>
 									<tr className="hide-ondesktop hide-on-tablet">
 										<td><button className="button-inverted" href="#">View all activity</button></td>
