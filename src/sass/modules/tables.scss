@@ -76,25 +76,6 @@
             tr {
                 border-bottom: 1px solid $grey-lighter;
 
-                > a {
-                    text-decoration: none;
-
-                    > div {
-                        margin: 10px 14px;
-
-                        .heading {
-                            font-family: Source Sans Pro,sans-serif;
-                            font-size: 1.375em;
-                            font-weight: 600;
-                            color: $black;
-                        }
-
-                        p:last-of-type {
-                            margin: 0;
-                        }
-                    }
-                }
-
                 &:last-of-type {
                     border-bottom: none;
                 }
@@ -102,6 +83,27 @@
                 td {
                     padding: 25px 20px;
                     position: relative;
+
+                    > a {
+                        text-decoration: none;
+    
+
+                        > div {
+                            margin: 10px 14px;
+
+                            .heading {
+                                font-family: $font-family-headings;
+                                font-size: $fontSizeLarge;
+                                font-weight: $fontWeightBold;
+                                color: $grey-darkest;
+                            }
+
+                            p:last-of-type {
+                                margin-top: 10px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
 
                     &.align-right {
                         text-align: right;
@@ -443,11 +445,31 @@
     }
 }
 
-.with-link {
-    table {
-        tbody {
-            tr {
-                td {
+.appointment-link {
+    tbody {
+        tr {
+            td {
+                @media #{$mobile, $tablet} {
+                    a {
+                        text-decoration: none;
+                        color: $grey-darkest;
+
+                        > div {
+                            display: flex;
+                            align-items: center;
+
+                            > div {
+                                flex: 2 0 0;
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @media #{$desktop} {
                     a {
                         display: block;
                         position: absolute;
@@ -456,6 +478,33 @@
                         width: 9999px;
                         height: 100%;
                         z-index: 9999;
+                    }
+                }
+            }
+        }
+
+        tr:hover {
+            cursor: pointer;
+            background: $off-white;
+        }
+    }
+}
+
+.with-link {
+    table {
+        tbody {
+            tr {
+                td {
+                    @media #{$desktop} {
+                        a {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 9999px;
+                            height: 100%;
+                            z-index: 9999;
+                        }
                     }
                 }
             }
