@@ -404,7 +404,7 @@
                     }
                 }
 
-                @media #{$desktop} {
+                @media #{$desktop, $tablet} {
                     a {
                         display: block;
                         position: absolute;
@@ -430,7 +430,7 @@
         tbody {
             tr {
                 td {
-                    @media #{$desktop} {
+                    @media #{$desktop, $tablet} {
                         a {
                             display: block;
                             position: absolute;
