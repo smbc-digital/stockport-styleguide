@@ -76,6 +76,25 @@
             tr {
                 border-bottom: 1px solid $grey-lighter;
 
+                > a {
+                    text-decoration: none;
+
+                    > div {
+                        margin: 10px 14px;
+
+                        .heading {
+                            font-family: Source Sans Pro,sans-serif;
+                            font-size: 1.375em;
+                            font-weight: 600;
+                            color: $black;
+                        }
+
+                        p:last-of-type {
+                            margin: 0;
+                        }
+                    }
+                }
+
                 &:last-of-type {
                     border-bottom: none;
                 }

@@ -35,31 +35,76 @@ class Tables extends Component{
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
+									<tr className="hide-on-desktop hide-on-tablet">
+										<a href="#">
+											<div>
+												<p className="heading"><strong>Street light located on Wellington Road South</strong></p>
+												<span className="status-information">Open</span>
+												<p>Last updated Yesterday</p>
+											</div>
+										</a>
+									</tr>
+									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Street light located on Wellington Road South</td>
 										<td><span className="status-information">Open</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> Yesterday</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
-									<tr>
+									<tr className="hide-on-desktop hide-on-tablet">
+										<a href="#">
+											<div>
+												<p className="heading"><strong>Pot hole located on Hill Road</strong></p>
+												<span className="status-information">Open</span>
+												<p>Last updated 2 days ago</p>
+											</div>
+										</a>
+									</tr>
+									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Pot hole located on Hill Road</td>
 										<td><span className="status-information">Open</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 2 days ago</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
-									<tr>
+									<tr className="hide-on-desktop hide-on-tablet">
+										<a href="#">
+											<div>
+												<p className="heading"><strong>Street light located on Great Bridge Street</strong></p>
+												<span className="status-default">On hold</span>
+												<p>Last updated 3 March 2017</p>
+											</div>
+										</a>
+									</tr>
+									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Street light located on Great Bridge Street</td>
 										<td><span className="status-default">On hold</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated</span> 3 March 2017</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
-									<tr>
+									<tr className="hide-on-desktop hide-on-tablet">
+										<a href="#">
+											<div>
+												<p className="heading"><strong>Pot hole located on River Road</strong></p>
+												<span className="status-success">Complete</span>
+												<p>Last updated 1 March 2017</p>
+											</div>
+										</a>
+									</tr>
+									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Pot hole located on River Road</td>
 										<td><span className="status-success">Complete</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
 										<td className="hide-on-mobile"><i className="fa fa-angle-right"></i></td>
 									</tr>
-									<tr>
+									<tr className="hide-on-desktop hide-on-tablet">
+										<a href="#">
+											<div>
+												<p className="heading"><strong>Pot hole located on Buckingham Road</strong></p>
+												<span className="status-error">Issue</span>
+												<p>Last updated 1 March 2017</p>
+											</div>
+										</a>
+									</tr>
+									<tr className="hide-on-mobile">
 										<td className="heading"><a href="#"></a>Pot hole located on Buckingham Road</td>
 										<td><span className="status-error">Issue</span></td>
 										<td className="align-right align-left-mobile"><span className="hide-on-desktop hide-on-tablet">Last updated </span> 1 March 2017</td>
