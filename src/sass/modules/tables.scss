@@ -317,6 +317,14 @@
         }
     }
 
+    .no-activity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-top: 1px solid #cbcbcb;
+    }
+
     table {
         overflow: hidden;
         margin: 0;
