@@ -293,11 +293,6 @@
     border-radius: 5px;
     box-shadow: 0 10px 20px $box-shadow;
 
-    .alert-warning-form {
-        border: none;
-        padding: 20px 40px 20px 20px;
-    }
-
     header {
         max-width: none;
         padding: 15px 15px;
@@ -327,11 +322,16 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
-<<<<<<< HEAD
-        border-top: 1px solid #cbcbcb;
-=======
         border-top: 1px solid #cbcbcb;        
->>>>>>> Simon #1608  Added no activity class
+    }
+    
+
+    .alert-warning-form {
+        padding: 20px 40px 10px 20px;
+        max-width: 62%;
+        width: auto;
+        margin-bottom: 20px;
+        display: inline-block;
     }
 
     table {
