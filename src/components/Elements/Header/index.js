@@ -4,6 +4,17 @@ class Header extends Component {
 
 	constructor(props) {
 		super(props)
+
+		this.state = {
+			oldStylesheet: true
+		}
+	}
+
+	onStylesheetChange(event) {
+		event.preventDefault()
+		this.setState({
+			oldStylesheet: !this.state.oldStylesheet
+		})
 	}
 
 	onModalCheckboxChange(event) {
@@ -15,6 +26,7 @@ class Header extends Component {
 
 		return (
 			<header>
+				{ this.state.oldStylesheet ? <link rel="stylesheet" href="/styles.min.css"></link> : <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css"></link> }
 				<div className="skip-to-main-content hide-on-mobile hide-on-tablet">
 					<a href="#content">Skip to main content</a>
 				</div>
@@ -62,7 +74,7 @@ class Header extends Component {
 							</div>
 						</div>
 						: <div id="header-my-account">
-							<a href="http://myaccount.stockport.gov.uk"><i className="fa fa-user" aria-hidden="true"></i>My Account</a>
+							<a href="#" onClick={this.onStylesheetChange.bind(this)}>{ this.state.oldStylesheet ? 'Show me v2' : 'Show me v1' }</a>
 						</div>}
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
 						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
