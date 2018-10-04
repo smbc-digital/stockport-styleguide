@@ -6,14 +6,14 @@ class Header extends Component {
 		super(props)
 
 		this.state = {
-			oldStylesheet: true
+			styleSheet: '/styles.min.css'
 		}
 	}
 
-	onStylesheetChange(event) {
-		event.preventDefault()
+	onStyleSheetChange(event) {
+
 		this.setState({
-			oldStylesheet: !this.state.oldStylesheet
+			styleSheet: event.target.value
 		})
 	}
 
@@ -26,7 +26,7 @@ class Header extends Component {
 
 		return (
 			<header>
-				{ this.state.oldStylesheet ? <link rel="stylesheet" href="/styles.min.css"></link> : <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css"></link> }
+				<link rel="stylesheet" href={this.state.styleSheet}></link>
 				<div className="skip-to-main-content hide-on-mobile hide-on-tablet">
 					<a href="#content">Skip to main content</a>
 				</div>
@@ -73,8 +73,12 @@ class Header extends Component {
 								</div>
 							</div>
 						</div>
-						: <div id="header-my-account">
-							<a href="#" onClick={this.onStylesheetChange.bind(this)}>{ this.state.oldStylesheet ? 'Show me v2' : 'Show me v1' }</a>
+						: <div id="header-my-account" style={{padding: '16px 12px 0'}}>
+							<select id="lang" onChange={this.onStyleSheetChange.bind(this)} value={this.state.value} style={{marginBottom: '0'}}>
+								<option value="/styles.min.css">Local</option>
+								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1</option>
+								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css">Remote v2</option>
+							</select>
 						</div>}
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
 						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
