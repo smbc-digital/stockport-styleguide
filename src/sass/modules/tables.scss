@@ -49,7 +49,7 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
-        border-top: 1px solid #cbcbcb;
+        border-top: 1px solid #cbcbcb;        
     }
 
     table {
@@ -293,6 +293,11 @@
     border-radius: 5px;
     box-shadow: 0 10px 20px $box-shadow;
 
+    .alert-warning-form {
+        border: none;
+        padding: 20px 40px 20px 20px;
+    }
+
     header {
         max-width: none;
         padding: 15px 15px;
@@ -322,7 +327,11 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
+<<<<<<< HEAD
         border-top: 1px solid #cbcbcb;
+=======
+        border-top: 1px solid #cbcbcb;        
+>>>>>>> Simon #1608  Added no activity class
     }
 
     table {
@@ -515,3 +524,4 @@
         }
     }
 }
+
