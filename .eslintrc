@@ -1,7 +1,13 @@
 {
+    "settings": {
+        "react": {
+          "version": "16.5.2"
+        }
+    },
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parser": "babel-eslint",
@@ -13,8 +19,14 @@
             "error",
             "tab"
         ],
+        "react/prop-types": 0,
+        "react/no-unescaped-entities": 0,
+        "space-infix-ops": [
+            "error",
+            {"int32Hint": false}
+        ],
         "linebreak-style": [
-            1,
+            "error",
             "windows"
         ],
         "quotes": [
@@ -24,12 +36,6 @@
         "semi": [
             "error",
             "never"
-        ],
-        "react/prop-types": 0,
-        "react/no-unescaped-entities": 0,
-        "space-infix-ops": [
-            "error",
-            {"int32Hint": false}
         ]
     }
 }
