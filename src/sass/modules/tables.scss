@@ -430,11 +430,6 @@
                 }
             }
         }
-
-        tr:hover {
-            cursor: pointer;
-            background: $off-white;
-        }
     }
 }
 
@@ -458,7 +453,6 @@
             }
 
             tr:hover {
-                cursor: pointer;
                 background: $off-white;
             }
         }
@@ -523,6 +517,14 @@
                 }
             }
         }
+    }
+}
+
+.hover-hand { 
+    cursor: pointer;
+
+    &:hover {
+        background: $off-white;
     }
 }
 
