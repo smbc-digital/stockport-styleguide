@@ -22,7 +22,7 @@ module.exports = (env, argv) => {
 			}),
 			new CleanWebpackPlugin('./dist'),
 			new CopyWebpackPlugin([
-				{ from: 'src/web.config', to: '/dist' }
+				{ from: 'src/web.config', to: './' }
 			]),
 		],
 		module: {
