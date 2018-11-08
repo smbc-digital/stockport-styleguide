@@ -51,6 +51,15 @@
             @include border-radius(0);
         }
     }
+
+    > form button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 100%;
+        text-decoration: underline;
+        padding-left: 0;
+    }
 }
 
 .alert-warning {
