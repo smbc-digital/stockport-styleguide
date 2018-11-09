@@ -431,9 +431,15 @@ body > header,
     padding: 20px;
 }
 
-.title {
+.title-content {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
     font-family: $font-family-headings;
     font-weight: $fontWeightBold;
 
