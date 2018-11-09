@@ -3,6 +3,7 @@
     
     width: 100%;
     border: 1px solid $grey-lighter;
+    background-color: $white;
     @include border-radius(3px);
     @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
     margin-bottom: 20px;
