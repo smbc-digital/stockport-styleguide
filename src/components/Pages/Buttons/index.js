@@ -23,6 +23,11 @@ class Buttons extends Component {
 					<CodeExample>
 						<button className="button-inverted" href="#">I'm an inverted button</button>
 					</CodeExample>
+					<div style={{backgroundColor: '#055c58'}}>
+						<CodeExample>
+							<button className="button-transparent" href="#">I'm a transparent button</button>
+						</CodeExample>
+					</div>
 					<CodeExample>
 						<button className="button-primary" href="#" disabled>I'm a disabled button</button>
 					</CodeExample>

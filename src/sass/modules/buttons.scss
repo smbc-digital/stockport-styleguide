@@ -131,6 +131,12 @@ a.button {
     }
 }
 
+.button-transparent {
+    @extend .button;
+    @include button-colors(transparent, $white);
+    border: 1px solid $white;
+}
+
 .button-loading {
     transition: color .2s;
     transition-property: color, background-color;
