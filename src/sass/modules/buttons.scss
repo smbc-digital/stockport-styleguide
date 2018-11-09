@@ -131,10 +131,26 @@ a.button {
     }
 }
 
-.button-transparent {
+.button-underlined {
     @extend .button;
     @include button-colors(transparent, $white);
-    border: 1px solid $white;
+    @include border-radius(0);
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+    padding: 0;
+
+    &:before {
+        content: '';
+    }
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    @media #{$mobile} {
+        width: auto;
+    }
 }
 
 .button-loading {
