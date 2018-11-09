@@ -60,6 +60,10 @@
         text-decoration: underline;
         padding-left: 0;
     }
+
+    &.full-width {
+        width: 100%;
+    }
 }
 
 .alert-warning {
