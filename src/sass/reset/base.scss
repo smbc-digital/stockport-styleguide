@@ -13,6 +13,10 @@ main {
         background-color: $white;
     }
 
+    &.padded {
+        padding: 0 10px;
+    }
+
     #root, // sass-lint:disable-line no-ids (#root needed for React)
     .page-container {
         @include main-layout;
