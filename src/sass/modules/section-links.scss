@@ -31,17 +31,17 @@
         padding: 10px 20px;
         position: relative;
 
-        i {
-            font-size: 2.5em;
-            margin: 0 25px 0 0;
-        }
-        
         &:before {
             @include chevron(10px);
             width: auto;
             visibility: visible;
             overflow: visible;
             color: $grey-dark;
+        }
+
+        i {
+            font-size: 2.5em;
+            margin: 0 25px 0 0;
         }
     }
 }
