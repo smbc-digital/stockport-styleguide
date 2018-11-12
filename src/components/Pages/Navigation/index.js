@@ -83,6 +83,17 @@ class Navigation extends Component{
 							</li>
 						</ol>
 					</section>
+					<section>
+						<h2>Section links</h2>
+						<a className='section-link'>
+							<i className="si-house si-default"/>
+							View your Council Tax information
+						</a>
+						<a className='section-link'>
+							<i className="si-wallet si-default"/>
+							View your benefits information
+						</a>
+					</section>
 				</article>
 				<Aside/>
 			</main>
