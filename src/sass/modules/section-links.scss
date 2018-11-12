@@ -1,6 +1,6 @@
 .section-link {
     @include border-radius(3px);
-    @extend .grid-40;
+    @extend .grid-25;
     @extend .tablet-grid-50;
     @extend .mobile-grid-100;
     

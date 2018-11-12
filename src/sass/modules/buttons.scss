@@ -136,7 +136,8 @@ a.button {
     @include button-colors(transparent, $white);
     @include border-radius(0);
     border: none;
-    border-bottom: 1px solid white;
+    text-decoration: underline;
+    text-align: left;
     box-shadow: none;
     padding: 0;
 
