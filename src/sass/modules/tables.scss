@@ -354,7 +354,16 @@
         padding: 20px 40px 30px 20px;
         border: none;
         margin-bottom: 0;
+    }
+
+    table {
+        tbody {
+            tr {
+                position: relative;
+                padding: 14px;
+            }
         }
+    }
 }
 
 .no-activity {
