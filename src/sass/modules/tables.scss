@@ -332,6 +332,11 @@
             }
     }
 }
+    .alert-warning-form {
+        padding: 20px 40px 30px 20px;
+        border: none;
+        margin-bottom: 0;
+        }
 }
 
 .no-activity {
@@ -345,12 +350,6 @@
         margin-bottom: 0;
     }
 }
-
-.alert-warning-form {
-    padding: 20px 40px 30px 20px;        
-    border: none;
-    margin-bottom: 0;
-    }
 
 table {
     overflow: hidden;
