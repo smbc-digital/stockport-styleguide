@@ -3,7 +3,7 @@
     color: $white;
     background-color: $grey-dark;
     display: table;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
 
     > i {
@@ -87,13 +87,15 @@
 .alert-information {
     @include alert;
     @include alert-colours($soft-blue, $white);
-    
-    // margin-bottom: 20px;
 
     form {
-        .button-underlined {
+
+        .button-underline {
+
             font-weight: 500;
+            
         }
+
     }
 }
 
