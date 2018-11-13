@@ -359,8 +359,10 @@
     table {
         tbody {
             tr {
-                position: relative;
-                padding: 14px;
+                td {
+                    position: relative;
+                    padding: 14px;
+                }
             }
         }
     }
