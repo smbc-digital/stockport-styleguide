@@ -35,6 +35,11 @@ form {
 
     h3,
     .h3 {
+
+        @media #{$mobile} {
+            margin-bottom: 0;
+        }
+
         margin-bottom: 16px;
         display: block;
 
@@ -68,6 +73,7 @@ form {
             @media #{$mobile} {
                 display: block;
                 padding: 0;
+                margin-bottom: 16px;
             }
         }
 

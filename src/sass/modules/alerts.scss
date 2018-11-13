@@ -40,6 +40,14 @@
         right: 3px;
         color: $white;
 
+        @media #{$mobile} {
+            right: 10px;
+        }
+
+        @media #{$tablet} {
+            right: 6px;
+        }
+
         i {
             font-size: 1.500em;
         }

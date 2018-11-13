@@ -1,0 +1,51 @@
+.section-link {
+    @include border-radius(3px);
+    @extend .grid-25;
+    @extend .tablet-grid-50;
+    @extend .mobile-grid-100;
+    
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 20px 0;
+    padding: 20px;
+    border: 1px solid $grey-lighter;
+    color: $black;
+    font-weight: $fontWeightBold;
+    text-decoration: none;
+    @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
+
+    &:hover {
+        @include transition-box-shadow(0 20px 40px 0 rgba(0,0,0,0.3));
+        text-decoration: underline;
+    }
+
+    i {
+        font-size: 3.5em;
+    }
+
+    @media #{$mobile} {
+        flex-direction: row;
+        margin: 0 0 10px 0;
+        padding: 10px 20px;
+        position: relative;
+
+        &:last-of-type {
+            margin: 0 0 20px 0;
+        }
+
+        &:before {
+            @include chevron(10px);
+            width: auto;
+            visibility: visible;
+            overflow: visible;
+            color: $grey-dark;
+        }
+
+        i {
+            font-size: 2.5em;
+            margin: 0 25px 0 0;
+        }
+    }
+}

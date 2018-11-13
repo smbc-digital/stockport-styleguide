@@ -38,9 +38,18 @@ module.exports = (env, argv) => {
 				{
 					test: /\.scss$/,
 					use: [
-						argv === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+						argv === 'development' ? 'style-loader' : {
+							loader: MiniCssExtractPlugin.loader, options: {
+								publicPath: './'
+							}
+						},
 						"css-loader",
-						"sass-loader"
+						{
+							loader: "sass-loader",
+							options: {
+								includePaths: [path.resolve(__dirname, "src/sass/assets/fonts/")]
+							}
+						}
 					]
 				},
 				{

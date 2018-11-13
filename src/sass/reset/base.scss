@@ -32,6 +32,12 @@ ul {
     @include center-wrapper;
 }
 
+.dashboard-container {
+    @media #{$tablet, $mobile} { 
+        padding: 0 10px;
+    }
+}
+
 .sr-only {
     position: absolute;
     width: 1px;

@@ -437,6 +437,12 @@ body > header,
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .button-tertiary {
+        @extend .hide-on-mobile;
+        @extend .hide-on-tablet;
+        margin: 0;
+    }
 }
 
 .title {
