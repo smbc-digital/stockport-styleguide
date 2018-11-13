@@ -21,3 +21,13 @@
         margin-bottom: 0;
     }
 }
+
+.dashboard-button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+        text-align: center;
+    }
+}
