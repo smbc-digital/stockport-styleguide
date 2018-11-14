@@ -10,7 +10,7 @@
 
     header {
         display: table;
-        padding: 20px 0 10px;
+        padding: 20px 0;
         width: 100%;
 
         @media #{$mobile} {
@@ -340,7 +340,7 @@
 
 
             .button-inverted {
-                margin: 0 0 30px 0;
+                margin: 0;
             }
 
             button { 

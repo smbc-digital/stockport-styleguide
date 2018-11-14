@@ -25,7 +25,10 @@
 .dashboard-button-container {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+
+    @media #{$mobile} {
+        flex-wrap: wrap;
+    }
 
     a {
         text-align: center;
