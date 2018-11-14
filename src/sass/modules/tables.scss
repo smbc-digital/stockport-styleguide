@@ -368,8 +368,10 @@
         }
     }
 
-    .mobile-call-to-action:hover {
-        background-color: $white;
+    .mobile-call-to-action {
+        &:hover {
+            background-color: $white;
+        }
 
         .button-inverted {
             margin: 0;
@@ -386,6 +388,10 @@
 
     p {
         margin-bottom: 0;
+    }
+
+    .button-inverted {
+        margin: 0;
     }
 }
 
