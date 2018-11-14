@@ -26,11 +26,22 @@
     display: flex;
     justify-content: flex-start;
 
-    @media #{$mobile} {
-        flex-wrap: wrap;
+    i {
+        padding-bottom: 10px; 
     }
 
     a {
         text-align: center;
+    }
+
+    @media #{$mobile} {
+        i {
+            padding-bottom: 0; 
+        }
+        flex-wrap: wrap;
+        
+        a {
+            text-align: left;
+        }
     }
 }
