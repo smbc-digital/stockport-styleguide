@@ -3,7 +3,7 @@
     color: $white;
     background-color: $grey-dark;
     display: table;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
 
     > i {
@@ -87,6 +87,16 @@
 .alert-information {
     @include alert;
     @include alert-colours($soft-blue, $white);
+
+    form {
+
+        .button-underlined {
+
+            font-weight: 500;
+            
+        }
+
+    }
 }
 
 .alert-error {
@@ -155,7 +165,7 @@
 
 .alert-information-fullwidth {
     @extend .alert-information;
-    @include alert-fullwidth;
+    @include alert-fullwidth;    
 }
 
 .alert-error-fullwidth {

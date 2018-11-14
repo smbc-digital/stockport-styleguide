@@ -10,7 +10,7 @@
 
     header {
         display: table;
-        padding: 20px 0 10px;
+        padding: 20px 0;
         width: 100%;
 
         @media #{$mobile} {
@@ -18,7 +18,7 @@
         }
 
         .headings {
-            display: table-cell;
+            display: block;
             vertical-align: middle;
             padding-left: 20px;
 
@@ -26,9 +26,18 @@
                 padding-left: 10px;
             }
 
-            h2,
+            h2 {
+                margin: 0;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: normal;
+            }
+
             p {
-                margin: 0 0 10px 0;
+                line-height: 22px;
+                margin-top: 5px;
+                color: #666;
+                margin-bottom: 0;
             }
         }
 
@@ -37,6 +46,10 @@
             vertical-align: middle;
             text-align: right;
             padding-right: 20px;
+
+            .button-inverted {
+                margin: 0;
+            }
 
             button {
                 margin: 0;
@@ -295,8 +308,10 @@
     box-shadow: 0 10px 20px $box-shadow;
 
     header {
+        display: flex;
+
         max-width: none;
-        padding: 15px 15px;
+        padding: 20px;
         border-bottom: 1px solid $grey-lighter;
 
         @media #{$mobile} {
@@ -316,77 +331,108 @@
             color: $grey-dark;
             margin-bottom: 0;
         }
-    }
 
-    .no-activity {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        border-top: 1px solid #cbcbcb;
+        .call-to-action { 
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: right; 
+            margin-left: auto; 
 
-        p {
-            margin-bottom: 0;
-        }
+
+            .button-inverted {
+                margin: 0;
+            }
+
+            button { 
+                margin: 0; 
+                display: inline-block; 
+            }
     }
+}
 
     .alert-warning-form {
-        padding: 20px 40px 30px 20px;        
+        padding: 20px 40px 30px 20px;
         border: none;
         margin-bottom: 0;
     }
 
     table {
-        overflow: hidden;
-        margin: 0;
-        border-collapse: separate;
-        border: none;
-        width: 100%;
-        border-spacing: 0;
-
-        thead {
-            border-bottom: 1px solid $grey-darkest;
-
-            tr {
-                height: 30px;
-                background-color: $off-white;
-                border-top: 1px solid $grey-lighter;
-
-                .align-right {
-                    text-align: right;
-                }
-
-                td {
-                    padding-left: 14px;
-                    padding-right: 14px;
-                }
-            }
-        }
-
         tbody {
             tr {
-                border-bottom: 1px solid $grey-lighter;
-
-                .align-right {
-                    text-align: right;
-                }
-
                 td {
                     position: relative;
                     padding: 14px;
-                    border-bottom: 1px solid $grey-lighter;
+                }
+            }
+        }
+    }
+}
 
-                    > div { 
-                        display: flex;
-                        align-items: center;
+.no-activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px solid #cbcbcb;
 
-                        > div {
-                            flex: 2 0 0;
-                        }
+    p {
+        margin-bottom: 0;
+    }
+}
 
-                        p {
-                            margin: 0;
-                        }
+table {
+    overflow: hidden;
+    margin: 0;
+    border-collapse: separate;
+    border: none;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        border-bottom: 1px solid $grey-darkest;
+
+        tr {
+            height: 30px;
+            background-color: $off-white;
+            border-top: 1px solid $grey-lighter;
+
+            .align-right {
+                text-align: right;
+                }
+
+            td {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid $grey-lighter;
+
+            .align-right {
+
+                text-align: right;
+            }
+
+            td {
+
+                border-bottom: 1px solid $grey-lighter;
+
+                > div { 
+
+                    display: flex;
+                    align-items: center;
+
+                    > div {
+
+                        flex: 2 0 0;
+                    }
+
+                    p {
+
+                        margin: 0;
                     }
                 }
             }

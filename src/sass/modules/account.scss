@@ -21,3 +21,16 @@
         margin-bottom: 0;
     }
 }
+
+.dashboard-button-container {
+    display: flex;
+    justify-content: flex-start;
+
+    @media #{$mobile} {
+        flex-wrap: wrap;
+    }
+
+    a {
+        text-align: center;
+    }
+}
