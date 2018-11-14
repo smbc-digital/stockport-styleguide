@@ -305,7 +305,7 @@
     padding: 0;
     border: 1px solid $grey-light;
     background-color: $white;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 10px 20px $box-shadow;
 
     header {
@@ -365,6 +365,14 @@
                     padding: 14px;
                 }
             }
+        }
+    }
+
+    .mobile-call-to-action:hover {
+        background-color: $white;
+
+        .button-inverted {
+            margin: 0;
         }
     }
 }
