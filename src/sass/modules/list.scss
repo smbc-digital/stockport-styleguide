@@ -27,4 +27,10 @@ ol {
     padding-left: 33px;
     border-left: 4px solid #bfc1c3;
     margin-bottom: 20px;
+
+    label {
+        @media #{$mobile} {
+            margin-bottom: 16px;
+        }
+    }
 }
