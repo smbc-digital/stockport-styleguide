@@ -4,7 +4,8 @@ body {
     margin: 0;
 }
 
-main {
+main,
+#content { // sass-lint:disable-line no-ids (Main tag not supported in < internet explorer 12)
     @extend .grid-container;
     @extend .grid-parent;
 
