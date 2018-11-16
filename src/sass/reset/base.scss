@@ -4,14 +4,17 @@ body {
     margin: 0;
 }
 
-main,
-#content { // sass-lint:disable-line no-ids (Main tag not supported in < internet explorer 12)
+main {
     @extend .grid-container;
     @extend .grid-parent;
 
     &.full-width,
     article {
         background-color: $white;
+    }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: block;
     }
 
     #root, // sass-lint:disable-line no-ids (#root needed for React)
