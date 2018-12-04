@@ -2,16 +2,12 @@ body > footer,
 #root > footer { // sass-lint:disable-line no-ids (#root needed for React)
     border-top: 10px solid $teal;
     background-color: $primary-dark;
-    padding-top: 20px;
 
     #footer-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
         @extend .grid-33;
         @extend .tablet-grid-35;
         @extend .mobile-grid-100;
-        display: table-cell;
-        vertical-align: middle;
         padding: 10px 0;
-        margin: 0;
         @include header-footer-logo;
 
         @media #{$mobile} {
@@ -24,7 +20,7 @@ body > footer,
         @extend .tablet-grid-45;
         list-style: none;
         display: inline;
-        padding: 0 0 20px;
+        padding: 20px 0 20px;
 
         li {
             float: left;
