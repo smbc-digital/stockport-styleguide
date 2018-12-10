@@ -286,7 +286,7 @@ class Inputs extends Component {
 									<div className="grid-100">
 										<i className="fa fa-1x fa-file"></i>
 										<span>test2.txt</span>
-										<i className="fa fa-1x fa-times"></i>
+										<i className="fa fa-1x fa-times" tabIndex="0"></i>
 									</div>
 								</div>
 								<div className="upload-file-input">

@@ -14,7 +14,7 @@
 
         span {
             display: table-cell;
-            width: 90%;
+            width: calc(95% - 16px);
 
             @media #{$mobile} {
                 width: 85%;
@@ -37,7 +37,11 @@
         .fa-times {
             cursor: pointer;
             font-size: 1.25em;
-            width: 5%;
+            width: 16px;
+
+            &:focus {
+                @include outline;
+            }
         }
     }
 }
