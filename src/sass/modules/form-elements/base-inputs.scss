@@ -40,7 +40,12 @@ input[type=text] {
     height: 40px;
     border: 2px solid #1b1b1b;
     padding: 6px;
-    width: 280px;    
+    width: 280px;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+
 }
 
 textarea {
@@ -63,7 +68,7 @@ p.characters-remaining {
     line-height: 20px;
 
     @media #{$mobile} {
-        font-size: fontSizeSmall;   
+        font-size: $fontSizeSmall;   
     }
 
 }
