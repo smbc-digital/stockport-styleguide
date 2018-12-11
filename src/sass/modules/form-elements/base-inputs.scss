@@ -35,9 +35,17 @@ textarea {
     }
 }
 
+input[type=text]{
+    color: #1b1b1b;
+    height: 40px;
+    border: 2px solid #1b1b1b;
+    padding: 6px;
+    width: 280px;    
+}
 textarea {
-    height: 250px;
+    height: 200px;
     margin-bottom: 10px;
+    line-height: 20px;   
 
     &.small {
         height: 100px;
@@ -48,6 +56,15 @@ textarea {
     }
 }
 
+p.text-area-description, p.characters-remaining {
+    font-size: $fontSizeDefault;
+    line-height: 20px;
+
+    @media #{$mobile} {
+        font-size: fontSizeSmall;   
+    }
+
+}
 
 select {
     @include border-radius(3px);
