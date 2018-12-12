@@ -223,3 +223,13 @@
         @content;
     }
 }
+
+@mixin lead-paragraph {
+    font-size: 24px;
+    line-height: 32px;
+        
+    @media #{mobile} {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

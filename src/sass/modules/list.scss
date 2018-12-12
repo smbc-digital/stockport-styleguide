@@ -29,6 +29,7 @@ ol {
     margin-bottom: 20px;
 
     label {
+        @include lead-paragraph;
         @media #{$mobile} {
             margin-bottom: 16px;
         }

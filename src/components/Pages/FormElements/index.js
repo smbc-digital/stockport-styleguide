@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
 import CodeExample from '../../Elements/CodeExample'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer,SortcodeInput,AccountNumberInput } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer, SortcodeInput, AccountNumberInput } from 'smbc-react-components'
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 
@@ -33,6 +33,36 @@ class Inputs extends Component {
 				'name': 'MeatChoice',
 				'value': '',
 				'disabled': 'true'
+			}
+		]
+
+		this.radioInputsWithAdditionalInputs = [
+			{
+				'id': 'radio-meat-1',
+				'label': 'Radio 1',
+				'name': 'RadioMeat',
+				'value': '',
+				renderIfChecked: () =>
+					<TextInputContainer
+						label="Text fields"
+						id="cheese-1"
+						type="text"
+						optional={true}
+						description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users."
+						onChangeHandler={() => { }}
+					/>
+			},
+			{
+				'id': 'radio-meat-2',
+				'label': 'Radio 2',
+				'name': 'RadioMeat',
+				'value': ''
+			},
+			{
+				'id': 'radio-meat-3',
+				'label': 'Radio 3',
+				'name': 'RadioMeat',
+				'value': ''
 			}
 		]
 
@@ -98,6 +128,19 @@ class Inputs extends Component {
 										description='Radio buttons allow users to make a single selection from a list of possible choices.'
 										legend='Meat choice'
 										options={this.radioInputs}
+										onChange={this.onChange.bind(this)}
+									/>
+								</CodeExample>
+							</form>
+						</section>
+						<section>
+							<form method="get" role="form radio-button">
+								<CodeExample>
+									<RadioInputsContainer
+										header='Radio Buttons focused within'
+										description='Radio buttons with additonal inputs.'
+										legend='Meat choice with cheese choice'
+										options={this.radioInputsWithAdditionalInputs}
 										onChange={this.onChange.bind(this)}
 									/>
 								</CodeExample>
@@ -248,10 +291,10 @@ class Inputs extends Component {
 							<form method="get" role="form my-account-validation">
 								<CodeExample>
 									<TextAreaInputContainer
-										maxLength={10} 
-										onChange={this.onChange.bind(this)} 
+										maxLength={10}
+										onChange={this.onChange.bind(this)}
 										id='testId'
-										label='TextArea input label' 
+										label='TextArea input label'
 										value='This a textArea input label'
 									/>
 								</CodeExample>
@@ -282,7 +325,7 @@ class Inputs extends Component {
 						<section>
 							<form>
 								<h1>Submit your supporting documents</h1>
-								<div className="upload-file-list" style={{display: 'block'}}>
+								<div className="upload-file-list" style={{ display: 'block' }}>
 									<div className="grid-100">
 										<i className="fa fa-1x fa-file"></i>
 										<span>test2.txt</span>
