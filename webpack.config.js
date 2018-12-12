@@ -22,7 +22,7 @@ module.exports = (env, argv) => {
 			}),
 			new CleanWebpackPlugin('./dist'),
 			new CopyWebpackPlugin([
-				{ from: 'src/web.config', to: '/dist' }
+				{ from: 'src/web.config', to: './' }
 			]),
 		],
 		module: {
@@ -38,9 +38,18 @@ module.exports = (env, argv) => {
 				{
 					test: /\.scss$/,
 					use: [
-						argv === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+						argv === 'development' ? 'style-loader' : {
+							loader: MiniCssExtractPlugin.loader, options: {
+								publicPath: './'
+							}
+						},
 						"css-loader",
-						"sass-loader"
+						{
+							loader: "sass-loader",
+							options: {
+								includePaths: [path.resolve(__dirname, "src/sass/assets/fonts/")]
+							}
+						}
 					]
 				},
 				{

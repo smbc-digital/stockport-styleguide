@@ -1,5 +1,6 @@
 .currency-input-container {
-    > i {
+    > i,
+    span {
         position: absolute;
         padding: 20px 10px 10px 15px;
         pointer-events: none;

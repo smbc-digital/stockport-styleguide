@@ -3,7 +3,7 @@
     color: $white;
     background-color: $grey-dark;
     display: table;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
 
     > i {
@@ -40,6 +40,14 @@
         right: 3px;
         color: $white;
 
+        @media #{$mobile} {
+            right: 10px;
+        }
+
+        @media #{$tablet} {
+            right: 6px;
+        }
+
         i {
             font-size: 1.500em;
         }
@@ -50,6 +58,19 @@
             background-color: rgba(255, 255, 255, 0.15);
             @include border-radius(0);
         }
+    }
+
+    > form button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 100%;
+        text-decoration: underline;
+        padding-left: 0;
+    }
+
+    &.full-width {
+        width: 100%;
     }
 }
 
@@ -66,6 +87,15 @@
 .alert-information {
     @include alert;
     @include alert-colours($soft-blue, $white);
+
+    form {
+
+        .button-underlined {
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+    }
 }
 
 .alert-error {
@@ -134,7 +164,7 @@
 
 .alert-information-fullwidth {
     @extend .alert-information;
-    @include alert-fullwidth;
+    @include alert-fullwidth;    
 }
 
 .alert-error-fullwidth {

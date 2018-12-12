@@ -74,7 +74,7 @@ a.button {
     display: inline-block;
     
     @media #{$mobile} {
-        padding: 10px 0;
+        box-sizing: border-box;
     }
 }
 
@@ -128,6 +128,29 @@ a.button {
         cursor: default;
         background-color: #e1e1e1;
         @include box-shadow(none);
+    }
+}
+
+.button-underlined {
+    @extend .button;
+    @include button-colors(transparent, $white);
+    @include border-radius(0);
+    border: none;
+    text-decoration: underline;
+    text-align: left;
+    box-shadow: none;
+    padding: 0;
+
+    &:before {
+        content: '';
+    }
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    @media #{$mobile} {
+        width: auto;
     }
 }
 

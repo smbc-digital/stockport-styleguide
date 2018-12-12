@@ -12,6 +12,7 @@ textarea {
     margin-bottom: 20px;
     box-sizing: border-box;
 
+
     &.input-validation-error {
         border: 1px solid $red;
         @include border-radius(3px 3px 0 0);
@@ -54,7 +55,7 @@ textarea {
     line-height: 20px;   
 
     &.small {
-        height: 100px;
+        height: 125px;
     }
 
     &.char-limit {

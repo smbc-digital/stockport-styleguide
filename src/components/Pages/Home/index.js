@@ -10,9 +10,11 @@ export class Home extends Component {
 		return (
 			<main className="full-width" id="content">
 				<section className="title-container">
-					<div className="title">
-						<h1>Welcome to the Stockport.gov.uk style guide</h1>
-						<p className="hide-on-mobile">Home to the Digital Team's shared styles and design patterns</p>
+					<div className="title-content">
+						<div className="title">
+							<h1>Welcome to the Stockport.gov.uk style guide</h1>
+							<p className="hide-on-mobile">Home to the Digital Team's shared styles and design patterns</p>
+						</div>
 					</div>
 				</section>
 				<section className="center-wrapper">

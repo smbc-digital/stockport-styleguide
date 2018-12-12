@@ -18,5 +18,32 @@
 
     &:last-of-type {
         border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+
+.dashboard-button-container {
+    display: flex;
+    justify-content: flex-start;
+
+    i {
+        padding-bottom: 10px; 
+    }
+
+    a {
+        text-align: center;
+    }
+
+    @media #{$mobile} {
+        i {
+            padding-bottom: 0; 
+        }
+
+        flex-wrap: wrap;
+
+        a {
+            text-align: left;
+        }
+
     }
 }

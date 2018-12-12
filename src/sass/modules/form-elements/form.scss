@@ -35,6 +35,11 @@ form {
 
     h3,
     .h3 {
+
+        @media #{$mobile} {
+            margin-bottom: 0;
+        }
+
         margin-bottom: 16px;
         display: block;
 
@@ -47,9 +52,7 @@ form {
         @extend h3;
 
         @media #{$mobile} {
-            &.optional {
-                margin-bottom: 0;
-            }
+            margin-bottom: 16px;
         }
     }
 
@@ -59,8 +62,6 @@ form {
     }
 
     p {
-        margin: 0 0 10px;
-
         &.optional {
             padding-left: 10px;
             font-size: $fontSizeSmall;
@@ -70,6 +71,7 @@ form {
             @media #{$mobile} {
                 display: block;
                 padding: 0;
+                margin-bottom: 16px;
             }
         }
 
@@ -128,6 +130,7 @@ form {
 
 // sass-lint:disable class-name-format
 .smallerText {
+    margin: 0 0 10px 0;
     font-size: $fontSizeSmall;
 }
 

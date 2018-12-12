@@ -431,22 +431,34 @@ body > header,
     padding: 20px;
 }
 
-.title {
+.title-content {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button-tertiary {
+        @extend .hide-on-mobile;
+        @extend .hide-on-tablet;
+        margin: 0;
+    }
+}
+
+.title {
     font-family: $font-family-headings;
     font-weight: $fontWeightBold;
 
     h1 {
         color: $white;
-        font-size: 2.750em;
-        margin-bottom: 20px;
+        font-size: 2.00em;
+        margin-bottom: 10px;
     }
 
     p {
         margin-bottom: 0;
         color: $white;
-        font-size: $fontSizeLarger;
+        font-size: $fontSizeDefault;
     }
 }
 

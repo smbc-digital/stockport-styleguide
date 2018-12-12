@@ -2,16 +2,12 @@ body > footer,
 #root > footer { // sass-lint:disable-line no-ids (#root needed for React)
     border-top: 10px solid $teal;
     background-color: $primary-dark;
-    padding-top: 20px;
 
     #footer-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
         @extend .grid-33;
         @extend .tablet-grid-35;
         @extend .mobile-grid-100;
-        display: table-cell;
-        vertical-align: middle;
         padding: 10px 0;
-        margin: 0;
         @include header-footer-logo;
 
         @media #{$mobile} {
@@ -24,7 +20,7 @@ body > footer,
         @extend .tablet-grid-45;
         list-style: none;
         display: inline;
-        padding: 0 0 20px;
+        padding: 20px 0 20px;
 
         li {
             float: left;
@@ -191,5 +187,69 @@ body > footer,
             display: inline;
             font-size: 0.900em;
         }
+    }
+
+    .atoz {
+        background-color: $primary;
+        text-align: center;
+        padding-bottom: 20px;
+
+        @media #{$tablet, $desktop} {
+            border-bottom: 6px solid $teal;
+        }
+
+        h2 {
+            color: $white;
+            padding-top: 5px;
+            margin-bottom: 30px;
+            margin-top: 0;
+            font-family: $font-family-headings;
+        }
+
+        .alphabet {
+            max-width: 790px;
+            display: inline-block;
+
+            .letter {
+                display: inline-block;
+                padding-bottom: 15px;
+                padding-right: 5px;
+                padding-left: 5px;
+
+                .letter-bordered {
+                    display: inline-block;
+                    border: 1px solid rgba(255,255,255,0.5);
+                    border-radius: 100%;
+                    padding: 10px;
+                    width: 23px;
+                    height: 23px;
+                    display: inline-block;
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 23px;
+                    line-height: 1em;
+
+                    &:hover, 
+                    &:focus {
+                        border: 1px solid $white;
+                        text-decoration: none;
+                    }
+
+                    a:hover, 
+                    a:focus {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .letter.active a {
+                background-color: $white;
+                color: $primary;
+            }
+        }
+    }
+
+    .no-bottom-atoz .atoz {
+        border-bottom: none;
     }
 }
