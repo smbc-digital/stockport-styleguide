@@ -2,8 +2,8 @@ input,
 textarea {
     display: block;
     padding: 15px 10px;
-    border: 1px solid $grey-middle;
-    @include border-radius(3px);
+    border: 2px solid $almost-black;
+    @include border-radius(0);
     width: 100%;
     max-width: 550px;
     font-family: $font-family;
@@ -36,9 +36,9 @@ textarea {
 }
 
 input[type=text] {
-    color: #1b1b1b;
+    color: $almost-black;
     height: 40px;
-    border: 2px solid #1b1b1b;
+    border: 2px solid $almost-black;
     padding: 6px;
     width: 280px;
 
@@ -62,16 +62,6 @@ textarea {
     }
 }
 
-p.text-area-description,
-p.characters-remaining {
-    font-size: $fontSizeDefault;
-    line-height: 20px;
-
-    @media #{$mobile} {
-        font-size: $fontSizeSmall;   
-    }
-
-}
 
 select {
     @include border-radius(3px);

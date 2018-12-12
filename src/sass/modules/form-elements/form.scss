@@ -128,7 +128,12 @@ form {
 
 // sass-lint:disable class-name-format
 .smallerText {
-    font-size: $fontSizeSmall;
+    font-size: $fontSizeDefault;
+    line-height: 20px;
+
+    @media #{$mobile} {
+        font-size: $fontSizeSmall;   
+    }
 }
 
 .spinner {
