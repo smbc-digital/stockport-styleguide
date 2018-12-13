@@ -142,7 +142,7 @@
     }
 
     label {
-        @include lead-paragraph;
+        @extend .lead-paragraph;
         @include user-select(none);
         cursor: pointer;
         display: inline-block;
@@ -220,15 +220,5 @@
 
     @keyframes #{$animationName} {
         @content;
-    }
-}
-
-@mixin lead-paragraph {
-    font-size: 24px;
-    line-height: 32px;
-        
-    @media #{mobile} {
-        font-size: 18px;
-        line-height: 28px;
     }
 }
