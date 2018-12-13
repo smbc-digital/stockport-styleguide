@@ -41,7 +41,7 @@ form {
 h1,
 .h1 {
     font-family: $font-family-headings;
-    color: $primary;
+    color: $primary-text;
     font-size: $fontSizeExtraLarge;
     font-weight: $fontWeightBold;
     line-height: 3.125em;
@@ -56,7 +56,7 @@ h1,
 h2,
 .h2 {
     font-family: $font-family-headings;
-    color: $grey-darkest;
+    color: $primary-text;
     font-size: $fontSizeLarger;
     font-weight: $fontWeightBold;
     line-height: 2.5em;
@@ -71,7 +71,7 @@ h2,
 h3,
 .h3 {
     font-family: $font-family-headings;
-    color: $grey-darkest;
+    color: $primary-text;
     font-size: $fontSizeLarge;
     font-weight: $fontWeightBold;
     margin: 0 0 26px 0;
@@ -86,7 +86,7 @@ h3,
 h4,
 .h4 {
     font-family: $font-family-headings;
-    color: $grey-darkest;
+    color: $primary-text;
     font-size: $fontSizeBold;
     font-weight: 600;
     margin: 0 0 26px 0;
