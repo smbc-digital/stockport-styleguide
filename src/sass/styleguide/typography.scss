@@ -1,5 +1,5 @@
 .lead-paragraph {
-    @include lead-paragraph;
+    @extend lead-paragraph; 
 }
 
 .description p {
