@@ -41,14 +41,13 @@ class Inputs extends Component {
 				'id': 'radio-meat-1',
 				'label': 'Radio 1',
 				'name': 'RadioMeat',
-				'value': '',
+				'value': 'test',
 				renderIfChecked: () =>
 					<TextInputContainer
 						label="Text fields"
 						id="cheese-1"
 						type="text"
 						optional={true}
-						description="Text inputs allow users to enter information. There are different types of text inputs, which provide slightly different experiences for users."
 						onChangeHandler={() => { }}
 					/>
 			},
@@ -56,13 +55,13 @@ class Inputs extends Component {
 				'id': 'radio-meat-2',
 				'label': 'Radio 2',
 				'name': 'RadioMeat',
-				'value': ''
+				'value': 'test2'
 			},
 			{
 				'id': 'radio-meat-3',
 				'label': 'Radio 3',
 				'name': 'RadioMeat',
-				'value': ''
+				'value': 'test3'
 			}
 		]
 

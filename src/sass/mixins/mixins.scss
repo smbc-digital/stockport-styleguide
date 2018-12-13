@@ -142,13 +142,12 @@
     }
 
     label {
+        @include lead-paragraph;
         @include user-select(none);
         cursor: pointer;
         display: inline-block;
         font-family: $font-family;
-        font-size: $fontSizeDefault;
         font-weight: $fontWeightRegular;
-        line-height: $fontSizeLarger;
         margin: 0;
         padding: 3px 0 4px 60px;
         position: relative;
