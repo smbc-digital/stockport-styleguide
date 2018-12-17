@@ -54,9 +54,6 @@ class Typography extends Component {
 								<p>Mobile values:</p>
 								<p>Font size: 32px</p>
 								<p>Line height: 35px</p>
-
-								<p>Letter spacing: -1.5px</p>
-
 							</div>
 						</section>
 						<section className="with-border-bottom">
