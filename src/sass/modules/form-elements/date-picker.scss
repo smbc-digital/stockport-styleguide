@@ -40,29 +40,27 @@ input[type="date"] {
 }
 
 .input-memorable-date { 
+    p {
+        margin: 0 0 10px 0;
+    }
+
     div {
         display: inline-block;
-        position: relative;
+        position: relative;     
 
-        input {
+        input[type="number"] {
+            @extend input;
             display: inline-block;
             width: 55px;
             margin-right: 20px;
-            line-height: 1.125em;
-            text-align: center;
-
-            @media #{$mobile} {
-                text-align: center;
-                display: inline-block;
-            }
         }
 
         label {
-            font-size: 1.25em;
-            display: block;
+            @extend p;
+            margin-bottom: 0;
         }
 
-        &:last-of-type input {
+        &:last-of-type input[type="number"] {
             width: 75px;
         }
 

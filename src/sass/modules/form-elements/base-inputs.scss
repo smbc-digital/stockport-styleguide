@@ -1,7 +1,7 @@
 input,
 textarea {
     display: block;
-    padding: 15px 10px;
+    padding: 6px;
     border: 2px solid $almost-black;
     @include border-radius(0);
     width: 100%;
@@ -16,19 +16,11 @@ textarea {
     &.input-validation-error {
         border: 1px solid $red;
         @include border-radius(3px 3px 0 0);
-
-        &:active,
-        &:focus {
-            border-color: transparent;
-            border-radius: 0;
-        }
     }
 
     &:active,
     &:focus {
         @include outline;
-        border-color: transparent;
-        border-radius: 0;
     }
 
     @media #{$mobile} {

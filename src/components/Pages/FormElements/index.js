@@ -11,19 +11,19 @@ class Inputs extends Component {
 		this.radioInputs = [
 			{
 				'id': 'radio-inline-1',
-				'label': 'This value should span over one line',
+				'label': 'This value over one line',
 				'name': 'MeatChoice',
 				'value': ''
 			},
 			{
 				'id': 'radio-inline-2',
-				'label': 'This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.',
+				'label': 'This value should span over two lines.',
 				'name': 'MeatChoice',
 				'value': ''
 			},
 			{
 				'id': 'radio-inline-3',
-				'label': 'This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.',
+				'label': 'Over three lines. This value should span three lines.',
 				'name': 'MeatChoice',
 				'value': ''
 			},
@@ -68,19 +68,19 @@ class Inputs extends Component {
 		this.checkboxInputs = [
 			{
 				'id': 'checkbox-inline-1',
-				'label': 'This value should span over one line',
+				'label': 'This value one line',
 				'name': 'CheeseChoice',
 				'value': ''
 			},
 			{
 				'id': 'checkbox-inline-2',
-				'label': 'This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.',
+				'label': 'This value should span over two lines.',
 				'name': 'CheeseChoice',
 				'value': ''
 			},
 			{
 				'id': 'checkbox-inline-3',
-				'label': 'This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.',
+				'label': 'Over three lines. This value should span over three lines.',
 				'name': 'CheeseChoice',
 				'value': ''
 			},
@@ -218,7 +218,7 @@ class Inputs extends Component {
 							<form method="get" role="form memorable-date-input">
 								<CodeExample>
 									<MemorableDateInputContainer
-										onChangeHandler={() => { }}
+										onChange={() => { }}
 										heading='Memorable dates'
 										description="For example, 23 7 1968"
 									/>

@@ -35,16 +35,17 @@ form {
 
     h3,
     .h3 {
-
         @media #{$mobile} {
             margin-bottom: 0;
         }
-
-        margin-bottom: 16px;
         display: block;
 
         &.optional {
             display: inline-block;
+        }
+
+        &.no-margin-bottom {
+            margin-bottom: 0;
         }
     }
 
