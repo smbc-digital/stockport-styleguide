@@ -59,10 +59,9 @@ textarea {
 }
 
 
-select {
-    @include border-radius(3px);
+select {   
     font-size: $fontSizeDefault;
-    border: 1px solid #999;
+    border: 2px solid $almost-black;
     width: 100%;
     max-width: 550px;
     font-family: $font-family;
@@ -80,6 +79,11 @@ select {
 
     &::-ms-expand {
         display: none;
+    }
+
+    
+    &:focus{
+        border: 2px solid $almost-black; 
     }
 }
 

@@ -65,6 +65,22 @@ class Inputs extends Component {
 			}
 		]
 
+		this.selectWithAdditionalInputs =
+		[
+			{
+				value: '1',
+				name: 'Option A'
+			},
+			{ 
+				value: '2',
+				name: 'option C'
+			},
+			{
+				value:'other',
+				name:'Other'
+			}
+		]
+
 		this.checkboxInputs = [
 			{
 				'id': 'checkbox-inline-1',
@@ -97,11 +113,18 @@ class Inputs extends Component {
 			date: null,
 			focused: false,
 			dateValidationMessage: '',
+			dropDownValue: ''
 		}
 	}
 
 	onChange(event) {
 		return event
+	}
+
+	onChangeDropdown(event) {
+		this.setState({
+			dropDownValue: event.target.value
+		})
 	}
 
 	onChangeDate(date) {
@@ -162,7 +185,7 @@ class Inputs extends Component {
 							<form method="get" role="form select-input">
 								<CodeExample>
 									<SelectInputContainer
-										description="Drop downs allow a user to select one options from a list; these are foun most commonlt in address finders. Before using a drop down we should think about whether radio buttons are more suitable."
+										description="Drop downs allow a user to select one options from a list; these are founn most commonly in address finders. Before using a drop down we should think about whether radio buttons are more suitable."
 										id="style-guide-select"
 										name="style-guide-select"
 										placeholder="Select an address..."
@@ -171,6 +194,27 @@ class Inputs extends Component {
 										options={[{ value: '1', name: 'first option' }, { value: '2', name: 'second option' }]}
 									/>
 								</CodeExample>
+							</form>
+							<form method="get" role="form select-input-other">
+								<CodeExample>
+									<SelectInputContainer
+										description="Drop downs allow a user to select one options from a list; If other is selected a text box is shown"
+										id="style-guide-select"
+										name="style-guide-select"
+										placeholder="Select an option..."
+										onChange={this.onChangeDropdown.bind(this)}
+										label="Drop downs"										
+										options={[{ value: '1', name: 'Option A' }, { value: '2', name: 'option B' }, { value: '3', name: 'option C' }, {value:'other', name:'Other will bring a text field beneath'}]}
+									/>
+								</CodeExample>
+								{ this.state.dropDownValue == 'other' && 
+									<TextInputContainer
+										label="Further Details"
+										id="further-details"
+										type="text"
+										optional={false}
+										onChangeHandler={() => { }}
+									/> }
 							</form>
 						</section>
 					</section>
