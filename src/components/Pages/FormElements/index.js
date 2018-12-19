@@ -204,7 +204,7 @@ class Inputs extends Component {
 										placeholder="Select an option..."
 										onChange={this.onChangeDropdown.bind(this)}
 										label="Drop downs"										
-										options={[{ value: '1', name: 'Option A' }, { value: '2', name: 'option B' }, { value: '3', name: 'option C' }, {value:'other', name:'Other will bring a text field beneath'}]}
+										options={[{ value: '1', name: 'Option A' }, { value: '2', name: 'Option B' }, { value: '3', name: 'Option C' }, {value:'other', name:'Other will bring a text field beneath'}]}
 									/>
 								</CodeExample>
 								{ this.state.dropDownValue == 'other' && 
