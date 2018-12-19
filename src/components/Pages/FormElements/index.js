@@ -23,7 +23,7 @@ class Inputs extends Component {
 			},
 			{
 				'id': 'radio-inline-3',
-				'label': 'Over three lines. This value should span three lines.',
+				'label': 'Over multiple lines. This value should span multiple lines. Over multiple lines. This value should span multiple lines.',
 				'name': 'MeatChoice',
 				'value': ''
 			},
