@@ -62,12 +62,12 @@ textarea {
 select {   
     font-size: $fontSizeDefault;
     border: 2px solid $almost-black;
-    width: 100%;
+    width: 280px;
     max-width: 550px;
     font-family: $font-family;
     box-sizing: border-box;
-    line-height: 1.125em;
-    padding: 15px 40px 15px 10px;
+    line-height: normal;
+    padding: 6px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png');
@@ -81,6 +81,9 @@ select {
         display: none;
     }
    
+    @media #{$mobile} {
+        width: 100%;
+    }
 }
 
 input[type="number"] {
