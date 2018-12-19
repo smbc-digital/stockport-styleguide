@@ -80,11 +80,7 @@ select {
     &::-ms-expand {
         display: none;
     }
-
-    
-    &:focus{
-        border: 2px solid $almost-black; 
-    }
+   
 }
 
 input[type="number"] {
