@@ -44,12 +44,12 @@ h1,
     color: $primary-text;
     font-size: $fontSizeExtraLarge;
     font-weight: $fontWeightBold;
-    line-height: 3.125em;
+    line-height: 3.125rem;
     margin: 0 0 21px 0;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeExtraLarge;
-        line-height: 2.187em;
+        line-height: 2.187rem;
     }
 }
 
@@ -59,12 +59,12 @@ h2,
     color: $primary-text;
     font-size: $fontSizeLarger;
     font-weight: $fontWeightBold;
-    line-height: 2.5em;
+    line-height: 2.5rem;
     margin: 0 0 26px 0;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeLarger;
-        line-height:  1.875em;
+        line-height:  1.875rem;
     }
 }
 
@@ -75,11 +75,11 @@ h3,
     font-size: $fontSizeLarge;
     font-weight: $fontWeightBold;
     margin: 0 0 26px 0;
-    line-height:  1.875em;
+    line-height:  1.875rem;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeLarge;
-        line-height: 1.25em;
+        line-height: 1.25rem;
     }
 }
 
@@ -90,11 +90,11 @@ h4,
     font-size: $fontSizeBold;
     font-weight: 600;
     margin: 0 0 26px 0;
-    line-height: 1.562em;
+    line-height: 1.562rem;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeBold;
-        line-height: 1.25em;
+        line-height: 1.25rem;
     }
 }
 
@@ -104,10 +104,10 @@ p,
     font-size: $fontSizeDefault;
     font-weight: $fontWeightRegular;
     margin: 0 0 20px 0;
-    line-height: 1.562em;
+    line-height: 1.562rem;
     @media #{$mobile} {
         font-size: $mobileFontSizeRegular;
-        line-height: 1.75em;
+        line-height: 1.75rem;
     }
 
     &.lead-paragraph {
@@ -132,11 +132,11 @@ a {
 }
 
 .lead-paragraph {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.500em;
+    line-height: 2rem;
 
     @media #{$mobile} {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.125em;
+        line-height: 1.750rem;
     }
 }
