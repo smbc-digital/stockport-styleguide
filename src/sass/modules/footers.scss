@@ -144,6 +144,43 @@ body > footer,
         }
     }
 
+    .footer-logo-links {
+        border-top: 2px solid rgba(7,40,38,.5);
+        padding: 30px 0;
+
+        @media #{$mobile} {
+            padding: 0 10px;
+        }
+
+        > div {
+
+            @media #{$tablet} {
+                display: inline-block;
+                min-width: 225px;
+                max-width: 15%;
+                vertical-align: top;
+            }
+
+            @media #{$mobile} {
+                margin-right: unset;
+                margin-bottom: 25px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            margin-right: 25px;
+
+            > img {
+                min-width: 225px;
+                max-width: 20%;
+            }
+
+            
+        }
+    }
+
     .footer-copyright {
         color: $white;
         background-color: $primary-darkest;
