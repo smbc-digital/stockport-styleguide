@@ -139,12 +139,12 @@ body > footer,
 
         > div {
             vertical-align: top;
+            margin-right: 25px;
             display: inline;
 
             @media #{$tablet} {
                 min-width: 225px;
                 max-width: 15%;
-                vertical-align: top;
             }
 
             @media #{$mobile} {
@@ -156,13 +156,10 @@ body > footer,
                 }
             }
 
-            margin-right: 25px;
-
             > img {
                 min-width: 225px;
                 max-width: 20%;
             }
-
             
         }
     }
