@@ -164,10 +164,6 @@ body > footer,
                 @media #{$mobile} {
                     vertical-align: unset;
                     padding-bottom: 20px;
-
-                    &:last-of-type {
-                        padding-bottom: 0
-                    }
                 }
             }
             
