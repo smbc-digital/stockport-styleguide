@@ -159,6 +159,15 @@ body > footer,
             > img {
                 min-width: 225px;
                 max-width: 20%;
+                vertical-align: top;
+
+                @media #{$mobile} {
+                    vertical-align: unset;
+
+                    &:not(:last-of-type) {
+                        padding-bottom: 20px;
+                    }
+                }
             }
             
         }
