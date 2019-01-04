@@ -28,6 +28,13 @@ ul {
     margin: 0;
 }
 
+hr {
+    height: 1px;
+    color: $grey-light;
+    background-color: $grey-light;
+    border: none;
+}
+
 .full-width {
     max-width: 100%;
 }
