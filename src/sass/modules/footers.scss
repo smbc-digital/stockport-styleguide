@@ -150,6 +150,7 @@ body > footer,
         > a {
             vertical-align: top;            
             display: inline;
+            margin-left: 60px;
 
             @media #{$tablet} {
                 min-width: 225px;
