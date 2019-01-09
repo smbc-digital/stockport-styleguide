@@ -16,8 +16,8 @@ article {
         margin-bottom: 20px;
     }
 
-    &.did-you-know[class*="grid-"]
-    &.did-you-know[class^="grid-"] {
+    .did-you-know [class^="grid-"]
+    .did-you-know [class*="grid-"] {
         padding-left: 0;
     }
 }
