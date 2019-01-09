@@ -47,7 +47,11 @@ input[type="text"] {
 textarea {
     height: 200px;
     margin-bottom: 10px;
-    line-height: 20px;   
+    line-height: 25px;   
+
+    @media #{$mobile} {
+        line-height: 22px;
+    }
 
     &.small {
         height: 125px;
