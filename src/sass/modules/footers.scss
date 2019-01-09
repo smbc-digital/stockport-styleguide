@@ -135,10 +135,7 @@ body > footer,
 
         margin-left: 60px;
 
-        &:first-of-type {
-            margin: 0;
-        }
-
+       
         @media #{$mobile} {
             padding: 20px 10px 0 10px;
         }
@@ -151,6 +148,10 @@ body > footer,
             vertical-align: top;            
             display: inline;
             margin-left: 60px;
+
+            &:first-of-type {
+                margin: 0 0 0 0;
+            }
 
             @media #{$tablet} {
                 min-width: 225px;
