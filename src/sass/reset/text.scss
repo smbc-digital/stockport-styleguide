@@ -116,6 +116,19 @@ p,
 
 }
 
+li,
+.li {
+    font-family: $font-family;
+    font-size: $fontSizeDefault;
+    font-weight: $fontWeightRegular;    
+    margin: 0 0 20px 0;
+    line-height: 1.562rem;
+    @media #{$mobile} {
+        font-size: $mobileFontSizeRegular;
+        line-height: 1.75rem;
+    }
+}
+
 a {
     color: $primary;
     text-decoration: underline;
