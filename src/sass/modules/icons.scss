@@ -25,12 +25,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.did-you-know [class^="si-"],
-.did-you-know [class*="si-"] {
-    vertical-align: text-top;
-    font-weight: 600;
-}
-
 // default icon is the si-documents, make sure this matches up when you update the icons
 .si-default:before {
     content: "\e90b";
