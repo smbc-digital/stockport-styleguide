@@ -146,10 +146,6 @@ body > footer,
             display: inline;
             margin-left: 60px;
 
-            &:first-of-type {
-                margin: 0 0 0 0;
-            }
-
             @media #{$tablet} {
                 min-width: 225px;
                 max-width: 15%;
@@ -161,6 +157,10 @@ body > footer,
                 &:last-of-type {
                     margin-bottom: 0;
                 }
+            }
+
+            &:first-of-type {
+                margin: 0;
             }
 
             > img {
