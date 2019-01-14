@@ -113,6 +113,23 @@ class Typography extends Component {
 							</div>
 						</section>
 						<section className="with-border-bottom">
+							<ul>
+								<li>This is what list item text looks like</li>
+								<li>This is what another list item text looks like</li>
+							</ul>
+							<div className="description">
+								<p>Font family: Noto Sans</p>
+								<p>Font size: 19px</p>
+								<p>Font weight: 400</p>
+								<p>Line height: 25px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 16px</p>
+								<p>Line height: 28px</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
 							<p className="lead-paragraph">This is what lead body text looks like</p>
 							<div className="description">
 								<p>Font family: Noto Sans</p>
