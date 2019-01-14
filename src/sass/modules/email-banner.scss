@@ -1,25 +1,27 @@
 .email-banner {
-    height: 100%;
     min-height: 140px;
-    background-color: #fff;
-    padding-left: 0;
     display: flex;
-    border-radius: 3px;
-    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, .1);
+    background-color: $white;
+    @include border-radius(3px);
+    @include box-shadow(0 10px 14px 0 $dark-border);
     margin: 20px auto;
 
-    > :nth-child(1) {
+    > div:first-child {
         width: 140px;
-        background-color: #207eab;
+        background-color: $soft-blue;
         display: flex;
         justify-content: center;
-        align-content: center;
         flex-direction: column;
         text-align: center;
         border-radius: 3px 0 0 3px;
+
+        i {
+            color: $white;
+            font-size: 80px;
+        }
     }
 
-    > :nth-child(2) {
+    > div:last-child {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -32,15 +34,17 @@
 
         form {
             padding-left: 0;
-
-            button {
-                width: 100%;
-            }
+            display: flex;
+            align-items: flex-start;
 
             input {
                 width: 100%;
                 padding-right: 20px;
-                margin: 0;
+                margin: 0 20px 0 0;
+            }
+
+            .button-primary {
+                @extend .grid-30;
             }
         }
     }
