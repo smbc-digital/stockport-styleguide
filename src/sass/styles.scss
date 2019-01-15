@@ -1,5 +1,8 @@
 @import 'vendor/unsemantic-grid-responsive-tablet';
+
 @import 'mixins/mixins';
+@import 'mixins/image';
+
 @import 'reset/devices';
 @import 'reset/colour-palette';
 @import 'reset/text';
@@ -21,6 +24,8 @@
 @import 'modules/error';
 @import 'modules/information-list';
 @import 'modules/email-banner';
+@import 'modules/profile-inline';
+
 @import 'modules/feedback/success';
 @import 'modules/feedback/ineligible-warning';
 @import 'modules/feedback/system-failure';
