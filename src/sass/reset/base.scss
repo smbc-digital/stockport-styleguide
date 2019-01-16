@@ -95,3 +95,9 @@ ul {
     color: $grey-light;
     background-color: $grey-light;
 }
+
+.darken {
+    background-color: rgba(20,20,20,.5);
+    height: 100%;
+    min-height: 400px;
+}

@@ -1,224 +1,224 @@
 @mixin main-layout {
-    @include center-wrapper;
-    background-color: $white;
-    padding: 20px 20px 0;
+	@include center-wrapper;
+	background-color: $white;
+	padding: 20px 20px 0;
 
-    @media #{$mobile} {
-        padding: 20px 10px 0;
-    }
+	@media #{$mobile} {
+		padding: 20px 10px 0;
+	}
 }
 
-@mixin center-wrapper { 
-    @extend .grid-container;
-    margin: 0 auto;
+@mixin center-wrapper {
+	@extend .grid-container;
+	margin: 0 auto;
 }
 
-@mixin button-colors ($button-colour, $text-colour) {
-    background-color: $button-colour;
-    color: $text-colour;
+@mixin button-colors($button-colour, $text-colour) {
+	background-color: $button-colour;
+	color: $text-colour;
 
-    a {
-        color: $text-colour;
-    }
+	a {
+		color: $text-colour;
+	}
 
-    &:hover,
-    &:focus {
-        background-color: lighten($button-colour, 5%);
-    }
+	&:hover,
+	&:focus {
+		background-color: lighten($button-colour, 5%);
+	}
 
-    &:active {
-        background-color: darken($button-colour, 5%);
-    }
+	&:active {
+		background-color: darken($button-colour, 5%);
+	}
 }
 
 @mixin border-radius($radius) {
-    -moz-border-radius: $radius;
-    -webkit-border-radius: $radius;
-    border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
 }
 
 @mixin box-shadow($shadow) {
-    -webkit-box-shadow: $shadow;
-    box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
 }
 
 @mixin outline {
-    outline: 3px solid $orange;
+	outline: 3px solid $orange;
 }
 
 @mixin transition-box-shadow($shadow) {
-    @include box-shadow($shadow);
-    cursor: pointer;
-    text-decoration: none;
-    transition-duration: .5s;
-    transition-property: box-shadow;
+	@include box-shadow($shadow);
+	cursor: pointer;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	transition-property: box-shadow;
 }
 
 @mixin chevron($right-position) {
-    content: '\f105';
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 20px;
-    margin-top: -10px;
-    position: absolute;
-    right: $right-position;
-    top: 50%;
+	content: "\f105";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	margin-top: -10px;
+	position: absolute;
+	right: $right-position;
+	top: 50%;
 }
 
 @mixin alert-colours($content-background-color, $font-color) {
-    background-color: $content-background-color;
+	background-color: $content-background-color;
 
-    a {
-        color: $font-color;
-    }
+	a {
+		color: $font-color;
+	}
 
-    > i {
-        background-color: darken($content-background-color, 10%);
-    }
+	> i {
+		background-color: darken($content-background-color, 10%);
+	}
 
-    .content {
-        color: $font-color;
+	.content {
+		color: $font-color;
 
-        h2,
-        h3 {
-            color: $font-color;
-        }
-    }
+		h2,
+		h3 {
+			color: $font-color;
+		}
+	}
 
-    .dismiss {
-        color: $font-color;
-    }
+	.dismiss {
+		color: $font-color;
+	}
 }
 
 @mixin user-select($value) {
-    -moz-user-select: $value;
-    -ms-user-select: $value;
-    -webkit-user-select: $value;
-    user-select: $value;
+	-moz-user-select: $value;
+	-ms-user-select: $value;
+	-webkit-user-select: $value;
+	user-select: $value;
 }
 
 @mixin radio-checkbox-input($type, $radius) {
-    display: block;
-    margin-bottom: 20px;
-    position: relative;
-    max-width: 66%;
+	display: block;
+	margin-bottom: 20px;
+	position: relative;
+	max-width: 66%;
 
-    @media #{$mobile} {
-        max-width: 100%;
-    }
+	@media #{$mobile} {
+		max-width: 100%;
+	}
 
-    input[type=#{$type}] {
-        cursor: pointer;
-        filter: alpha(opacity=0);
-        height: 38px;
-        left: 0;
-        margin: 0;
-        opacity: 0;
-        position: absolute;
-        top: 5px;
-        width: 38px;
-        z-index: 1;
-        zoom: 1;
+	input[type="#{$type}"] {
+		cursor: pointer;
+		filter: alpha(opacity=0);
+		height: 38px;
+		left: 0;
+		margin: 0;
+		opacity: 0;
+		position: absolute;
+		top: 5px;
+		width: 38px;
+		z-index: 1;
+		zoom: 1;
 
-        &:disabled {
-            cursor: default;
+		&:disabled {
+			cursor: default;
 
-            + label {
-                cursor: default;
-                filter: alpha(opacity=35);
-                opacity: .35;
-            }
-        }
+			+ label {
+				cursor: default;
+				filter: alpha(opacity=35);
+				opacity: 0.35;
+			}
+		}
 
-        &:checked + label::after {
-            filter: alpha(opacity=100);
-            opacity: 1;
-            zoom: 1;
-        }
+		&:checked + label::after {
+			filter: alpha(opacity=100);
+			opacity: 1;
+			zoom: 1;
+		}
 
-        &:focus + label::before {
-            @include outline;
-        }
-    }
+		&:focus + label::before {
+			@include outline;
+		}
+	}
 
-    label {
-        @include user-select(none);
-        cursor: pointer;
-        font-size: 19px;
-        line-height: 28px;
-        display: inline-block;
-        font-family: $font-family;
-        font-weight: $fontWeightRegular;
-        margin: 0;
-        padding: 12px 0 4px 60px;
-        position: relative;
+	label {
+		@include user-select(none);
+		cursor: pointer;
+		font-size: 19px;
+		line-height: 28px;
+		display: inline-block;
+		font-family: $font-family;
+		font-weight: $fontWeightRegular;
+		margin: 0;
+		padding: 12px 0 4px 60px;
+		position: relative;
 
-        &::before {
-            background: transparent;
-            border: 2px solid;
-            height: 34px;
-            left: 0;
-            
-            content: "";
-            width: 34px;
-            position: absolute;
-            top: 5px;
-            @include border-radius($radius);
-            margin-top: 0;
-        }
+		&::before {
+			background: transparent;
+			border: 2px solid;
+			height: 34px;
+			left: 0;
 
-        &::after {
-            width: 0;
-            height: 0;
-            position: absolute;
-            top: 13px;
-            zoom: 1;
-            filter: alpha(opacity=0);
-            opacity: 0;
-        }
-    }
+			content: "";
+			width: 34px;
+			position: absolute;
+			top: 5px;
+			@include border-radius($radius);
+			margin-top: 0;
+		}
+
+		&::after {
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 13px;
+			zoom: 1;
+			filter: alpha(opacity=0);
+			opacity: 0;
+		}
+	}
 }
 
 @mixin header-footer-logo {
-    a {
-        background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
-        background-size: cover;
-        display: inline-block;
-        height: 50px;
-        width: 250px;
-        color: transparent;
-        font-size: 0;
-        position: relative;
-        top: -8px;
+	a {
+		background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-full%402x.png");
+		background-size: cover;
+		display: inline-block;
+		height: 50px;
+		width: 250px;
+		color: transparent;
+		font-size: 0;
+		position: relative;
+		top: -8px;
 
-        @media #{$mobile} {
-            background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-mobile%402x.png");
-            height: 35px;
-            width: 175px;
-        }
-    }
+		@media #{$mobile} {
+			background-image: url("https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/logo-stockport-mobile%402x.png");
+			height: 35px;
+			width: 175px;
+		}
+	}
 }
 
-@mixin animation ($animationOptions) {
-    -webkit-animation: $animationOptions;
-    -moz-animation: $animationOptions;
-    -o-animation: $animationOptions; // sass-lint:disable-line no-misspelled-properties
-    animation: $animationOptions
+@mixin animation($animationOptions) {
+	-webkit-animation: $animationOptions;
+	-moz-animation: $animationOptions;
+	-o-animation: $animationOptions; // sass-lint:disable-line no-misspelled-properties
+	animation: $animationOptions;
 }
 
-@mixin keyframes ($animationName) {
-    @-webkit-keyframes #{$animationName} {
-        @content;
-    }
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
 
-    @-moz-keyframes #{$animationName} {
-        @content;
-    }
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
 
-    @-o-keyframes #{$animationName} {
-        @content;
-    }
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
 
-    @keyframes #{$animationName} {
-        @content;
-    }
+	@keyframes #{$animationName} {
+		@content;
+	}
 }

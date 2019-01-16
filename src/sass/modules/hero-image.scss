@@ -1,0 +1,13 @@
+.hero-image {
+	@media #{$desktop} {
+		height: 555px;
+	}
+
+	@media #{$mobile, $tablet} {
+		height: 400px;
+	}
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
