@@ -5,7 +5,7 @@
 }
 
 @mixin flex-row($count, $gap) {
-	width: Calc(100% * (1 / $count) - $gap);
+	width: (100% * (1 / $count) - $gap);
 	flex-grow: 1;
 	flex-basis: 0;
 	margin: 0 $gap;

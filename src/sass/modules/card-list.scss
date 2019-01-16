@@ -18,14 +18,16 @@
 					color: $purple;
 				}
 			}
-			&:nth-child(2) {
-				a > i {
-					color: $soft-blue;
-				}
-			}
+
 			&:last-child {
 				a > i {
 					color: $primary-light;
+				}
+			}
+
+			&:nth-child(2) {
+				a > i {
+					color: $soft-blue;
 				}
 			}
 		}
