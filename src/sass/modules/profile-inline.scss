@@ -1,0 +1,40 @@
+.profile-inline {
+    a {
+        display: block;
+        overflow: hidden;
+
+        &:hover .read-more {
+            text-decoration: underline;
+        }
+
+    }
+
+    .profile-inline-image {
+        display: flex;
+        justify-content: center;
+
+        .circle-image {
+            @include circle-image;
+            width: 220px;
+            height: 220px;
+            max-width: none;
+        }
+    }
+
+    .profile-inline-heading {
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: $almost-black;
+            font-size: .9em;
+        }
+    }
+
+    .profile-inline-quote {
+        p {
+            color: $almost-black;
+        }
+    }
+}
