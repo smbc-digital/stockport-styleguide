@@ -1,5 +1,11 @@
 article {
     padding: 30px 10px 0;
+
+    ul {
+        li {
+            margin-left: 30px;
+        }
+    }
     
     @media #{$mobile} {
         padding-top: 30px;
