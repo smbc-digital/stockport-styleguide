@@ -81,6 +81,12 @@ select {
     margin-bottom: 20px;
     text-overflow: ellipsis;
 
+
+    &:active,
+    &:focus {
+        @include outline; 
+    }
+
     &::-ms-expand {
         display: none;
     }
