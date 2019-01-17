@@ -1,40 +1,129 @@
-.profile-inline {
-    a {
-        display: block;
-        overflow: hidden;
+.profile-inline-container {
+	background-color: $white;
+	padding: 20px;
+	margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition-duration: .5s;
 
-        &:hover .read-more {
+	@include flex(row);
+
+	> * {
+		@include flex-row(2, 3%);
+    }
+    
+    @media #{$mobile, $tablet} {
+        @include flex(column);
+
+        > * {
+            @include flex-column(3%);
+        }
+
+        .profile-inline-image {
+            align-self: center;
+        }
+	}
+
+	border: 1px solid #ebebeb;
+	box-shadow: none;
+
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.profile-inline-image {
+		flex-grow: 0;
+		border-radius: 50%;
+		width: 220px;
+        height: 220px;
+	}
+
+	.profile-inline-quote {
+		@include flex(column);
+
+		> * {
+			@include flex-column(1.5%);
+        }
+
+        > h2 {
+            flex-grow: 0;
+            color: $grey-darkest;
+        }
+
+		.profile-inline-quote-content {
+            @include flex(row);
+
+            > * {
+                @include flex-row(3, 2%);
+            }
+
+            i {
+                flex-grow: 0;
+
+                &:last-child {
+                    align-self: end;
+                }
+            }
+
+            p {
+                color: $grey-darkest;
+                font-size: 1em;
+            }
+        }
+
+        .read-more {
+            
+            flex-grow: 0;
             text-decoration: underline;
         }
+	}
+}
 
-    }
+.profile-inline {
+	margin: 20px 0;
+	background-color: $white;
+	padding: 10px 0;
 
-    .profile-inline-image {
-        display: flex;
-        justify-content: center;
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		border: 1px solid #ebebeb;
+	}
 
-        .circle-image {
-            @include circle-image;
-            width: 220px;
-            height: 220px;
-            max-width: none;
-        }
-    }
+	a {
+		display: block;
+		overflow: hidden;
 
-    .profile-inline-heading {
-        h2 {
-            margin-bottom: 5px;
-        }
+		.read-more {
+			text-decoration: underline;
+		}
+	}
 
-        p {
-            color: $almost-black;
-            font-size: .9em;
-        }
-    }
+	.profile-inline-image {
+		display: flex;
+		justify-content: center;
 
-    .profile-inline-quote {
-        p {
-            color: $almost-black;
-        }
-    }
+		.circle-image {
+			@include circle-image;
+			width: 220px;
+			height: 220px;
+			max-width: none;
+		}
+	}
+
+	.profile-inline-heading {
+		h2 {
+			margin-bottom: 5px;
+		}
+
+		p {
+			color: $almost-black;
+			font-size: 0.9em;
+		}
+	}
+
+	.profile-inline-quote {
+		p {
+			color: $almost-black;
+		}
+	}
 }
