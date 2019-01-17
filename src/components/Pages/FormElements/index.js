@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
 import CodeExample from '../../Elements/CodeExample'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer,SortcodeInput,AccountNumberInput } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer, SortcodeInput, AccountNumberInput } from 'smbc-react-components'
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 
@@ -11,19 +11,19 @@ class Inputs extends Component {
 		this.radioInputs = [
 			{
 				'id': 'radio-inline-1',
-				'label': 'This value should span over one line',
+				'label': 'This value over one line',
 				'name': 'MeatChoice',
 				'value': ''
 			},
 			{
 				'id': 'radio-inline-2',
-				'label': 'This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.',
+				'label': 'This value should span over two lines.',
 				'name': 'MeatChoice',
 				'value': ''
 			},
 			{
 				'id': 'radio-inline-3',
-				'label': 'This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.',
+				'label': 'Over multiple lines. This value should span multiple lines. Over multiple lines. This value should span multiple lines.',
 				'name': 'MeatChoice',
 				'value': ''
 			},
@@ -36,22 +36,67 @@ class Inputs extends Component {
 			}
 		]
 
+		this.radioInputsWithAdditionalInputs = [
+			{
+				'id': 'radio-meat-1',
+				'label': 'Radio 1',
+				'name': 'RadioMeat',
+				'value': 'test',
+				renderIfChecked: () =>
+					<TextInputContainer
+						label="Text fields"
+						id="cheese-1"
+						type="text"
+						optional={true}
+						onChangeHandler={() => { }}
+					/>
+			},
+			{
+				'id': 'radio-meat-2',
+				'label': 'Radio 2',
+				'name': 'RadioMeat',
+				'value': 'test2'
+			},
+			{
+				'id': 'radio-meat-3',
+				'label': 'Radio 3',
+				'name': 'RadioMeat',
+				'value': 'test3'
+			}
+		]
+
+		this.selectWithAdditionalInputs =
+		[
+			{
+				value: '1',
+				name: 'Option A'
+			},
+			{ 
+				value: '2',
+				name: 'option C'
+			},
+			{
+				value:'other',
+				name:'Other'
+			}
+		]
+
 		this.checkboxInputs = [
 			{
 				'id': 'checkbox-inline-1',
-				'label': 'This value should span over one line',
+				'label': 'This value one line',
 				'name': 'CheeseChoice',
 				'value': ''
 			},
 			{
 				'id': 'checkbox-inline-2',
-				'label': 'This value should span over two lines. This value should span over two lines. This value should span over two lines. This value should span over two lines.',
+				'label': 'This value should span over two lines.',
 				'name': 'CheeseChoice',
 				'value': ''
 			},
 			{
 				'id': 'checkbox-inline-3',
-				'label': 'This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines. This value should span over three lines.',
+				'label': 'Over three lines. This value should span over three lines.',
 				'name': 'CheeseChoice',
 				'value': ''
 			},
@@ -68,11 +113,18 @@ class Inputs extends Component {
 			date: null,
 			focused: false,
 			dateValidationMessage: '',
+			dropDownValue: ''
 		}
 	}
 
 	onChange(event) {
 		return event
+	}
+
+	onChangeDropdown(event) {
+		this.setState({
+			dropDownValue: event.target.value
+		})
 	}
 
 	onChangeDate(date) {
@@ -104,6 +156,19 @@ class Inputs extends Component {
 							</form>
 						</section>
 						<section>
+							<form method="get" role="form radio-button">
+								<CodeExample>
+									<RadioInputsContainer
+										header='Radio Buttons focused within'
+										description='Radio buttons with additonal inputs.'
+										legend='Meat choice with cheese choice'
+										options={this.radioInputsWithAdditionalInputs}
+										onChange={this.onChange.bind(this)}
+									/>
+								</CodeExample>
+							</form>
+						</section>
+						<section>
 							<form method="get" role="form checkboxes">
 								<CodeExample>
 									<CheckboxInputsContainer
@@ -120,7 +185,7 @@ class Inputs extends Component {
 							<form method="get" role="form select-input">
 								<CodeExample>
 									<SelectInputContainer
-										description="Drop downs allow a user to select one options from a list; these are foun most commonlt in address finders. Before using a drop down we should think about whether radio buttons are more suitable."
+										description="Drop downs allow a user to select one options from a list; these are founn most commonly in address finders. Before using a drop down we should think about whether radio buttons are more suitable."
 										id="style-guide-select"
 										name="style-guide-select"
 										placeholder="Select an address..."
@@ -129,6 +194,27 @@ class Inputs extends Component {
 										options={[{ value: '1', name: 'first option' }, { value: '2', name: 'second option' }]}
 									/>
 								</CodeExample>
+							</form>
+							<form method="get" role="form select-input-other">
+								<CodeExample>
+									<SelectInputContainer
+										description="Drop downs allow a user to select one options from a list; If other is selected a text box is shown"
+										id="style-guide-select"
+										name="style-guide-select"
+										placeholder="Select an option..."
+										onChange={this.onChangeDropdown.bind(this)}
+										label="Drop downs"										
+										options={[{ value: '1', name: 'Option A' }, { value: '2', name: 'Option B' }, { value: '3', name: 'Option C' }, {value:'other', name:'Other will bring a text field beneath'}]}
+									/>
+								</CodeExample>
+								{ this.state.dropDownValue == 'other' && 
+									<TextInputContainer
+										label="Further Details"
+										id="further-details"
+										type="text"
+										optional={false}
+										onChangeHandler={() => { }}
+									/> }
 							</form>
 						</section>
 					</section>
@@ -176,7 +262,7 @@ class Inputs extends Component {
 							<form method="get" role="form memorable-date-input">
 								<CodeExample>
 									<MemorableDateInputContainer
-										onChangeHandler={() => { }}
+										onChange={() => { }}
 										heading='Memorable dates'
 										description="For example, 23 7 1968"
 									/>
@@ -248,10 +334,10 @@ class Inputs extends Component {
 							<form method="get" role="form my-account-validation">
 								<CodeExample>
 									<TextAreaInputContainer
-										maxLength={10} 
-										onChange={this.onChange.bind(this)} 
+										maxLength={10}
+										onChange={this.onChange.bind(this)}
 										id='testId'
-										label='TextArea input label' 
+										label='TextArea input label'
 										value='This a textArea input label'
 									/>
 								</CodeExample>
@@ -282,7 +368,7 @@ class Inputs extends Component {
 						<section>
 							<form>
 								<h1>Submit your supporting documents</h1>
-								<div className="upload-file-list" style={{display: 'block'}}>
+								<div className="upload-file-list" style={{ display: 'block' }}>
 									<div className="grid-100">
 										<i className="fa fa-1x fa-file"></i>
 										<span>test2.txt</span>

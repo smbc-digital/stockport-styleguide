@@ -5,6 +5,7 @@ ul {
 
     &.indented-list {
         margin: 0 0 20px 35px;
+        font-size: 1.187em;
     
         @media #{$mobile} {
             margin-left: 25px;
@@ -27,6 +28,10 @@ ol {
     padding-left: 33px;
     border-left: 4px solid #bfc1c3;
     margin-bottom: 20px;
+
+    h3 {
+        line-height: 19px;
+    }
 
     label {
         @media #{$mobile} {

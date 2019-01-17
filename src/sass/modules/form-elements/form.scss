@@ -35,16 +35,17 @@ form {
 
     h3,
     .h3 {
-
         @media #{$mobile} {
             margin-bottom: 0;
         }
-
-        margin-bottom: 16px;
         display: block;
 
         &.optional {
             display: inline-block;
+        }
+
+        &.no-margin-bottom {
+            margin-bottom: 0;
         }
     }
 
@@ -92,6 +93,7 @@ form {
 
     ul {
         margin: 0 0 20px 15px;
+        font-size: 1.187em;
     }
 }
 
@@ -130,8 +132,12 @@ form {
 
 // sass-lint:disable class-name-format
 .smallerText {
-    margin: 0 0 10px 0;
-    font-size: $fontSizeSmall;
+    font-size: $fontSizeDefault;
+    line-height: 20px;
+
+    @media #{$mobile} {
+        font-size: $fontSizeSmall;   
+    }
 }
 
 .spinner {
