@@ -83,7 +83,7 @@ select {
 
     &:active,
     &:focus {
-        @include outline;
+        @include outline; 
     }
 
     &::-ms-expand {
