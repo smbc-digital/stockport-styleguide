@@ -1,7 +1,76 @@
-.news-card{
-    .news-card-body{
+.news-card-container {
+	text-decoration: none;
+	display: block;
+    @include border-radius(3px);
+    @include box-shadow(0 10px 14px 0 $dark-border);
+
+    > :hover {
+        transition-duration: .5s;
+        @include box-shadow(0 20px 40px 0 $dark-border);
     }
 
-    .news-card-thumbnail{
-    }
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+	.news-card {
+		display: flex;
+		background-color: $white;
+
+		.news-card-body {
+			padding: 20px 30px;
+
+			p {
+				font-size: 1em;
+				color: $grey-darkest;
+			}
+
+			* {
+				margin: 0;
+				line-height: 2;
+			}
+			
+			.news-date {
+                color: $primary;
+			}
+			
+			> :last-child {
+				margin-bottom: 20px;
+			}
+		}
+
+		@media #{$mobile} {
+			flex-direction: column;
+
+			.news-card-body {
+				order: 2;
+			}
+
+			.news-card-thumbnail {
+				order: 1;
+				width: 100%;
+			}
+		}
+
+		@media #{$desktop, $tablet} {
+			
+			.news-card-body {
+				order: 1;
+				width: 70%;
+			}
+
+			flex-direction: row;
+
+			.news-card-thumbnail {
+				order: 2;
+				width: 30%;
+			}
+		}
+
+		.news-card-thumbnail {
+			min-height: 200px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: left top;
+		}
+	}
 }

@@ -79,6 +79,7 @@
 
 			> li {
 				@include flex-column(1.5%);
+				min-height: 85px;
 				height: 85px;
 				display: block;
 

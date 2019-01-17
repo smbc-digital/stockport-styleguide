@@ -28,7 +28,7 @@ rules:
     - filename-extension: false
   empty-args: 2
   empty-line-between-blocks:
-    - 2
+    - 1
   extends-before-declarations: 2
   function-name-format:
     - 2

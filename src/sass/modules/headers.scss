@@ -527,3 +527,13 @@ body > header,
 		padding-right: 20px;
 	}
 }
+
+.inline-header {
+	* {
+		display: inline-block;
+	}
+
+	> :last-child {
+		float: right;
+	}
+}
