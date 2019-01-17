@@ -42,7 +42,12 @@
 		@include flex(column);
 
 		> * {
-			@include flex-column(1.5%);
+			@include flex-column(1%);
+        }
+
+        > .subtitle{
+            color: $grey-darkest;
+            font-size: 1em;
         }
 
         > h2 {
@@ -66,64 +71,15 @@
             }
 
             p {
-                color: $grey-darkest;
-                font-size: 1em;
+                color: $grey-dark;
+                font-style: italic;
+                font-size: .9em;
             }
         }
 
         .read-more {
-            
             flex-grow: 0;
             text-decoration: underline;
         }
-	}
-}
-
-.profile-inline {
-	margin: 20px 0;
-	background-color: $white;
-	padding: 10px 0;
-
-	&:hover {
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-		border: 1px solid #ebebeb;
-	}
-
-	a {
-		display: block;
-		overflow: hidden;
-
-		.read-more {
-			text-decoration: underline;
-		}
-	}
-
-	.profile-inline-image {
-		display: flex;
-		justify-content: center;
-
-		.circle-image {
-			@include circle-image;
-			width: 220px;
-			height: 220px;
-			max-width: none;
-		}
-	}
-
-	.profile-inline-heading {
-		h2 {
-			margin-bottom: 5px;
-		}
-
-		p {
-			color: $almost-black;
-			font-size: 0.9em;
-		}
-	}
-
-	.profile-inline-quote {
-		p {
-			color: $almost-black;
-		}
 	}
 }
