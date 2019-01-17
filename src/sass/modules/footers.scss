@@ -164,17 +164,15 @@ body > footer,
             > img {
                 min-width: 200px;
                 max-width: 200px;
+                vertical-align: top;
 
                 @media #{$tablet} {
                     min-width: 150px;
                     max-width: 150px;
                 }
 
-                vertical-align: top;
-
                 @media #{$mobile} {
-                    vertical-align: unset;
-                    padding-bottom: 20px;
+                    padding-bottom: 30px;
                 }
             }
             
