@@ -2,6 +2,11 @@
     @include flex(row);
     height: 313px;
     text-decoration: none;
+    transition-duration: .5s;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
 
     > * {
         @include flex-row(2, 0);
@@ -10,9 +15,29 @@
     img {
         width: 713px;
         flex-grow: 0; 
+        
+        @media #{$mobile, $tablet} {
+            display: none;
+        }
     }
 
     > div {
+        @include flex(column);
         background-image: linear-gradient($primary, $teal-darker);
+        padding: 0 60px 0 20px;
+        justify-content: center;
+
+        @media #{$desktop} {
+            border-right: 5px $teal solid;
+        }
+
+
+        .button-tertiary {
+            box-shadow: none;
+        }
+
+        h2 {
+            color: $white;
+        }
     }
 }
