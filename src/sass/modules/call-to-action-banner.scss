@@ -19,6 +19,8 @@
     img {
         width: 713px;
         flex-grow: 0; 
+        min-width: 713px;
+        height: 100%;
 
         @media #{$mobile, $tablet} {
             display: none;
@@ -32,6 +34,7 @@
         padding: 20px 30px;
         align-items: center;
         text-align: center;
+        height: 100%;
 
         @media #{$desktop} {
             border-right: 5px $teal solid;
