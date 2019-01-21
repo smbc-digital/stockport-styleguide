@@ -54,6 +54,7 @@
             flex-grow: 0;
             color: $grey-darkest;
         }
+        display: block;
 
 		.profile-inline-quote-content {
             @include flex(row);
