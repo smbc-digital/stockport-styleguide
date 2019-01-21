@@ -21,6 +21,7 @@
         flex-grow: 0; 
         min-width: 713px;
         height: 100%;
+        border-radius: 0 4px 4px 0;
 
         @media #{$mobile, $tablet} {
             display: none;
@@ -35,12 +36,14 @@
         align-items: center;
         text-align: center;
         height: 100%;
+        border-radius: 4px;
 
         @media #{$desktop} {
             border-right: 5px $teal solid;
             padding: 0 60px 0 20px;
             text-align: left;
             align-items: inherit;
+            border-radius: 4px 0 0 4px;
         }
 
         .button-tertiary {
