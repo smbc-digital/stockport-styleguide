@@ -1,0 +1,22 @@
+.circle-list-container {
+    div {
+        @include flex(row);
+
+        > * {
+            @include flex-row(3, 2%);
+        }
+
+        .circle-list-item {
+            @include flex(column);
+            
+            align-items: center;
+            text-align: center;
+
+            img {
+                width: 243px;
+                height: 243px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
