@@ -74,7 +74,7 @@ class Header extends Component {
 							</div>
 						</div>
 						: <div id="header-my-account" style={{padding: '16px 12px 0'}}>
-							<label htmlFor="lang" className="sr-only" style="transition: none 0s ease 0s;">Version selection</label>
+							<label htmlFor="lang" className="sr-only">Version selection</label>
 							<select id="lang" onChange={this.onStyleSheetChange.bind(this)} value={this.state.value} style={{marginBottom: '0'}}>
 								<option value="/styles.min.css">Local</option>
 								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1</option>
