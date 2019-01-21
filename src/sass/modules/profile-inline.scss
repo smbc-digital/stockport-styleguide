@@ -23,7 +23,15 @@
         .profile-inline-image {
             align-self: center;
         }
-	}
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+
+        @media #{$desktop} {
+            margin: 0;
+        }
+    }
 
 	box-shadow: none;
 
@@ -39,25 +47,30 @@
 	}
 
 	.profile-inline-quote {
-		@include flex(column);
+        display: block;
 
-		> * {
-			@include flex-column(1%);
-        }
-
-        > .subtitle {
+        > .subtitle  {
             color: $grey-darkest;
             font-size: 1em;
+            margin-bottom: 10px;
+
+            @media #{$desktop} {
+                margin-bottom: 0;
+            }
         }
 
         > h2 {
             flex-grow: 0;
             color: $grey-darkest;
         }
-        display: block;
 
 		.profile-inline-quote-content {
             @include flex(row);
+            margin-bottom: 10px;
+
+            @media #{$desktop} {
+                margin-bottom: 0;
+            }
 
             > * {
                 @include flex-row(3, 2%);
