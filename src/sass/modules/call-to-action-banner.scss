@@ -1,0 +1,64 @@
+.call-to-action-banner-container {
+    @include flex(row);
+    height: 100%;
+    text-decoration: none;
+    transition-duration: .5s;
+
+    @media #{$desktop} {
+        height: 313px;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
+
+    > * {
+        @include flex-row(2, 0);
+    }
+
+    img {
+        width: 713px;
+        flex-grow: 0; 
+        min-width: 713px;
+        height: 100%;
+        border-radius: 0 4px 4px 0;
+
+        @media #{$mobile, $tablet} {
+            display: none;
+        }
+    }
+
+    > div {
+        @include flex(column);
+        background-image: linear-gradient($primary, $teal-darker);
+        justify-content: center;
+        padding: 20px 30px;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        border-radius: 4px;
+
+        @media #{$desktop} {
+            border-right: 5px $teal solid;
+            padding: 0 60px 0 20px;
+            text-align: left;
+            align-items: inherit;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .button-tertiary {
+            box-shadow: none;
+            width: 50%;
+            display: block;
+
+            @media #{$desktop} {
+                width: 60%;
+                margin: 0;
+            }
+        }
+
+        h2 {
+            color: $white;
+        }
+    }
+}

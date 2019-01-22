@@ -21,6 +21,12 @@
         }
     }
 
+    @media #{$mobile} {
+        > div:first-child {
+            display: none;
+        }
+    }
+
     > div:last-child {
         display: flex;
         justify-content: space-around;
@@ -30,6 +36,12 @@
 
         h3 {
             margin: 0;
+            padding-top: 10px;
+
+            @media #{$mobile} {
+                padding-top: 15px;
+            }
+
         }
 
         form {
@@ -41,6 +53,14 @@
                 width: 100%;
                 padding-right: 20px;
                 margin: 0 20px 0 0;
+                height: 47px;
+            }
+
+            @media #{$mobile} {
+                flex-direction: column;
+                input {
+                    margin: 10px 0 15px 0;
+                }
             }
 
             .button-primary {

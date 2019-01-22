@@ -19,7 +19,7 @@ class Colours extends Component{
 			{
 				'Name': 'Teal darker',
 				'Class': 'teal-darker',
-				'Hex': '#1a8c7a'
+				'Hex': '#188479'
 			},
 			{
 				'Name': 'Off white',

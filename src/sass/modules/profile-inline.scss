@@ -5,6 +5,7 @@
     margin-top: 20px;
     text-decoration: none;
     transition-duration: .5s;
+    border-radius: 4px;
 
 	@include flex(row);
 
@@ -22,9 +23,16 @@
         .profile-inline-image {
             align-self: center;
         }
-	}
+    }
+    
+    h2 {
+        margin-bottom: 10px;
 
-	border: 1px solid #ebebeb;
+        @media #{$desktop} {
+            margin: 0;
+        }
+    }
+
 	box-shadow: none;
 
 	&:hover {
@@ -39,10 +47,16 @@
 	}
 
 	.profile-inline-quote {
-		@include flex(column);
+        display: block;
 
-		> * {
-			@include flex-column(1.5%);
+        > .subtitle  {
+            color: $grey-darkest;
+            font-size: 1em;
+            margin-bottom: 10px;
+
+            @media #{$desktop} {
+                margin-bottom: 0;
+            }
         }
 
         > h2 {
@@ -52,6 +66,11 @@
 
 		.profile-inline-quote-content {
             @include flex(row);
+            margin-bottom: 10px;
+
+            @media #{$desktop} {
+                margin-bottom: 0;
+            }
 
             > * {
                 @include flex-row(3, 2%);
@@ -64,66 +83,11 @@
                     align-self: end;
                 }
             }
-
-            p {
-                color: $grey-darkest;
-                font-size: 1em;
-            }
         }
 
         .read-more {
-            
             flex-grow: 0;
             text-decoration: underline;
         }
-	}
-}
-
-.profile-inline {
-	margin: 20px 0;
-	background-color: $white;
-	padding: 10px 0;
-
-	&:hover {
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-		border: 1px solid #ebebeb;
-	}
-
-	a {
-		display: block;
-		overflow: hidden;
-
-		.read-more {
-			text-decoration: underline;
-		}
-	}
-
-	.profile-inline-image {
-		display: flex;
-		justify-content: center;
-
-		.circle-image {
-			@include circle-image;
-			width: 220px;
-			height: 220px;
-			max-width: none;
-		}
-	}
-
-	.profile-inline-heading {
-		h2 {
-			margin-bottom: 5px;
-		}
-
-		p {
-			color: $almost-black;
-			font-size: 0.9em;
-		}
-	}
-
-	.profile-inline-quote {
-		p {
-			color: $almost-black;
-		}
 	}
 }

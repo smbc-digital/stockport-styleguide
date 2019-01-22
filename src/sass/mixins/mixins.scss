@@ -71,7 +71,8 @@
 		color: $font-color;
 	}
 
-	> i {
+	> i,
+	.icon {
 		background-color: darken($content-background-color, 10%);
 	}
 
@@ -79,7 +80,9 @@
 		color: $font-color;
 
 		h2,
-		h3 {
+		h3,
+		.h2,
+		.h3 {
 			color: $font-color;
 		}
 	}

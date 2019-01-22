@@ -1,272 +1,268 @@
 @mixin alert {
-    @include border-radius(5px);
-    color: $white;
-    background-color: $grey-dark;
-    display: table;
-    margin-bottom: 20px;
-    text-align: left;
+	@include border-radius(5px);
+	color: $white;
+	background-color: $grey-dark;
+	display: table;
+	margin-bottom: 20px;
+	text-align: left;
 
-    > i {
-        @include border-radius(5px 0 0 5px);
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 2.250em;
-        padding: 15px 20px;
-        background-color: $grey-darkest;
-        color: rgba(255, 255, 255, 0.65);
-    }
+	> i {
+		@include border-radius(5px 0 0 5px);
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 2.25em;
+		padding: 15px 20px;
+		background-color: $grey-darkest;
+		color: rgba(255, 255, 255, 0.65);
+	}
 
-    > div {
-        display: table-cell;
-        vertical-align: middle;
-        padding: 20px 15px;
+	> div {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 20px 15px;
 
-        h2,
-        h3 {
-            color: $white;
-            margin-bottom: 10px;
-            font-size: 1.375em;
-        }
+		p {
+			margin-bottom: 0;
+		}
 
-        p {
-            margin-bottom: 0;
-        }
-    }
+		h2,
+		h3,
+		.h2,
+		.h3 {
+			color: $white;
+			margin-bottom: 10px;
+			font-size: 1.375em;
+		}
+	}
 
-    > a {
-        padding: 7px 7px 2px 5px;
-        position: relative;
-        top: 3px;
-        right: 3px;
-        color: $white;
+	> a {
+		padding: 7px 7px 2px 5px;
+		position: relative;
+		top: 3px;
+		right: 3px;
+		color: $white;
 
-        @media #{$mobile} {
-            right: 10px;
-        }
+		@media #{$mobile} {
+			right: 10px;
+		}
 
-        @media #{$tablet} {
-            right: 6px;
-        }
+		@media #{$tablet} {
+			right: 6px;
+		}
 
-        i {
-            font-size: 1.500em;
-        }
+		i {
+			font-size: 1.5em;
+		}
 
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: rgba(255, 255, 255, 0.15);
-            @include border-radius(0);
-        }
-    }
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: rgba(255, 255, 255, 0.15);
+			@include border-radius(0);
+		}
+	}
 
-    > form button {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 100%;
-        text-decoration: underline;
-        padding-left: 0;
-    }
+	> form button {
+		background: none;
+		border: none;
+		color: #fff;
+		font-size: 100%;
+		text-decoration: underline;
+		padding-left: 0;
+	}
 
-    &.full-width {
-        width: 100%;
-    }
+	&.full-width {
+		width: 100%;
+	}
 }
 
 .alert-warning {
-    @include alert;
-    @include alert-colours($orange, $grey-darkest);
+	@include alert;
+	@include alert-colours($orange, $grey-darkest);
 
-    a:active,
-    a:focus {
-        outline-color: $soft-blue;
-    }
+	a:active,
+	a:focus {
+		outline-color: $soft-blue;
+	}
 }
 
 .alert-information {
-    @include alert;
-    @include alert-colours($soft-blue, $white);
+	@include alert;
+	@include alert-colours($soft-blue, $white);
 
-    form {
-
-        .button-underlined {
-            font-weight: 500;
-            margin-bottom: 0;
-        }
-
-    }
+	form {
+		.button-underlined {
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+	}
 }
 
 .alert-error {
-    @include alert;
-    @include alert-colours($red, $white);
+	@include alert;
+	@include alert-colours($red, $white);
 }
 
 .alert-success {
-    @include alert;
-    @include alert-colours($green, $white);
+	@include alert;
+	@include alert-colours($green, $white);
 }
 
 @mixin alert-fullwidth {
-    width: 100%;
-    border-radius: 0;
-    position: relative;
-    
+	width: 100%;
+	position: relative;
+	display: block;
+	margin: 0;
+	border-radius: 0;
 
-    > i {
-        font-size: 1.875em;
-        color: rgba(255, 255, 255, 0.65);
-        width: 25px;
-        padding: 10px 15px;
-    }
+	> .alert-body {
+		@include center-wrapper;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
 
-    > div {
-        padding: 20px;
+		> .icon {
+			width: 7%;
+			min-width: 55px;
+			display: flex;
 
-        p {
-            margin-bottom: -6px;
-        }
-    }
+			> i {
+				font-size: 2em;
+				color: hsla(0, 0%, 100%, 0.65);
+				margin: 0 auto;
+				align-self: center;
+			}
+		}
 
-    div:last-of-type {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: right;
-        padding-right: 10px;
-        padding-top: 20px;
-        min-width: 50px;
+		> .content {
+			padding: 20px;
+			flex-grow: 2;
+		}
 
-        a {
-            color: $white;
-            border: 1px solid $white;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 50px;
-            padding: 11px 11px 7px 12px;
+		> .dismiss {
+			display: flex;
+			width: 5%;
+			min-width: 50px;
+			align-self: center;
 
-            &:hover,
-            &:focus,
-            &:active {
-                background-color: rgba(255, 255, 255, 0);
-            }
-
-            i {
-                font-size: 1.5em;
-            }
-        }
-    }
+			> a {
+				color: #fff;
+				border: 1px solid #fff;
+				background-color: hsla(0, 0%, 100%, 0.15);
+				border-radius: 100%;
+				padding: 1px 13px;
+			}
+		}
+	}
 }
 
 .alert-warning-fullwidth {
-    @extend .alert-warning;
-    @include alert-fullwidth;
+	@extend .alert-warning;
+	@include alert-fullwidth;
 }
 
 .alert-information-fullwidth {
-    @extend .alert-information;
-    @include alert-fullwidth;    
+	@extend .alert-information;
+	@include alert-fullwidth;
 }
 
 .alert-error-fullwidth {
-    @extend .alert-error;
-    @include alert-fullwidth;
+	@extend .alert-error;
+	@include alert-fullwidth;
 }
 
 .alert-success-fullwidth {
-    @extend .alert-success;
-    @include alert-fullwidth;
+	@extend .alert-success;
+	@include alert-fullwidth;
 }
 
 .alert-inline {
-    background-color: $off-white;
-    border-left: 5px solid $grey-lighter;
-    padding: 20px;
-    margin-bottom: 30px;
-    @include border-radius(3px);
+	background-color: $off-white;
+	border-left: 5px solid $grey-lighter;
+	padding: 20px;
+	margin-bottom: 30px;
+	@include border-radius(3px);
 
-    h2 {
-        margin-bottom: 10px;
-        font-size: 1.5em;
-    }
+	h2 {
+		margin-bottom: 10px;
+		font-size: 1.5em;
+	}
 
-    p {
-        margin-bottom: 0;
-    }
+	p {
+		margin-bottom: 0;
+	}
 }
 
 @mixin alert-form {
-    padding: 20px 40px 20px 0;
-    border-top: 1px solid $grey-light;
-    border-bottom: 1px solid $grey-light;
-    max-width: 62%;
-    width: auto;
-    margin-bottom: 20px;
-    display: inline-block;
-    
-    @media #{$mobile} {
-        padding-left: 0;
-        padding-right: 0;
-        max-width: 100%;
+	padding: 20px 40px 20px 0;
+	border-top: 1px solid $grey-light;
+	border-bottom: 1px solid $grey-light;
+	max-width: 62%;
+	width: auto;
+	margin-bottom: 20px;
+	display: inline-block;
 
-        i, 
-        span {
-            padding: 0
-        } 
-    }
+	@media #{$mobile} {
+		padding-left: 0;
+		padding-right: 0;
+		max-width: 100%;
 
-    > i, 
-    span {        
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 2.250em;
-        padding-right: 30px;
-        width: 4%;
+		i,
+		span {
+			padding: 0;
+		}
+	}
 
-        @media #{$tablet}
-        {
-            width: 7%;
-        }
-    }
+	> i,
+	span {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 2.25em;
+		padding-right: 30px;
+		width: 4%;
 
-    p {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: left;
+		@media #{$tablet} {
+			width: 7%;
+		}
+	}
 
-        @media #{$mobile} 
-        {
-            padding-right: 10px;
-        }
-    }
+	p {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
 
-    > div {
-        display: table-cell;
+		@media #{$mobile} {
+			padding-right: 10px;
+		}
+	}
 
-        ul {
-            padding-left: 25px;
-            
-            @media #{$mobile} 
-            {
-                padding-left: 15px;
-            }
-        }
-    }
+	> div {
+		display: table-cell;
+
+		ul {
+			padding-left: 25px;
+
+			@media #{$mobile} {
+				padding-left: 15px;
+			}
+		}
+	}
 }
 
 .alert-information-form {
-    @include alert-form;
+	@include alert-form;
 
-    i, 
-    span {
-        color: $soft-blue;        
-    }
+	i,
+	span {
+		color: $soft-blue;
+	}
 }
 
 .alert-warning-form {
-    @include alert-form;
+	@include alert-form;
 
-    i, 
-    span {
-        color: $orange;
-    }
+	i,
+	span {
+		color: $orange;
+	}
 }

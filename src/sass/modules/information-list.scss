@@ -1,6 +1,14 @@
 .information-list {
-  padding-left: 10px;
+  padding-left: 0;
   margin: 30px 0;
+
+  li {
+    margin-left: 0;
+
+    > div {
+      padding-left: 0;
+    }
+  }
 
   &.information-list-key-facts {
     li {
@@ -38,7 +46,21 @@
     display: block;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
+    }
+  }
+
+  .information-item {
+    color: $black;
+
+    &:hover {
+      .information-item-link {
+        text-decoration: underline;
+      }
+    }
+
+    .information-item-link {
+      color: $primary;
     }
   }
 
