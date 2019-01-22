@@ -42,14 +42,12 @@ input[type="text"] {
         width: 100%;
     }
 
-}
-
-
-.address-picker-input {
-    width: 200px;
-
-    @media #{$mobile} {
-        width: 100%;
+    &.address-picker-input {
+        width: 200px;
+    
+        @media #{$mobile} {
+            width: 100%;
+        }
     }
 }
 
