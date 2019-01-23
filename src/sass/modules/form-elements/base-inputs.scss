@@ -42,6 +42,13 @@ input[type="text"] {
         width: 100%;
     }
 
+    &.address-picker-input {
+        width: 200px;
+    
+        @media #{$mobile} {
+            width: 100%;
+        }
+    }
 }
 
 textarea {
@@ -66,12 +73,12 @@ textarea {
 select {   
     font-size: $fontSizeDefault;
     border: 2px solid $almost-black;
-    width: 280px;
-    max-width: 550px;
+    width: 432px;
+    max-width: 432px;
     font-family: $font-family;
     box-sizing: border-box;
     line-height: normal;
-    padding: 6px;
+    padding: 6px 45px 6px 6px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png');

@@ -71,7 +71,8 @@
 		color: $font-color;
 	}
 
-	> i {
+	> i,
+	.icon {
 		background-color: darken($content-background-color, 10%);
 	}
 
