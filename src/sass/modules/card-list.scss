@@ -1,4 +1,4 @@
-.card-list-container {
+.card-list-container {	
 	h1.card-list-header {
 		color: $white;
 		word-wrap: break-word;
@@ -37,6 +37,11 @@
 				@include flex-row(3, 1.5%);
 				display: block;
 				height: 328px;
+
+				
+				&.featured-item-card {
+					height: 399px;
+				}
 
 				> a {
 					background-color: $white;
