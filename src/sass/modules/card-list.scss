@@ -1,4 +1,4 @@
-.card-list-container {
+.card-list-container {	
 	h1.card-list-header {
 		color: $white;
 		word-wrap: break-word;
@@ -50,6 +50,11 @@
 				
 				&.full-height {
 					height: 100%;
+				}
+
+				
+				&.featured-item-card {
+					height: 399px;
 				}
 
 				> a {

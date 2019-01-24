@@ -1,0 +1,27 @@
+.video-section {
+    @include center-wrapper;
+    
+    text-align: center;
+    padding: 30px 0;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: $fontSizeSmall;
+    }
+
+    iframe {
+        @include box-shadow(0 2px 6px rgba($grey-adobe,0.2));
+        width: 100%;
+        height: 500px;
+    }
+
+    .thin-divider {
+        width: 100%;
+        max-width: 200px;
+        min-width: 100px;
+        margin-bottom: 30px;
+    }
+}

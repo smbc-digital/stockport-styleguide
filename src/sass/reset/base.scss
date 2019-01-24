@@ -100,6 +100,11 @@ ul {
     background-color: $grey-light;
 }
 
+.thin-divider {
+    @extend .thick-divider;
+    height: 1px;
+}
+
 .darken {
     background-color: rgba(20,20,20,.5);
     height: 100%;
