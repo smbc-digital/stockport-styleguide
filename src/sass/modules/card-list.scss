@@ -4,7 +4,7 @@
 		word-wrap: break-word;
 		margin: 20px 0;
 
-		@media #{$desktop} {
+		@media #{$desktop, $tablet} {
 			width: 50%;
 		}
 	}
@@ -13,10 +13,10 @@
 		position: absolute;
 		top: 0;
 		right: 10px;
+	}
 
-		@media #{$mobile, $tablet} {
-			display: none;
-		}
+	.read-more-mobile {
+		@include button-inverted($white, $teal-darker, $teal-darker);
 	}
 
 	.card-list-body {
@@ -42,7 +42,7 @@
 			}
 		}
 
-		@media #{$desktop} {
+		@media #{$desktop, $tablet} {
 			> li {
 				@include flex-row(3, 1.5%);
 				display: block;
@@ -121,7 +121,7 @@
 			}
 		}
 
-		@media #{$mobile, $tablet} {
+		@media #{$mobile} {
 			@include flex(column);
 			margin-bottom: 5%;
 
