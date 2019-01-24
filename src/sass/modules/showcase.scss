@@ -1,8 +1,37 @@
 .showcase-section {
+	@extend .full-width;
+
 	padding: 30px 0;
 	width: 100%;
 
-	&.background-off-white {
+	// &.background-off-white {
+	// 	background-color: $off-white;
+	// }
+
+	&:nth-child(odd){
+		background-color: $white;
+	}
+
+	&:nth-child(even){
 		background-color: $off-white;
+	}
+
+	.showcase-button-container{
+		@include flex(row);
+
+		.showcase-button {
+			@extend .button-inverted;
+
+			@include flex-row(3, 5%);
+			
+			display: inline-block;
+			font-size: $fontSizeDefault;
+			font-weight: $fontWeightBold;
+
+			> i {
+				padding-right: 20px;
+				line-height: 1.3em;
+			}
+		}
 	}
 }
