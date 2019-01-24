@@ -18,6 +18,10 @@
         height: 640px;
     }
 
+    .base-akita-container {
+        @include box-shadow(0 3px 6px rgba($grey-dark, 70%));
+    }
+
     .thin-divider {
         width: 100%;
         max-width: 200px;
