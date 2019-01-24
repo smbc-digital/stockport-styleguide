@@ -20,12 +20,12 @@
     h2 {
         margin-bottom: 10px;
 
-        @media #{$desktop} {
+        @media #{$desktop, $tablet} {
             margin: 0;
         }
     }
 
-    @media #{$mobile, $tablet} {
+    @media #{$mobile} {
         @include flex(column);
 
         > * {
@@ -55,7 +55,7 @@
             flex-grow: 0;
             padding: 10px 0;
 
-            @media #{$desktop} {
+            @media #{$desktop, $tablet} {
                 margin-bottom: 0;
             }
         }

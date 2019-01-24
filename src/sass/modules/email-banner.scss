@@ -65,6 +65,10 @@
 
             .button-primary {
                 @extend .grid-30;
+                
+                @media #{$tablet} {
+                    min-width: 30%;
+                }
             }
         }
     }
