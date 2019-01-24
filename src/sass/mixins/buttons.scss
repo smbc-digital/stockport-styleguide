@@ -1,0 +1,10 @@
+@mixin button-tertiary($color1, $color2) {
+    @extend .button;
+    @include button-colors($color1, $color2);
+}
+
+@mixin button-inverted($color1, $color2, $borderColor) {
+    @extend .button;
+    @include button-colors($color1, $color2);
+    border: solid 1px $borderColor;
+}

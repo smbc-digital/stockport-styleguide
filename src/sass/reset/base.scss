@@ -34,6 +34,10 @@ ul {
 
 .center-wrapper { 
     @include center-wrapper;
+    
+    &.relative {
+        position: relative;
+    }
 }
 
 .dashboard-container {
@@ -94,6 +98,11 @@ ul {
     border: none;
     color: $grey-light;
     background-color: $grey-light;
+}
+
+.thin-divider {
+    @extend .thick-divider;
+    height: 1px;
 }
 
 .darken {

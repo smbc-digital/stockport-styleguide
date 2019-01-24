@@ -4,9 +4,19 @@
 		word-wrap: break-word;
 		margin: 20px 0;
 
-		@media #{$desktop} {
+		@media #{$desktop, $tablet} {
 			width: 50%;
 		}
+	}
+
+	.read-more {
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+
+	.read-more-mobile {
+		@include button-inverted($white, $teal-darker, $teal-darker);
 	}
 
 	.card-list-body {
@@ -32,11 +42,15 @@
 			}
 		}
 
-		@media #{$desktop} {
+		@media #{$desktop, $tablet} {
 			> li {
 				@include flex-row(3, 1.5%);
 				display: block;
 				height: 328px;
+				
+				&.full-height {
+					height: 100%;
+				}
 
 				
 				&.featured-item-card {
@@ -73,19 +87,53 @@
 							color: $grey-darkest;
 						}
 					}
+
+					&.image-card {
+						text-align: left;
+						transition: box-shadow .5s;
+
+						&:hover {
+							box-shadow: 0 10px 20px rgba(0,0,0,.2); 
+						}
+
+						img {
+							width: 100%;
+							height: 233px;
+							border-radius: 5px 5px 0 0;
+						}
+
+						h3 {
+							padding: 20px;
+							margin: 0;
+						}
+
+						> p {
+							padding: 0 20px 15px 20px;
+							margin: 0;
+							color: $primary-text;
+
+							> i {
+								width: 10%;
+							}
+						}
+					}
 				}
 			}
 		}
 
-		@media #{$mobile, $tablet} {
+		@media #{$mobile} {
 			@include flex(column);
 			margin-bottom: 5%;
 
 			> li {
 				@include flex-column(1.5%);
-				min-height: 85px;
-				height: 85px;
+				height: 100%;
 				display: block;
+
+				&.thin-card {
+					min-height: 85px;
+					height: 85px;
+				}
 
 				> a {
 					background-color: $white;
@@ -127,6 +175,37 @@
 							align-items: center;
 							height: 100%;
 							color: #333;
+						}
+					}
+
+					&.image-card {
+						display: block;
+						text-align: left;
+						transition: box-shadow .5s;
+
+						&:hover {
+							box-shadow: 0 10px 20px rgba(0,0,0,.2); 
+						}
+
+						img {
+							width: 100%;
+							height: 233px;
+							border-radius: 5px 5px 0 0;
+						}
+
+						h3 {
+							padding: 20px;
+							margin: 0;
+						}
+
+						> p {
+							padding: 0 20px 15px 20px;
+							margin: 0;
+							color: $primary-text;
+
+							> i {
+								width: 10%;
+							}
 						}
 					}
 				}
