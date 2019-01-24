@@ -38,12 +38,11 @@
 			align-items: center;
 			text-align: center;
 			text-decoration: none;
-			transition: box-shadow 0.5s, background-color 0.5s;
+			transition: box-shadow 0.5s;
 			padding: 0 30px;
 			box-sizing: border-box;
 
 			&:hover {
-				background-color: rgba($grey-lighter, 0.2);
 				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 			}
 

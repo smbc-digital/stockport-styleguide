@@ -429,12 +429,13 @@ body > header,
 .title-container {
 	background-color: $teal-darker;
 	margin: 0 0 20px 0;
-	padding: 20px;
+	padding: 0;
 }
 
 .title-content {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

@@ -1,6 +1,7 @@
 .system-failure {
     @include main-layout;
     text-align: center;
+    margin-bottom: 20px;
 
     .icon {
         color: $red;
