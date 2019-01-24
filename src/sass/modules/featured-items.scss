@@ -1,8 +1,7 @@
 .featured-item-container {
 	h2.featured-item-header {
 		word-wrap: break-word;
-		margin: 20px 0;
-		font-weight: 400;
+		margin: 0 0 30px 0;
 
 		@media #{$desktop} {
 			width: 50%;
@@ -10,79 +9,71 @@
 	}
 
 	.featured-item-body {
-		@include flex(row);
 
-		@media #{$desktop} {
-			> li {
+		@include flex(column);
+
+		@media #{$desktop, $tablet} {
+			@include flex(row);
+		}
+		align-items: stretch;
+
+		> li {
+			@media #{$mobile} {
+				@include flex-column(3%);
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			@media #{$desktop, $tablet} {
 				@include flex-row(3, 1.5%);
+			}
+
+			&:outline {
+				border-radius: 0;
+			}
+
+			max-width: 373px;
+			min-height: 399px;
+			display: block;
+	
+			> a {
+				background-color: $white;
 				display: block;
+				height: 100%;
+				width: 100%;
 				margin: 0;
-		
-				> a {
-					background-color: $white;
+				text-decoration: none;
+				border-radius: 5px;
+				transition: box-shadow 0.5s;
+				text-align: left;
+				padding: 0;
+
+				@media #{$mobile} {
+					box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+				}
+
+				&:hover {
+					box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+				}
+
+				> img {
 					display: block;
-					height: 399px;
-					width: 373px;
-					text-decoration: none;
-					border-radius: 5px;
-					text-align: left;
-					padding: 0;
+					width: 100%;
+					border-radius: 5px 5px 0 0;
+				}
 
-					&:hover {
-						background-color: rgba($grey-lighter, 0.2);
-						box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-					}
-		
-						> img {
-							display: block;
-							height: 195px;
-							width: 373px;
-							border-radius: 5px 5px 0 0;
-						}
+				> h3 {
+					padding: 20px 0 10px 20px;
+					margin: 0;
+					color: $grey-darkest;
+				}
 
-						> h3 {
-							padding: 20px 20px 0 20px;
-							margin: 0;
-							color: $grey-darkest;
-						}
-		
-						> p {
-							padding: 0 20px 20px 20px;
-							color: $grey-darkest;
-							line-height: 2em;
-						}
-					}
+				> p {
+					padding: 0 20px 20px 20px;
+					color: $grey-darkest;
+					line-height: 2em;
+				}
 				}
 			}
-		}
-		
-		// @media #{$mobile, $tablet} {
-		// 	@include flex(column);
-		// 	margin-bottom: 5%;
-		
-		// 	> li {
-		// 		@include flex-column(1.5%);
-		// 		min-height: 85px;
-		// 		height: 399px;
-		// 		display: block;
-		
-		// 		> a {
-		// 			background-color: $white;
-		// 			display: block;
-		// 			height: 399px;
-		// 			width: 377px;
-		// 			border-radius: 3px;
-		// 			text-decoration: none;
-		// 			align-items: center;
-		// 			@include flex(row);
-		
-		// 			&.icon-card {
-		// 				> * {
-		// 					@include flex-row(2, 2%);
-		// 				}
-		// 			}
-		// 		}
-		// 	}
-		// }
-	
+		}	
 }
