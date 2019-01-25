@@ -8,15 +8,15 @@
 	// 	background-color: $off-white;
 	// }
 
-	&:nth-child(odd){
+	&:nth-child(odd) {
 		background-color: $white;
 	}
 
-	&:nth-child(even){
+	&:nth-child(even) {
 		background-color: $off-white;
 	}
 
-	.showcase-button-container{
+	.showcase-button-container {
 		@include flex(row);
 
 		.showcase-button {
