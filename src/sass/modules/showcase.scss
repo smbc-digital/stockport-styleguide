@@ -13,20 +13,20 @@
 	}
 
 	.showcase-button-container {
-		@include flex(row);
+		@include flex(column);
+
+		@media #{$desktop, $tablet} {
+			@include flex(row);
+		}
 
 		.showcase-button {
-			@extend .button-inverted;
+			@extend .button-icon-inverted;
 
-			@include flex-row(3, 5%);
-			
-			display: inline-block;
-			font-size: $fontSizeDefault;
-			font-weight: $fontWeightBold;
+			@include flex-column(2.5%);
 
-			> i {
-				padding-right: 20px;
-				line-height: 1.3em;
+
+			@media #{$desktop, $tablet} {
+				@include flex-row(3, 5%);
 			}
 		}
 	}
