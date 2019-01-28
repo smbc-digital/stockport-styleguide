@@ -44,7 +44,7 @@ input[type="text"] {
 
     &.address-picker-input {
         width: 200px;
-    
+
         @media #{$mobile} {
             width: 100%;
         }
@@ -54,7 +54,7 @@ input[type="text"] {
 textarea {
     height: 200px;
     margin-bottom: 10px;
-    line-height: 25px;   
+    line-height: 25px;
 
     @media #{$mobile} {
         line-height: 22px;
@@ -70,7 +70,7 @@ textarea {
 }
 
 
-select {   
+select {
     font-size: $fontSizeDefault;
     border: 2px solid $almost-black;
     width: 432px;
@@ -90,13 +90,13 @@ select {
 
     &:active,
     &:focus {
-        @include outline; 
+        @include outline;
     }
 
     &::-ms-expand {
         display: none;
     }
-    
+
     @media #{$mobile} {
         width: 100%;
     }
@@ -106,10 +106,10 @@ input[type="number"] {
     -moz-appearance: textfield;
     width: 135px;
 
-    &::-webkit-inner-spin-button, 
-    &::-webkit-outer-spin-button { 
-        -webkit-appearance: none; 
-        margin: 0; 
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 }
 
@@ -143,4 +143,8 @@ input[type="number"] {
 .input-text-short {
     max-width: 275px;
     width: 50%;
+}
+
+#cludo-search-form-content input[type="search"] {
+    max-width: none;
 }
