@@ -4,8 +4,8 @@ body > footer,
     background-color: $primary-dark;
 
     #footer-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
-        @extend .grid-33;
-        @extend .tablet-grid-35;
+        @extend .grid-25;
+        @extend .tablet-grid-25;
         @extend .mobile-grid-100;
         padding: 10px 0;
         @include header-footer-logo;
@@ -13,11 +13,18 @@ body > footer,
         @media #{$mobile} {
             padding-left: 25px;
         }
+
+        @media #{$tablet} {
+            a {
+                height: 35px;
+                width: 175px;
+            }
+        }
     }
 
     .footer-links {
-        @extend .grid-33;
-        @extend .tablet-grid-45;
+        @extend .grid-45;
+        @extend .tablet-grid-40;
         list-style: none;
         display: inline;
         padding: 20px 0 20px;
@@ -38,12 +45,12 @@ body > footer,
     }
 
     .social-links {
-        @extend .grid-33;
-        @extend .tablet-grid-20;
+        @extend .grid-30;
+        @extend .tablet-grid-35;
         @extend .hide-on-mobile;
         list-style: none;
         text-align: right;
-        padding: 0;
+        padding: 15px 0;
 
         li {
             display: inline-block;
@@ -68,9 +75,14 @@ body > footer,
                 width: 60px;
                 color: $white;
 
+                @media #{$tablet} {
+                    height: 50px;
+                    width: 50px;
+                }
+
                 i {
                     font-size: $fontSizeLarger;
-                    position: relative;
+                    position: inherit;
                     top: 5px;
                 }
             }
@@ -84,6 +96,7 @@ body > footer,
         list-style: none;
         padding: 0;
         background-color: $teal;
+        height: 83px;
 
         li {
             float: left;
@@ -243,7 +256,7 @@ body > footer,
     .atoz {
         background-color: $primary;
         text-align: center;
-        padding-bottom: 20px;
+        padding: 15px 0 20px 0;
 
         @media #{$tablet, $desktop} {
             border-bottom: 6px solid $teal;
