@@ -46,115 +46,84 @@ class Typography extends Component {
 							<h1>This is what h1 looks like</h1>
 							<div className="description">								
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 48px</p>
-								<p>Font weight: 700</p>
-								<p>Line height: 50px</p>
+								<p>Font size: 48px/2.526em/$fontSizeExtraLarge)</p>
+								<p>Font weight: 700/$fontWeightBold)</p>
+								<p>Line height: 50px/1.04</p>
 								<p>Colour: #1b1b1b</p>								
 								<br/>
 								<p>Mobile values:</p>
-								<p>Font size: 32px</p>
-								<p>Line height: 35px</p>
+								<p>Font size: 32px/2em/$mobileFontSizeExtraLarge</p>
+								<p>Line height: 35px/1.25</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<h2>This is what h2 looks like</h2>
 							<div className="description">
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 36px</p>
-								<p>Font weight: 700</p>
-								<p>Line height: 40px</p>
+								<p>Font size: 36px/1.895em/$fontSizeLarge</p>
+								<p>Font weight: 700/$fontWeightBold</p>
+								<p>Line height: 40px/1.111</p>
 								<p>Colour: #1b1b1b</p>
 								<br/>
 								<p>Mobile values</p>
-								<p>Font size: 24px</p>
-								<p>Line height: 30px</p>
+								<p>Font size: 24px/1.5em/$mobileFontSizeLarger</p>
+								<p>Line height: 30px/1.25</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<h3>This is what h3 looks like</h3>
 							<div className="description">
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 24px</p>
-								<p>Font weight: 700</p>
-								<p>Line height: 30px</p>
+								<p>Font size: 24px/1.125m/$fontSizeLarge</p>
+								<p>Font weight: 700/$fontWeightBold</p>
+								<p>Line height: 30px/1.25</p>
 								<p>Colour: #1b1b1b</p>
 								<br/>
 								<p>Mobile values</p>
-								<p>Font size: 18px</p>
-								<p>Line height: 20px</p>
+								<p>Font size: 18px/$mobileFontSizeLarge</p>
+								<p>Line height: 20px/1.111</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<h4>This is what h4 looks like</h4>
 							<div className="description">
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 19px</p>
-								<p>Font weight: 600</p>
-								<p>Line height: 25px</p>
+								<p>Font size: 19px/1em/$fontSizeDefault</p>
+								<p>Font weight: 600/$fontWeightSemiBold</p>
+								<p>Line height: 25px/1.315</p>
 								<p>Colour: #1b1b1b</p>
 								<br/>
 								<p>Mobile values</p>
-								<p>Font size: 16px</p>
-								<p>Line height: 20px</p>
+								<p>Font size: 16px/1em/$mobileFontSizeBold</p>
+								<p>Line height: 20px/1.25</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<p className="lead-paragraph">This is what lead body text looks like</p>
+							<div className="description">
+								<p>Font family: Noto Sans</p>
+								<p>Font size: 24px</p>
+								<p>Font weight: 400</p>
+								<p>Line height: 32px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 18px</p>
+								<p>Line height: 28px</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<p>This is what body text looks like</p>
 							<div className="description">
 								<p>Font family: Noto Sans</p>
-								<p>Font size: 19px</p>
-								<p>Font weight: 400</p>
-								<p>Line height: 25px</p>
+								<p>Font size: 19px/1em/$fontSizeDefault</p>
+								<p>Font weight: 400/$fontWeightRegular</p>
+								<p>Line height: 25px/1.316</p>
 								<p>Colour: #1b1b1b</p>
 								<br/>
 								<p>Mobile values</p>
-								<p>Font size: 16px</p>
-								<p>Line height: 28px</p>
-							</div>
-						</section>
-						<section className="with-border-bottom">
-							<ul>
-								<li>This is what list item text looks like</li>
-								<li>This is what another list item text looks like</li>
-							</ul>
-							<div className="description">
-								<p>Font family: Noto Sans</p>
-								<p>Font size: 19px</p>
-								<p>Font weight: 400</p>
-								<p>Line height: 25px</p>
-								<p>Colour: #1b1b1b</p>
-								<br/>
-								<p>Mobile values</p>
-								<p>Font size: 16px</p>
-								<p>Line height: 28px</p>
-							</div>
-						</section>
-						<section className="with-border-bottom">
-							<p className="lead-paragraph">This is what lead body text looks like</p>
-							<div className="description">
-								<p>Font family: Noto Sans</p>
-								<p>Font size: 24px</p>
-								<p>Font weight: 400</p>
-								<p>Line height: 32px</p>
-								<p>Colour: #1b1b1b</p>
-								<br/>
-								<p>Mobile values</p>
-								<p>Font size: 18px</p>
-								<p>Line height: 28px</p>
-							</div>
-						</section>
-						<section className="with-border-bottom">
-							<p className="lead-paragraph">This is what lead body text looks like</p>
-							<div className="description">
-								<p>Font family: Noto Sans</p>
-								<p>Font size: 24px</p>
-								<p>Font weight: 400</p>
-								<p>Line height: 32px</p>
-								<p>Colour: #1b1b1b</p>
-								<br/>
-								<p>Mobile values</p>
-								<p>Font size: 18px</p>
-								<p>Line height: 28px</p>
+								<p>Font size: 16px/1em/$mobileFontSizeRegular</p>
+								<p>Line height: 28px/1.75</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">

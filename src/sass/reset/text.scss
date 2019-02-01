@@ -5,14 +5,13 @@ $font-family: 'Noto Sans', Arial, sans-serif;
 $font-family-headings: 'Source Sans Pro', sans-serif;
 
 /* Font weight */
-$fontWeightLight: 300;
 $fontWeightRegular: 400;
+$fontWeightSemiBold: 600;
 $fontWeightBold: 700;
 
 /* Font Size */
-$fontSizeSmall: 0.842em;
+$fontSizeSmall: 0.875em;
 $fontSizeDefault: 1em;
-$fontSizeBold: 1em;
 $fontSizeLarge: 1.263em;
 $fontSizeLarger: 1.895em;
 $fontSizeExtraLarge: 2.526em;
@@ -39,7 +38,7 @@ body {
 /*------------------- Headings -------------------*/
 form {
     h1 {
-        font-weight: 600;
+        font-weight: $fontWeightSemiBold;
     }
 }
 
@@ -49,12 +48,12 @@ h1,
     color: $primary-text;
     font-size: $fontSizeExtraLarge;
     font-weight: $fontWeightBold;
-    line-height: 2.632rem;
+    line-height: 1.04;
     margin: 0 0 21px 0;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeExtraLarge;
-        line-height: 2.187rem;
+        line-height: 1.25;
     }
 }
 
@@ -64,12 +63,12 @@ h2,
     color: $primary-text;
     font-size: $fontSizeLarger;
     font-weight: $fontWeightBold;
-    line-height: 2.105rem;
+    line-height: 1.111;
     margin: 0 0 26px 0;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeLarger;
-        line-height:  1.875rem;
+        line-height: 1.25;
     }
 }
 
@@ -80,11 +79,11 @@ h3,
     font-size: $fontSizeLarge;
     font-weight: $fontWeightBold;
     margin: 0 0 26px 0;
-    line-height:  1.579rem;
+    line-height:  1.25;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeLarge;
-        line-height: 1.25rem;
+        line-height: 1.111;
     }
 }
 
@@ -92,14 +91,14 @@ h4,
 .h4 {
     font-family: $font-family-headings;
     color: $primary-text;
-    font-size: $fontSizeBold;
-    font-weight: 600;
+    font-size: $fontSizeDefault;
+    font-weight: $fontWeightSemiBold;
     margin: 0 0 26px 0;
-    line-height: 1.316rem;
+    line-height: 1.315;
 
     @media #{$mobile} {
         font-size: $mobileFontSizeBold;
-        line-height: 1.25rem;
+        line-height: 1.25;
     }
 }
 
@@ -109,32 +108,15 @@ p,
     font-size: $fontSizeDefault;
     font-weight: $fontWeightRegular;
     margin: 0 0 20px 0;
-    line-height: 1.316rem;
+    line-height: 1.316;
     @media #{$mobile} {
         font-size: $mobileFontSizeRegular;
-        line-height: 1.75rem;
-    }
-
-    &.lead-paragraph {
-        @extend .lead-paragraph;
-    }
-
-}
-
-li,
-.li {
-    font-family: $font-family;
-    font-size: $fontSizeDefault;
-    font-weight: $fontWeightRegular;    
-    margin: 0 0 20px 0;
-    line-height: 1.316rem;
-    @media #{$mobile} {
-        font-size: $mobileFontSizeRegular;
-        line-height: 1.75rem;
+        line-height: 1.75;
     }
 }
 
 a {
+    @extend p;
     color: $primary;
     text-decoration: underline;
 
@@ -150,11 +132,11 @@ a {
 }
 
 .lead-paragraph {
-    font-size: 1.263em;
-    line-height: 1.684rem;
+    font-size: $fontSizeLarge;
+    line-height: 1.333;
 
     @media #{$mobile} {
-        font-size: 1.125em;
-        line-height: 1.750rem;
+        font-size: $mobileFontSizeLarge;
+        line-height: 1.555;
     }
 }
