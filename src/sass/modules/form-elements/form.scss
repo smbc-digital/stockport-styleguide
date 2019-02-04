@@ -4,6 +4,7 @@ form {
     word-break: break-word;
 
     @media #{$desktop, $tablet} {
+        &:not(fieldset) {
         h1,
         h3,
         h2,
@@ -11,6 +12,7 @@ form {
         li {
            width: 66.6667%
         }
+    }
     }
     
     fieldset {
