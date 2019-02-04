@@ -9,7 +9,18 @@ form {
         h2,
         p,
         li {
-            width: 66.6667%
+            width: 66.6667%;
+        }
+
+        .header-container,
+        fieldset {
+            h1,
+            h3,
+            h2,
+            p,
+            li {
+                width: unset;
+            }
         }
     }
 
