@@ -4,17 +4,27 @@ form {
     word-break: break-word;
 
     @media #{$desktop, $tablet} {
-        &:not(fieldset, .header-container) {
         h1,
         h3,
         h2,
         p,
         li {
-           width: 66.6667%
+            width: 66.6667%
         }
+        
 
+        fieldset , .header-container {
+            h1,
+            h3,
+            h2,
+            p,
+            li {
+                width: unset;
+            }
+        }
+            
     }
-    }
+
     
     fieldset {
         border: none;
