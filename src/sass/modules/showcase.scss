@@ -21,9 +21,10 @@
 
 		.showcase-button {
 			@extend .button-icon-inverted;
-
+			
 			@include flex-column(2.5%);
 
+			margin-top: 0;
 
 			@media #{$desktop, $tablet} {
 				@include flex-row(3, 5%);
