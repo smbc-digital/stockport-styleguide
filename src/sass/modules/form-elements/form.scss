@@ -4,7 +4,7 @@ form {
     word-break: break-word;
 
     @media #{$desktop, $tablet} {
-        &:not(fieldset, div.header-container) {
+        &:not(fieldset,div div.header-container) {
         h1,
         h3,
         h2,
