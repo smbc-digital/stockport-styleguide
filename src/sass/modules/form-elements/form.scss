@@ -3,18 +3,15 @@ form {
     width: 100%;
     word-break: break-word;
 
-    @media #{$desktop, $tablet}{
+    @media #{$desktop, $tablet} {
         h1,
         h3,
         h2,
         p,
-        li 
-        {
+        li {
                 width: 66.6667%;
         }
-    }
 
-    
     fieldset, 
     .header-container {
         h1,
@@ -24,7 +21,11 @@ form {
         li {
                 width: unset;
             }
-    }       
+        } 
+    }
+
+    
+          
     
     
     fieldset {
