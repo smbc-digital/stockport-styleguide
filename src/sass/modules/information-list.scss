@@ -5,6 +5,14 @@
   li {
     margin-left: 0;
 
+    .icon-column {
+      @extend .grid-5;
+    }
+  
+    .text-column {
+      @extend .grid-95;
+    }
+
     > div {
       padding-left: 0;
     }
@@ -65,9 +73,20 @@
   }
 
   &.showcase {
-    li p {
-      margin-bottom: 0;
+    li {
+      .icon-column {
+        @extend .grid-10; 
+      }
+  
+      .text-column {
+        @extend .grid-90;
+      }
+
+      p {
+        margin-bottom: 0;
+      }     
     }
+
     @media #{$tablet, $desktop} {
       li {
         width: 50%;
