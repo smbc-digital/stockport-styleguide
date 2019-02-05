@@ -1,10 +1,17 @@
-#root {
-    width: 66.6667%;
-}
+
 
 form {
     margin: 0;
-    width: 100%;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+
+    @media #{$tablet,$desktop} {
+        width: 66.6667%;
+    }
+    
+    width: 66.6667%;
     word-break: break-word;
 
     fieldset {
