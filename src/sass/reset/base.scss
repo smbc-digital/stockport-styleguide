@@ -43,7 +43,7 @@ p img {
 
 .center-wrapper { 
     @include center-wrapper;
-    
+
     &.relative {
         position: relative;
     }
