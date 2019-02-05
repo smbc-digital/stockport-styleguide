@@ -5,6 +5,10 @@ form {
         width: 100%;
     }
     
+    @media #{$tablet,$desktop} {
+        width: 66.6667%;
+    }
+    
     width: 66.6667%;
     word-break: break-word;
 
