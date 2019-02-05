@@ -1,5 +1,10 @@
 form {
     margin: 0;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+    
     width: 66.6667%;
     word-break: break-word;
 
