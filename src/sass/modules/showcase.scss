@@ -5,11 +5,11 @@
 	width: 100%;
 
 	&:nth-child(odd) {
-		background-color: $white;
+		background-color: $off-white;
 	}
 
 	&:nth-child(even) {
-		background-color: $off-white;
+		background-color: $white;
 	}
 
 	.showcase-button-container {
