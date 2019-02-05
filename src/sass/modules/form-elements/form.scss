@@ -1,28 +1,11 @@
+#root {
+    width: 66.6667%;
+}
+
 form {
     margin: 0;
     width: 100%;
     word-break: break-word;
-
-    @media #{$desktop, $tablet} {
-        h1,
-        h3,
-        h2,
-        p,
-        li {
-            width: 66.6667%;
-        }
-
-        .header-container,
-        fieldset {
-            h1,
-            h3,
-            h2,
-            p,
-            li {
-                width: unset;
-            }
-        }
-    }
 
     fieldset {
         border: none;
