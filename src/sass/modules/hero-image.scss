@@ -1,9 +1,9 @@
 .hero-image {
-	@media #{$desktop} {
+	@media #{$desktop, $tablet} {
 		height: 555px;
 	}
 
-	@media #{$mobile, $tablet} {
+	@media #{$mobile} {
 		height: 400px;
 	}
 
