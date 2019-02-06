@@ -273,7 +273,9 @@ a.anchor-with-icon {
 }
 
 a.anchor-as-block { 
-    display: block;
+    // If you are reading this you might think: this is ridiculous. 
+    // However, the block value sets the element width to 100%. Using table we get it displayed as a block with the width related to its content. This allows to mimic the button tag behavior.
+    display: table;
 }
 
 
