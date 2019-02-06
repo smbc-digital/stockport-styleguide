@@ -8,6 +8,8 @@ main {
 	@extend .grid-container;
 	@extend .grid-parent;
 
+	background-color: $white;
+
 	&.full-width,
 	article {
 		background-color: $white;
