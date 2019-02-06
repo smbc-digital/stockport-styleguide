@@ -116,7 +116,7 @@ p,
 }
 
 a {
-    @extend p;
+    @extend .p;
     color: $primary;
     text-decoration: underline;
 
