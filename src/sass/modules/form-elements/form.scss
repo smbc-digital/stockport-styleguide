@@ -1,7 +1,13 @@
 form {
     margin: 0;
-    width: 100%;
+   
     word-break: break-word;
+
+    width: 66.6667%;
+    
+    @media #{mobile} {
+        width: 100%
+    }
 
     fieldset {
         border: none;
@@ -12,16 +18,13 @@ form {
 
         legend {
             padding: 0;
-            width: 66%;
 
             @media #{$mobile} {
                 width: 100%
             }
         }
 
-        @media #{$desktop, $tablet} {
-            width: 66.6667%
-        }
+        
 
         @media not all and (min-resolution: .001dpcm) { 
             @supports (-webkit-appearance: none) {
