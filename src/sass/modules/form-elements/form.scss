@@ -3,6 +3,14 @@ form {
    
     word-break: break-word;
 
+    @media #{$mobile} {
+        width: 100%;
+    }
+    
+    @media #{$tablet,$desktop} {
+        width: 66.6667%;
+    }
+    
     width: 66.6667%;
     
     @media #{mobile} {
