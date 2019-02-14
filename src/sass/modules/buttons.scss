@@ -112,6 +112,54 @@ a.button {
     border: solid 1px $grey-middle;
 }
 
+.button-icon-inverted {
+    @extend .button-inverted;
+    padding: 20px 45px;
+    line-height: 0;
+
+    @media #{$desktop, $tablet} {
+        padding: 10px 45px;
+        line-height: normal;
+        max-width: 23%;
+    }
+
+    display: inline-block;
+    font-size: $fontSizeDefault;
+    font-weight: $fontWeightBold;
+
+    > span {
+        &:first-child {
+            font-size: $fontSizeLarge;
+            color: $other-social-media;
+            position: absolute;
+            left: 0;
+            margin-left: 20px;
+            top: calc(50% - ( 1.263em / 2));
+            margin-top: 3px;
+        }
+
+        &:last-child {
+            margin: auto;
+        }
+
+        &[class*="facebook"] {
+            color: $facebook;
+        }
+
+        &[class*="twitter"] {
+            color: $twitter;
+        }
+
+        &[class*="instagram"] {
+            color: $instagram;
+        }
+
+        &[class*="youtube"] {
+            color: $youtube;
+        }
+    }
+}
+
 .button-selected { 
     @extend .button;
     @include button-colors($soft-blue, $white);
@@ -225,7 +273,9 @@ a.anchor-with-icon {
 }
 
 a.anchor-as-block { 
-    display: block;
+    // If you are reading this you might think: this is ridiculous. 
+    // However, the block value sets the element width to 100%. Using table we get it displayed as a block with the width related to its content. This allows to mimic the button tag behavior.
+    display: table;
 }
 
 

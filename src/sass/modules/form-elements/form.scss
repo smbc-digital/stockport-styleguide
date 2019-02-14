@@ -1,6 +1,15 @@
 form {
     margin: 0;
-    width: 100%;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+    
+    @media #{$tablet,$desktop} {
+        width: 66.6667%;
+    }
+    
+    width: 66.6667%;
     word-break: break-word;
 
     fieldset {
@@ -12,15 +21,10 @@ form {
 
         legend {
             padding: 0;
-            width: 66%;
 
             @media #{$mobile} {
                 width: 100%
             }
-        }
-
-        @media #{$desktop, $tablet} {
-            width: 66.6667%
         }
 
         @media not all and (min-resolution: .001dpcm) { 
@@ -81,7 +85,6 @@ form {
         }
 
         &.description {
-            @extend .grid-66;
             float: none;
             padding: 0;
         }

@@ -1,112 +1,123 @@
 body {
-    background-color: $off-white;
-    min-width: 320px;
-    margin: 0;
+	background-color: $off-white;
+	min-width: 320px;
+	margin: 0;
 }
 
 main {
-    @extend .grid-container;
-    @extend .grid-parent;
+	@extend .grid-container;
+	@extend .grid-parent;
 
-    &.full-width,
-    article {
-        background-color: $white;
-    }
+	background-color: $white;
 
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        display: block;
-    }
+	&.full-width,
+	article {
+		background-color: $white;
+	}
 
-    #root, // sass-lint:disable-line no-ids (#root needed for React)
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		display: block;
+	}
+
+	#root, // sass-lint:disable-line no-ids (#root needed for React)
     .page-container {
-        @include main-layout;
-    }
+		@include main-layout;
+	}
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
+
+	li,
+	.li {
+		margin: 0 0 20px 0;
+	}
 }
 
 .full-width {
+	max-width: 100%;
+}
+
+p img {
     max-width: 100%;
 }
 
 .center-wrapper { 
     @include center-wrapper;
-    
+
     &.relative {
         position: relative;
     }
 }
 
 .dashboard-container {
-    @media #{$tablet, $mobile} { 
-        padding: 0 10px;
-    }
+	@media #{$tablet, $mobile} {
+		padding: 0 10px;
+	}
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: none;
 }
 
 .hidden {
-    display: none;
+	display: none;
 }
 
 .noscroll {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .inline {
-    display: inline-block;
+	display: inline-block;
 }
 
 .block {
-    display: block;
+	display: block;
 }
 
 .margin-auto {
-    margin: auto;
+	margin: auto;
 }
 
 .no-margin-top {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .no-margin-right {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 .no-margin-bottom {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .no-margin-left {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .thick-divider {
-    height: 3px;
-    border: none;
-    color: $grey-light;
-    background-color: $grey-light;
+	height: 3px;
+	border: none;
+	color: $grey-light;
+	background-color: $grey-light;
 }
 
 .thin-divider {
-    @extend .thick-divider;
-    height: 1px;
+	@extend .thick-divider;
+	height: 1px;
 }
 
 .darken {
-    background-color: rgba(20,20,20,.5);
-    height: 100%;
-    min-height: 400px;
+	background-color: rgba(20, 20, 20, 0.5);
+	height: 100%;
+	min-height: 400px;
 }

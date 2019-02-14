@@ -16,7 +16,7 @@
 	> * {
 		@include flex-row(2, 3%);
     }
-    
+
     h2 {
         margin-bottom: 10px;
 
@@ -48,7 +48,8 @@
 
 	.profile-inline-quote {
         display: block;
-        > .subtitle  {
+
+        > .subtitle {
             color: $grey-darkest;
             font-size: 1em;
             margin-bottom: 10px;

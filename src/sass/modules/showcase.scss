@@ -1,8 +1,34 @@
 .showcase-section {
+	@extend .full-width;
+
 	padding: 30px 0;
 	width: 100%;
 
-	&.background-off-white {
+	&:nth-child(odd) {
+		background-color: $white;
+	}
+
+	&:nth-child(even) {
 		background-color: $off-white;
+	}
+
+	.showcase-button-container {
+		@include flex(column);
+
+		@media #{$desktop, $tablet} {
+			@include flex(row);
+		}
+
+		.showcase-button {
+			@extend .button-icon-inverted;
+			
+			@include flex-column(2.5%);
+
+			margin-top: 0;
+
+			@media #{$desktop, $tablet} {
+				@include flex-row(3, 5%);
+			}
+		}
 	}
 }
