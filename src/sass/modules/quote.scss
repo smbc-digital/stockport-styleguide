@@ -24,6 +24,7 @@
 
 	.quote-body {
 		@include flex(row);
+        flex: 1 0;
 
 		> * {
 			@include flex-row(3, 3%);
@@ -42,7 +43,7 @@
 		}
 
 		.fa-quote-right {
-			align-self: end;
+			align-self: flex-end;
 		}
 	}
 }
