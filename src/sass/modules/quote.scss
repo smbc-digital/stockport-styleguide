@@ -1,0 +1,48 @@
+.inline-quote-container {
+	@include flex(column);
+	align-items: center;
+
+	img {
+		flex-grow: 0;
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+		min-height: 200px;
+		min-width: 200px;
+	}
+
+	> h4 {
+		text-align: center;
+		color: rgba($primary-text, 0.75);
+		font-size: $fontSizeSmall;
+		width: 100%;
+	}
+
+	> * {
+		@include flex-column(10px);
+	}
+
+	.quote-body {
+		@include flex(row);
+
+		> * {
+			@include flex-row(3, 3%);
+		}
+
+		> i {
+			flex-grow: 0;
+
+			&.green {
+				color: $primary;
+			}
+		}
+
+		.lead-paragraph {
+			text-align: center;
+		}
+
+		.fa-quote-right {
+			align-self: end;
+		}
+	}
+}
