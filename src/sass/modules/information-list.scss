@@ -80,6 +80,7 @@
 
       .text-column {
         @extend .grid-90;
+        color: $black;
       }
 
       p {
