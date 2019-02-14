@@ -8,6 +8,16 @@
 		}
 	}
 
+	.read-more {
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+
+	.read-more-mobile {
+		@include button-inverted($white, $teal-darker, $teal-darker);
+	}
+
 	.featured-item-body {
 
 		@include flex(column);
@@ -72,7 +82,46 @@
 					color: $grey-darkest;
 					line-height: 2em;
 				}
+
+				.featured-event-item {
+					> img {
+						display: block;
+						width: 100%;
+						border-radius: 5px 5px 0 0;
+					}
+	
+					> h3 {
+						padding: 20px 0 10px 20px;
+						margin: 0;
+						color: $grey-darkest;
+					}
+
+					> div {
+						margin-left: 10px;
+						color: $grey-darkest;
+
+						.featured-event-icon {
+								@extend .grid-10;
+						}
+
+						span {
+							@extend .grid-90;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							font-size: $fontSizeSmall;
+
+						}
+
+						&:last-child {
+							span {
+								&:last-child {
+									padding-bottom: 30px;
+								}
+							}
+						}
+					}
 				}
 			}
-		}	
+		}
+	}	
 }
