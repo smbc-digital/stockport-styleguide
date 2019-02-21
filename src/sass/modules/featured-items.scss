@@ -28,7 +28,7 @@
 
 		align-items: stretch;
 
-		>li {
+		> li {
 			@media #{$mobile} {
 				@include flex-column(3%);
 				margin-left: auto;
@@ -46,7 +46,7 @@
 			max-width: 373px;
 			display: block;
 
-			>a {
+			> a {
 				background-color: $white;
 				display: block;
 				height: 100%;
@@ -66,62 +66,45 @@
 					box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 				}
 
-				>img {
+				img {
 					display: block;
 					width: 100%;
 					height: 233px;
 					border-radius: 5px 5px 0 0;
 				}
 
-				>h3 {
+				h3 {
 					padding: 20px 0 10px 20px;
 					margin: 0;
 					color: $grey-darkest;
 				}
 
-				>p {
+				p {
 					padding: 0 20px 20px 20px;
 					color: $grey-darkest;
 					line-height: 2em;
 				}
 
+				span {
+					color: $grey-darkest;
+					line-height: 2em;
+				}
+
 				.featured-event-item {
-					>img {
-						display: block;
-						width: 100%;
-						height: 233px;
-						border-radius: 5px 5px 0 0;
+					@include flex(row);
+
+					span {
+						box-sizing: border-box;
+						padding: 0;
+						margin-left: 5%;
+						width: 10%;
+						font-family: FontAwesome;
 					}
 
-					>h3 {
-						padding: 20px 0 10px 20px;
-						margin: 0;
-						color: $grey-darkest;
-					}
-
-					>div {
-						margin-left: 10px;
-						color: $grey-darkest;
-
-						.featured-event-icon {
-							@extend .grid-10;
-						}
-
-						span {
-							@extend .grid-90;
-							padding-top: 10px;
-							padding-bottom: 10px;
-							font-size: $fontSizeSmall;
-
-						}
-
-						&:last-child {
-							span {
-								&:last-child {
-									padding-bottom: 30px;
-								}
-							}
-						}
+					p {
+						padding: 0;
+						box-sizing: border-box;
+						width: 85%;
 					}
 				}
 			}
