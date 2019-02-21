@@ -385,6 +385,19 @@ class Inputs extends Component {
 							</form>
 						</section>
 					</section>
+					<section>
+						<form>
+							<h1>Booking Selection</h1>
+							<h2>Choose an appointment</h2>
+							<h3>Wednesday 27 January 2019</h3>
+							<button className="button-inverted appointment-button-select" href="#">08:45am</button>
+							<button className="button-inverted appointment-button-select" href="#">12:45pm</button>
+							<h3>Wednesday 6 February 2019</h3>
+							<button className="button-inverted appointment-button-select" href="#">08:45am</button>
+							<a className='anchor-with-icon' href='#'><i className="fa fa-plus-square fa-2x"></i>Show more dates</a>
+							<button className="button-primary">Next step</button>
+						</form>
+					</section>
 				</article>
 				<Aside />
 			</main>
