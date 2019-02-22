@@ -37,11 +37,7 @@ form {
         }
 
         &.declaration-checkbox {
-            font-size: $fontSizeDefault;
-
-            @media #{$mobile} {
-                font-size: $mobileFontSizeRegular;
-            }
+            @extend body;
         }
     }
 
