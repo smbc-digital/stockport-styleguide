@@ -35,6 +35,14 @@ form {
                 }
             }
         }
+
+        &.declaration-checkbox {
+            font-size: $fontSizeDefault;
+
+            @media #{$mobile} {
+                font-size: $mobileFontSizeRegular;
+            }
+        }
     }
 
     h3,

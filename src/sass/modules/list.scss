@@ -6,7 +6,7 @@ ul {
     &.indented-list {
         margin: 0 0 20px 35px;
         font-size: 1.187em;
-    
+
         @media #{$mobile} {
             margin-left: 25px;
         }
