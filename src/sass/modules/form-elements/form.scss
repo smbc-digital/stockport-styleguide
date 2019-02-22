@@ -27,7 +27,7 @@ form {
             }
         }
 
-        @media not all and (min-resolution: .001dpcm) { 
+        @media not all and (min-resolution: .001dpcm) {
             @supports (-webkit-appearance: none) {
                 legend {
                     -webkit-margin-top-collapse: separate;
@@ -37,7 +37,11 @@ form {
         }
 
         &.declaration-checkbox {
-            @extend body;
+            div {
+                label {
+                    @extend body;
+                }
+            }
         }
     }
 
