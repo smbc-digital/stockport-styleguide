@@ -1,6 +1,7 @@
 @mixin flex($direction) {
 	display: flex;
 	display: -webkit-flex;
+	display: -ms-flex;
 	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	flex-direction: $direction;

@@ -1,6 +1,7 @@
 .inline-quote-container {
 	@include flex(column);
-	align-items: center;
+	align-items: center; 
+	margin: 2em 0;
 
 	img {
 		flex-grow: 0;
@@ -24,14 +25,14 @@
 
 	.quote-body {
 		@include flex(row);
-        flex: 1 0;
 
 		> * {
-			@include flex-row(3, 3%);
+			@include flex-row(3, 1%);
 		}
 
 		> i {
 			flex-grow: 0;
+			flex-basis: 40px;
 
 			&.green {
 				color: $primary;
@@ -44,6 +45,7 @@
 
 		.fa-quote-right {
 			align-self: flex-end;
+			// margin-right: 1%;
 		}
 	}
 }
