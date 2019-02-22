@@ -133,23 +133,28 @@ body > footer,
         border-top: 2px solid rgba(7,40,38,.5);
         padding: 30px 0;
 
-        @media #{$mobile} {
-            padding: 20 10px 0 10px;
+        @media #{$tablet} {
+            margin-bottom: 20px;
         }
 
-        > div {
-            vertical-align: top;
-            margin-right: 25px;
+        @media #{$mobile} {
+            padding: 20px 10px 0 10px;
+        }
+
+        > a {
+            vertical-align: top;            
             display: inline;
+            margin: 0 60px 0 0;
 
             @media #{$tablet} {
                 min-width: 225px;
                 max-width: 15%;
+                margin: 0 40px 35px 0;
             }
 
             @media #{$mobile} {
-                margin-right: unset;
                 margin-bottom: 25px;
+                margin: 0 25px 30px 0;
 
                 &:last-of-type {
                     margin-bottom: 0;
@@ -157,8 +162,18 @@ body > footer,
             }
 
             > img {
-                min-width: 225px;
-                max-width: 20%;
+                min-width: 200px;
+                max-width: 200px;
+                vertical-align: top;
+
+                @media #{$tablet} {
+                    min-width: 150px;
+                    max-width: 150px;
+                }
+
+                @media #{$mobile} {
+                    padding-bottom: 30px;
+                }
             }
             
         }
@@ -258,7 +273,6 @@ body > footer,
                     padding: 10px;
                     width: 23px;
                     height: 23px;
-                    display: inline-block;
                     color: $white;
                     text-decoration: none;
                     font-size: 23px;

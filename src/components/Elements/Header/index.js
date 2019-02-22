@@ -74,10 +74,11 @@ class Header extends Component {
 							</div>
 						</div>
 						: <div id="header-my-account" style={{padding: '16px 12px 0'}}>
+							<label htmlFor="lang" className="sr-only">Version selection</label>
 							<select id="lang" onChange={this.onStyleSheetChange.bind(this)} value={this.state.value} style={{marginBottom: '0'}}>
 								<option value="/styles.min.css">Local</option>
-								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1</option>
-								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css">Remote v2</option>
+								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1 / Version 2</option>
+								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css">Remote v2 / Verison 2.2</option>
 							</select>
 						</div>}
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
@@ -97,8 +98,7 @@ class Header extends Component {
 						<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
 					</div>
 				</div>
-				<nav className="breadcrumb">
-					<h2 className="sr-only">Breadcrumb navigation</h2>
+				<nav className="breadcrumb" aria-label="Breadcrumb navigation">
 					<ul className="center-wrapper">
 						<li><a href="/">Home</a></li>
 					</ul>

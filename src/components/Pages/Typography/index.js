@@ -44,48 +44,100 @@ class Typography extends Component {
 						<h2>Headings</h2>
 						<section className="with-border-bottom">
 							<h1>This is what h1 looks like</h1>
-							<div className="description">
+							<div className="description">								
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 60px</p>
-								<p>Font weight: 600</p>
-								<p>Colour: #065c58</p>
-								<p>Letter spacing: -1.5px</p>
+								<p>Font size: 48px</p>
+								<p>Font weight: 700</p>
+								<p>Line height: 50px</p>
+								<p>Colour: #1b1b1b</p>								
+								<br/>
+								<p>Mobile values:</p>
+								<p>Font size: 32px</p>
+								<p>Line height: 35px</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<h2>This is what h2 looks like</h2>
 							<div className="description">
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 28px</p>
-								<p>Font weight: 600</p>
-								<p>Colour: #333333</p>
+								<p>Font size: 36px</p>
+								<p>Font weight: 700</p>
+								<p>Line height: 40px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 24px</p>
+								<p>Line height: 30px</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<h3>This is what h3 looks like</h3>
 							<div className="description">
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 22px</p>
+								<p>Font size: 24px</p>
 								<p>Font weight: 700</p>
-								<p>Colour: #333333</p>
+								<p>Line height: 30px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 18px</p>
+								<p>Line height: 20px</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<h4>This is what h4 looks like</h4>
 							<div className="description">
 								<p>Font family: Source Sans Pro</p>
-								<p>Font size: 20px</p>
-								<p>Font weight: 400</p>
-								<p>Colour: #333333</p>
+								<p>Font size: 19px</p>
+								<p>Font weight: 600</p>
+								<p>Line height: 25px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 16px</p>
+								<p>Line height: 20px</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
 							<p>This is what body text looks like</p>
 							<div className="description">
 								<p>Font family: Noto Sans</p>
-								<p>Font size: 16px</p>
+								<p>Font size: 19px</p>
 								<p>Font weight: 400</p>
-								<p>Colour: #333333</p>
+								<p>Line height: 25px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 16px</p>
+								<p>Line height: 28px</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<p className="lead-paragraph">This is what lead body text looks like</p>
+							<div className="description">
+								<p>Font family: Noto Sans</p>
+								<p>Font size: 24px</p>
+								<p>Font weight: 400</p>
+								<p>Line height: 32px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 18px</p>
+								<p>Line height: 28px</p>
+							</div>
+						</section>
+						<section className="with-border-bottom">
+							<p className="lead-paragraph">This is what lead body text looks like</p>
+							<div className="description">
+								<p>Font family: Noto Sans</p>
+								<p>Font size: 24px</p>
+								<p>Font weight: 400</p>
+								<p>Line height: 32px</p>
+								<p>Colour: #1b1b1b</p>
+								<br/>
+								<p>Mobile values</p>
+								<p>Font size: 18px</p>
+								<p>Line height: 28px</p>
 							</div>
 						</section>
 						<section className="with-border-bottom">
