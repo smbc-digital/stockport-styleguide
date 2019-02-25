@@ -39,8 +39,11 @@ form {
         &.declaration-checkbox {
             div {
                 label {
-                    @extend body;
-                    background-color: unset;
+                    font-size: 19px;
+                    
+                    @media #{$mobile} {
+                        font-size: 16px;
+                    }
                 }
             }
         }
