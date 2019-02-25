@@ -3,6 +3,7 @@ input[type="date"] {
     float: none;
     position: relative;
     text-align: center;
+    min-width: 170px;
 
     @media #{$mobile} {
         width: 100%;
