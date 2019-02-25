@@ -112,6 +112,15 @@ a.button {
     border: solid 1px $grey-middle;
 }
 
+.button-radio-list {
+    @extend .button;
+    @include button-colors($white, $grey-dark);
+    @include transition-box-shadow(none);
+    font-weight: $fontWeightRegular;
+    border: solid 1px $soft-blue;
+    border-radius: 0;
+}
+
 .button-selected { 
     @extend .button;
     @include button-colors($soft-blue, $white);
