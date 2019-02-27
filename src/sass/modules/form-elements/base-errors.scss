@@ -2,6 +2,9 @@
     margin-top: -32px;
 
     .input-content {
+        > i{
+            display: none;
+        }
         > p {
             background: $red;
             color: $white;
@@ -10,7 +13,7 @@
             padding: 10px;
             margin-bottom: 0;
             position: relative;
-            top: -20px;
+            top: -25px;
 
             @media #{$mobile} {
                 width: auto;
