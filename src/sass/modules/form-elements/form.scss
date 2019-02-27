@@ -170,3 +170,8 @@ form {
         font-size: 30px;
     }
 }
+
+.page-loading-spinner {
+    @extend .spinner;
+    margin-bottom: 50px;
+}
