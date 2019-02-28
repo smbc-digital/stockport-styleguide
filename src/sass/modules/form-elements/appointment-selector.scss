@@ -93,6 +93,7 @@ form .new-appointment-radio-container {
 
         &:checked + label {
             @extend .button-selected;
+            @include box-shadow(none);
             width: inherit;
             margin: 0;
             padding: 10px 35px;
