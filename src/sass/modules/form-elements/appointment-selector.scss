@@ -97,6 +97,7 @@ form .new-appointment-radio-container {
             width: inherit;
             margin: 0;
             padding: 10px 35px;
+            font-weight: $fontWeightRegular;
 
             &:before {
                 content: none;
@@ -107,6 +108,7 @@ form .new-appointment-radio-container {
             &:active {
                 @include box-shadow(none);
                 @include transition-box-shadow(none);
+                background-color: $soft-blue;
             }
         }
     }

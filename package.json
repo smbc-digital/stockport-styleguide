@@ -50,7 +50,7 @@
     "redux-thunk": "^2.3.0",
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
-    "smbc-react-components": "^4.1.71",
+    "smbc-react-components": "^4.1.72",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.27.1",

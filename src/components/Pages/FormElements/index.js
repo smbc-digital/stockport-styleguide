@@ -114,12 +114,16 @@ class Inputs extends Component {
 				date: 'Wednesday 27 February 2019',
 				times: [
 					{
-						startTime: '8:45am',
-						endTime: '11:00am'
+						value: '27/02/2019 08:45:00',
+						label: '8:45am',
+						id: '27/02/2019 08:45:00',
+						name: 'appointment'
 					},
 					{
-						startTime: '12:45pm',
-						endTime: '15:00pm'
+						value: '27/02/2019 12:45:00',
+						label: '12:45pm',
+						id: '27/02/2019 12:45:00',
+						name: 'appointment'
 					}
 				]
 			},
@@ -127,8 +131,10 @@ class Inputs extends Component {
 				date: 'Wednesday 6 March 2019',
 				times: [
 					{
-						startTime: '8:45am',
-						endTime: '11:00am'
+						value: '06/03/2019 08:45:00',
+						label: '8:45am',
+						id: '06/03/2019 08:45:00',
+						name: 'appointment'
 					}
 				]
 			}
@@ -258,10 +264,11 @@ class Inputs extends Component {
 									<SelectableButtonList
 										heading="Select an appointment"
 										enableH2={true}
+										displayHeading={true}
+										enableRadioH2={false}
 										buttonList={this.selectableButtonOptions}
-										onButtonClick={this.onButtonClick.bind(this)}
-										colour="radio-list"
-										inline={true}
+										onRadioInputChange={this.onChange.bind(this)}
+										cssClass='new-appointment-radio-container'
 										showMore={true}
 										onClick={() => {}}
 									/>
