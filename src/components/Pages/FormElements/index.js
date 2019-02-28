@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Aside from '../../Elements/Aside'
 import CodeExample from '../../Elements/CodeExample'
-import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer, SortcodeInput, AccountNumberInput } from 'smbc-react-components'
+import { RadioInputsContainer, CheckboxInputsContainer, MemorableDateInputContainer, TextInputContainer, AddressPicker, SelectInputContainer, TextAreaInputContainer, SortcodeInput, AccountNumberInput, SelectableButtonList } from 'smbc-react-components'
 import 'react-dates/initialize'
 import { SingleDatePicker } from 'react-dates'
 
@@ -109,6 +109,31 @@ class Inputs extends Component {
 			}
 		]
 
+		this.selectableButtonOptions = [
+			{
+				date: 'Wednesday 27 February 2019',
+				times: [
+					{
+						startTime: '8:45am',
+						endTime: '11:00am'
+					},
+					{
+						startTime: '12:45pm',
+						endTime: '15:00pm'
+					}
+				]
+			},
+			{
+				date: 'Wednesday 6 March 2019',
+				times: [
+					{
+						startTime: '8:45am',
+						endTime: '11:00am'
+					}
+				]
+			}
+		]
+
 		this.state = {
 			date: null,
 			focused: false,
@@ -130,6 +155,14 @@ class Inputs extends Component {
 	onChangeDate(date) {
 		let validationMessage = date !== null ? '' : 'Date is invalid'
 		this.setState({ date: date, isValid: date !== null, dateValidationMessage: validationMessage })
+	}
+
+	onButtonClick = (event, item) => {
+		event.preventDefault()
+		this.props.context.selectedAppointment = item
+		const copyOfState = Object.assign({}, this.state)
+		copyOfState.isSelectedAppointment = true
+		this.setState(copyOfState)
 	}
 
 	render() {
@@ -215,6 +248,25 @@ class Inputs extends Component {
 										optional={false}
 										onChangeHandler={() => { }}
 									/> }
+							</form>
+						</section>
+						<section>
+							<form>
+								<h3>Selectable button list</h3>
+								<p>This component works in a similar way to radio buttons and can be used for things like appointment selection</p>
+								<CodeExample>
+									<SelectableButtonList
+										heading="Select an appointment"
+										enableH2={true}
+										buttonList={this.selectableButtonOptions}
+										onButtonClick={this.onButtonClick.bind(this)}
+										colour="radio-list"
+										inline={true}
+										showMore={true}
+										onClick={() => {}}
+									/>
+								</CodeExample>
+								<button className="button-primary">Next step</button>
 							</form>
 						</section>
 					</section>
@@ -384,19 +436,7 @@ class Inputs extends Component {
 								<button disabled="" id="submitFiles" type="submit" className="button-primary">Submit your documents</button>
 							</form>
 						</section>
-						<section>
-							<form>
-								<h1>Booking Selection</h1>
-								<h2>Choose an appointment</h2>
-								<h3>Wednesday 27 January 2019</h3>
-								<button className="button-inverted inline" href="#">08:45am</button>
-								<button className="button-inverted inline" href="#">12:45pm</button>
-								<h3>Wednesday 6 February 2019</h3>
-								<button className="button-inverted inline" href="#">08:45am</button>
-								<a className='anchor-with-icon' href='#'><i className="fa fa-plus-square fa-2x"></i>Show more dates</a>
-								<button className="button-primary">Next step</button>
-							</form>
-						</section>
+						
 					</section>
 				</article>
 				<Aside />
