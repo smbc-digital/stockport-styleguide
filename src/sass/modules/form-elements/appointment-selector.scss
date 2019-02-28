@@ -101,6 +101,13 @@ form .new-appointment-radio-container {
             &:before {
                 content: none;
             }
+
+            &:hover,
+            &:focus,
+            &:active {
+                @include box-shadow(none);
+                @include transition-box-shadow(none);
+            }
         }
     }
 
