@@ -71,7 +71,7 @@ form .new-appointment-radio-container {
     margin: 0 20px 30px 0;
 
     label {
-        @extend .button--radio-list;
+        @extend .button-radio-list;
         width: inherit;
         margin: 0;
         padding: 10px 35px;
