@@ -109,6 +109,8 @@ body > header,
 					color: $primary;
 					text-align: left;
 					border-bottom: 1px solid $grey-lighter;
+					margin: 0;
+					line-height: 2;
 
 					&:hover {
 						color: $primary-pale;
@@ -218,8 +220,12 @@ body > header,
 						display: block;
 						text-align: center;
 						padding: 10px 0;
-						border-top: 1px solid rgba(255, 255, 255, 0.1);
 						border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+						margin: 0;
+
+						&:first-of-type {
+							border-top: 1px solid rgba(255, 255, 255, 0.1);
+						}
 
 						&:after {
 							content: none;
