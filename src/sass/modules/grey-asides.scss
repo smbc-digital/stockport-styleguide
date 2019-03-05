@@ -1,0 +1,49 @@
+.grey-aside {
+    @extend .grid-parent;
+    @extend .grid-30;
+    @extend .tablet-grid-30;
+    @extend .mobile-grid-100;
+    padding-top: 20px;
+
+    background-color: #ebebeb;
+    top: 135px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+
+    @media #{$mobile} {
+        padding: 0 20px;
+    }
+
+    h2 {
+        padding-left: 35px;
+
+        @media #{$mobile} {
+            padding: 20px 0 0;
+            margin-bottom: 20px;
+        }
+    }
+    
+    a.account-details {
+        background-color: white;
+        padding: 10px 0 15px 30px;
+        font-size: 15px;
+        display: block;
+        border: solid 1px 1px 1px 0 #ccc;
+        border-radius: 3px;
+        margin: 3px 3px 3px 0;
+        text-decoration: none;
+
+        h3 {
+            display: inline-block;
+            color: #055c58;
+            line-height: 1.5em;
+            text-decoration: underline;
+            font-size: 1.125em;
+            margin: 0;
+        }
+    }
+
+    
+}
