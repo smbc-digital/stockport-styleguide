@@ -92,6 +92,7 @@ form .new-appointment-radio-container {
         margin: 0;
 
         &:checked + label {
+            @include outline;
             @extend .button-selected;
             @include box-shadow(none);
             width: inherit;
@@ -106,6 +107,7 @@ form .new-appointment-radio-container {
             &:hover,
             &:focus,
             &:active {
+                @include outline;
                 @include box-shadow(none);
                 @include transition-box-shadow(none);
                 background-color: $soft-blue;
