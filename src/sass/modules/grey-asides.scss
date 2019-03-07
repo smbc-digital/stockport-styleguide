@@ -26,7 +26,7 @@
     }
     
     a.account-details {
-        background-color: white;
+        background-color: $off-white;
         padding: 10px 0 15px 30px;
         font-size: 15px;
         display: block;
@@ -35,6 +35,10 @@
         margin: 3px 3px 3px 0;
         text-decoration: none;
 
+        &.active {
+            background-color: white;
+        }
+
         h3 {
             display: inline-block;
             color: #055c58;
@@ -42,6 +46,11 @@
             text-decoration: underline;
             font-size: 1.125em;
             margin: 0;
+        }
+        
+        p {
+            margin-bottom: 0;
+            color: $grey-dark;
         }
     }
 
