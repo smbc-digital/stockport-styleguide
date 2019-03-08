@@ -18,7 +18,7 @@
         position: relative;
         top: unset;
         bottom: unset;
-        right:unset;
+        right: unset;
     }
 
     h2 {
@@ -32,13 +32,14 @@
     
     a.account-details {
         background-color: $off-white;
-        padding: 10px 0 15px 30px;
+        padding: 10px 5px 15px 30px;
         font-size: 15px;
         display: block;
         border: solid 1px 1px 1px 0 #ccc;
         border-radius: 3px;
         margin: 3px 3px 3px 0;
         text-decoration: none;
+        max-width: 320px;;
 
         &.active {
             background-color: white;
