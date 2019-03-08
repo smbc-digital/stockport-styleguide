@@ -10,10 +10,12 @@
     bottom: 0;
     right: 0;
     position: absolute;
+    display: block;
 
 
     @media #{$mobile} {
         padding: 0 20px;
+        position: relative;
     }
 
     h2 {
