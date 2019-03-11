@@ -153,6 +153,11 @@
                         }
                     }
 
+                    @media #{$desktop, $tablet}
+                    {
+                        display: none;
+                    }
+
                     @media #{$mobile} {
                         display: block;
                         padding: 0 10px 10px;
