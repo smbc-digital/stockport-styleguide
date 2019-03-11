@@ -153,10 +153,7 @@
                         }
                     }
 
-                    @media #{$desktop, $tablet}
-                    {
-                        display: none;
-                    }
+                  
 
                     @media #{$mobile} {
                         display: block;
