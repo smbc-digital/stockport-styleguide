@@ -16,6 +16,11 @@ article {
         @extend .tablet-grid-70;
         @extend .mobile-grid-100;
         padding-left: 55px;
+
+        @media #{$mobile, $tablet} {
+            padding-left: unset;
+        }
+
     }
 
     section.with-border-bottom {
