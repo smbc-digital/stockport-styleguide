@@ -12,6 +12,7 @@
         display: table;
         padding: 20px 0;
         width: 100%;
+        border-bottom: 1px solid $grey-lighter;
 
         @media #{$mobile} {
             background-color: $grey-lighter;
