@@ -52,6 +52,24 @@
 
         &.active {
             background-color: white;
+
+            p:first-of-type {
+                font-weight: 600;
+    
+                &:before {
+                    content: "\F053";
+                    font: normal normal normal 14px/1 FontAwesome;
+                    left: 10px;
+                    top: 16px;
+                    position: absolute;
+                    font-weight: normal;
+    
+                    @media #{$mobile,$tablet} {
+                        content: "";
+                    }
+                }
+            }
+        
         }
 
         h3 {
