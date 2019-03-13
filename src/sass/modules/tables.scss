@@ -12,6 +12,7 @@
         display: table;
         padding: 20px 0;
         width: 100%;
+        border-bottom: 1px solid $grey-lighter;
 
         @media #{$mobile} {
             background-color: $grey-lighter;
@@ -30,6 +31,13 @@
                 margin: 0;
                 font-size: 20px;
                 line-height: 20px;
+                letter-spacing: normal;
+            }
+
+            h2.full-size {
+                margin: 0;
+                font-size: 1.895em;
+                line-height: 1.1111em;
                 letter-spacing: normal;
             }
 
@@ -101,9 +109,18 @@
                     padding: 25px 20px;
                     position: relative;
 
-                    > a {
-                        text-decoration: none;
+                    h3 {
+                      margin: 0 0 5px 0;
+                    }
 
+                    .button-primary,
+                    .button-secondary,
+                    .button-inverted {
+                        margin-bottom: 0;
+                    }
+
+                    > a {
+                        
                         > div {
                             margin: 10px 14px;
 
@@ -136,6 +153,8 @@
                         }
                     }
 
+                  
+
                     @media #{$mobile} {
                         display: block;
                         padding: 0 10px 10px;
@@ -160,6 +179,10 @@
 
                         button {
                             margin-bottom: 0;
+                        }
+
+                        h3 {
+                            margin: 0 0 5px;
                         }
                     }
                 }
@@ -593,4 +616,20 @@ table {
         background: $off-white;
     }
 }
+
+td.heading {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+td section.alert-inline {
+    margin-bottom: 0;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+}
+
+
 

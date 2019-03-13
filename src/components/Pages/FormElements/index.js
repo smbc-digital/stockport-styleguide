@@ -55,13 +55,29 @@ class Inputs extends Component {
 				'id': 'radio-meat-2',
 				'label': 'Radio 2',
 				'name': 'RadioMeat',
-				'value': 'test2'
+				'value': 'test2',
+				renderIfChecked: () =>
+					<TextInputContainer
+						label="Text fields"
+						id="cheese-1"
+						type="text"
+						optional={true}
+						onChangeHandler={() => { }}
+					/>
 			},
 			{
 				'id': 'radio-meat-3',
 				'label': 'Radio 3',
 				'name': 'RadioMeat',
-				'value': 'test3'
+				'value': 'test3',
+				renderIfChecked: () =>
+					<TextInputContainer
+						label="Text fields"
+						id="cheese-1"
+						type="text"
+						optional={true}
+						onChangeHandler={() => { }}
+					/>
 			}
 		]
 
