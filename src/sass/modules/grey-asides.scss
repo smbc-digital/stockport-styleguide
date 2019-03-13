@@ -36,9 +36,7 @@
         padding: 10px 5px 15px 30px;
         font-size: 15px;
         display: block;
-        border-top: solid 1px #ccc;
-        border-right: solid 1px #ccc solid; 
-        border-bottom: solid 1px #ccc;
+        border: solid 1px #ccc;
         border-left: none;
         border-radius: 0 3px 3px 0;
         margin: 3px 3px 3px 0;
@@ -56,6 +54,15 @@
 
         &.active {
             background-color: white;
+
+            border-top: solid 1px #ccc;
+            border-right: solid 1px #ccc solid; 
+            border-bottom: solid 1px #ccc;
+            border-left: none;
+
+            @media #{$mobile} {
+                border: solid 1px #ccc;
+            }
 
             p:first-of-type {
                 font-weight: 600;
