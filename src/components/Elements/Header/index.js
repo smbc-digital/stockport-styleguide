@@ -22,7 +22,7 @@ class Header extends Component {
 	}
 
 	render() {
-		const { loggedIn, javascriptBanner } = this.props
+		const { loggedIn, javascriptBanner, uniqueKey  } = this.props
 
 		return (
 			<header>
@@ -34,6 +34,11 @@ class Header extends Component {
 					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
+					<input id={uniqueKey ? `search-mobile-${uniqueKey}` : 'search-mobile'} type='checkbox' name='search-mobile' tabIndex='1' />
+					<label className='search-mobile-label' htmlFor={uniqueKey ? `search-mobile-${uniqueKey}` : 'search-mobile'}>
+						<i className="fa fa-search" aria-hidden="true"></i>
+						<span className='hidden'>Open search bar</span>
+					</label>
 					{loggedIn
 						? <div id="header-my-account" className="logged-in">
 							<div className='menu-container'>
@@ -84,6 +89,12 @@ class Header extends Component {
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
 						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
 						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
+						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+					<form method="get" role="search" id="cludo-search-mobile-form" className="cludo-search_autocomplete">
+						<i className="fa fa-caret-up" aria-hidden="true"></i>
+						<label htmlFor="search-mobile" className="sr-only">Search Stockport council website</label>
+						<input id="search-mobile" className="search-input" name="query" placeholder="Hi there! What are you looking for?" autoComplete="off" type="text" />
 						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
