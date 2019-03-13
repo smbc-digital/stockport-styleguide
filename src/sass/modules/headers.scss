@@ -378,11 +378,15 @@ body > header,
             height: 50px;
             max-width: 100%;
             margin: 20px 0;
+
+            &::-ms-clear {
+                margin: 0 25px 0 0;
+            }
         }
 
         button {
             position: absolute;
-            top: calc(42.5px - (#{$fontSizeDefault} / 2));
+            top: calc(45px - (#{$fontSizeDefault} / 2));
             font-size: $fontSizeDefault;
             line-height: $fontSizeDefault;
             right: 20px;
