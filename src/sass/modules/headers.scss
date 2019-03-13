@@ -349,27 +349,38 @@ body > header,
 
     input[name="search-mobile"]:checked ~ #cludo-search-mobile-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
         height: 85px;
+
+        > div {
+            height: 85px;
+        }
     }
 
     #cludo-search-mobile-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
         @extend .mobile-grid-100, .tablet-grid-100, .hide-on-desktop;
         background: linear-gradient(-180deg, transparent 5px, $primary-darkest 5px);
         width: calc(100% + 20px);
-        margin: 0 0 0 -10px;
+        margin: 0 0 -5px -10px;
         height: 0;
-        overflow: hidden;
         transition: height .75s ease-in-out;
         position: relative;
         box-sizing: border-box;
+        top: -5px;
+
+        > div {
+            height: 0;
+            overflow: hidden;
+            transition: height .75s ease-in-out;
+            position: relative;
+        }
 
         .fa-caret-up {
             position: absolute;
             top: -6px;
-            right: 28px;
+            right: 18px;
             color: $primary-darkest;
 
             @media #{$mobile} {
-                right: 26px;
+                right: 16px;
             }
         }
 
@@ -385,7 +396,7 @@ body > header,
             top: calc(42.5px - (#{$fontSizeDefault} / 2));
             font-size: $fontSizeDefault;
             line-height: $fontSizeDefault;
-            right: 20px;
+            right: 10px;
             background: 0 0;
             border: none;
             cursor: pointer;
