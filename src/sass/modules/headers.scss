@@ -4,8 +4,7 @@ body > header,
 	background-color: $primary;
 	width: 100%;
 
-	#header-logo {
-		// sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
+	#header-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
 		@extend .grid-50;
 		@extend .tablet-grid-50;
 		@extend .mobile-grid-50;
@@ -18,21 +17,25 @@ body > header,
 		}
 	}
 
-	#header-my-account {
-		// sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
+	#header-my-account { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
 		@extend .grid-25;
-		@extend .tablet-grid-25;
+		@extend .tablet-grid-10;
 
 		&.form-header {
 			@extend .grid-50;
 			@extend .tablet-grid-50;
 		}
-		@extend .mobile-grid-50;
+
+		@extend .mobile-grid-10;
 		text-align: right;
 		padding: 21px 12px;
 
 		@media #{$mobile} {
 			padding: 14px 15px;
+		}
+
+		@media #{$mobile}, #{$tablet} {
+			float: right;
 		}
 
 		&.logged-in {
@@ -125,11 +128,11 @@ body > header,
 
 			.modal {
 				@extend .hide-on-desktop;
-				font-size: 24px;
+				font-size: $fontSizeLarge;
 
 				@media #{$mobile} {
 					margin: 0 0 10px 0;
-					font-size: 16px;
+					font-size: $mobileFontSizeRegular;
 				}
 
 				.fa-user {
@@ -143,6 +146,7 @@ body > header,
 					color: $primary-pale;
 					padding: 0 12px;
 					cursor: pointer;
+					margin: 0 5%;
 				}
 
 				input {
@@ -261,11 +265,11 @@ body > header,
 		}
 	}
 
-	#cludo-search-form, // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
-    form {
+	form#cludo-search-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
 		@extend .grid-25;
 		@extend .tablet-grid-25;
 		@extend .hide-on-mobile;
+		@extend .hide-on-tablet;
 		padding: 19px 15px 12px;
 		background-color: rgba(255, 255, 255, 0.1);
 		position: relative;
@@ -324,6 +328,74 @@ body > header,
 				cursor: pointer;
 				transition: none;
 			}
+		}
+	}
+
+	.search-mobile-label {
+		@extend .hide-on-desktop;
+		font-size: $fontSizeLarge;
+		border: 1px solid $primary-pale;
+		float: right;
+		border-radius: 3px;
+		color: $primary-pale;
+		padding: 0 12px;
+		margin: 13px 0 13px 5px;
+		cursor: pointer;
+
+		@media #{$mobile} {
+			font-size: $mobileFontSizeRegular;
+		}
+	}
+
+	input[name="search-mobile"] {
+		@extend .hide-on-desktop;
+		position: absolute;
+		z-index: -10;
+		width: 0;
+		height: 0;
+	}
+
+	input[name="search-mobile"]:checked ~ #cludo-search-mobile-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
+		height: 85px;
+	}
+
+	#cludo-search-mobile-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
+		@extend .mobile-grid-100, .tablet-grid-100, .hide-on-desktop;
+		background: linear-gradient(-180deg, transparent 5px, $primary-darkest 5px);
+		width: calc(100% + 20px);
+		margin: 0 0 0 -10px;
+		height: 0;
+		overflow: hidden;
+		transition: height .75s ease-in-out;
+		position: relative;
+		box-sizing: border-box;
+
+		.fa-caret-up {
+			position: absolute;
+			top: -6px;
+			right: 28px;
+			color: $primary-darkest;
+
+			@media #{$mobile} {
+				right: 26px;
+			}
+		}
+
+		input {
+			width: 100%;
+			height: 50px;
+			max-width: 100%;
+			margin: 20px 0;
+		}
+
+		button {
+			position: absolute;
+			top: calc(42.5px - (#{$fontSizeDefault} / 2));
+			font-size: $fontSizeDefault;
+			line-height: $fontSizeDefault;
+			right: 20px;
+			background: 0 0;
+			border: none;
 		}
 	}
 

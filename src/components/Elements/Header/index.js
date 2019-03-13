@@ -91,9 +91,10 @@ class Header extends Component {
 						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 					<form method="get" role="search" id="cludo-search-mobile-form" className="cludo-search_autocomplete">
-						{/* <label htmlFor="search" className="sr-only">Search Stockport council website</label> */}
-						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
-						{/* <button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button> */}
+						<i className="fa fa-caret-up" aria-hidden="true"></i>
+						<label htmlFor="search-mobile" className="sr-only">Search Stockport council website</label>
+						<input id="search-mobile" className="search-input" name="query" placeholder="Hi there! What are you looking for?" autoComplete="off" type="text" />
+						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
 				{ javascriptBanner 
