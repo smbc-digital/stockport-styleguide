@@ -36,9 +36,9 @@
         padding: 10px 5px 15px 30px;
         font-size: 15px;
         display: block;
-        border-top: solid 2px #ccc;
-        border-right: solid 2px #ccc solid; 
-        border-bottom: solid 2px #ccc;
+        border-top: solid 1px #ccc;
+        border-right: solid 1px #ccc solid; 
+        border-bottom: solid 1px #ccc;
         border-left: none;
         border-radius: 0 3px 3px 0;
         margin: 3px 3px 3px 0;
@@ -86,7 +86,7 @@
         
         p {
             margin-bottom: 0;
-            color: $grey-dark;
+            color: $almost-black;
         }
     }
 
