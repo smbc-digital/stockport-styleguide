@@ -69,8 +69,7 @@
                 &:before {
                     content: "\F053";
                     font: normal normal normal 14px/1 FontAwesome;
-                    left: 10px; 
-                    position: absolute;
+                    margin-left: -20px;
                     font-weight: normal;
     
                     @media #{$mobile,$tablet} {
