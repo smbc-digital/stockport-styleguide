@@ -12,6 +12,10 @@ main {
 	display: flex;
 	flex-direction: horizontal;
 
+	@media #{$mobile} {
+		flex-direction: column;
+	}
+
 	&.full-width,
 	article {
 		background-color: $white;
