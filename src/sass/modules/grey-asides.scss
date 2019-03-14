@@ -71,9 +71,11 @@
                     font: normal normal normal 14px/1 FontAwesome;
                     margin-left: -20px;
                     font-weight: normal;
+                    margin-right: 10px;
     
                     @media #{$mobile,$tablet} {
                         content: "";
+                        margin: unset;
                     }
                 }
             }
