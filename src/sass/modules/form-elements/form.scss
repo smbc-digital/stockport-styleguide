@@ -1,15 +1,15 @@
 form {
     margin: 0;
 
-    @media #{$mobile} {
+    @media #{$mobile, $tablet} {
         width: 100%;
     }
     
-    @media #{$tablet,$desktop} {
+    @media #{$desktop} {
         width: 66.6667%;
     }
     
-    width: 66.6667%;
+    
     word-break: break-word;
 
     fieldset {
