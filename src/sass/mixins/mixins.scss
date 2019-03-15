@@ -2,6 +2,7 @@
 	@include center-wrapper;
 	background-color: $white;
 	padding: 20px 20px 0;
+	flex-grow: 1;
 
 	@media #{$mobile} {
 		padding: 20px 10px 0;
