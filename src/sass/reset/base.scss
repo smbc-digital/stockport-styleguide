@@ -10,7 +10,8 @@ main {
 
 	background-color: $white;
 	display: flex;
-	flex-direction: horizontal;
+	flex-direction: row;
+	justify-content: flex-start;
 
 	@media #{$mobile} {
 		flex-direction: column;
@@ -20,6 +21,7 @@ main {
 	article {
 		background-color: $white;
 		flex-direction: column;
+		flex-grow: 1;
 	}
 
 	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
