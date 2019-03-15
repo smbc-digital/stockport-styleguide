@@ -9,10 +9,17 @@ main {
 	@extend .grid-parent;
 
 	background-color: $white;
+	display: flex;
+	flex-direction: horizontal;
+
+	@media #{$mobile} {
+		flex-direction: column;
+	}
 
 	&.full-width,
 	article {
 		background-color: $white;
+		flex-direction: column;
 	}
 
 	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
