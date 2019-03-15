@@ -39,7 +39,8 @@ ol {
         margin-bottom: 0;
     }
 
-    .input-error-content {
+    .input-error-content,
+    .input-date-picker .input-error-content {
         top: 0;
     }
 }

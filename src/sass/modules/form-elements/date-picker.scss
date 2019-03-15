@@ -88,14 +88,24 @@ input[type="date"] {
 }
 
 .input-date-picker {
-    &.invalid input {
-        border: 1px solid $red;
-        @include border-radius(3px 3px 0 0);
+    &.invalid {
+        input {
+            border: 1px solid $red;
+            @include border-radius(3px 3px 0 0);
+        }
+
+        .DateInput_fang { // sass-lint:disable-line class-name-format
+            display: none;
+        }
+
+        .SingleDatePicker_picker { // sass-lint:disable-line class-name-format
+            top: 90px !important; // sass-lint:disable-line no-important because react-dates directly attach styles to DOM element
+        }
     }
 
     .input-error-content {
         top: -21px;
-        width: 130px;
+        width: 260px;
         display: inline-block;
     }
 
