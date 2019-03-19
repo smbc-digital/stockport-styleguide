@@ -12,6 +12,11 @@
 		background-color: $off-white;
 	}
 
+	article {
+		padding: 0;
+		background: none;
+	}
+
 	.showcase-button-container {
 		@include flex(column);
 
