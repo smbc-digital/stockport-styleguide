@@ -6,6 +6,8 @@
     background-size: 100% 100%;
     display: block;
     position: relative;
+    margin-bottom: 20px;
+
 
     @media #{$tablet} {
         max-width: 880px;
@@ -15,5 +17,12 @@
         width: 100%;
         max-width: 550px;
         height: 180px;
+    }
+
+    .copyright-information {
+        color: black;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
     }
 }
