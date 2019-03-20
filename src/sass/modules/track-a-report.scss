@@ -7,11 +7,11 @@
     display: block;
     position: relative;
 
-    #{$tablet} {
+    @media #{$tablet} {
         max-width: 880px;
     }
 
-    #{$mobile} {
+    @media #{$mobile} {
         width: 100%;
         max-width: 550px;
         height: 180px;
