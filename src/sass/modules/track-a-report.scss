@@ -8,9 +8,24 @@
     position: relative;
     margin-bottom: 20px;
 
-    :before {
+    &.open::before {
         position: absolute;
         content: '';
+        background-color: #ff0030;
+        border-radius: 50%;
+        opacity: 1;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        border: 2px solid white;
+    }
+
+    &.closed::before {
+        position: absolute;
+        content: '';
+        background-color: #00ff30;
         border-radius: 50%;
         opacity: 1;
         width: 20px;
@@ -38,12 +53,4 @@
         margin-bottom: 0;
         size: 0.7em;
     }
-}
-
-.open :before {
-    background-color: #ff0030;
-}
-
-.closed :before {
-    background-color: #00ff30
 }
