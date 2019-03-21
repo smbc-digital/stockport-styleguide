@@ -29,7 +29,7 @@
             margin-bottom: 20px;
         }
     }
-    
+
     a.account-details {
         background-color: $off-white;
         padding: 10px 5px 15px 30px;
@@ -42,20 +42,18 @@
         text-decoration: none;
         max-width: 320px;
 
-        
-       @media #{$mobile} {
-           border: solid 1px #ccc;
-           border-radius: 3px;
-           padding: 10px;
-           margin: 3px 3px 15px 3px;
-           width: 90%;
-       }
+        @media #{$mobile} {
+            border: solid 1px #ccc;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 3px 3px 15px 3px;
+            width: 90%;
+        }
 
         &.active {
             background-color: white;
-
             border-top: solid 1px #ccc;
-            border-right: solid 1px #ccc solid; 
+            border-right: solid 1px #ccc solid;
             border-bottom: solid 1px #ccc;
             border-left: none;
 
@@ -65,21 +63,20 @@
 
             p:first-of-type {
                 font-weight: 600;
-    
+
                 &:before {
                     content: "\F053";
                     font: normal normal normal 14px/1 FontAwesome;
                     margin-left: -20px;
                     font-weight: normal;
                     margin-right: 10px;
-    
+
                     @media #{$mobile,$tablet} {
                         content: "";
                         margin: unset;
                     }
                 }
             }
-        
         }
 
         h3 {
@@ -90,12 +87,10 @@
             font-size: 1.125em;
             margin: 0;
         }
-        
+
         p {
             margin-bottom: 0;
             color: $almost-black;
         }
     }
-
-    
 }
