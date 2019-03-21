@@ -8,6 +8,18 @@
     position: relative;
     margin-bottom: 20px;
 
+    :before {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        opacity: 1;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        border: 2px solid white;
+    }
 
     @media #{$tablet} {
         max-width: 880px;
@@ -26,4 +38,12 @@
         margin-bottom: 0;
         size: 0.7em;
     }
+}
+
+.open :before {
+    background-color: #ff0030;
+}
+
+.closed :before {
+    background-color: #00ff30
 }
