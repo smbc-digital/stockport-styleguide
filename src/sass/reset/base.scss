@@ -64,6 +64,8 @@ p img {
 	@media #{$tablet, $mobile} {
 		padding: 0 10px;
 	}
+
+	background-color: $off-white;
 }
 
 .sr-only {
