@@ -1,6 +1,6 @@
 .service-items {
     width: 100%;
-    border: 1px solid $greyLighter;
+    border: 1px solid $grey-lighter;
     border-radius: 3px;
     box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -70,10 +70,10 @@
 }
 
 .service-item-green {
-    border-left: 5px solid $richGreen;
+    border-left: 5px solid $rich-green;
 
     h3 {
-        color: $richGreen;
+        color: $rich-green;
     }
 }
 
@@ -114,7 +114,7 @@
     }
 
     p {
-        color: $greyMiddle;
+        color: $grey-middle;
         margin-top: -10px;
         margin-bottom: 10px;
     }
@@ -130,7 +130,7 @@
 }
 
 .service-info-block {
-    border-top: 1px solid $offWhite;
+    border-top: 1px solid $off-white;
     padding: 10px;
 
     .button {
@@ -144,7 +144,7 @@
     .service-info-block-additional {
         margin-top: 5px;
         background-color: $white;
-        border: 1px solid $offWhite;
+        border: 1px solid $off-white;
         padding: 5px 10px;
     }
 }
@@ -180,7 +180,7 @@
 }
 
 .report-icon {
-    color: $greyMiddle;
+    color: $grey-middle;
 }
 
 .service-info-summary {

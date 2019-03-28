@@ -26,7 +26,7 @@
     left: 18px;
     height: 100%;
     width: 4px;
-    background: $greyLighter;
+    background: $grey-lighter;
 }
 
 .timeline-block {
@@ -85,7 +85,7 @@
 }
 
 .timeline-img.icon-green {
-    background: $tealDark;
+    background: $teal-dark;
 }
 
 .timeline-img.icon-orange {
@@ -182,11 +182,11 @@
 }
 
 .full-width-timeline-header {
-    background: $tealDark;
+    background: $teal-dark;
 }
 
 .heaader-timeline-background {
-    background-color: $tealDark;
+    background-color: $teal-dark;
     margin: -31px -20px 0 -20px;
 }
 
@@ -260,8 +260,8 @@
 
 .timeline-header-content .status h3 {
     outline: $white thick;
-    background: white;
-    color: $tealDark;
+    background: $white;
+    color: $teal-dark;
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
