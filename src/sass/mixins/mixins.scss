@@ -225,3 +225,66 @@
 		@content;
 	}
 }
+
+@mixin list-no-style {
+    list-style: none;
+    margin: 0;
+
+    li {
+        margin: 0;
+    }
+}
+
+@mixin centered {
+    text-align: center;
+}
+
+@mixin linear-gradient($gradients...) {
+    background: linear-gradient($gradients);
+    background: -moz-linear-gradient($gradients);
+    background: -webkit-gradient($gradients);
+}
+
+@mixin button-colors ($buttonColor, $textColor) {
+    background-color: $buttonColor;
+
+    a {
+        color: $textColor;
+    }
+
+	&:hover, 
+	&:focus {
+        background-color: lighten($buttonColor, 5%);
+    }
+
+    &:active {
+        background-color: darken($buttonColor, 5%);
+    }
+}
+
+@mixin service-block($serviceColor) {
+    border-top-color: $serviceColor;
+
+    .button-call-to-action {
+        @include button-colors($serviceColor, $white);
+    }
+
+    .button-muted {
+        @include button-colors($grey-dark, $white);
+    }
+
+    .service-info-content {
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 100%;
+        margin: 10px 0 0;
+    }
+
+    .highlighted {
+        color: $serviceColor;
+    }
+
+    .grayed {
+        color: $grey-middle;
+    }
+}
