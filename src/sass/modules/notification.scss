@@ -1,0 +1,70 @@
+.notification {
+    @include centered;
+
+    .icon-bordered {
+        color: $green;
+        margin-bottom: 15px;
+    }
+}
+
+.notification-error {
+    h2 {
+        line-height: normal;
+    }
+
+    .icon-bordered {
+        color: $red;
+        width: 80px;
+    }
+}
+
+.container-heading .notification {
+    h2 {
+        line-height: normal;
+    }
+}
+
+.notification-pending {
+
+    .icon-bordered {
+        color: $primary;
+    }
+}
+
+h1.centered {
+    @include centered;
+}
+
+.problem {
+    display: table;
+
+    .icon {
+        color: $red;
+        display: table-cell;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .message {
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 1.3em;
+        font-weight: bold;
+    }
+
+    .fa {
+        margin-right: 10px;
+        padding-top: 5px;
+        width: 40px;
+        height: 35px;
+        border: 3px solid;
+        border-radius: 100%;
+        text-align: center;
+    }
+}
+
+.spar .alert-title {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
