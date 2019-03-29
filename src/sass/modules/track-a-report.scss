@@ -47,10 +47,11 @@
     }
 
     .copyright-information p {
-        color: black;
+        color: $white;
         position: absolute;
         bottom: 0;
         margin-bottom: 0;
-        size: 0.7em;
+        font-size: x-small;
     }
 }
+
