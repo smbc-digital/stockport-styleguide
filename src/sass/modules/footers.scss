@@ -142,19 +142,9 @@ body > footer,
         }
 
         > a {
-<<<<<<< HEAD
-            vertical-align: top;
-            display: inline;
-            margin-left: 60px;
-
-            &:first-of-type {
-                margin-left: 0;
-            }
-=======
             vertical-align: top;            
             display: inline;
             margin: 0 60px 0 0;
->>>>>>> 5ed412d2b5e44c64139214846d81c65d60309bd6
 
             @media #{$tablet} {
                 min-width: 225px;
