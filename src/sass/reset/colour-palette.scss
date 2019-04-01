@@ -7,16 +7,18 @@ $primary-darker: #1d3837;
 $primary-darkest: #092726;
 
 // Secondary Colours
+$teal-dark: #00937c;
 $teal-darker: #188479;
 $teal: #00b79b;
 $soft-blue: #207eab;
 $green: #15863a;
+$rich-green: #62ac0b;
 $orange: #ef8a16;
 $yellow-dark: #ffb733;
 $red: #c83725;
 $purple: #8e5572;
 
-// Greys 
+// Greys
 $white: #fff;
 $off-white: #ebebeb;
 $grey-lightest: #e1e1e1;
@@ -25,9 +27,13 @@ $grey-light: #bcbcbc;
 $grey-middle: #999;
 $grey-dark: #666;
 $grey-darkest: #333;
+$almost-black: #1b1b1b;
 $black: #000;
 $dark-border: rgba(0, 0, 0, .1);
 $box-shadow: rgba(0, 0, 0, .05);
+
+// Text colors
+$primary-text: #1b1b1b;
 
 // Social Colours
 $facebook: #3b5998;

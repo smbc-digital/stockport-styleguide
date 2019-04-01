@@ -21,15 +21,17 @@
         vertical-align: middle;
         padding: 20px 15px;
 
+        p {
+            margin-bottom: 0;
+        }
+
         h2,
-        h3 {
+        h3,
+        .h2,
+        .h3 {
             color: $white;
             margin-bottom: 10px;
             font-size: 1.375em;
-        }
-
-        p {
-            margin-bottom: 0;
         }
     }
 
@@ -198,7 +200,7 @@
     padding: 20px 40px 20px 0;
     border-top: 1px solid $grey-light;
     border-bottom: 1px solid $grey-light;
-    max-width: 62%;
+    max-width: 100%;
     width: auto;
     margin-bottom: 20px;
     display: inline-block;

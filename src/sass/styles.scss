@@ -19,6 +19,7 @@
 @import 'modules/section-links';
 @import 'modules/list';
 @import 'modules/error';
+@import 'modules/video';
 @import 'modules/feedback/success';
 @import 'modules/feedback/ineligible-warning';
 @import 'modules/feedback/system-failure';
@@ -33,3 +34,6 @@
 @import 'modules/form-elements/appointment-selector';
 @import 'modules/form-elements/autocomplete';
 @import 'modules/form-elements/pagination';
+@import 'modules/appointments';
+@import 'modules/notification';
+@import 'modules/service';

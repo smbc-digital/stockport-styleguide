@@ -84,3 +84,10 @@ ul {
 .no-margin-left {
     margin-left: 0;
 }
+
+.thick-divider {
+    height: 3px;
+    border: none;
+    color: $grey-light;
+    background-color: $grey-light;
+}

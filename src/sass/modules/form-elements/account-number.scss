@@ -1,7 +1,6 @@
 .account-number { 
     input {
-        width: 15%;
-
+        
         @media #{$tablet} {
             width: 40%
         }

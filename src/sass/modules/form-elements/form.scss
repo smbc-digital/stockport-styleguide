@@ -1,7 +1,21 @@
 form {
     margin: 0;
-    width: 100%;
+   
     word-break: break-word;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+    
+    @media #{$tablet,$desktop} {
+        width: 66.6667%;
+    }
+    
+    width: 66.6667%;
+    
+    @media #{mobile} {
+        width: 100%
+    }
 
     fieldset {
         border: none;
@@ -12,16 +26,13 @@ form {
 
         legend {
             padding: 0;
-            width: 66%;
 
             @media #{$mobile} {
                 width: 100%
             }
         }
 
-        @media #{$desktop, $tablet} {
-            width: 66.6667%
-        }
+        
 
         @media not all and (min-resolution: .001dpcm) { 
             @supports (-webkit-appearance: none) {
@@ -35,16 +46,17 @@ form {
 
     h3,
     .h3 {
-
         @media #{$mobile} {
             margin-bottom: 0;
         }
-
-        margin-bottom: 16px;
         display: block;
 
         &.optional {
             display: inline-block;
+        }
+
+        &.no-margin-bottom {
+            margin-bottom: 0;
         }
     }
 
@@ -80,7 +92,6 @@ form {
         }
 
         &.description {
-            @extend .grid-66;
             float: none;
             padding: 0;
         }
@@ -92,6 +103,7 @@ form {
 
     ul {
         margin: 0 0 20px 15px;
+        font-size: 1.187em;
     }
 }
 
@@ -130,8 +142,12 @@ form {
 
 // sass-lint:disable class-name-format
 .smallerText {
-    margin: 0 0 10px 0;
-    font-size: $fontSizeSmall;
+    font-size: $fontSizeDefault;
+    line-height: 20px;
+
+    @media #{$mobile} {
+        font-size: $fontSizeSmall;   
+    }
 }
 
 .spinner {
@@ -153,4 +169,9 @@ form {
         font: normal normal normal 14px/1 FontAwesome;
         font-size: 30px;
     }
+}
+
+.page-loading-spinner {
+    @extend .spinner;
+    margin-bottom: 50px;
 }

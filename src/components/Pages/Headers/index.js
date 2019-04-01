@@ -14,18 +14,20 @@ class Headers extends Component {
 					<h1>Headers</h1>
 					<h2>Header with logged out state</h2>
 					<div className='header-showcase'>
-						<Header/>
+						<Header uniqueKey={1}/>
 					</div>
 					<h2>Header with logged in state</h2>
 					<div className='header-showcase'>
 						<Header
 							loggedIn
+							uniqueKey={2}
 						/>
 					</div>
 					<h2>Header with javascript disabled</h2>
 					<div className='header-showcase'>
 						<Header
 							loggedIn javascriptBanner
+							uniqueKey={3}
 						/>
 					</div>
 				</article>

@@ -22,7 +22,7 @@ class Header extends Component {
 	}
 
 	render() {
-		const { loggedIn, javascriptBanner } = this.props
+		const { loggedIn, javascriptBanner, uniqueKey  } = this.props
 
 		return (
 			<header>
@@ -34,6 +34,11 @@ class Header extends Component {
 					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
+					<input id={uniqueKey ? `search-mobile-${uniqueKey}` : 'search-mobile'} type='checkbox' name='search-mobile' tabIndex='1' />
+					<label className='search-mobile-label' htmlFor={uniqueKey ? `search-mobile-${uniqueKey}` : 'search-mobile'}>
+						<i className="fa fa-search" aria-hidden="true"></i>
+						<span className='hidden'>Open search bar</span>
+					</label>
 					{loggedIn
 						? <div id="header-my-account" className="logged-in">
 							<div className='menu-container'>
@@ -74,15 +79,22 @@ class Header extends Component {
 							</div>
 						</div>
 						: <div id="header-my-account" style={{padding: '16px 12px 0'}}>
+							<label htmlFor="lang" className="sr-only">Version selection</label>
 							<select id="lang" onChange={this.onStyleSheetChange.bind(this)} value={this.state.value} style={{marginBottom: '0'}}>
 								<option value="/styles.min.css">Local</option>
-								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1</option>
-								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css">Remote v2</option>
+								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1 / Version 2</option>
+								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css">Remote v2 / Verison 2.2</option>
 							</select>
 						</div>}
 					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
 						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
 						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
+						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+					<form method="get" role="search" id="cludo-search-mobile-form" className="cludo-search_autocomplete">
+						<i className="fa fa-caret-up" aria-hidden="true"></i>
+						<label htmlFor="search-mobile" className="sr-only">Search Stockport council website</label>
+						<input id="search-mobile" className="search-input" name="query" placeholder="Hi there! What are you looking for?" autoComplete="off" type="text" />
 						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
@@ -97,8 +109,7 @@ class Header extends Component {
 						<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
 					</div>
 				</div>
-				<nav className="breadcrumb">
-					<h2 className="sr-only">Breadcrumb navigation</h2>
+				<nav className="breadcrumb" aria-label="Breadcrumb navigation">
 					<ul className="center-wrapper">
 						<li><a href="/">Home</a></li>
 					</ul>

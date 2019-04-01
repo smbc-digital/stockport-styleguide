@@ -27,13 +27,13 @@
                 text-decoration: none;
             }
 
-            i {
+            span.nav-icon {
                 display: block;
                 color: $primary;
                 font-size: 2.250em;
             }
 
-            span {
+            span.nav-text {
                 text-decoration: underline;
                 display: block;
             }

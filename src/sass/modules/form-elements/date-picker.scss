@@ -3,6 +3,7 @@ input[type="date"] {
     float: none;
     position: relative;
     text-align: center;
+    min-width: 170px;
 
     @media #{$mobile} {
         width: 100%;
@@ -40,30 +41,28 @@ input[type="date"] {
 }
 
 .input-memorable-date { 
+    p {
+        margin: 0 0 10px 0;
+    }
+
     div {
         display: inline-block;
-        position: relative;
+        position: relative;     
 
-        input {
+        input[type="number"] {
+            @extend input;
             display: inline-block;
             width: 55px;
             margin-right: 20px;
-            line-height: 1.125em;
-            text-align: center;
-
-            @media #{$mobile} {
-                text-align: center;
-                display: inline-block;
-            }
         }
 
         label {
-            font-size: 1.25em;
-            display: block;
+            @extend p;
+            margin-bottom: 0;
         }
 
-        &:last-of-type input {
-            width: 75px;
+        &:last-of-type input[type="number"] {
+            width: 110px;
         }
 
         .fa-caret-up {
@@ -89,14 +88,24 @@ input[type="date"] {
 }
 
 .input-date-picker {
-    &.invalid input {
-        border: 1px solid $red;
-        @include border-radius(3px 3px 0 0);
+    &.invalid { 
+        input {
+            border: 1px solid $red;
+            @include border-radius(3px 3px 0 0);
+        }
+
+        .DateInput_fang { // sass-lint:disable-line class-name-format
+            display: none;
+        }
+
+        .SingleDatePicker_picker { // sass-lint:disable-line class-name-format
+            top: 90px !important; // sass-lint:disable-line no-important because react-dates directly attach styles to DOM element
+        }
     }
 
     .input-error-content {
         top: -21px;
-        width: 130px;
+        width: 260px;
         display: inline-block;
     }
 
