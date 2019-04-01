@@ -246,7 +246,8 @@
 }
 
 @mixin button-colors ($buttonColor, $textColor) {
-    background-color: $buttonColor;
+	background-color: $buttonColor;
+	color: $textColor;
 
     a {
         color: $textColor;
