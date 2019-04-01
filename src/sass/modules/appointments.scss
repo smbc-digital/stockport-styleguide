@@ -182,6 +182,10 @@
     background: #54ab9b;
 }
 
+#timeline-header.no-line::before {
+    content: none;
+}
+
 .full-width-timeline-header {
     background: $teal-dark;
 }
