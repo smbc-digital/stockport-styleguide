@@ -42,10 +42,10 @@ button {
     &:disabled {
         background-color: transparentize($teal-darker, 0.65);
         @include box-shadow(none);
-        cursor: default; 
+        cursor: default;
 
         &:hover {
-            background-color: transparentize($teal-darker, 0.65);  
+            background-color: transparentize($teal-darker, 0.65);
             @include transition-box-shadow(none);
             cursor: default;
         }
@@ -72,7 +72,7 @@ form .button {
 
 a.button {
     display: inline-block;
-    
+
     @media #{$mobile} {
         box-sizing: border-box;
     }
@@ -94,7 +94,7 @@ a.button {
 
     &:disabled,
     &:disabled:hover {
-        background-color: $grey-lighter;  
+        background-color: $grey-lighter;
         @include transition-box-shadow(0 0 0 0 rgba(0,0,0,0.3));
         cursor: default;
     }
@@ -109,7 +109,7 @@ a.button {
 .button-inverted {
     @extend .button;
     @include button-colors($white, $grey-darkest);
-    border: solid 1px $grey-middle;
+    border: solid 15px $grey-middle;
 }
 
 .button-radio-list {
@@ -169,7 +169,7 @@ a.button {
     }
 }
 
-.button-selected { 
+.button-selected {
     @extend .button;
     @include button-colors($soft-blue, $white);
 }
@@ -281,8 +281,8 @@ a.anchor-with-icon {
     }
 }
 
-a.anchor-as-block { 
-    // If you are reading this you might think: this is ridiculous. 
+a.anchor-as-block {
+    // If you are reading this you might think: this is ridiculous.
     // However, the block value sets the element width to 100%. Using table we get it displayed as a block with the width related to its content. This allows to mimic the button tag behavior.
     display: table;
 }
