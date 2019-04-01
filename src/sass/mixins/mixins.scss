@@ -253,7 +253,7 @@
         color: $textColor;
     }
 
-	&:hover, 
+	&:hover,
 	&:focus {
         background-color: lighten($buttonColor, 5%);
     }

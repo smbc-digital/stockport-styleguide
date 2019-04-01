@@ -109,7 +109,7 @@ a.button {
 .button-inverted {
     @extend .button;
     @include button-colors($white, $grey-darkest);
-    border: solid 15px $grey-middle;
+    border: solid 1px $grey-middle;
 }
 
 .button-radio-list {
