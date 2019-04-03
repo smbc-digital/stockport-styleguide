@@ -45,7 +45,11 @@
 
     @media #{$mobile} {
         margin-left: 18px;
-        width: 70%;
+        width: 90%;
+    }
+
+    @media #{$tablet} {
+        margin-left: 18px;
     }
 
 }
