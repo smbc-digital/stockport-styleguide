@@ -1,20 +1,3 @@
-.signup-or-login {
-	background: linear-gradient(0deg, $primary-dark 0%, $primary 100%);
-
-	.icon-list {
-		@include flex(row);
-
-		li {
-			@include flex-row(3, 3%);
-			flex-grow: 0;
-			-webkit-flex-grow: 0;
-			-webkit-flex-basis: auto;
-			flex-basis: auto;
-			list-style: none;
-		}
-	}
-}
-
 .sign-up {
     padding-bottom: 50px;
 
@@ -61,7 +44,7 @@
     }
 }
 
-.new-sign-up-login {
+sign-up-or-login {
     background: #055c58;
     background: -webkit-linear-gradient(90deg, #254441 0%, #055c58 100%);
     background: -moz-linear-gradient(90deg, #254441 0%, #055c58 100%);
@@ -484,9 +467,21 @@
 
     @media #{$tablet, $mobile} {
         border-bottom: none;
-    }
-}
+	}
 
+	.icon-list {
+		@include flex(row);
+
+		li {
+			@include flex-row(3, 3%);
+			flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-webkit-flex-basis: auto;
+			flex-basis: auto;
+			list-style: none;
+		}
+	}
+}
 
 .login-warning {
     padding: 0;
