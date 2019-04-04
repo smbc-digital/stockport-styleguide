@@ -38,23 +38,25 @@ a.banner {
 
 	> div:last-child {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		flex-direction: column;
 		padding: 0 30px;
 		flex-grow: 1;
 
 		h2 {
 			margin: 0;
-			padding-top: 10px;
+			line-height: 2.5em;
 
 			@media #{$mobile} {
 				padding-top: 15px;
+				line-height: 1.111em;
 			}
 		}
 
 		p {
             color: $primary-darkest;
-            margin-bottom: 0;
+			margin-bottom: 0;
+			line-height: 2.5em;
 		}
 
 		form {
