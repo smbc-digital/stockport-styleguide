@@ -36,7 +36,7 @@
         }
 
         &:before {
-            @include chevron(10px);
+            @include chevron(10px, 20px);
             width: auto;
             visibility: visible;
             overflow: visible;

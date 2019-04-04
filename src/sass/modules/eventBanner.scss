@@ -1,0 +1,29 @@
+.event-banner-container {
+	@include flex(row);
+	min-height: 140px;
+	border-radius: 2.5px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+	> div {
+		@include flex-row(2, 1.5%);
+	}
+
+	.event-banner-icon {
+		flex-basis: 140px;
+		flex-grow: 0;
+		background-color: $soft-blue;
+		display: flex;
+		justify-content: center;
+        align-items: center;
+        border-radius: 2.5px 0 0 2.5px;
+        color: $white;
+
+		span {
+			font-size: 80px;
+		}
+	}
+
+	.event-banner-body {
+		flex-grow: 1;
+	}
+}

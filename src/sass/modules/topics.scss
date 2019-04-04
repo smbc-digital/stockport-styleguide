@@ -46,7 +46,7 @@
                 }
 
                 &:after {
-                    @include chevron(25px);
+                    @include chevron(25px, 20px);
                 }
 
                 span {

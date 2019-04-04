@@ -26,7 +26,7 @@ button {
     }
 
     &:before {
-        @include chevron(10px);
+        @include chevron(10px, 20px);
     }
 
     &:hover {

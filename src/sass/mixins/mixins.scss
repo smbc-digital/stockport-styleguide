@@ -55,14 +55,13 @@
 	transition-property: box-shadow;
 }
 
-@mixin chevron($right-position) {
+@mixin chevron($right-position, $size) {
 	content: "\f105";
 	font: normal normal normal 14px/1 FontAwesome;
-	font-size: 20px;
-	margin-top: -10px;
+	font-size: $size;
 	position: absolute;
 	right: $right-position;
-	top: 50%;
+	top: calc(50% - (#{$size} / 2));
 }
 
 @mixin alert-colours($content-background-color, $font-color) {
