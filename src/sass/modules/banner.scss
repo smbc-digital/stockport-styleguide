@@ -2,7 +2,13 @@ a.banner {
     &:before {
         @include chevron(10px, 60px);
         color: $primary-darkest;
-    }
+	}
+	
+	@media #{$mobile} {
+		&:before {
+			@include chevron(10px, 20px);
+		}
+	}
 }
 
 .banner {
@@ -15,6 +21,10 @@ a.banner {
 	margin: 20px auto;
 	text-decoration: none;
 
+	@media #{$mobile} {
+		min-height: 60px;
+	}
+
 	> div:first-child {
 		width: 140px;
 		background-color: $soft-blue;
@@ -24,15 +34,17 @@ a.banner {
 		text-align: center;
 		border-radius: 3px 0 0 3px;
 
+		@media #{$mobile} {
+			width: 60px;
+		}
+
 		span {
 			color: $white;
 			font-size: 80px;
-		}
-	}
 
-	@media #{$mobile, $tablet} {
-		> div:first-child {
-			display: none;
+			@media #{$mobile} {
+				font-size: 35px;
+			}
 		}
 	}
 
@@ -43,20 +55,27 @@ a.banner {
 		padding: 0 30px;
 		flex-grow: 1;
 
-		h2 {
+		p, 
+		h2, 
+		h3 {
 			margin: 0;
+		}
+
+		h2 {
 			line-height: 2.5em;
 
 			@media #{$mobile} {
-				padding-top: 15px;
-				line-height: 1.111em;
+				padding-top: 10px;
+				line-height: 1.25em;
 			}
 		}
 
 		p {
-            color: $primary-darkest;
-			margin-bottom: 0;
-			line-height: 2.5em;
+			color: $primary-darkest;
+			
+			@media #{$mobile} {
+				display: none;
+			}
 		}
 
 		form {
