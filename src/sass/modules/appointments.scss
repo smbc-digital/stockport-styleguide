@@ -42,6 +42,16 @@
     h2 {
         font: 1em/2 "Noto Sans", sans-serif;
     }
+
+    @media #{$mobile} {
+        margin-left: 18px;
+        width: 90%;
+    }
+
+    @media #{$tablet} {
+        margin-left: 18px;
+    }
+
 }
 
 .timeline-block::after {
