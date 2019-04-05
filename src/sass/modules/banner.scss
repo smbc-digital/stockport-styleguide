@@ -1,7 +1,8 @@
 a.banner {
     &:before {
         @include chevron(10px, 60px);
-        color: $primary-darkest;
+		color: $primary-darkest;
+		text-align: center;
 	}
 	
 	@media #{$mobile} {
@@ -11,11 +12,11 @@ a.banner {
 	}
 }
 
-.banner {
+.banner,
+.banner-no-icon {
 	position: relative;
 	min-height: 140px;
 	display: flex;
-	background-color: $white;
 	@include border-radius(3px);
 	@include box-shadow(0 10px 14px 0 $dark-border);
 	margin: 20px auto;
@@ -25,14 +26,27 @@ a.banner {
 		min-height: 60px;
 	}
 
-	> div:first-child {
-		width: 140px;
-		background-color: $soft-blue;
+	div:first-child {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		text-align: center;
 		border-radius: 3px 0 0 3px;
+	}
+
+	div:last-child {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+.banner {
+	background-color: $white;
+
+	> div:first-child {
+		width: 140px;
+		background-color: $soft-blue;
+		text-align: center;
 
 		@media #{$mobile} {
 			width: 60px;
@@ -49,9 +63,6 @@ a.banner {
 	}
 
 	> div:last-child {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
 		padding: 0 30px;
 		flex-grow: 1;
 
@@ -106,5 +117,58 @@ a.banner {
 				}
 			}
 		}
+	}
+}
+
+.banner-no-icon {
+	background-color: $primary;
+
+	div:first-child {
+		width: 90%;
+		background-color: $primary;
+
+		p,
+		h2 {
+			color: $white;
+		}
+
+		p {
+			padding: 0 150px 30px 30px;
+		}
+
+		h2 {
+			padding: 30px 150px 0 30px;
+		}
+
+		@media #{$mobile} {
+			p {
+				padding: 0 20px 20px 20px;
+			}
+
+			h2 {
+				padding: 15px 20px 0 20px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	div:last-child {
+		width: 10%;
+		min-width: 50px;		
+		background-color: $other-social-media;
+		text-align: center;
+		color: $white;
+		font-size: 60px;
+		font-weight: lighter;
+		border-radius: 0 3px 3px 0;
+	}
+}
+
+a.banner,
+a.banner-no-icon {
+	@include transition-property(box-shadow);
+
+	&:hover {
+		@include box-shadow(0 20px 40px 0 $box-shadow-hover);
 	}
 }

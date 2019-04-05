@@ -55,6 +55,12 @@
 	transition-property: box-shadow;
 }
 
+@mixin transition-property($property) {
+	text-decoration: none;
+	transition-duration: 0.5s;
+	transition-property: $property;
+}
+
 @mixin chevron($right-position, $size) {
 	content: "\f105";
 	font: normal normal normal 14px/1 FontAwesome;
