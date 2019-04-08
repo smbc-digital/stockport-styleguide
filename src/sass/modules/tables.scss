@@ -1,11 +1,8 @@
 .data-table {
     @extend .paginated-footer;
-    
+
     width: 100%;
-    border-top: none;
-    border-bottom: solid 1px $grey-lighter;
-    border-right: solid 1px $grey-lighter;
-    border-left: solid 1px $grey-lighter;
+    border: solid 1px $grey-lighter;
     background-color: $white;
     @include border-radius(3px);
     @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
@@ -74,7 +71,7 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
-        border-top: 1px solid #cbcbcb;        
+        border-top: 1px solid #cbcbcb;
     }
 
     table {
@@ -123,7 +120,7 @@
                     }
 
                     > a {
-                        
+
                         > div {
                             margin: 10px 14px;
 
@@ -156,7 +153,7 @@
                         }
                     }
 
-                  
+
 
                     @media #{$mobile} {
                         display: block;
@@ -363,20 +360,20 @@
             margin-bottom: 0;
         }
 
-        .call-to-action { 
-            display: flex; 
-            vertical-align: middle; 
-            text-align: right; 
-            margin-left: auto; 
+        .call-to-action {
+            display: flex;
+            vertical-align: middle;
+            text-align: right;
+            margin-left: auto;
 
 
             .button-inverted {
                 margin: 0;
             }
 
-            button { 
-                margin: 0; 
-                display: inline-block; 
+            button {
+                margin: 0;
+                display: inline-block;
             }
     }
 }
@@ -465,7 +462,7 @@ table {
 
                 border-bottom: 1px solid $grey-lighter;
 
-                > div { 
+                > div {
 
                     display: flex;
                     align-items: center;
@@ -612,7 +609,7 @@ table {
     }
 }
 
-.hover-hand { 
+.hover-hand {
     cursor: pointer;
 
     &:hover {
