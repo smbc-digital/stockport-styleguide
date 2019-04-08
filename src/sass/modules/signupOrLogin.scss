@@ -227,7 +227,7 @@
             }
         }
 
-        .button-new-login {
+        .button-login {
             background-color: #ef8a16;
             margin: 25px 0 5px 0;
             border-radius: 5px;
@@ -250,7 +250,7 @@
             }
         }
 
-        .button-new-register {
+        .signup-button {
             margin: 10px 0 5px 0;
             border-radius: 5px;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
@@ -482,6 +482,7 @@
 			-webkit-flex-basis: auto;
 			flex-basis: auto;
             list-style: none;
+            margin-right: 0;
 		}
 	}
 }
@@ -559,7 +560,7 @@
     }
 
 
-    .button-new-register {
+    .button-register {
         margin: 25px 0 5px 0;
         border-radius: 5px;
         box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
