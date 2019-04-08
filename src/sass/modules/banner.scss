@@ -1,3 +1,17 @@
+.banner-section {
+	@extend .full-width;
+
+	padding: 50px 0;
+	width: 100%;
+	background-color: $off-white;
+	padding: 25px 0;
+
+	@media #{$mobile} {
+		width: auto;
+		margin: 0 10px;;
+	}
+}
+
 a.banner {
     &:before {
         @include chevron(10px, 60px);
