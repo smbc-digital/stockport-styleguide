@@ -44,7 +44,9 @@
     }
 }
 
-signup-or-login {
+.signup-or-login {
+    @extend .grid-parent, .grid-100, .tablet-grid-100, .mobile-grid-100 ;
+
     background: #055c58;
     background: -webkit-linear-gradient(90deg, #254441 0%, #055c58 100%);
     background: -moz-linear-gradient(90deg, #254441 0%, #055c58 100%);
