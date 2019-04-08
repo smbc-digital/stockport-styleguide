@@ -2,7 +2,10 @@
     @extend .paginated-footer;
     
     width: 100%;
-    border: 1px solid $grey-lighter;
+    border-top: none;
+    border-bottom: solid 1px $grey-lighter;
+    border-right: solid 1px $grey-lighter;
+    border-left: solid 1px $grey-lighter;
     background-color: $white;
     @include border-radius(3px);
     @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
