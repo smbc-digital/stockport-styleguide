@@ -14,7 +14,7 @@
         background-color: $white;
     }
 
-    .button-signup {
+    .signup-button {
         background-color: $orange;
     }
 
@@ -36,7 +36,7 @@
             border-top: 1px solid rgba(255,255,255,0.3);
         }
 
-        .button-login {
+        .login-button {
             border: 1px solid #fff;
             color: #fff;
             background: transparent;
@@ -227,7 +227,8 @@
             }
         }
 
-        .button-login {
+        .login-button {
+            @extend button ;
             background-color: #ef8a16;
             margin: 25px 0 5px 0;
             border-radius: 5px;
@@ -251,6 +252,7 @@
         }
 
         .signup-button {
+            @extend button ;
             margin: 10px 0 5px 0;
             border-radius: 5px;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
