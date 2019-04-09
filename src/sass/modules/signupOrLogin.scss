@@ -94,16 +94,15 @@
                     margin-right: 0;
                 }
 
-                &:nth-of-type(4) i {
+                &:nth-of-type(4) span {
                     padding-right: 6%;
                 }
 
                 padding: 0;
-                margin: 2% 5% 1% 0;
                 font-weight: bold;
             }
 
-            i {
+            span {
                 padding-right: 5%;
                 text-align: center;
             }
