@@ -99,6 +99,7 @@
                 }
 
                 padding: 0;
+                margin: 2% 0 1% 0;
                 font-weight: bold;
             }
 
@@ -157,6 +158,10 @@
         text-align: left;
         margin-bottom: 20px;
 
+        h2 {
+            margin-bottom: 20px;
+        }
+
         @media #{$tablet} {
             padding: 10px 40px;
         }
@@ -174,7 +179,7 @@
             }
         }
 
-        h1 {
+        h2 {
             font-family: 'Source Sans Pro';
             color: $white;
             font-size: 24px;
