@@ -146,7 +146,7 @@
         margin: 10px 0 0 0;
     }
 
-    .signup-form {
+    .account-form {
         @extend .grid-30, .suffix-5, .tablet-grid-45, .tablet-suffix-5 ;
         border-radius: 5px;
         border-width: 1px;
@@ -223,6 +223,10 @@
             &:invalid:required {
                 box-shadow: none;
             }
+        }
+
+        form {
+            width: 100%;
         }
 
         .login-button {
