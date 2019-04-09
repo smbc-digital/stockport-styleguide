@@ -228,7 +228,7 @@
         }
 
         .login-button {
-            @extend button ;
+            @extend .button ;
             background-color: #ef8a16;
             margin: 25px 0 5px 0;
             border-radius: 5px;
@@ -252,7 +252,7 @@
         }
 
         .signup-button {
-            @extend button ;
+            @extend .button ;
             margin: 10px 0 5px 0;
             border-radius: 5px;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
