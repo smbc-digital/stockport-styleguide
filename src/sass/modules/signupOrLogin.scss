@@ -273,20 +273,18 @@
             padding: 10px;
             text-align: center;
 
-            a {
-                text-decoration: none;
+            text-decoration: none;
+
+            @media #{$mobile} {
+                color: $primary;
+            }
+
+            &:hover {
+                color: $white;
+                text-decoration: underline;
 
                 @media #{$mobile} {
                     color: $primary;
-                }
-
-                &:hover {
-                    color: $white;
-                    text-decoration: underline;
-
-                    @media #{$mobile} {
-                        color: $primary;
-                    }
                 }
             }
         }
