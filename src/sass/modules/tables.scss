@@ -249,6 +249,10 @@
 .data-table-striped {
     @extend .data-table;
 
+    &.no-heading {
+        border-top: none;
+    }
+
     table {
         thead th {
             background-color: $white;
