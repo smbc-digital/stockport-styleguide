@@ -420,15 +420,17 @@
         div.password-label-container {
             position: relative;
 
-            div.show-hide-password {
-                display: inline-block;
-                position: absolute;
-                right: 0;
-                top: 4px;
-                cursor: pointer;
+            div {
+                div.show-hide-password {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 4px;
+                    cursor: pointer;
 
-                &:focus {
-                    outline: $orange solid 3px;
+                    &:focus {
+                        outline: $orange solid 3px;
+                    }
                 }
             }
 
