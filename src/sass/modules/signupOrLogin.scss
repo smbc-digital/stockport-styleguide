@@ -110,13 +110,12 @@
         }
     }
 
-	p,
-	li {
+    li p {
         color: #ffffff;
-        font-size: 15px; /* Approximation due to font substitution */
         font-weight: 400;
-        line-height: 24px; /* Approximation due to font substitution */
+        line-height: 24px;
         text-align: left;
+        font-size: 15px;
     }
 
     ol li {
@@ -186,7 +185,6 @@
             font-weight: 600;
             letter-spacing: -0.48px;
             text-align: left;
-            margin-bottom: 10px;
 
             @media #{$mobile} {
                 color: $black;
@@ -229,7 +227,7 @@
 
         .login-button {
             @extend .button ;
-            background-color: #ef8a16;
+            background-color: $orange;
             margin: 25px 0 5px 0;
             border-radius: 5px;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
@@ -255,6 +253,7 @@
             @extend .button ;
             margin: 10px 0 5px 0;
             border-radius: 5px;
+            background-color: $teal-darker;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
             width: 100%;
             min-width: 235px;
