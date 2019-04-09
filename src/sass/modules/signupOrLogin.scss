@@ -63,7 +63,7 @@
             padding: 0;
             margin: 0;
 
-            span {
+            .icon-wrapper {
                 display: inline-block;
                 width: 40px;
                 padding-right: 5%;
@@ -80,10 +80,6 @@
             margin: 0 0 2% 0;
             list-style: none;
             box-sizing: border-box;
-
-            p {
-                font-size: 2.25em;
-            }
         }
 
         p {
