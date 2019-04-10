@@ -110,13 +110,12 @@
         }
     }
 
-	p,
-	li {
+    li p {
         color: #ffffff;
-        font-size: 15px; /* Approximation due to font substitution */
         font-weight: 400;
-        line-height: 24px; /* Approximation due to font substitution */
+        line-height: 24px;
         text-align: left;
+        font-size: 15px;
     }
 
     ol li {
@@ -147,7 +146,7 @@
         margin: 10px 0 0 0;
     }
 
-    .signup-form {
+    .account-form {
         @extend .grid-30, .suffix-5, .tablet-grid-45, .tablet-suffix-5 ;
         border-radius: 5px;
         border-width: 1px;
@@ -186,7 +185,6 @@
             font-weight: 600;
             letter-spacing: -0.48px;
             text-align: left;
-            margin-bottom: 10px;
 
             @media #{$mobile} {
                 color: $black;
@@ -227,9 +225,13 @@
             }
         }
 
+        form {
+            width: 100%;
+        }
+
         .login-button {
             @extend .button ;
-            background-color: #ef8a16;
+            background-color: $orange;
             margin: 25px 0 5px 0;
             border-radius: 5px;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
@@ -255,6 +257,7 @@
             @extend .button ;
             margin: 10px 0 5px 0;
             border-radius: 5px;
+            background-color: $teal-darker;
             box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
             width: 100%;
             min-width: 235px;
@@ -274,20 +277,18 @@
             padding: 10px;
             text-align: center;
 
-            a {
-                text-decoration: none;
+            text-decoration: none;
+
+            @media #{$mobile} {
+                color: $primary;
+            }
+
+            &:hover {
+                color: $white;
+                text-decoration: underline;
 
                 @media #{$mobile} {
                     color: $primary;
-                }
-
-                &:hover {
-                    color: $white;
-                    text-decoration: underline;
-
-                    @media #{$mobile} {
-                        color: $primary;
-                    }
                 }
             }
         }
@@ -419,15 +420,17 @@
         div.password-label-container {
             position: relative;
 
-            div.show-hide-password {
-                display: inline-block;
-                position: absolute;
-                right: 0;
-                top: 4px;
-                cursor: pointer;
+            div {
+                div.show-hide-password {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 4px;
+                    cursor: pointer;
 
-                &:focus {
-                    outline: $orange solid 3px;
+                    &:focus {
+                        outline: $orange solid 3px;
+                    }
                 }
             }
 
@@ -485,6 +488,10 @@
 			flex-basis: auto;
             list-style: none;
             margin-right: 0%;
+
+            span {
+                font-size: 2.25em;
+            }
 		}
 	}
 }
