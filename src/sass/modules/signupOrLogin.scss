@@ -129,6 +129,8 @@
         font-weight: 600;
         letter-spacing: -2.5px;
         text-align: left;
+        margin-top: 10px;
+        margin-bottom: 15px;
 
         @media #{$tablet, $mobile} {
             font-size: 30px;
@@ -170,6 +172,10 @@
             background: $white;
         }
 
+        input {
+            margin-bottom: 0;
+        }
+
         .password-requirements {
             p {
                 @media #{$mobile} {
@@ -198,6 +204,7 @@
             font-weight: 700;
             letter-spacing: -0.36px;
             text-align: left;
+            display: inline;
 
             @media #{$mobile} {
                 color: $black;
@@ -227,6 +234,10 @@
 
         form {
             width: 100%;
+
+            label {
+                margin-bottom: 10px;
+            }
         }
 
         .login-button {
@@ -321,11 +332,21 @@
             text-align: left;
             padding: 0;
             margin-top: 10px;
+
+            p {
+                display: inline;
+            }
         }
 
         .field-error-content {
+            .field-error-icon {
+                font-size: 25px;
+                margin-right: 10px;
+            }
+
             .field-validation-error {
                 li {
+                    margin-bottom: 0;
                     @media #{$mobile} {
                         color: $black;
                     }
@@ -409,7 +430,7 @@
         }
 
         div.email-confirmation {
-            margin-top: 5px;
+            margin-top: 15px;
 
             label {
                 font-size: 18px;
@@ -430,6 +451,10 @@
 
                     &:focus {
                         outline: $orange solid 3px;
+                    }
+
+                    input {
+                        display: none;
                     }
                 }
             }
@@ -490,7 +515,7 @@
             margin-right: 0%;
 
             span {
-                font-size: 2.25em;
+                font-size: 2em;
             }
 		}
 	}
