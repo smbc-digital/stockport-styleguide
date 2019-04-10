@@ -65,8 +65,12 @@
 
             .icon-wrapper {
                 display: inline-block;
-                width: 40px;
                 padding-right: 5%;
+                width: 40px;
+
+                @media #{$mobile} {
+                    width: 35px;
+                }
             }
         }
     }
@@ -129,8 +133,11 @@
         font-weight: 600;
         letter-spacing: -2.5px;
         text-align: left;
-        margin-top: 10px;
         margin-bottom: 15px;
+
+        @media #{$desktop} {
+            margin-top: 10px;
+        }
 
         @media #{$tablet, $mobile} {
             font-size: 30px;
@@ -285,13 +292,15 @@
         }
 
         .forgot-password {
-            padding: 10px;
             text-align: center;
-
             text-decoration: none;
 
             @media #{$mobile} {
                 color: $primary;
+            }
+
+            @media #{$mobile, desktop} {
+                padding: 10px;
             }
 
             &:hover {
@@ -355,6 +364,7 @@
         }
 
         .field-error-icon {
+            vertical-align: middle;
             width: 5px;
             padding-right: 10px;
         }
@@ -435,6 +445,7 @@
             label {
                 font-size: 18px;
                 font-weight: 400;
+                padding-left: 45px;
             }
         }
 
@@ -446,7 +457,7 @@
                     display: inline-block;
                     position: absolute;
                     right: 0;
-                    top: 4px;
+                    top: 0;
                     cursor: pointer;
 
                     &:focus {
@@ -493,7 +504,7 @@
         color: $white;
         font-size: 1.5em;
         margin-bottom: 0;
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     border-bottom: 6px solid #06b79b;
@@ -506,7 +517,7 @@
 		@include flex(row);
 
 		li {
-			@include flex-row(3, 3%);
+			@include flex-row(3, 5%);
 			flex-grow: 0;
 			-webkit-flex-grow: 0;
 			-webkit-flex-basis: auto;
@@ -516,6 +527,14 @@
 
             span {
                 font-size: 2em;
+            }
+
+            @media #{$mobile} {
+                width: unset;
+            }
+
+            @media #{$tablet} {
+                width: 50%;
             }
 		}
 	}
