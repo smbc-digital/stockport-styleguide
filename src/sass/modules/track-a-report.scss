@@ -55,3 +55,70 @@
     }
 }
 
+//VIEW TRACKER REPORT
+
+.timeline-header-content button.button-primary {
+    margin: 20px 0 20px 0;
+    color: white;
+    border: 1px #54ab9b solid;
+    background-color: #00937c;
+
+    .toggle-default-option {
+        height: 54px;
+        transition: 0.5s;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 5px;
+
+
+    }
+
+    &:hover {
+        background-color: #1ea28d;
+        color: #fff;
+        cursor: pointer;
+        -webkit-box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+        box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+        text-decoration: none;
+    }
+
+    i {
+        float: left;
+        top: 50%;
+        margin-right: 20px;
+
+        @media #{$mobile} {
+            margin: 5px 0 -22px -20px;
+        }
+    }
+
+    &.toggle-button {
+        height: 64px;
+        overflow: hidden;
+        background-color: #3b5998;
+        display: block;
+
+        @media #{$super-mobile} {
+            padding-top: 5px;
+        }
+
+        &:hover {
+            border-color: transparent;
+
+    .toggle-default-option {
+                margin-top: -66px;
+                transition: 0.3s;
+            }
+        }
+
+        &.unsubscribe-report-btn:hover {
+            background-color: #c83725;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+
+
+
