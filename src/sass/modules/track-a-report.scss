@@ -63,7 +63,6 @@
     border: 1px #54ab9b solid;
     background-color: #00937c;
     
-
     .toggle-default-option {
         height: 54px;
         transition: 0.5s;
@@ -102,16 +101,16 @@
         @media #{$super-mobile} {
             padding-top: 5px;
         }
-    
+
         &:hover {
             border-color: transparent;
-    
-            .toggle-default-option {
+
+    .toggle-default-option {
                 margin-top: -66px;
                 transition: 0.3s;
             }
         }
-    
+
         &.unsubscribe-report-btn:hover {
             background-color: #c83725;
             transition: 0.3s;
