@@ -55,3 +55,73 @@
     }
 }
 
+//VIEW TRACKER REPORT
+
+.timeline-header-content button {
+    margin: 20px 0 20px 0;
+    color: white;
+    border: 1px #54ab9b solid;
+    background-color: #00937c;
+}
+
+.button-default {
+    background-color: #188479;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    color: #fff;
+    // display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-size: 1.125em;
+    letter-spacing: 0;
+    line-height: 20px;
+    min-width: 300px;
+    padding: 15px 25px 15px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+    transition-property: opacity,box-shadow;
+    width: auto;
+
+    .toggle-default-option {
+        height: 54px;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        background-color: #1ea28d;
+        color: #fff;
+        cursor: pointer;
+        -webkit-box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+        box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+        text-decoration: none;
+    }
+
+    i {
+        float: left;
+        top: 50%;
+        margin-right: 20px;
+    }
+}
+
+
+.toggle-button {
+    height: 54px;
+    overflow: hidden;
+    background-color: #3b5998;
+    display: block;
+
+    &:hover {
+        border-color: transparent;
+
+        .toggle-default-option {
+            margin-top: -54px;
+            transition: 0.3s;
+        }
+    }
+}
+
+.unsubscribe-report-btn.button-default:hover {
+    background-color: #c83725;
+    transition: 0.3s;
+}
