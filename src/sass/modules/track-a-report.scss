@@ -88,6 +88,10 @@
         margin-right: 20px;
 
         @media #{$mobile} {
+            margin: 5px 5 -22px -20px;
+        }
+
+        @media #{$super-mobile} {
             margin: 5px 0 -22px -20px;
         }
     }
