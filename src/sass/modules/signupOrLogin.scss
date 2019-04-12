@@ -58,20 +58,13 @@
         padding: 10px;
     }
 
-    @media #{$desktop, $tablet, $mobile} {
-        .icon-list {
-            padding: 0;
-            margin: 0;
+    .icon-list .icon-wrapper {
+        display: inline-block;
+        padding-right: 5%;
+        width: 40px;
 
-            .icon-wrapper {
-                display: inline-block;
-                padding-right: 5%;
-                width: 40px;
-
-                @media #{$mobile} {
-                    width: 35px;
-                }
-            }
+        @media #{$mobile} {
+            width: 35px;
         }
     }
 
@@ -80,11 +73,6 @@
     }
 
     ul.icon-list {
-        li {
-            margin: 0 0 2% 0;
-            list-style: none;
-            box-sizing: border-box;
-        }
 
         p {
             display: inline-block;
@@ -101,10 +89,6 @@
                 &:nth-of-type(4) span {
                     padding-right: 6%;
                 }
-
-                padding: 0;
-                margin: 2% 0 1% 0;
-                font-weight: bold;
             }
 
             span {
@@ -523,18 +507,22 @@
 			-webkit-flex-basis: auto;
 			flex-basis: auto;
             list-style: none;
-            margin-right: 0%;
+            margin: 0 7% 2% 0;
+            box-sizing: border-box;
+            padding: 0;
+            font-weight: bold;
 
             span {
                 font-size: 2em;
             }
 
             @media #{$mobile} {
-                width: unset;
+                width: 100%;
             }
 
             @media #{$tablet} {
                 width: 50%;
+                margin: 0 0 2%;
             }
 		}
 	}
