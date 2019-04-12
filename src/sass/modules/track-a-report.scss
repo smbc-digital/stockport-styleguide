@@ -70,7 +70,9 @@
         margin-bottom: 10px;
         padding-top: 5px;
 
-
+        @media #{$super-mobile} {
+            padding-top: 0;
+        }
     }
 
     &:hover {
