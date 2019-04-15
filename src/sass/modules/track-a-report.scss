@@ -70,7 +70,7 @@
         margin-bottom: 10px;
         padding-top: 5px;
 
-        @media #{$super-mobile} {
+        @media #{$super-mobile, $mobile} {
             padding-top: 0;
         }
     }
