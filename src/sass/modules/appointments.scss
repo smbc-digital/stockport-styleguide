@@ -239,7 +239,11 @@
 }
 
 .timeline-background {
-    margin: 0 -20px 0 -20px;
+    margin: 0 -20px 0 0;
+
+    @media #{$mobile, $tablet} {
+        margin: 0 -20px 0 20px;
+    }
 }
 
 .timeline-img-header {
