@@ -100,8 +100,7 @@
 
     &.toggle-button {
         height: 64px;
-        overflow: hidden;
-        background-color: #3b5998;
+        overflow: hidden        
         display: block;
 
         @media #{$super-mobile} {
