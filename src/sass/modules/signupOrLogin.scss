@@ -465,6 +465,52 @@
             color: $grey-light;
         }
     }
+<<<<<<< HEAD
+=======
+
+    h2 {
+        color: $white;
+        font-size: 1.5em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    border-bottom: 6px solid #06b79b;
+
+    @media #{$tablet, $mobile} {
+        border-bottom: none;
+	}
+
+	.icon-list {
+		@include flex(row);
+
+		li {
+			@include flex-row(3, 3%);
+			flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-webkit-flex-basis: auto;
+			flex-basis: auto;
+            list-style: none;
+            margin-right: 0%;
+
+            span {
+                font-size: 2.25em;
+            }
+		}
+    }
+
+    .input-error {
+        .input-content > p {
+            top: -16px;
+            right: 10px;
+            width: 100%;
+
+            @media #{$mobile, $tablet} {
+                top: -10px;
+            }
+        }
+    }
+>>>>>>> refactor(Homepage): updating error validation message
 }
 
 .login-warning {
