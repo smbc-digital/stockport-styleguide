@@ -4,12 +4,12 @@ form {
     @media #{$mobile, $tablet} {
         width: 100%;
     }
-    
+
     @media #{$desktop} {
         width: 66.6667%;
     }
-    
-    
+
+
     word-break: break-word;
 
     fieldset {
@@ -40,7 +40,7 @@ form {
             div {
                 label {
                     font-size: 19px;
-                    
+
                     @media #{$mobile} {
                         font-size: 16px;
                     }
@@ -84,7 +84,7 @@ form {
             font-size: $fontSizeSmall;
             display: inline-block;
             margin-bottom: 0;
-    
+
             @media #{$mobile} {
                 display: block;
                 padding: 0;
@@ -150,7 +150,7 @@ form {
     line-height: 20px;
 
     @media #{$mobile} {
-        font-size: $fontSizeSmall;   
+        font-size: $fontSizeSmall;
     }
 }
 
@@ -173,4 +173,8 @@ form {
         font: normal normal normal 14px/1 FontAwesome;
         font-size: 30px;
     }
+}
+
+.clear-checkboxes-button {
+    cursor: pointer;
 }
