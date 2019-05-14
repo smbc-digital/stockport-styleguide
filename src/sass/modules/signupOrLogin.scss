@@ -259,6 +259,20 @@
             }
         }
 
+        .button-disabled {
+            &.button-default {
+                background-color: #aed4d0;
+                border: 1px solid rgba(0,0,0,.1);
+            }
+        
+            &.button-default {
+                &:hover {
+                background-color: #aed4d0;
+                cursor: default;
+                }
+            }
+        }
+
         .forgot-password {
             text-align: center;
             text-decoration: none;
