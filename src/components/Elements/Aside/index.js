@@ -50,6 +50,10 @@ class Aside extends Component{
 			{
 				name: 'Navigation',
 				route: '/navigation'
+			},
+			{
+				name: 'Status Elements',
+				route: '/status-elements'
 			}
 		]
 		this.state = {

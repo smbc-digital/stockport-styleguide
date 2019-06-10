@@ -32,6 +32,7 @@ export class Home extends Component {
 						<li><a href="/icons"><i className="si-colin"></i><span>Icons</span></a></li>
 						<li><a href="/promotions"><i className="si-microphone"></i><span>Promotions</span></a></li>
 						<li><a href="/headers"><i className="fa fa-columns"></i><span>Headers</span></a></li>
+						<li><a href="/status-elements"><i className="fa fa-tasks"></i><span>Status Elements</span></a></li>
 					</ul>
 				</section>
 			</main>
