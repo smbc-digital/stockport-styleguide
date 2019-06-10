@@ -1,0 +1,96 @@
+ol.task-item-list {
+	list-style: none;
+	counter-reset: list-counter;
+	position: relative;
+	padding: 0 0 0 2rem;
+}
+
+.task-item-list {
+	li {
+		counter-increment: list-counter;
+		margin: 0 0 1.75rem 0;
+
+		&:before {
+			@extend .h3;
+			content: counter(list-counter) ".";
+			position: absolute;
+			left: 0;
+		}
+
+		&.disabled {
+			color: $grey-dark;
+
+			h2 {
+				color: $grey-dark;
+			}
+
+			&:before {
+				color: $grey-dark;
+			}
+		}
+	}
+}
+
+.task-item {
+	position: relative;
+
+	p {
+		font-family: $font-family-headings;
+		font-weight: $fontWeightSemiBold;
+	}
+
+	h2 {
+		@extend .h3;
+		margin: 0 0 5px 0;
+	}
+
+	hr {
+		border: 1px solid $grey-dark;
+		border-bottom: none;
+    }
+    
+	[class^="status-"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: $fontSizeSmall;
+		font-family: $font-family-headings;
+		font-weight: $fontWeightBold;
+		padding: 0 5px;
+		line-height: 1.5rem;
+		box-sizing: border-box;
+
+		&.status-completed {
+			color: $white;
+			background-color: $soft-blue;
+		}
+
+		&.status-not-completed {
+			color: $grey-dark;
+			background-color: $white;
+			border: 2px solid $grey-dark;
+		}
+
+		&.status-cant-start {
+			color: $white;
+			background-color: $grey-dark;
+		}
+    }
+    
+    .anchor-with-status{
+        display: block;
+        position: relative;
+        border-bottom: 1px solid $grey-dark;
+        padding: 10px 0;
+        margin: 0;
+        font-size: $fontSizeSmall;
+        
+        &:first-of-type{
+            border-top: 1px solid $grey-dark;
+        }
+
+        > [class^="status-"] {
+            top: calc(50% - 0.75rem);
+        }
+    }
+}
