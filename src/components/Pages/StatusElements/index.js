@@ -49,6 +49,7 @@ const StatusElements = () => {
 												</p>
 												<a href='#' className='anchor-with-status'>I am a link without a status</a>
 												<a href='#' className='anchor-with-status'>I am a link with a status<span class="status-completed">Completed</span></a>
+												<a href='#' className='anchor-with-status'>I am also a link with a status<span class="status-not-completed">Not Completed</span></a>
 											</Fragment>
 										)
 									}}

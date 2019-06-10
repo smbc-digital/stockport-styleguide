@@ -77,15 +77,16 @@ ol.task-item-list {
 		}
     }
     
-    .anchor-with-status{
+    .anchor-with-status {
         display: block;
         position: relative;
-        border-bottom: 1px solid $grey-dark;
-        padding: 10px 0;
+        border-bottom: 1px solid #1a8c7a;
+        padding: 13px 0;
         margin: 0;
-        font-size: $fontSizeSmall;
+		font-size: $fontSizeSmall;
+		color: #1a8c7a;//Wasn't in the color-palette file, didn't know what to name it! 
         
-        &:first-of-type{
+        &:first-of-type {
             border-top: 1px solid $grey-dark;
         }
 
