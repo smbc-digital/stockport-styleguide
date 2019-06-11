@@ -48,10 +48,12 @@ main #root.success-page {
         padding: 0;
 
         ul > li {
-            @media #{$desktop, $tablet} {
-                font-size: 1.187em;
+            font-size: 1.187em;
+            color: red;
+            @media #{$mobile} {
+                font-size: 1em;
             }
-            font-size: 1em;
+
         }
     }
 
