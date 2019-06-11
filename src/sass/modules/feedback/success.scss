@@ -49,7 +49,6 @@ main #root.success-page {
 
         ul > li {
             font-size: 1.187em;
-            color: red;
             @media #{$mobile} {
                 font-size: 1em;
             }
