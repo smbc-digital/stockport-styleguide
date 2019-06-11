@@ -55,8 +55,8 @@ ol.task-item-list {
 	hr {
 		border: 1px solid $grey-dark;
 		border-bottom: none;
-    }
-    
+	}
+
 	[class^="status-"] {
 		position: absolute;
 		top: 0;
@@ -90,8 +90,8 @@ ol.task-item-list {
 			color: $white;
 			background-color: $grey-dark;
 		}
-    }
-    
+	}
+
     .anchor-with-status {
         display: block;
         position: relative;
@@ -103,14 +103,14 @@ ol.task-item-list {
 		a {
 			font-size: $fontSizeSmall;
 		}
-        
+
         &:first-of-type {
             border-top: 1px solid $grey-light;
         }
 
         > [class^="status-"] {
 			top: calc(50% - 0.75rem);
-			
+
 			@media #{$mobile} {
 				margin: 5px 0;
 			}
