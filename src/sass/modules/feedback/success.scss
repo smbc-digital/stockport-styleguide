@@ -27,7 +27,7 @@ main #root.success-page {
             margin-bottom: 0;
         }
 
-        h1 { 
+        h1 {
             margin-bottom: 0;
             padding-bottom: 30px;
             padding-top: 0;
@@ -46,6 +46,13 @@ main #root.success-page {
         @extend .tablet-grid-100;
 
         padding: 0;
+
+        ul > li {
+            @media #{$desktop} {
+                font-size: 1.187em;
+            }
+            font-size: 1em;
+        }
     }
 
     @media #{$mobile} {
@@ -77,7 +84,7 @@ section.header-container {
         margin-bottom: 0;
     }
 
-    h1 { 
+    h1 {
         margin-bottom: 0;
         padding-bottom: 30px;
         padding-top: 0;
