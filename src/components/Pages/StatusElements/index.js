@@ -47,9 +47,17 @@ const StatusElements = () => {
 											<Fragment>
 												<p>That's the way I look when I get home late; black and blue. It's so important to do something every day that will make you happy. Let's put a touch more of the magic here. Isn't that fantastic that you can create an almighty tree that fast? This is your world.
 												</p>
-												<a href='#' className='anchor-with-status'>I am a link without a status</a>
-												<a href='#' className='anchor-with-status'>I am a link with a status<span class="status-completed">Completed</span></a>
-												<a href='#' className='anchor-with-status'>I am also a link with a status<span class="status-not-completed">Not Completed</span></a>
+												<div className='anchor-with-status'>
+													<a href='#'>I am a link without a status</a>
+												</div>
+												<div className='anchor-with-status'>
+													<a href='#'>I am a link with a status</a>
+													<span class="status-completed">Completed</span>
+												</div>
+												<div className='anchor-with-status'>
+													<a href='#'>I am also a link with a status</a>
+													<span class="status-not-completed">Not Completed</span>
+												</div>
 											</Fragment>
 										)
 									}}
@@ -63,13 +71,13 @@ const StatusElements = () => {
 										return (
 											<Fragment>
 												<p>That's the way I look when I get home late; black and blue. It's so important to do something every day that will make you happy. Let's put a touch more of the magic here. Isn't that fantastic that you can create an almighty tree that fast? This is your world.</p>
-												<hr />
 											</Fragment>
 										)
 									}}
 									status={TaskStatus.CantStart}
 									title={'Disabled task'}
 								/>
+								<hr />
 							</li>
 						</ol>
 						<TaskItem

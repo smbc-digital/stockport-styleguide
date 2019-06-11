@@ -42,6 +42,14 @@ ol.task-item-list {
 	h2 {
 		@extend .h3;
 		margin: 0 0 5px 0;
+
+		@media #{$tablet} {
+			max-width: 300px;
+		}
+
+		@media #{$desktop} {
+			max-width: 600px;
+		}
 	}
 
 	hr {
@@ -60,6 +68,12 @@ ol.task-item-list {
 		line-height: 1.5rem;
 		box-sizing: border-box;
 
+		@media #{$mobile} {
+			font-size: $fontSizeDefault;
+			position: relative;
+			display: table;
+		}
+
 		&.status-completed {
 			color: $white;
 			background-color: $soft-blue;
@@ -69,6 +83,7 @@ ol.task-item-list {
 			color: $grey-dark;
 			background-color: $white;
 			border: 2px solid $grey-dark;
+			line-height: 1.25rem;
 		}
 
 		&.status-cant-start {
@@ -80,18 +95,25 @@ ol.task-item-list {
     .anchor-with-status {
         display: block;
         position: relative;
-        border-bottom: 1px solid #1a8c7a;
-        padding: 13px 0;
+        border-bottom: 1px solid $grey-light;
+        padding: 5px 0;
         margin: 0;
-		font-size: $fontSizeSmall;
-		color: #1a8c7a;//Wasn't in the color-palette file, didn't know what to name it! 
+		color: $primary-pale;
+
+		a {
+			font-size: $fontSizeSmall;
+		}
         
         &:first-of-type {
-            border-top: 1px solid $grey-dark;
+            border-top: 1px solid $grey-light;
         }
 
         > [class^="status-"] {
-            top: calc(50% - 0.75rem);
+			top: calc(50% - 0.75rem);
+			
+			@media #{$mobile} {
+				margin: 5px 0;
+			}
         }
     }
 }
