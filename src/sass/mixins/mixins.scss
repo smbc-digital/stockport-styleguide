@@ -70,6 +70,15 @@
 	top: calc(50% - (#{$size} / 2));
 }
 
+@mixin left-chevron($left-position, $size) {
+	content: "\f104";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: $size;
+	position: absolute;
+	left: $left-position;
+	top: calc(50% - (#{$size} / 2));
+}
+
 @mixin alert-colours($content-background-color, $font-color) {
 	background-color: $content-background-color;
 

@@ -29,6 +29,12 @@ button {
         @include chevron(10px, 20px);
     }
 
+    &.left-chevron {
+        &:before {
+            @include left-chevron(10px, 20px);
+        }
+    }
+
     &:hover {
         @include transition-box-shadow(0 20px 40px 0 rgba(0,0,0,0.3));
     }
