@@ -64,6 +64,17 @@
     top: 50%;
 }
 
+
+@mixin chevron-left($left-position) {
+    content: '\f104';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    margin-top: -10px;
+    position: absolute;
+    left: $left-position;
+    top: 50%;
+}
+
 @mixin alert-colours($content-background-color, $font-color) {
     background-color: $content-background-color;
 
