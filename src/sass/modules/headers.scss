@@ -347,7 +347,7 @@ body > header,
 		}
 	}
 
-	input[name="search-mobile"] {
+	input[name="search-mobile-checkbox"] {
 		@extend .hide-on-desktop;
 		position: absolute;
 		z-index: -10;
@@ -355,7 +355,7 @@ body > header,
 		height: 0;
 	}
 
-	input[name="search-mobile"]:checked ~ #cludo-search-mobile-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
+	input[name="search-mobile-checkbox"]:checked ~ #cludo-search-mobile-form { // sass-lint:disable-line no-ids (Needed to select 3rd Party element, CludoSearch)
 		height: 85px;
 	}
 
