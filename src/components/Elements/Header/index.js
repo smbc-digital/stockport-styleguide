@@ -35,7 +35,7 @@ class Header extends Component {
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
 					<input id={uniqueKey ? `search-mobile-checkbox-${uniqueKey}` : 'search-mobile-checkbox'} type='checkbox' name='search-mobile-checkbox' tabIndex='1' />
-                    <label className='search-mobile-label' htmlFor={uniqueKey ? `search-mobile-checkbox-${uniqueKey}` : 'search-mobile-checkbox'}>
+					<label className='search-mobile-label' htmlFor={uniqueKey ? `search-mobile-checkbox-${uniqueKey}` : 'search-mobile-checkbox'}>
 						<i className="fa fa-search" aria-hidden="true"></i>
 						<span className='hidden'>Open search bar</span>
 					</label>
