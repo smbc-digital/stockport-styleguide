@@ -3,6 +3,10 @@ ol.task-item-list {
 	counter-reset: list-counter;
 	position: relative;
 	padding: 0 0 0 2rem;
+
+	@media #{$mobile} {
+		margin: 0 10px 0 10px;
+	}
 }
 
 .task-item-list {
