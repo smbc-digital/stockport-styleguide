@@ -142,6 +142,7 @@ body > footer,
         }
 
         > a {
+            @extend .grid-20;
             vertical-align: top;            
             display: inline;
             margin: 0 60px 0 0;
@@ -159,10 +160,6 @@ body > footer,
                 &:last-of-type {
                     margin-bottom: 0;
                 }
-            }
-
-            &:first-of-type {
-                margin: 0;
             }
 
             > img {
