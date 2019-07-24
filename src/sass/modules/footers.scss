@@ -142,10 +142,13 @@ body > footer,
         }
 
         > a {
-            @extend .grid-20;
-            vertical-align: top;            
+            vertical-align: top;
             display: inline;
             margin: 0 60px 0 0;
+
+            @media #{$desktop} {
+                @include grid-20;
+            }
 
             @media #{$tablet} {
                 min-width: 225px;
@@ -167,6 +170,10 @@ body > footer,
                 max-width: 200px;
                 vertical-align: top;
 
+                @media #{$desktop} {
+                    margin-bottom: 15px;
+                }
+
                 @media #{$tablet} {
                     min-width: 150px;
                     max-width: 150px;
@@ -176,7 +183,6 @@ body > footer,
                     padding-bottom: 30px;
                 }
             }
-            
         }
     }
 
