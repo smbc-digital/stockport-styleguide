@@ -146,10 +146,6 @@ body > footer,
             display: inline;
             margin: 0 60px 0 0;
 
-            @media #{$desktop} {
-                @include grid-20;
-            }
-
             @media #{$tablet} {
                 min-width: 225px;
                 max-width: 15%;
