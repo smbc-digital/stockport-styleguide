@@ -166,10 +166,6 @@ body > footer,
                 max-width: 200px;
                 vertical-align: top;
 
-                @media #{$desktop} {
-                    margin-bottom: 15px;
-                }
-
                 @media #{$tablet} {
                     min-width: 150px;
                     max-width: 150px;
