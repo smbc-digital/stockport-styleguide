@@ -96,28 +96,33 @@ ol.task-item-list {
 		}
 	}
 
-    .anchor-with-status {
-        display: block;
-        position: relative;
-        border-bottom: 1px solid $grey-light;
-        padding: 5px 0;
-        margin: 0;
+	.anchor-with-status {
+		display: block;
+		position: relative;
+		border-bottom: 1px solid $grey-light;
+		padding: 5px 0;
+		margin: 0;
 		color: $primary-pale;
 
-		a {
+		> a,
+		> p {
 			font-size: $fontSizeSmall;
+			margin: 0;
+			font-weight: $fontWeightRegular;
+			font-family: $font-family;
+			display: inline;
 		}
 
-        &:first-of-type {
-            border-top: 1px solid $grey-light;
-        }
+		&:first-of-type {
+			border-top: 1px solid $grey-light;
+		}
 
-        > [class^="status-"] {
+		> [class^="status-"] {
 			top: calc(50% - 0.75rem);
 
 			@media #{$mobile} {
 				margin: 5px 0;
 			}
-        }
-    }
+		}
+	}
 }
