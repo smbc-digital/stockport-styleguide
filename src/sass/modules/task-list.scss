@@ -113,6 +113,10 @@ ol.task-item-list {
 			display: inline;
 		}
 
+		> p {
+			color: $grey-dark;
+		}
+
 		&:first-of-type {
 			border-top: 1px solid $grey-light;
 		}
