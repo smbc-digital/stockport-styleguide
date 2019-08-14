@@ -15,7 +15,7 @@ ol.task-item-list {
 	}
 
 	.task-item-list {
-		li {
+		> li {
 			counter-increment: list-counter;
 
 			&:before {
@@ -70,6 +70,18 @@ ol.task-item-list {
 	hr {
 		border: 1px solid $grey-light;
 		border-bottom: none;
+	}
+
+	> ul {
+			padding-left: 2em;
+			margin-bottom: 20px;
+			list-style-type: disc;	
+		> li {
+			color: #333;
+			margin-bottom: 0.2em;
+			font-size: 1em;
+			font-family: "Source Sans Pro", sans-serif;
+		}
 	}
 
 	[class^="status-"] {
