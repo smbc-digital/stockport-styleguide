@@ -6,5 +6,13 @@
     },
     "eslint.enable": true,
     "sasslint.enable": true,
-    "files.eol": "\r\n"
+    "files.eol": "\r\n",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#f28322",
+        "titleBar.inactiveBackground": "#f2832299",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveForeground": "#15202b99",
+        "tab.activeBorder": "#f59e52"
+    },
+    "peacock.color": "#F28322"
 }

@@ -28,6 +28,10 @@ ol.task-item-list {
 	li {
 		margin: 0 0 2.5rem;
 
+		@media #{$tablet, $desktop} {
+			margin-left: 26px;
+		}
+
 		&.disabled {
 			color: $grey-dark;
 
@@ -48,10 +52,6 @@ ol.task-item-list {
 	p {
 		font-family: $font-family-headings;
 		font-weight: $fontWeightRegular;
-	}
-
-	@media #{$desktop, $tablet} {
-		margin-left: 28px;
 	}
 
 	h2 {
