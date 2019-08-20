@@ -48,11 +48,12 @@ main #root.success-page {
         padding: 0;
 
         ul {
-            padding: 0 0 20px 16px;
+            padding: 5px 0 20px 16px;
             line-height: 1.562rem;
 
             li {
                 font-size: 1.187rem;
+                padding-bottom: 5px;
                 @media #{$mobile} {
                     font-size: 1em;
                 }
