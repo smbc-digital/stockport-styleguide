@@ -50,16 +50,22 @@ ol.task-item-list {
 		font-weight: $fontWeightRegular;
 	}
 
+	@media #{$desktop, $tablet} {
+		margin-left: 28px;
+	}
+
 	h2 {
 		@extend .h3;
-		margin: 0 0 5px 24px;
+		margin: 0 0 5px 16px;
 
 		@media #{$tablet} {
 			max-width: 300px;
+			margin-left: 0;
 		}
 
 		@media #{$desktop} {
 			max-width: 600px;
+			margin-left: 0;
 		}
 	}
 
