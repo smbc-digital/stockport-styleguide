@@ -63,6 +63,7 @@ const StatusElements = () => {
 									}}
 									status={TaskStatus.None}
 									title={'Status none task'}
+									displayHr={false}
 								/>
 							</li>
 							<li className='disabled'>
@@ -77,7 +78,6 @@ const StatusElements = () => {
 									status={TaskStatus.CantStart}
 									title={'Disabled task'}
 								/>
-								<hr />
 							</li>
 						</ol>
 						<TaskItem

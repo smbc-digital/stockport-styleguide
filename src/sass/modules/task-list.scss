@@ -89,21 +89,15 @@ ol.task-item-list {
 	}
 
 	[class^="status-"] {
-		position: absolute;
-		top: 0;
-		right: 0;
-		font-size: $fontSizeSmall;
+		font-size: $fontSizeDefault;
 		font-family: $font-family-headings;
 		font-weight: $fontWeightBold;
-		padding: 0 5px;
-		line-height: 1.5rem;
+		padding: 2px 8px 4px 8px;
+		line-height: normal;
 		box-sizing: border-box;
-
-		@media #{$mobile} {
-			font-size: $fontSizeDefault;
-			position: relative;
-			display: table;
-		}
+		white-space: nowrap;
+		float: right;
+		margin: 0 0 0 16px;
 
 		&.status-completed {
 			color: $white;
@@ -115,6 +109,10 @@ ol.task-item-list {
 			background-color: $white;
 			border: 2px solid $grey-dark;
 			line-height: 1.25rem;
+
+			@media #{$mobile} {
+				line-height: 1rem;
+			}
 		}
 
 		&.status-cant-start {
@@ -124,7 +122,8 @@ ol.task-item-list {
 	}
 
 	.anchor-with-status {
-		display: block;
+		display: flex;
+		justify-content: space-between;
 		position: relative;
 		border-bottom: 1px solid $grey-light;
 		padding: 5px 0;
@@ -138,6 +137,7 @@ ol.task-item-list {
 			font-weight: $fontWeightRegular;
 			font-family: $font-family;
 			display: inline;
+			align-self: center;
 		}
 
 		> p {
@@ -149,11 +149,7 @@ ol.task-item-list {
 		}
 
 		> [class^="status-"] {
-			top: calc(50% - 0.75rem);
-
-			@media #{$mobile} {
-				margin: 5px 0;
-			}
+			align-self: flex-start;
 		}
 	}
 }
