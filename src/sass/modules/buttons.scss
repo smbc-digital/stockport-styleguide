@@ -116,6 +116,13 @@ a.button {
     @extend .button;
     @include button-colors($white, $grey-darkest);
     border: solid 1px $grey-middle;
+
+    &:disabled,
+    &:disabled:hover {
+        background-color: transparent;
+        border-color: $grey-lighter;
+        color: $grey-lighter;
+    }
 }
 
 .button-radio-list {

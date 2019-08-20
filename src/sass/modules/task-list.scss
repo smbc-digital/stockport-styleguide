@@ -26,7 +26,7 @@ ol.task-item-list {
 
 .task-item-list {
 	li {
-		margin: 0 0 1.75rem 0;
+		margin: 0 0 2.5rem;
 
 		&.disabled {
 			color: $grey-dark;
@@ -56,16 +56,18 @@ ol.task-item-list {
 
 	h2 {
 		@extend .h3;
-		margin: 0 0 5px 16px;
+		margin: 0 0 8px 16px;
 
 		@media #{$tablet} {
 			max-width: 300px;
 			margin-left: 0;
+			margin-bottom: 16px;
 		}
 
 		@media #{$desktop} {
 			max-width: 600px;
 			margin-left: 0;
+			margin-bottom: 16px;
 		}
 	}
 
