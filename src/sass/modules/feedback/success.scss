@@ -54,10 +54,17 @@ main #root.success-page {
             li {
                 font-size: 1.187rem;
                 padding-bottom: 5px;
-                @media #{$mobile} {
+                @media #{$mobile, $tablet} {
                     font-size: 1em;
+                    padding-bottom: 10px;
                 }
         }
+
+            @media #{$mobile, $tablet} {
+                font-size: 1em;
+                padding-bottom: 5px;
+            }
+
     }
 
     }
