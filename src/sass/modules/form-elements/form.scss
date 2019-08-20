@@ -1,14 +1,6 @@
 form {
     margin: 0;
-
-    @media #{$mobile, $tablet} {
-        width: 100%;
-    }
-
-    @media #{$desktop} {
-        width: 66.6667%;
-    }
-
+    width: 100%;
 
     word-break: break-word;
 
