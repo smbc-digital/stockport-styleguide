@@ -33,7 +33,18 @@ main {
 		display: block;
 	}
 
-	#root, // sass-lint:disable-line no-ids (#root needed for React)
+	#root { // sass-lint:disable-line no-ids (#root needed for React)
+		@extend .grid-container;
+		margin: 0;
+		background-color: $white;
+		padding: 32px 16px;
+		flex-grow: 1;
+
+		@media #{$desktop} {
+			padding: 40px 32px;
+		}
+	}
+
     .page-container {
 		@include main-layout;
 	}
