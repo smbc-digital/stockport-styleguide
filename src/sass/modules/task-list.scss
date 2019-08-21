@@ -14,6 +14,10 @@ ol.task-item-list {
 		> li {
 			counter-increment: list-counter;
 
+			@media#{$mobile} {
+				margin-left: 16px;
+			}
+
 			&:before {
 				@extend .h3;
 				content: counter(list-counter) ".";
@@ -48,6 +52,12 @@ ol.task-item-list {
 
 .task-item {
 	position: relative;
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@media #{$mobile} {
+			margin-left: -16px;
+		}
+	}
 
 	p {
 		font-family: $font-family-headings;
