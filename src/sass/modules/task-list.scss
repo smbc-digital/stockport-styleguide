@@ -31,7 +31,7 @@ ol.task-item-list {
 .task-item-list {
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 		@media #{$mobile} {
-			margin-left: -22px; // IE11 hacks
+			margin-left: 22px; // IE11 hacks
 		}
 	}
 	
