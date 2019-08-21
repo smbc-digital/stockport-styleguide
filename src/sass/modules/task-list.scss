@@ -29,14 +29,14 @@ ol.task-item-list {
 }
 
 .task-item-list {
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@media #{$mobile} {
+			margin-left: -22px; // IE11 hacks
+		}
+	}
+	
 	li {
 		margin: 0 0 2.5rem;
-
-		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-			@media #{$mobile} {
-				margin-left: -22px; // IE11 hacks
-			}
-		}
 
 		@media #{$tablet, $desktop} {
 			margin-left: 26px;
