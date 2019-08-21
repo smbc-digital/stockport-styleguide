@@ -45,11 +45,9 @@ ol.task-item-list {
 		&.disabled {
 			color: $grey-dark;
 
-			h2 {
-				color: $grey-dark;
-			}
-
-			&:before {
+			h2,
+			&:before,
+			ul li  {
 				color: $grey-dark;
 			}
 		}
@@ -66,7 +64,7 @@ ol.task-item-list {
 	}
 
 	p {
-		font-family: $font-family-headings;
+		font-family: $font-family;
 		font-weight: $fontWeightRegular;
 	}
 
@@ -145,15 +143,14 @@ ol.task-item-list {
 		padding: 8px 0;
 		margin: 0;
 		color: $primary-pale;
-		height: 26px;
+		min-height: 26px;
 
 		@media #{$desktop, $tablet} {
-			height: 30px;
+			min-height: 30px;
 		}
 
 		> a,
 		> p {
-			font-size: $fontSizeSmall;
 			margin: 0;
 			font-weight: $fontWeightRegular;
 			font-family: $font-family;
