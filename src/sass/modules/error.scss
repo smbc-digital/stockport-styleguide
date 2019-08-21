@@ -3,7 +3,7 @@ main.error-page-container {
     background-image: url('https://s3-eu-west-1.amazonaws.com/live-iag-static-assets/bg-sg-home.jpg');
     max-width: 100%;
 
-    #root {
+    #root { // sass-lint:disable-line no-ids (#root needed for react)
         background: none;
 
         .error-page {

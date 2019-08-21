@@ -1,5 +1,5 @@
 .success-page,
-main #root.success-page {
+main #root.success-page { // sass-lint:disable-line no-ids (#root needed for react)
     @include main-layout;
     padding-top: 20px;
 

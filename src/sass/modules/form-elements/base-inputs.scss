@@ -151,6 +151,6 @@ input[type="number"] {
     width: 50%;
 }
 
-#cludo-search-form-content input[type="search"] {
+#cludo-search-form-content input[type="search"] { // sass-lint:disable-line no-ids (needed for cludeo)
     max-width: none;
 }

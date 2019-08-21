@@ -2,7 +2,7 @@
     @include main-layout;
 }
 
-#root,
+#root, // sass-lint:disable-line no-ids (#root needed for react)
 .ineligible-warning {
     div.header-container {
         display: table;
