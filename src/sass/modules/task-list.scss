@@ -1,16 +1,9 @@
-ol.task-item-list {
-	position: relative;
-	padding: 0;
-}
-
 // IE11 crashes when using the css counter() functionality, the code below ensures it is only used on browsers that support it
 @supports (content: counter(list-counter) ".") {
-	ol.task-item-list {
+	.task-item-list {
 		list-style: none;
 		counter-reset: list-counter;
-	}
 
-	.task-item-list {
 		> li {
 			counter-increment: list-counter;
 
@@ -29,6 +22,9 @@ ol.task-item-list {
 }
 
 .task-item-list {
+	position: relative;
+	padding: 0;
+
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 		@media #{$mobile} {
 			margin-left: 22px; // IE11 hacks
@@ -93,12 +89,10 @@ ol.task-item-list {
 	> ul {
 			padding-left: 2em;
 			margin-bottom: 20px;
-			list-style-type: disc;	
+			list-style-type: disc;
+			
 		> li {
-			color: #333;
 			margin-bottom: 0.2em;
-			font-size: 1em;
-			font-family: "Source Sans Pro", sans-serif;
 		}
 	}
 
