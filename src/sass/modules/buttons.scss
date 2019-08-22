@@ -123,6 +123,10 @@ a.button {
         border-color: $grey-lighter;
         color: $grey-lighter;
     }
+
+    &.button-loading:after {
+        color: $grey-dark;
+    }
 }
 
 .button-radio-list {
