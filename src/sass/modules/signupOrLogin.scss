@@ -140,14 +140,24 @@
 
         @media #{$tablet} {
             padding: 10px 40px;
+        }
 
-            .login-signup-recaptcha {
+        .login-signup-recaptcha {
+            @media #{$mobile}, #{$tablet} {
                 transform-origin: top left;
                 -moz-transform: scale(0.9,0.9);
                 -ms-transform: scale(0.9,0.9);
                 -webkit-transform: scale(0.9,0.9);
                 -o-transform: scale(0.9,0.9);
                 transform: scale(0.9,0.9);
+            }
+
+            @media #{$super-mobile} {
+                transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                -o-transform: scale(0.8);
             }
         }
 
