@@ -16,6 +16,10 @@
     text-decoration: none;
     @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
 
+    &:last-of-type {
+        margin: 0 0 20px 0;
+    }
+
     &:hover {
         @include transition-box-shadow(0 20px 40px 0 rgba(0,0,0,0.3));
         text-decoration: none;
