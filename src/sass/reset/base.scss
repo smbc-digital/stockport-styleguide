@@ -42,11 +42,15 @@ main {
 
 		@media #{$desktop} {
 			padding: 40px 32px;
-			max-width: 66%;
+
+			> * {
+				max-width: 66%;
+				width: 66%;
+			}
 		}
 	}
 
-    .page-container {
+	.page-container {
 		@include main-layout;
 	}
 }
@@ -66,15 +70,15 @@ ul {
 }
 
 p img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
-.center-wrapper { 
-    @include center-wrapper;
+.center-wrapper {
+	@include center-wrapper;
 
-    &.relative {
-        position: relative;
-    }
+	&.relative {
+		position: relative;
+	}
 }
 
 .dashboard-container {
