@@ -153,6 +153,39 @@ p img {
 	margin-left: 1em;
 }
 
+.no-padding-left {
+	padding-left: 0;
+}
+
+.no-padding-right {
+	padding-right: 0;
+}
+
+.no-padding-top {
+	padding-top: 0;
+}
+
+.no-padding-bottom {
+	padding-bottom: 0;
+}
+
+.no-padding {
+	@extend .no-padding-left;
+	@extend .no-padding-right;
+	@extend .no-padding-top;
+	@extend .no-padding-bottom;
+}
+
+.no-x-padding {
+	@extend .no-padding-left;
+	@extend .no-padding-right;
+}
+
+.no-y-padding {
+	@extend .no-padding-top;
+	@extend .no-padding-bottom;
+}
+
 .thick-divider {
 	height: 3px;
 	border: none;
