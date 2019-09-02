@@ -112,6 +112,12 @@ a.button {
     border: solid 1px $white;
 }
 
+.button-tertiary-inverted {
+    @extend .button;
+    @include button-colors(transparent, $teal-darker);
+    border: solid 1px $teal-darker;
+}
+
 .button-inverted {
     @extend .button;
     @include button-colors($white, $grey-darkest);

@@ -64,3 +64,22 @@
 		}
 	}
 }
+
+.latest-news {
+    .h2 {
+        color: $teal-dark;
+    }
+
+    .news-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 4px solid $grey-darkest;
+        margin: 0 0 15px 0;
+
+        .date {
+            line-height: 1.5em;
+            margin: 5px 0;
+        }
+    }
+}
