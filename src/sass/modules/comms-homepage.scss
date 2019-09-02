@@ -1,0 +1,21 @@
+.comms-homepage {
+    width: 100%;
+
+    h1 {
+        color: $primary;
+    }
+
+    h3, 
+    h2 {
+        color: $grey-darkest;
+    }
+
+    @media #{$desktop} {
+        .with-aside {
+            padding-left: 0;
+        }
+        .article-aside {
+            padding-right: 0;
+        }
+    }
+}
