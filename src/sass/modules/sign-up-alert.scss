@@ -1,0 +1,56 @@
+.sign-up-alert {
+    margin: 1.5em 0;
+
+    form {
+        background-color: $primary;
+        padding: 1.1em 1.1em 1.6em;
+        box-sizing: border-box;
+
+        label {
+            color: $white;
+        }
+
+        input {
+            border: $primary-pale 2px solid;
+            background-color: $primary-darker;
+            color: $white;
+
+            &::placeholder {
+                color: $primary-pale;
+            }
+
+            &:-ms-input-placeholder {
+                color: $primary-pale;
+            }
+
+            &::-ms-input-placeholder {
+                color: $primary-pale;
+            }
+
+            &:hover, 
+            &:active, 
+            &:focus {
+                border: $white 2px solid;
+                outline: $orange 2px solid;
+                outline-offset: 0;
+            }
+        }   
+
+        button {
+            @extend .button-inverted;
+
+            width: 100%;
+            color: $teal-darker;
+            font-size: $fontSizeDefault;
+            font-weight: $fontWeightSemiBold;
+            margin-bottom: 0;
+            box-shadow: 0 3px 0 0 $primary-darker;
+
+            &:before {
+                display: none;
+            }
+        }  
+        
+        
+    }
+}

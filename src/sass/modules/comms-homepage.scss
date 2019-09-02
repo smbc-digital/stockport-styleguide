@@ -14,8 +14,13 @@
         .with-aside {
             padding-left: 0;
         }
+
         .article-aside {
             padding-right: 0;
+        }
+
+        .sign-up-alert {
+            margin-top: $fontSizeExtraLarge + $fontSizeLarger + 2.6em;
         }
     }
 }
