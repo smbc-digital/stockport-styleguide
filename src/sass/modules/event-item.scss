@@ -1,0 +1,66 @@
+.event-item {
+    background-color: $white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+    text-align: left;
+    padding: 0;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+
+    @media #{$mobile} {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 233px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    h3 {
+        padding: 20px 10% 10px;
+        margin: 0;
+        color: $grey-darkest;
+    }
+
+    p {
+        padding: 0 20px 20px 20px;
+        color: $grey-darkest;
+        line-height: 2em;
+        font-size: $fontSizeSmall;
+    }
+
+    span {
+        color: $grey-darkest;
+        line-height: 2em;
+        font-size: $fontSizeSmall;
+    }
+
+    .featured-event-item {
+        @include flex(row);
+        padding: 0 10% 10px;
+
+        span {
+            box-sizing: border-box;
+            padding: 0;
+            width: 10%;
+            font-family: FontAwesome;
+        }
+
+        p {
+            padding: 0;
+            margin-bottom: 4px;
+            box-sizing: border-box;
+            width: 90%;
+        }
+    }
+}
