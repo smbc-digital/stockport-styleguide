@@ -33,7 +33,8 @@ main {
 		display: block;
 	}
 
-	#root { // sass-lint:disable-line no-ids (#root needed for React)
+	#root {
+		// sass-lint:disable-line no-ids (#root needed for React)
 		@extend .grid-container;
 		margin: 0;
 		background-color: $white;
@@ -153,37 +154,39 @@ p img {
 	margin-left: 1em;
 }
 
-.no-padding-left {
-	padding-left: 0;
-}
+body {
+	.no-padding-left {
+		padding-left: 0;
+	}
 
-.no-padding-right {
-	padding-right: 0;
-}
+	.no-padding-right {
+		padding-right: 0;
+	}
 
-.no-padding-top {
-	padding-top: 0;
-}
+	.no-padding-top {
+		padding-top: 0;
+	}
 
-.no-padding-bottom {
-	padding-bottom: 0;
-}
+	.no-padding-bottom {
+		padding-bottom: 0;
+	}
 
-.no-padding {
-	@extend .no-padding-left;
-	@extend .no-padding-right;
-	@extend .no-padding-top;
-	@extend .no-padding-bottom;
-}
+	.no-padding {
+		@extend .no-padding-left;
+		@extend .no-padding-right;
+		@extend .no-padding-top;
+		@extend .no-padding-bottom;
+	}
 
-.no-x-padding {
-	@extend .no-padding-left;
-	@extend .no-padding-right;
-}
+	.no-x-padding {
+		@extend .no-padding-left;
+		@extend .no-padding-right;
+	}
 
-.no-y-padding {
-	@extend .no-padding-top;
-	@extend .no-padding-bottom;
+	.no-y-padding {
+		@extend .no-padding-top;
+		@extend .no-padding-bottom;
+	}
 }
 
 .thick-divider {
