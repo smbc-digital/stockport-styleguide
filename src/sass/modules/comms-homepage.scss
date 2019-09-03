@@ -111,3 +111,28 @@
         text-decoration: none;
     }
 }
+
+div.iframe-container {
+    border: 4px $grey-lightest solid;
+    padding: 0 10px 0 10px;
+    margin-bottom: 40px;
+    max-width: 500px;
+
+    @media #{$mobile} {
+        margin-bottom: 40px;
+        max-width: 330px;
+    }
+}
+
+iframe.instagram {
+
+    width: 500px;
+    height: 700px;
+    border: none;
+
+    @media #{$mobile} {
+        width: 330px;
+        height: 500px;                   
+    }
+
+}
