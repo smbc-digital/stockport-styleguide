@@ -1,10 +1,22 @@
 .comms-homepage {
     @extend .center-wrapper;
-    width: 100%;
+
+    @media #{$mobile} {
+        box-sizing: border-box;
+        width: 100%;
+    }
 
     .comms-homepage-header {
         color: $primary;
-        margin: 0 0 40px 0;
+        margin: 40px 0;
+    }
+
+    .with-aside {
+        padding: 0 20px 0 0;
+
+        @media #{$mobile} {
+            padding: 0;
+        }
     }
 
 	h2 {
@@ -12,18 +24,27 @@
 		padding-left: 0;
 	}
 
-    .with-aside {
-        padding: 40px 20px 0 0;
-    }
+    .article-aside {
+        padding: 0;
 
-    @media #{$desktop} {
-        .article-aside {
-            padding: 40px 0 0 20px;
+        @media #{$desktop}, #{$tablet} {
+            margin: 55px 0 0 0;
         }
 
-		.useful-links {
-			a {
-				font-weight: $fontWeightSemiBold;
+        @media #{$mobile} {
+            padding: 20px 0 0 0;
+        }
+
+        h2:before {
+            content: "";
+            display: block;
+            margin: 1.5em 0 0.5em;
+            border-top: solid 3px $grey-darkest;
+        }
+
+        .useful-links {
+            a {
+                font-weight: $fontWeightSemiBold;
                 text-decoration: none;
                 
                 &:hover {
@@ -60,18 +81,24 @@
 
     .latest-news-header {
         margin: 0 0 15px 0;
+        height: 40px;
     }
 
     .latest-news-details {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: flex-start;
         border-bottom: 4px solid $grey-darkest;
         margin: 0 0 15px 0;
+        max-height: 30px;
 
         .latest-news-details-date {
             line-height: 1.5em;
-            margin: 5px 0;
+        }
+
+        // IE11 fix
+        .status-news {
+            border-bottom: 1px solid $grey-darkest;
         }
     }
 
