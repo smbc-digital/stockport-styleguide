@@ -1,36 +1,24 @@
 .comms-homepage {
-	width: 100%;
+    @extend .center-wrapper;
+    width: 100%;
 
-	h1 {
-		color: $primary;
-	}
+    .comms-homepage-header {
+        color: $primary;
+        margin: 0 0 40px 0;
+    }
 
 	h2 {
 		color: $grey-darkest;
 		padding-left: 0;
 	}
 
-	@media #{$desktop} {
-		.with-aside {
-			padding-left: 0;
-		}
+    .with-aside {
+        padding: 40px 20px 0 0;
+    }
 
-		.article-aside {
-			padding-right: 0;
-		}
-
-		.sign-up-alert {
-            margin-top: $fontSizeExtraLarge + $fontSizeLarger + 2.6em;
-		}
-	}
-
-	.article-aside {
-
-        h2:before {
-            content: "";
-            display: block;
-            margin: 1.5em 0 0.5em;
-            border-top: solid 3px $grey-darkest;
+    @media #{$desktop} {
+        .article-aside {
+            padding: 40px 0 0 20px;
         }
 
 		.useful-links {
@@ -70,16 +58,25 @@
         color: $teal-dark;
     }
 
-    .news-details {
+    .latest-news-header {
+        margin: 0 0 15px 0;
+    }
+
+    .latest-news-details {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         border-bottom: 4px solid $grey-darkest;
         margin: 0 0 15px 0;
 
-        .date {
+        .latest-news-details-date {
             line-height: 1.5em;
             margin: 5px 0;
         }
+    }
+
+    .latest-news-anchor {
+        color: black;
+        text-decoration: none;
     }
 }
