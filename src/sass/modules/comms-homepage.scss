@@ -2,6 +2,7 @@
 	@extend .center-wrapper;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 
 	@media #{$mobile} {
 		box-sizing: border-box;
