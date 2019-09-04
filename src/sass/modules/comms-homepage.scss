@@ -169,11 +169,10 @@ iframe.instagram {
     border: none;
 
     @media #{$mobile} {
-        height: 500px;
+        height: 530px;
     }
 
-    @media #{$tablet} {
-        width: 475px;
+    @media #{$tablet} {       
         height: 600px;
     }    
 }
