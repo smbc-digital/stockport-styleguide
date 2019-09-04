@@ -159,22 +159,19 @@
 
     @media #{$mobile} {
         margin-bottom: 40px;
-        max-width: 330px;
     }
 }
 
 iframe.instagram {
-    width: 500px;
+    width: 100%;
     height: 700px;
     border: none;
 
     @media #{$mobile} {
-        width: 330px;
-        height: 500px;                   
+        height: 500px;
     }
 
     @media #{$tablet} {
-        width: 475px;
         height: 700px;
     }    
 }
