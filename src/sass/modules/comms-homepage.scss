@@ -1,76 +1,111 @@
 .comms-homepage {
-    @extend .center-wrapper;
+	@extend .center-wrapper;
+	display: flex;
+	flex-wrap: wrap;
 
-    @media #{$mobile} {
-        box-sizing: border-box;
-        width: 100%;
-    }
+	@media #{$mobile} {
+		box-sizing: border-box;
+		width: 100%;
+	}
 
-    .comms-homepage-header {
-        color: $primary;
-        margin: 40px 0;
-    }
+	.comms-homepage-header {
+		color: $primary;
+		margin: 40px 0;
+		width: 100%;
+	}
 
-    .with-aside {
-        padding: 0 20px 0 0;
+	.with-aside {
+		padding: 0 60px 0 0;
+		width: 50%;
 
-        @media #{$mobile} {
-            padding: 0;
-        }
-    }
+		@media #{$tablet} {
+			padding: 0 40px 0 0;
+		}
+
+		@media #{$mobile} {
+			padding: 0;
+		}
+	}
 
 	h2 {
 		color: $grey-darkest;
 		padding-left: 0;
 	}
 
-    .article-aside {
-        padding: 0;
+	.article-aside {
+		padding: 0;
 
-        @media #{$desktop}, #{$tablet} {
-            margin: 55px 0 0 0;
-        }
+		@media #{$desktop}, #{$tablet} {
+			margin: 55px 0 0 0;
+			width: 30%;
+			min-width: 281px;
+		}
 
-        @media #{$mobile} {
-            padding: 20px 0 0 0;
-        }
-		
+		@media #{$mobile} {
+			padding: 20px 0 0 0;
+		}
+
 		&:last-child {
 			margin-bottom: 1.5em;
 		}
 
-        h2:before {
-            content: "";
-            display: block;
-            margin: 1.5em 0 0.5em;
-            border-top: solid 3px $grey-darkest;
-        }
+		h2 {
+			padding: 0;
 
-        .useful-links {
-            a {
-                font-weight: $fontWeightSemiBold;
-                text-decoration: none;
+			&:before {
+				content: "";
+				display: block;
+				margin: 1.5em 0 0.5em;
+				border-top: solid 2px $grey-darkest;
+			}
+		}
+
+		.event-item {
+			height: auto;
+			margin-left: 0;
+
+			img {
+				height: auto;
+			}
+		}
+
+		.useful-links {
+			a {
+				font-weight: $fontWeightSemiBold;
+				text-decoration: none;
+				color: $teal-darker;
+
+				&:hover {
+					color: $grey-darkest;
+					text-decoration: underline;
+
+					> li:before {
+						text-decoration: none;
+						border-top: solid 2px $grey-darkest;
+					}
+                }
                 
-                &:hover {
-                    color: $grey-darkest;
-                    text-decoration: underline;
-
-                    > li:before {
-                        text-decoration: none;
-                    }
+                &:last-of-type > li {
+                    margin-bottom: 0;
                 }
 
 				> li {
 					list-style: none;
-					margin-left: 0;
-					padding-left: 1.2em;
+					position: relative;
+                    margin: 0 0 15px 0;
+
+                    @media #{$mobile} {
+                        margin: 0 0 10px 0;
+                    }
 
 					&:before {
-						content: "---";
+						content: "";
 						display: inline-block;
-						letter-spacing: -3px;
-						width: 1.2em;
-                        margin-left: -1.2em;
+						width: 15px;
+						top: -5px;
+						margin-right: 10px;
+						position: relative;
+						border-top: solid 2px $teal-darker;
 					}
 				}
 			}
@@ -79,37 +114,37 @@
 }
 
 .latest-news {
-    .h2 {
-        color: $teal-dark;
-    }
+	.h2 {
+		color: $teal-dark;
+	}
 
-    .latest-news-header {
-        margin: 0 0 15px 0;
-        height: 40px;
-    }
+	.latest-news-header {
+		margin: 0 0 15px 0;
+		height: 40px;
+	}
 
-    .latest-news-details {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-bottom: 4px solid $grey-darkest;
-        margin: 0 0 15px 0;
-        max-height: 30px;
+	.latest-news-details {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		border-bottom: 4px solid $grey-darkest;
+		margin: 0 0 15px 0;
+		max-height: 30px;
 
-        .latest-news-details-date {
-            line-height: 1.5em;
-        }
+		.latest-news-details-date {
+			line-height: 1.5em;
+		}
 
-        // IE11 fix
-        .status-news {
-            border-bottom: 1px solid $grey-darkest;
-        }
-    }
+		// IE11 fix
+		.status-news {
+			border-bottom: 1px solid $grey-darkest;
+		}
+	}
 
-    .latest-news-anchor {
-        color: black;
-        text-decoration: none;
-    }
+	.latest-news-anchor {
+		color: black;
+		text-decoration: none;
+	}
 }
 
 .iframe-container {
