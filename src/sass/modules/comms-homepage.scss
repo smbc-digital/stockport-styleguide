@@ -94,11 +94,11 @@
 				> li {
 					list-style: none;
 					position: relative;
-                    margin: 0 0 15px 0;
+					margin: 0 0 15px 0;
 
-                    @media #{$mobile} {
-                        margin: 0 0 10px 0;
-                    }
+					@media #{$mobile} {
+						margin: 0 0 10px 0;
+					}
 
 					&:before {
 						content: "";
@@ -112,11 +112,11 @@
 				}
 			}
 		}
-    }
-    
-    .call-to-action-banner-container {
-        width: 100%;
-    }
+	}
+
+	.call-to-action-banner-container {
+		width: 100%;
+	}
 }
 
 .latest-news {
@@ -154,14 +154,14 @@
 }
 
 .iframe-container {
-    border: 4px $grey-lightest solid;
-    padding: 0 10px 0 10px;
-    margin-bottom: 40px;
-    max-width: 500px;
+	border: 4px $grey-lightest solid;
+	padding: 0 10px 0 10px;
+	margin-bottom: 40px;
+	max-width: 500px;
 
-    @media #{$mobile} {
-        margin-bottom: 40px;
-    }
+	@media #{$mobile} {
+		margin-bottom: 40px;
+	}
 }
 
 iframe.instagram {

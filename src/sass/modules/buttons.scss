@@ -89,6 +89,38 @@ a.button {
     @include button-colors($teal-darker, $white);
 }
 
+
+.button-primary-white {
+    @extend .button;
+    @include button-colors($white, $teal-darker);
+
+    width: 100%;
+    color: $teal-darker;
+    font-size: $fontSizeDefault;
+    font-weight: $fontWeightSemiBold;
+    margin-bottom: 0;
+    box-shadow: 0 4px 0 0 $primary-darker;
+    border: none;
+
+    &:before {
+        display: none;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 0 0 $primary-darker;
+        color: $primary;
+        background-color: $off-white;
+    }
+
+    &:active,
+    &:focus {
+        color: $primary;
+        background-color: $off-white;
+        box-shadow: none;
+        transform: translateY(2px);
+    }
+}
+
 .button-login {
     @extend .button;
     @include button-colors($green, $white);

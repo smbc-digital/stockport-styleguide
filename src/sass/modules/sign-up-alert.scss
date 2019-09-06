@@ -33,23 +33,6 @@
                 outline: $orange 2px solid;
                 outline-offset: 0;
             }
-        }   
-
-        button {
-            @extend .button-inverted;
-
-            width: 100%;
-            color: $teal-darker;
-            font-size: $fontSizeDefault;
-            font-weight: $fontWeightSemiBold;
-            margin-bottom: 0;
-            box-shadow: 0 3px 0 0 $primary-darker;
-
-            &:before {
-                display: none;
-            }
-        }  
-        
-        
+        }
     }
 }
