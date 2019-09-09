@@ -66,6 +66,10 @@
 				display: block;
 				margin: 1.5em 0 0.5em;
 				border-top: solid 2px $grey-darkest;
+
+				@media #{$mobile} {
+					margin-top: 1.8em;
+				}
 			}
 		}
 
