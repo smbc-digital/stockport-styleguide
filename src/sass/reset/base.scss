@@ -37,7 +37,8 @@ main {
 		display: block;
 	}
 
-	#root {
+	#root, 
+	#smart-answers-container {
 		// sass-lint:disable-line no-ids (#root needed for React)
 		@extend .grid-container;
 		margin: 0;

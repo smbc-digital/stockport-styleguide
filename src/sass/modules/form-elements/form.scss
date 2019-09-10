@@ -4,6 +4,14 @@ form {
 
     word-break: break-word;
 
+    .question-section {
+        margin-bottom: 24px;
+
+        span {
+            margin: 0;
+        }
+    }
+
     fieldset {
         border: none;
         padding: 0;
