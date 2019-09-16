@@ -204,7 +204,7 @@ body > header,
 					box-shadow: none;
 					margin: 10px 10px 0 0;
 
-					i {
+					span {
 						position: absolute;
 						top: 50%;
 						left: 10px;
@@ -253,14 +253,18 @@ body > header,
 			&:hover {
 				text-decoration: underline;
 
-				i {
+				span:first-of-type {
 					color: $white;
 				}
 			}
 
-			i {
+			span:first-of-type {
 				color: $primary-pale;
 				padding-right: 10px;
+			}
+
+			span:last-of-type {
+				@extend .hide-on-mobile;
 			}
 		}
 	}
