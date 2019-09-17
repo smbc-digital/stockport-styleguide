@@ -9,6 +9,12 @@ form {
 
         span {
             margin: 0;
+            display: block;
+
+            &.radio-sub-label {
+                font-size: $fontSizeSmall;
+                padding-left: 55px;
+            }
 
             li {
                 margin: 0;
