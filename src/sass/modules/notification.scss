@@ -8,6 +8,10 @@
 }
 
 .notification-error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     h2 {
         line-height: normal;
     }
@@ -15,6 +19,9 @@
     .icon-bordered {
         color: $red;
         width: 80px;
+        padding: 15px;
+        border: 3px solid;
+        border-radius: 100%;
     }
 }
 

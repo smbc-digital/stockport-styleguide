@@ -28,7 +28,7 @@ body > header,
         @extend .mobile-grid-10;
         text-align: right;
         padding: 24px 12px;
-        
+
         @media #{$mobile} {
             padding: 14px 15px;
         }
@@ -68,7 +68,7 @@ body > header,
             p {
                 margin: 0;
                 line-height: 1.5em;
-                color: $primary-pale;
+                color: #aecbc9;
             }
 
             a {
