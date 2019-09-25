@@ -50,11 +50,11 @@
     }
 
     &:before {
-        content: "\f0d8";
+        content: "\F0D8";
         font-family: FontAwesome;
         font-size: 2em;
-        color: $red;
+        color: rgb(200, 55, 37);
         position: absolute;
-        top: -20px;
+        top: -33px;
     }
 }
