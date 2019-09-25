@@ -24,6 +24,10 @@
     .icon-bordered {
         color: $red;
         width: 80px;
+        margin-bottom: 15px;
+        border: 3px solid;
+        border-radius: 100%;        
+        text-align: center;
     }
 }
 
@@ -37,6 +41,11 @@
 
     .icon-bordered {
         color: $primary;
+        width: 80px;
+        margin-bottom: 15px;
+        border: 3px solid;
+        border-radius: 100%;        
+        text-align: center;
     }
 }
 
@@ -76,4 +85,8 @@ h1.centered {
     padding-top: 10px;
     padding-bottom: 0;
     margin-bottom: 10px;
+}
+
+.info-block-actions {
+    text-align: center;
 }
