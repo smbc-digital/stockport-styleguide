@@ -3,6 +3,10 @@ div[alert-type] {
     max-width: 100%;
 }
 
+.info-block-actions {
+    text-align: center;
+}
+
 .notification {
     @include centered;
 
@@ -92,7 +96,3 @@ h1.centered {
     margin-bottom: 10px;
 }
 
-/* test*/
-div.info-block-actions {
-    text-align: center;
-}
