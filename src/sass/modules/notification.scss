@@ -3,7 +3,7 @@ div[alert-type] {
     max-width: 100%;
 }
 
-.info-block-actions {
+.info-block-action .info-block-actions {
     @include centered;
     background-color: red;
 }
