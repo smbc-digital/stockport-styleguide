@@ -49,7 +49,7 @@ main {
 		@media #{$desktop} {
 			padding: 40px 32px;
 
-			> :not(div[alert-type]) {
+			> :not(div.stock-alert) {
 				max-width: 66%;
 				width: 66%;
 			}
