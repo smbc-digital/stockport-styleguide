@@ -3,9 +3,8 @@ div[alert-type] {
     max-width: 100%;
 }
 
-.info-block .info-block-actions {
+.info-block {
     @include centered;
-    background-color: red;
 }
 
 .notification {
