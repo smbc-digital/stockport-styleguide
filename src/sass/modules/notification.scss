@@ -1,3 +1,10 @@
+div[alert-type]
+{
+    width: 100% !important;
+    max-width:100% !important;
+
+}
+
 .notification {
     @include centered;
 
@@ -23,7 +30,7 @@
 
     .icon-bordered {
         color: $red;
-        width: 80px;
+        width: 100px;
         margin-bottom: 15px;
         border: 3px solid;
         border-radius: 100%;        
@@ -41,7 +48,7 @@
 
     .icon-bordered {
         color: $primary;
-        width: 80px;
+        width: 100px;
         margin-bottom: 15px;
         border: 3px solid;
         border-radius: 100%;        
