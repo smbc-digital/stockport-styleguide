@@ -4,7 +4,7 @@ div[alert-type] {
 }
 
 .info-block-actions {
-    text-align: center;
+    @include centered;
 }
 
 .notification {
