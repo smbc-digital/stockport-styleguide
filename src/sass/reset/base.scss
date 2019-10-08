@@ -37,8 +37,7 @@ main {
 		display: block;
 	}
 
-	#root, 
-	#smart-answers-container {
+	#root {
 		// sass-lint:disable-line no-ids (#root needed for React)
 		@extend .grid-container;
 		margin: 0;
@@ -49,10 +48,23 @@ main {
 		@media #{$desktop} {
 			padding: 40px 32px;
 
-			> :not(div#stock-alert) {
+			> :not(#stock-alert) {
 				max-width: 66%;
 				width: 66%;
 			}
+		}
+	}
+
+	#smart-answers-container {
+		// sass-lint:disable-line no-ids (#root needed for React)
+		@extend .grid-container;
+		margin: 0;
+		background-color: $white;
+		padding: 32px 16px;
+		flex-grow: 1;
+
+		@media #{$desktop} {
+			padding: 40px 32px;	
 		}
 	}
 
