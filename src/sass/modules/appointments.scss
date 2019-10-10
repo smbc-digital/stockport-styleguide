@@ -44,12 +44,7 @@
     }
 
     @media #{$mobile} {
-        margin-left: 18px;
         width: 90%;
-    }
-
-    @media #{$tablet} {
-        margin-left: 18px;
     }
 
 }
@@ -209,7 +204,7 @@
 .timeline-header-content {
     position: relative;
     margin-left: 60px;
-    padding: 5px 0 5px 0;
+    padding: 5px 0 25px 0;
 
     p {
         color: white;
@@ -232,19 +227,18 @@
     color: white;
 
     span {
-        /*padding: 9px 16px 10px;*/
         margin: 7px 0 0 14px;
     }
-
-
 }
 
-.timeline-background {
-    margin: 0 -20px 0 -20px;
+.icon-header-clipboard {
+    background: $teal;
+    color: white;
 
-    /*added to fix bug*/
-    @media  #{"only screen and (min-width: 1025px) and (max-width: 1300px)"} {
-        margin: 0;
+    span {
+        margin: 10px 0 0 12px;
+        font-size: 30px;
+        display: inline-block;
     }
 }
 
@@ -290,6 +284,10 @@
     display: inline;
 }
 
+.timeline-header-content .track-header {
+    margin-top: 14px;
+}
+
 .report-information {
     padding-top: 5px;
 
@@ -313,5 +311,4 @@
         color: $white;
         padding: 5px 0 5px 0;
     }
-
 }
