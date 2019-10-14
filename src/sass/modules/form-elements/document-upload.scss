@@ -16,6 +16,10 @@
             display: table-cell;
             width: calc(95% - 16px);
 
+            &:first-of-type {
+                width: 8%;
+            }
+
             @media #{$mobile} {
                 width: 85%;
 
@@ -34,7 +38,7 @@
         }
 
         .document-name {
-            width: 85%;
+            width:85%;
         }
 
 
