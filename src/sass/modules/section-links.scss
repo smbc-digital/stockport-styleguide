@@ -29,7 +29,7 @@
         }
     }
 
-    i {
+    span.dashboard-button {
         font-size: 3.5em;
         -webkit-font-smoothing: none;
     }
@@ -52,7 +52,7 @@
             color: $grey-dark;
         }
 
-        i {
+        span.dashboard-button {
             font-size: 2.5em;
             margin: 0 25px 0 0;
         }
