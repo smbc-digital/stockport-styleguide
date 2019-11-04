@@ -121,7 +121,11 @@ input[type="number"] {
         padding-left: 33px;
         border-left: 4px solid #bfc1c3;
     }
-    
+
+    &:last-of-type {
+        margin-bottom: 25px;
+    }
+
     margin-bottom: 10px;
 
     label::after {
