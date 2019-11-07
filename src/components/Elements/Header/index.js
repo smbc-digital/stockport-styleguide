@@ -22,7 +22,7 @@ class Header extends Component {
 	}
 
 	render() {
-		const { loggedIn, javascriptBanner, uniqueKey } = this.props
+		const { javascriptBanner } = this.props
 
 		return (
 			<header>
@@ -34,68 +34,6 @@ class Header extends Component {
 					<div id="header-logo">
 						<a href="http://www.stockport.gov.uk">Stockport Metropolitan Borough Council Homepage</a>
 					</div>
-					<input id={uniqueKey ? `search-mobile-checkbox-${uniqueKey}` : 'search-mobile-checkbox'} type='checkbox' name='search-mobile-checkbox' tabIndex='1' />
-					<label className='search-mobile-label' htmlFor={uniqueKey ? `search-mobile-checkbox-${uniqueKey}` : 'search-mobile-checkbox'}>
-						<i className="fa fa-search" aria-hidden="true"></i>
-						<span className='hidden'>Open search bar</span>
-					</label>
-					{loggedIn
-						? <div id="header-my-account" className="logged-in">
-							<div className='menu-container'>
-								<div className='menu'>
-									<p>Welcome User</p>
-									<i className="fa fa-user" aria-hidden="true"></i>
-									<a href="http://myaccount.stockport.gov.uk">My Account</a>
-									<i className="fa fa-angle-down" aria-hidden="true"></i>
-								</div>
-								<nav className='menu-tooltip'>
-									<i className="fa fa-caret-up" aria-hidden="true"></i>
-									<a href="http://myaccount.stockport.gov.uk">My Account</a>
-									<a href="http://myaccount.stockport.gov.uk">Account Settings</a>
-									<a href="http://myaccount.stockport.gov.uk">Email alerts</a>
-									<a href="http://myaccount.stockport.gov.uk">Sign out</a>
-								</nav>
-							</div>
-							<div className='modal'>
-								<input id='modal' type='checkbox' name='modal' tabIndex='1' onClick={this.onModalCheckboxChange.bind(this)} />
-								<label htmlFor="modal">
-									<i className="fa fa-user" aria-hidden="true"></i>
-									<span className='hidden'>Open account menu</span>
-								</label>
-								<div className="modal-overlay">
-									<label htmlFor="modal" className="button button-outline button-close button-overlay">
-										<i className="fa fa-times" aria-hidden="true"></i>
-										Close
-									</label>
-									<nav>
-										<ul>
-											<li><a href="http://myaccount.stockport.gov.uk">My Account</a></li>
-											<li><a href="http://myaccount.stockport.gov.uk">Account settings</a></li>
-											<li><a href="http://myaccount.stockport.gov.uk">Email alerts</a></li>
-											<li><a href="http://myaccount.stockport.gov.uk">Sign out</a></li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-						</div>
-						: <div id="header-my-account" style={{padding: '16px 12px 0'}}>
-							<select id="lang" onChange={this.onStyleSheetChange.bind(this)} value={this.state.value} style={{marginBottom: '0'}}>
-								<option value="/styles.min.css">Local</option>
-								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/styles.min.css">Remote v1</option>
-								<option value="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css">Remote v2</option>
-							</select>
-						</div>}
-					<form method="get" role="search" id="cludo-search-form" className="cludo-search_autocomplete">
-						<label htmlFor="search" className="sr-only">Search Stockport council website</label>
-						<input id="search" className="search-input" name="query" placeholder="Search" autoComplete="off" type="text" />
-						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
-					</form>
-					<form method="get" role="search" id="cludo-search-mobile-form" className="cludo-search_autocomplete">
-						<i className="fa fa-caret-up" aria-hidden="true"></i>
-						<label htmlFor="search-mobile" className="sr-only">Search Stockport council website</label>
-						<input id="search-mobile" className="search-input" name="query" placeholder="Hi there! What are you looking for?" autoComplete="off" type="text" />
-						<button type="submit" title="Search Stockport Gov website"><i className="fa fa-search" aria-hidden="true"></i></button>
-					</form>
 				</div>
 				{ javascriptBanner 
 					? <div className="banner-header javascript-error">
@@ -103,11 +41,6 @@ class Header extends Component {
 							<span>JavaScript off</span>To get the best experience on this website please use a browser with JavaScript enabled.
 						</div>
 					</div> : null}
-				<div className="banner-header">
-					<div className="center-wrapper">
-						<span>NEW</span><strong>This part of Stockport.gov.uk is brand new</strong> &ndash; your <a href="/" target="_blank" data-mode="1" className="typeform-share link">feedback</a> will help us improve it.
-					</div>
-				</div>
 				<nav className="breadcrumb">
 					<h2 className="sr-only">Breadcrumb navigation</h2>
 					<ul className="center-wrapper">
