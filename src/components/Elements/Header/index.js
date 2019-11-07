@@ -4,21 +4,6 @@ class Header extends Component {
 
 	constructor(props) {
 		super(props)
-
-		this.state = {
-			styleSheet: '/styles.min.css'
-		}
-	}
-
-	onStyleSheetChange(event) {
-
-		this.setState({
-			styleSheet: event.target.value
-		})
-	}
-
-	onModalCheckboxChange(event) {
-		document.body.classList = event.target.checked ? 'noscroll' : ''
 	}
 
 	render() {
@@ -26,7 +11,6 @@ class Header extends Component {
 
 		return (
 			<header>
-				<link rel="stylesheet" href={this.state.styleSheet}></link>
 				<div className="skip-to-main-content hide-on-mobile hide-on-tablet">
 					<a href="#content">Skip to main content</a>
 				</div>
