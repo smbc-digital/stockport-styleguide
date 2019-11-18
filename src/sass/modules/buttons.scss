@@ -50,6 +50,12 @@ button {
         @include box-shadow(none);
         cursor: default;
 
+        &.button-loading {
+            background-color: $grey-middle;
+            @include box-shadow(0 10px 14px 0 $dark-border);
+            @include outline;
+        }
+
         &:hover {
             background-color: transparentize($teal-darker, 0.65);
             @include transition-box-shadow(none);
