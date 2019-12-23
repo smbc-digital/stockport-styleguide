@@ -58,6 +58,7 @@ textarea {
 
     @media #{$mobile} {
         line-height: 22px;
+        height: 125px;
     }
 
     &.small {
@@ -66,13 +67,15 @@ textarea {
 
     &.large {
         height: 300px;
+        @media #{$mobile} {
+            height: 125px;
+        }
     }
 
     &.char-limit {
         margin-bottom: 10px;
     }
 }
-
 
 select {   
     font-size: $fontSizeDefault;
