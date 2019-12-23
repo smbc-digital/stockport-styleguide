@@ -58,6 +58,7 @@ textarea {
 
     @media #{$mobile} {
         line-height: 22px;
+        height: 125px;
     }
 
     &.small {
