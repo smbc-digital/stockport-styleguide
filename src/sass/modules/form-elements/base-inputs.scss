@@ -63,6 +63,10 @@ textarea {
     &.small {
         height: 125px;
     }
+    
+    &.large {
+        height: 300px;
+    }
 
     &.char-limit {
         margin-bottom: 10px;
