@@ -4,8 +4,8 @@ textarea {
     padding: 6px;
     border: 2px solid $almost-black;
     @include border-radius(0);
-    width: 100%;
-    max-width: 550px;
+    width: 500px;
+    max-width: 100%;
     font-family: $font-family;
     color: $grey-darkest;
     font-size: $fontSizeDefault;
