@@ -67,6 +67,9 @@ textarea {
     
     &.large {
         height: 300px;
+        @media #{$mobile} {
+            height: 125px;
+        }
     }
 
     &.char-limit {
