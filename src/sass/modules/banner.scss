@@ -12,10 +12,6 @@
 	}
 }
 
-.image-test {
-	font-size: 5000px;
-}
-
 a.banner {
     &:before {
         @include chevron(10px, 60px);
