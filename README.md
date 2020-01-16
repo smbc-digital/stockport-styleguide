@@ -71,7 +71,7 @@ There are different sections to the styleguide that have been styled but not yet
 * :ballot_box_with_check: Buttons
 * :runner: Form elements
 * :ballot_box_with_check: Alerts
-* :no_entry_sign: Tables
+* :runner: Tables
 * :no_entry_sign: Profiles
 * :ballot_box_with_check: Icons
 * :ballot_box_with_check: Promotions
