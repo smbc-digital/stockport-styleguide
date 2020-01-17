@@ -11,8 +11,12 @@
     display: inline-block;
 }
 
+#root > #map.leaflet-container,
 #map.leaflet-container{
     font: 19px / 2 $font-family;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
 
     @media #{$mobile} {
         font: 16px / 2 $font-family;
@@ -21,6 +25,8 @@
 
 .leaflet-map{
     width: 100%;
-    height: 650px;
+    height: 730px;
+    min-height: 250px;
     border: none;
+    box-sizing: border-box;
 }
