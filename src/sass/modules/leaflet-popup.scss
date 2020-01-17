@@ -1,4 +1,4 @@
-.leaflet-popup-content-wrapper {
+.leaflet-popup > .leaflet-popup-content-wrapper {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.9);
     color: $white;
@@ -7,16 +7,15 @@
     .leaflet-popup-content {
         .item {
             padding-left: 24px;
-        }
-
-        .title {
-            display: inline-block;
-            margin-bottom: 0;
-            margin-top: 5px;
-            color: $grey-lighter;
-            font-size: $fontSizeSmall;
-            font-weight: $fontWeightRegular;
-        }
+            > p.title {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-top: 0;
+                color: $grey-lighter;
+                font-size: $fontSizeSmall;
+                font-weight: $fontWeightRegular;
+            }
+        }        
 
         .info {
             margin-top: 0;
@@ -26,6 +25,7 @@
             color: $grey-lighter;
             position: absolute;
             left: 14px;
+            line-height: 1.316;
         }
 
         a {
@@ -52,6 +52,7 @@
 
         .message-fault {
             background-color: $red;
+            color: $white;
         }
 
         .message-maintenance {
@@ -67,7 +68,7 @@
     }
 }
 
-.leaflet-container a.leaflet-popup-close-button {
+.leaflet-container .leaflet-popup > a.leaflet-popup-close-button {
     display: inline-block;
     font: normal normal $fontWeightSemiBold 24px/1 FontAwesome;
     text-rendering: auto;

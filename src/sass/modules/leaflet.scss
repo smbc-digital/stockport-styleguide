@@ -11,7 +11,7 @@
     display: inline-block;
 }
 
-.leaflet-container {
+#map.leaflet-container{
     font: 19px / 2 $font-family;
 
     @media #{$mobile} {
