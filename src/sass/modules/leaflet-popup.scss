@@ -5,6 +5,9 @@
     width: 100%;
 
     .leaflet-popup-content {
+        &:not(:last-of-type){
+            border-bottom: 2px solid #ccc;
+        }
         .item {
             padding-left: 24px;
             > p.title {
@@ -15,7 +18,7 @@
                 font-size: $fontSizeSmall;
                 font-weight: $fontWeightRegular;
             }
-        }        
+        }
 
         .info {
             margin-top: 0;
@@ -77,6 +80,6 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.leaflet-popup-tip {
+.leaflet-popup-tip-container > .leaflet-popup-tip {
     background-color: rgba(0, 0, 0, 0.9);
 }
