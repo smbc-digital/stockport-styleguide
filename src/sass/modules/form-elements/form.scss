@@ -88,7 +88,7 @@ form {
         display: inline-block;
     }
 
-    p {
+    p, span {
         &.optional {
             padding-left: 10px;
             font-size: $fontSizeSmall;
