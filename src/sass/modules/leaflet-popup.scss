@@ -5,7 +5,7 @@
     width: 100%;
 
     .leaflet-popup-content {
-        &:not(:last-of-type){
+        &:not(:last-of-type) {
             border-bottom: 2px solid #ccc;
         }
         .item {
