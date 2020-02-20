@@ -30,3 +30,130 @@
     border: none;
     box-sizing: border-box;
 }
+
+.leaflet-container {
+	max-width: unset;
+
+	.leaflet-control-container {	
+		display: flex;	
+		flex-direction: row;	
+		height: 100%;	
+
+		.leaflet-top.leaflet-left {	
+			position: relative;	
+			order: 1;	
+		}	
+
+		.leaflet-top.leaflet-right {	
+			position: relative;	
+			order: 3;	
+		}	
+
+		.leaflet-bottom.leaflet-left {	
+			position: relative;	
+			order: 2;	
+			flex-grow: 1;	
+			padding: 10px;	
+		}	
+
+		.leaflet-control-search.leaflet-control {	
+			width: 100%;	
+			margin: 0;	
+			display: flex;	
+			background-color: #fff;
+			border: none!important;
+
+			input.search-input {	
+				display: block!important;	
+				flex-grow: 1;	
+				outline: none;	
+				border: 0!important;
+				height: 28px;	
+			}	
+
+			ul {	
+				display: block;	
+				width: 100%;	
+				margin: 0;	
+				max-height: 200px!important;	
+				margin-top: 1px;	
+				box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2)!important;	
+				z-index: 1;	
+
+				> li.search-tip{	
+					background: #FFF;	
+					margin: 0;	
+					border-radius: 0;	
+					padding: 7px;	
+					border-bottom: 1px #ccc solid;	
+					cursor: pointer;	
+					font-size: 0.75em;
+
+					&:hover {	
+						color: #fff;	
+						background-color: #333;	
+					}
+				}
+
+				> li.search-tip-select{	
+					color: #fff;	
+					background-color: #333;
+					border-top:3px solid #ef8a16;	
+					border-bottom:3px solid #ef8a16;
+				}	
+			}
+
+			.search-alert {	
+				display: none!important;	
+			}
+
+			.search-button {	
+				display: block!important;	
+				margin-bottom: 0;	
+				text-decoration: none;	
+				padding-top: 4px;	
+				height: 32px;	
+				line-height: 26px;
+				background: none!important;
+
+				&::after {	
+					font-family: "FontAwesome";	
+					content: "\f002";	
+					font-size: 20px;	
+					padding: 0 12px 0 6px;	
+					color: #333;	
+					background: 0 0;	
+					border: none;	
+				}
+			}
+
+			&.search-exp{	
+				height: 36px;	
+				border: none;	
+				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);	
+			}
+
+			.search-cancel {
+				margin-top: 4px;	
+				margin-bottom: 0;	
+				line-height: 26px;	
+				height: 32px;
+				background: none!important;
+
+				&:hover {		
+					background-color: #f4f4f4;	
+				}
+
+				&::after {	
+					font-family: "FontAwesome";	
+					content: "\f00d";	
+					font-size: 20px;	
+					color: #333;	
+					background: 0 0;	
+					border: none;	
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
