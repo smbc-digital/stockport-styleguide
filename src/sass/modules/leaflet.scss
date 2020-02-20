@@ -62,6 +62,7 @@
 			display: flex;	
 			background-color: #fff;
 			border: none!important;
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2)!important;
 
 			input.search-input {	
 				display: block!important;	
@@ -115,6 +116,8 @@
 				height: 32px;	
 				line-height: 26px;
 				background: none!important;
+				position: absolute;
+				right: 5px;
 
 				&::after {	
 					font-family: "FontAwesome";	
@@ -130,7 +133,6 @@
 			&.search-exp{	
 				height: 36px;	
 				border: none;	
-				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);	
 			}
 
 			.search-cancel {
