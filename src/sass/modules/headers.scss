@@ -5,9 +5,9 @@ body > header,
     width: 100%;
 
     #header-logo { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
-        @extend .grid-20;
-        @extend .tablet-grid-30;
-        @extend .mobile-grid-30;
+        @extend .grid-50;
+        @extend .tablet-grid-50;
+        @extend .mobile-grid-50;
         height: 80px;
         padding-left: 0;
         @include header-footer-logo;
@@ -18,15 +18,14 @@ body > header,
     }
 
     #header-my-account { // sass-lint:disable-line no-ids (id needed for specific identifier as component is not reusable)
-        @extend .grid-55;
-        @extend .tablet-grid-50;
+        @extend .grid-25;
+        @extend .tablet-grid-10;
 
         &.form-header {
             @extend .grid-50;
             @extend .tablet-grid-50;
         }
-
-        @extend .mobile-grid-50;
+        @extend .mobile-grid-10;
         text-align: right;
         padding: 24px 12px;
 
@@ -248,10 +247,6 @@ body > header,
                 span:first-of-type {
                     color: $white;
                 }
-            }
-
-            &:first-of-type {
-                padding-right: 15px;
             }
 
             span:first-of-type {
