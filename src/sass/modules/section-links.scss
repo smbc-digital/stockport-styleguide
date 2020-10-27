@@ -16,20 +16,12 @@
     text-decoration: none;
     @include box-shadow(0 10px 13px 0 rgba(0, 0, 0, 0.1));
 
-    &:last-of-type {
-        margin: 0 0 20px 0;
-    }
-
     &:hover {
         @include transition-box-shadow(0 20px 40px 0 rgba(0,0,0,0.3));
-        text-decoration: none;
-
-        > span {
-            text-decoration: underline;
-        }
+        text-decoration: underline;
     }
 
-    span.dashboard-button {
+    i.span {
         font-size: 3.5em;
         -webkit-font-smoothing: none;
     }
@@ -45,14 +37,14 @@
         }
 
         &:before {
-            @include chevron(10px);
+            @include chevron(20px);
             width: auto;
             visibility: visible;
             overflow: visible;
             color: $grey-dark;
         }
 
-        span.dashboard-button {
+        i {
             font-size: 2.5em;
             margin: 0 25px 0 0;
         }

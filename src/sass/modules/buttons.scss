@@ -20,7 +20,7 @@ button {
     @include border-radius(3px);
     @include box-shadow(0 10px 14px 0 $dark-border);
 
-    i {
+    span.fa {
         top: 50%;
         float: left;
     }
