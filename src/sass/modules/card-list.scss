@@ -24,19 +24,19 @@
 
 		li {
 			&:first-child {
-				a > i {
+				a > span {
 					color: $purple;
 				}
 			}
 
 			&:last-child {
-				a > i {
+				a > span {
 					color: $primary-light;
 				}
 			}
 
 			&:nth-child(2) {
-				a > i {
+				a > span {
 					color: $soft-blue;
 				}
 			}
@@ -68,7 +68,7 @@
 					&.icon-card {
 						padding: 60px 15px 0 15px;
 
-						> i {
+						> span {
 							display: block;
 							padding: 15px 0;
 							font-size: 5em;
@@ -112,7 +112,7 @@
 							margin: 0;
 							color: $primary-text;
 
-							> i {
+							> span {
 								width: 10%;
 							}
 						}
@@ -149,7 +149,7 @@
 							@include flex-row(2, 2%);
 						}
 
-						> i {
+						> span {
 							font-size: 3em;
 							flex-grow: 0;
 							padding-left: 30px;
@@ -203,7 +203,7 @@
 							margin: 0;
 							color: $primary-text;
 
-							> i {
+							> span {
 								width: 10%;
 							}
 						}
