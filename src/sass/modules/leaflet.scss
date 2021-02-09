@@ -31,6 +31,14 @@
     box-sizing: border-box;
 }
 
+.leaflet-map-text-container {
+	padding: 0 16px;
+
+	@media #{$desktop} {
+		padding: 0 32px;
+	}
+}
+
 .leaflet-container {
 	max-width: unset;
 
