@@ -11,8 +11,8 @@
     display: inline-block;
 }
 
-#root > #map.leaflet-container,
-#map.leaflet-container {
+#root > #map.leaflet-container, // sass-lint:disable-line no-ids
+#map.leaflet-container {  // sass-lint:disable-line no-ids
     font: 19px / 2 $font-family;
     width: 100%;
     height: 100%;
@@ -64,66 +64,71 @@
 			padding: 10px;	
 		}	
 
-		.leaflet-control-search.leaflet-control {	
-			width: 100%;	
-			margin: 0;	
-			display: flex;	
+		.leaflet-control-search.leaflet-control {
+			width: 100%;
+			margin: 0;
+			display: flex;
 			background-color: #fff;
-			border: none!important;
-			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2)!important;
+			border: none !important;  // sass-lint:disable-line no-important
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) !important;   // sass-lint:disable-line no-important
 
-			input.search-input {	
-				display: block!important;	
-				flex-grow: 1;	
-				outline: none;	
-				border: 0!important;
-				height: 28px;	
-			}	
+			input.search-input {
+				display: block !important;   // sass-lint:disable-line no-important
+				flex-grow: 1;
+				outline: none;
+				border: 0 !important;   // sass-lint:disable-line no-important border-zero
+				height: 28px;
+				max-width: 80% !important;   // sass-lint:disable-line no-important
 
-			ul {	
-				display: block;	
-				width: 100%;	
-				margin: 0;	
-				max-height: 200px!important;	
-				margin-top: 1px;	
-				box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2)!important;	
-				z-index: 1;	
+				@media #{$desktop} {
+					max-width: 85% !important;   // sass-lint:disable-line no-important
+				}
+			}
 
-				> li.search-tip{	
-					background: #FFF;	
-					margin: 0;	
-					border-radius: 0;	
-					padding: 7px;	
-					border-bottom: 1px #ccc solid;	
-					cursor: pointer;	
+			ul {
+				display: block;
+				width: 100%;
+				margin: 0;
+				max-height: 200px !important;   // sass-lint:disable-line no-important
+				margin-top: 1px;
+				box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2) !important;   // sass-lint:disable-line no-important zero-unit
+				z-index: 1;
+
+				> li.search-tip {	
+					background: #fff;
+					margin: 0;
+					border-radius: 0;
+					padding: 7px;
+					border-bottom: 1px #ccc solid;
+					cursor: pointer;
 					font-size: 0.75em;
 
-					&:hover {	
-						color: #fff;	
-						background-color: #333;	
+					&:hover {
+						color: #fff;
+						background-color: #333;
 					}
 				}
 
-				> li.search-tip-select{	
-					color: #fff;	
+				> li.search-tip-select {
+					color: #fff;
 					background-color: #333;
-					border-top:3px solid #ef8a16;	
-					border-bottom:3px solid #ef8a16;
+					border-top: 3px solid #ef8a16;
+					border-bottom: 3px solid #ef8a16;
 				}	
 			}
 
 			.search-alert {	
-				display: none!important;	
+				display: none !important; // sass-lint:disable-line no-important
 			}
 
 			.search-button {	
-				display: block!important;	
+				display: block !important; // sass-lint:disable-line no-important
 				margin-bottom: 0;	
 				text-decoration: none;	
 				padding-top: 4px;	
 				height: 32px;	
 				line-height: 26px;
-				background: none!important;
+				background: none !important; // sass-lint:disable-line no-important
 				position: absolute;
 				right: 5px;
 
@@ -138,7 +143,7 @@
 				}
 			}
 
-			&.search-exp{	
+			&.search-exp {	
 				height: 36px;	
 				border: none;	
 			}
@@ -148,7 +153,7 @@
 				margin-bottom: 0;	
 				line-height: 26px;	
 				height: 32px;
-				background: none!important;
+				background: none !important; // sass-lint:disable-line no-important
 
 				&:hover {		
 					background-color: #f4f4f4;	
@@ -171,7 +176,7 @@
 		}
 
 		.legend {
-			background-color: #FFF;
+			background-color: #fff;
 			padding: 10px;
 			border-radius: 4px;
 			border: 2px solid rgba(0,0,0,0.2);
