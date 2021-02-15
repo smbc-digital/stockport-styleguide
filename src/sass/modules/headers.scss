@@ -22,8 +22,11 @@ body > header,
 		@extend .tablet-grid-50;
 
 		&.form-header {
-			@extend .grid-50;
-			@extend .tablet-grid-50;
+			@extend .grid-80;
+			@extend .tablet-grid-70;
+			@media #{$desktop} {
+				padding-right: 0;
+			}
 		}
 
 		@extend .mobile-grid-50;
@@ -164,7 +167,7 @@ body > header,
 				transform: scale(1);
 				-webkit-transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
 				transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
-				z-index: 800;
+				z-index: 1001;
 			}
 
 			.modal-overlay {
@@ -258,13 +261,11 @@ body > header,
 				}
             }
             
-            &:first-of-type {
-                margin-right: 15px;
-            }
-
 			span:first-of-type {
 				color: $primary-pale;
-				padding-right: 10px;
+				@media #{$desktop} {
+					padding-right: 10px;
+				}
 			}
 
 			span:last-of-type {
