@@ -55,13 +55,14 @@
         margin-bottom: 0;
         font-size: x-small;
 
-      @media #{$mobile} {
-        font-size: 0.4rem;      }
-    }
+        > p {
+          color: black;
+          margin-bottom: inherit;
+        }
 
-    .copyright-information > p {
-      color: black;
-      margin-bottom: inherit;
+      @media #{$mobile} {
+        font-size: 0.4rem;
+      }
     }
 }
 
