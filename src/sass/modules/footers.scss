@@ -1,5 +1,6 @@
 body > footer,
-#root > footer { // sass-lint:disable-line no-ids (#root needed for React)
+#root > footer,
+body > div > footer { // sass-lint:disable-line no-ids (#root needed for React)
     border-top: 10px solid $teal;
     background-color: $primary-dark;
 
