@@ -1,6 +1,7 @@
 body > header,
 #root > header, // sass-lint:disable-line no-ids (#root needed for React)
-.header-showcase > header {
+.header-showcase > header,
+body > div > header {
 	background-color: $primary;
 	width: 100%;
 
