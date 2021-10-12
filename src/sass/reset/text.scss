@@ -120,9 +120,10 @@ a {
     @extend .p;
     color: $primary;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
 
     &:hover {
-        text-decoration: none;
+        text-decoration-thickness: 3px;
     }
 
     &:active,
