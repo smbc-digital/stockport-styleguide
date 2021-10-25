@@ -96,12 +96,22 @@
             .secondary-item-description {
                 color: $grey-darkest;
                 font-size: 13px;
-                line-height: 1.5;
 
-                a {
-                    font-size: 14px;
-                    color: $primary-dark;
-                }
+                ul
+                {
+                    list-style: none;
+
+                    li                     
+                    {
+                        margin: 0;
+                        
+                        a {
+                            font-size: 14px;
+                            color: $primary-dark;
+                            margin: 0;          
+                        }   
+                    } 
+                }                                  
             }
         }
     }
