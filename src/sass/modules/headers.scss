@@ -252,10 +252,10 @@ body > div > header {
 
 		a {
 			color: $white;
-			text-decoration: none;
+			text-decoration: underline;
 
 			&:hover {
-				text-decoration: underline;
+				text-decoration-thickness: 3px;
 
 				span:first-of-type {
 					color: $white;
