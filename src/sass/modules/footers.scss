@@ -36,11 +36,11 @@ body > div > footer { // sass-lint:disable-line no-ids (#root needed for React)
             margin: 0 0 0 0;
 
             a {
-                text-decoration: none;
+                text-decoration: underline;
                 color: $white;
 
                 &:hover {
-                    text-decoration: underline;
+                    text-decoration-thickness: 3px;
                 }
             }
         }
