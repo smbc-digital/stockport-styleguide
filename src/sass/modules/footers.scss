@@ -215,9 +215,10 @@ body > div > footer { // sass-lint:disable-line no-ids (#root needed for React)
             text-align: right;
             padding: 0;
             color: $white;
+            text-decoration: underline;
 
             &:hover {
-                text-decoration: none;
+                text-decoration-thickness: 3px;
             }
         }
     }

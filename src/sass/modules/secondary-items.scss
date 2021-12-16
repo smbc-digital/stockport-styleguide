@@ -73,6 +73,11 @@
                 font-size: 18px;
                 font-weight: 600;
                 line-height: 1.5em;
+                text-decoration: underline;
+                
+                &:hover {
+                    text-decoration-thickness: 3px;
+                }
 
                 h3 {
                     font-size: 1em;
@@ -108,7 +113,12 @@
                         a {
                             font-size: 14px;
                             color: $primary-dark;
-                            margin: 0;          
+                            margin: 0;       
+                            text-decoration: underline;   
+
+                            &:hover {
+                                text-decoration-thickness: 3px;
+                            }
                         }   
                     } 
                 }                                  

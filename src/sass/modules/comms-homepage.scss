@@ -110,12 +110,12 @@
 
 				a {
 					font-weight: 400;
-					text-decoration: none;
+					text-decoration: underline;
 					color: $teal-darker;
 
 					&:hover {
 						color: $grey-darkest;
-						text-decoration: underline;
+						text-decoration-thickness: 3px;
 					}
 				}
 
@@ -202,13 +202,13 @@ iframe.instagram {
 
 .view-more-news {
 	color: #055c58;
-	text-decoration: none;
 	font-size: 1em;
 	font-weight: 400;
+	text-decoration: underline;
 	
 	&:hover {
 		color: $grey-darkest;
-		text-decoration: underline;
+		text-decoration-thickness: 3px;
 	}
 	
 	span {
