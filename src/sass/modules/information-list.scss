@@ -59,16 +59,15 @@
   }
 
   .information-item {
-    color: $grey-darkest;
-
-    &:hover {
-      .information-item-link {
-        text-decoration: underline;
-      }
+      color: $grey-darkest;
     }
 
-    .information-item-link {
+  .information-item-link {
       color: $primary;
+      text-decoration: underline;
+
+      &:hover {
+          text-decoration: 3px;
     }
   }
 
