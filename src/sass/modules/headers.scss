@@ -253,6 +253,7 @@ body > div > header {
 		a {
 			color: $white;
 			text-decoration: underline;
+			padding-left: 20px;
 
 			&:hover {
 				text-decoration-thickness: 3px;
@@ -261,7 +262,7 @@ body > div > header {
 					color: $white;
 				}
             }
-            
+
 			span:first-of-type {
 				color: $primary-pale;
 				padding-right: 10px;
