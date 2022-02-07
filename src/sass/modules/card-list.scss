@@ -46,7 +46,7 @@
 			> li {
 				@include flex-row(3, 1.5%);
 				display: block;
-				height: 328px;
+				height: 350px;
 
 				&.full-height {
 					height: 100%;
