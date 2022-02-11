@@ -121,12 +121,12 @@ a {
     text-decoration: underline;
 
     &:hover {
-        text-decoration: none;
+        text-decoration-thickness: 3px;
     }
 
     &:active,
     &:focus {
-        text-decoration: none;
+        text-decoration-thickness: 3px;
         outline: 3px solid $orange;
     }
 }
