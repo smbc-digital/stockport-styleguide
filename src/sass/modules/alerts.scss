@@ -80,6 +80,15 @@
 	@include alert;
 	@include alert-colours($orange, $grey-darkest);
 
+	a {
+		color: $primary;
+
+		&:hover {
+			color: $grey-darkest;
+			text-decoration-thickness: 3px;
+		}
+	}
+
 	a:active,
 	a:focus {
 		outline-color: $soft-blue;
