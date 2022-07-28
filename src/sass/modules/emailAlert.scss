@@ -18,7 +18,8 @@
             margin: inherit;
 
             @media #{$mobile} {
-                padding: 5px;
+                margin-top: 5px;
+                width: 100%;
             }
         }
     }
