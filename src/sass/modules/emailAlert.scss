@@ -1,9 +1,9 @@
 ﻿.email-alert {
-    flex-direction: row;
+    flex-direction: row !important;
     align-items: center;
 
     @media #{$mobile} {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     h2 {
@@ -16,6 +16,10 @@
         button {
             width: 18rem;
             margin: inherit;
+
+            @media #{$mobile} {
+                padding: 5px;
+            }
         }
     }
 }
