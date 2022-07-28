@@ -1,0 +1,21 @@
+﻿.email-alert {
+    flex-direction: row;
+    align-items: center;
+
+    @media #{$mobile} {
+        flex-direction: column;
+    }
+
+    h2 {
+        flex: none;
+    }
+
+    form {
+        justify-content: end;
+
+        button {
+            width: 18rem;
+            margin: inherit;
+        }
+    }
+}
