@@ -102,6 +102,10 @@ form {
     ul {
         margin: 0 0 20px 15px;
         font-size: 1.187em;
+
+        li ul {
+            font-size: 1em;
+        }
     }
 }
 
