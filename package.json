@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "cpx": "^1.5.0",
+    "isomorphic-fetch": "^3.0.0",
     "pretty": "^2.0.0",
     "react-highlight": "^0.14.0"
   }
