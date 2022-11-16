@@ -11,8 +11,12 @@
         padding-right: 85px;
 
         @media #{$mobile} {
-            padding: 15px;
+            padding: 10px;
             text-align: center;
+        }
+
+        @media #{$tablet} {
+            padding: 0 0 10px 0;
         }
     }
 
