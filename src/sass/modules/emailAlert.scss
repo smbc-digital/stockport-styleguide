@@ -4,18 +4,15 @@
 
     @media #{$mobile} {
         flex-direction: column !important;
-    }
-
-    @media #{$tablet} {
-        flex-direction: column !important;
-    }
+    }    
 
     h2 {
         flex: none;
         padding-right: 85px;
 
         @media #{$tablet} {
-            padding-right: 55px;
+            flex-direction: column !important;
+            align-items: center;
         }
 
         @media #{$mobile} {
