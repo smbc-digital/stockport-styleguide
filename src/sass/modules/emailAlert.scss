@@ -6,12 +6,25 @@
         flex-direction: column !important;
     }
 
+    @media #{$tablet} {
+        flex-direction: column !important;
+    }
+
     h2 {
         flex: none;
+        padding-right: 85px;
+
+        @media #{$tablet} {
+            padding-right: 55px;
+        }
+
+        @media #{$mobile} {
+            padding: 15px;
+            text-align: center;
+        }
     }
 
     form {
-        justify-content: end;
 
         button {
             width: 18rem;
