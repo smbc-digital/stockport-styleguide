@@ -10,11 +10,6 @@
         flex: none;
         padding-right: 85px;
 
-        @media #{$tablet} {
-            flex-direction: column !important;
-            align-items: center;
-        }
-
         @media #{$mobile} {
             padding: 15px;
             text-align: center;
@@ -23,9 +18,14 @@
 
     form {
 
+        @media #{$tablet} {
+            flex-direction: column !important;
+            align-items: center;
+        }
+        
         button {
             width: 18rem;
-            margin: inherit;
+            margin: inherit;            
 
             @media #{$mobile} {
                 margin: 5px 0 15px 0;
