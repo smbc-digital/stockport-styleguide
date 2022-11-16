@@ -20,9 +20,9 @@
 
         @media #{$tablet} {
             flex-direction: column !important;
-            align-items: center;
+            align-items: center !important;
         }
-        
+
         button {
             width: 18rem;
             margin: inherit;            
