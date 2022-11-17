@@ -8,14 +8,20 @@
 
     h2 {
         flex: none;
-        padding-right: 85px;
+        width: 790px;
+        height: 140px;
+        margin-top: 50px !important;
 
-        @media #{$mobile} {
+        @media #{$mobile} {           
+            width: initial;
+            height: initial;
             padding: 10px;
             text-align: center;
         }
 
         @media #{$tablet} {
+            width: initial;
+            height: initial;
             padding: 0 0 10px 0;
         }
     }
@@ -29,11 +35,16 @@
 
         button {
             width: 18rem;
+            margin-top: 50px;;
             margin: inherit;            
 
             @media #{$mobile} {
                 margin: 5px 0 15px 0;
                 width: 100%;
+            }
+
+            @media #{$tablet} {
+                margin: 0;
             }
         }
     }
