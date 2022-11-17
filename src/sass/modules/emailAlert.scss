@@ -9,8 +9,8 @@
     h2 {
         flex: none;
         width: 790px;
-        height: 140px;
-        margin-top: 50px !important;
+        height: 120px;
+        margin: 10px !important;
 
         @media #{$mobile} {           
             width: initial;
@@ -41,12 +41,12 @@
             margin: inherit;            
 
             @media #{$mobile} {
-                margin: 5px 0 15px 0;
+                margin: 5px 0 15px 0 !important;
                 width: 100%;
             }
 
             @media #{$tablet} {
-                margin: 0;
+                margin: 0 !important;
             }
         }
     }
