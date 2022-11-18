@@ -15,7 +15,6 @@
         @media #{$mobile} {           
             width: initial;
             height: initial;
-            padding: 10px;
             text-align: center;
             margin-top: 0 !important;
         }
@@ -23,7 +22,7 @@
         @media #{$tablet} {
             width: initial;
             height: initial;
-            padding: 0 0 10px 0;
+            text-align: center;
             margin-top: 0 !important;
         }
     }
@@ -46,7 +45,7 @@
             }
 
             @media #{$tablet} {
-                margin: 0 !important;
+                margin: 5px 0 15px 0 !important;
             }
         }
     }
