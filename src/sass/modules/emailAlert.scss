@@ -10,20 +10,22 @@
         flex: none;
         width: 790px;
         height: 120px;
-        margin: 10px !important;
+        margin-top: 50px !important;
+        line-height: initial !important;
 
         @media #{$mobile} {           
             width: initial;
             height: initial;
             text-align: center;
-            margin-top: 0 !important;
+            margin: 10px !important;
+            line-height: 1.2em !important;
         }
 
         @media #{$tablet} {
             width: initial;
             height: initial;
-            text-align: center;
-            line-height: initial !important;
+            text-align: center;        
+            margin: 10px !important;
         }
     }
 
