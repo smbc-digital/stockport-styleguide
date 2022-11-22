@@ -10,18 +10,19 @@
         flex: none;
         width: 80%;
         margin: 10px 0 10px 0 !important;
-        text-align: center;
         line-height: initial !important;
 
         @media #{$mobile} {           
             width: 95%;
             height: initial;
+            text-align: center;
             line-height: 1.2em !important;
         }
 
         @media #{$tablet} {
             width: initial;
             height: initial;
+            text-align: center;
         }
     }
 
