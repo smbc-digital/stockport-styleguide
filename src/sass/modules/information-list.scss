@@ -5,6 +5,14 @@
   li {
     margin-left: 0;
 
+    a {
+      text-decoration: underline;
+    
+      &:hover {
+        text-decoration-thickness: 3px;
+      }
+    }
+
     .icon-column {
       @extend .grid-5;
     }
